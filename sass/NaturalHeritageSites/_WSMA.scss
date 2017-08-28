@@ -136,7 +136,7 @@ html:not(.t-safari) {
     #masterHeaderActionArea a, .RadGrid input.PrimaryButton,
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
-        background: url(images/DiamondButton.svg#color-secondary-b) no-repeat top center!important; 
+        background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center!important; 
         background-size: 100% 100%!important;
         color: $color-base!important;
     }
@@ -293,7 +293,7 @@ html.t-safari {
         text-decoration: none;
         font-weight: bold;
         color: $color-base;
-        //line-break: normal;
+        line-break: normal;
     }
 }
 
