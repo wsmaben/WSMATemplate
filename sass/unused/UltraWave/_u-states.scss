@@ -1,0 +1,11 @@
+/* ==========================================================================
+   GLOBAL STATES 
+   ========================================================================== */
+/* Styles to indicate state (selected, hovered, etc.) - used throughout iMIS */
+
+/* Used in the PeoplePanel and elsewhere to denote a selected item within a group. */
+.SelectedItem {
+    background-color:lightblue;
+    opacity:1;
+    filter:Alpha(opacity=100); /* Sets the opacity for IE8 */
+}

@@ -1,0 +1,228 @@
+ /*==========================================================================
+   OBJECT BROWSER
+   ========================================================================== */
+/**
+ * Object Browser (aka document browser) is the Windows Explorer-like control 
+ * that displays a tree view of the folder structure in the left-hand panel
+ * and the list of available documents in the right.
+ * It is used in Content Designer, Site Designer, Resource Library, and many other places.
+ */
+
+.ObjectBrowser_OuterTable {
+    border: 1px solid #ccc;
+}
+.Toolbars {
+    width:100%; 
+    float:left; 
+    padding-top:3px; 
+    padding-bottom:3px; 
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    input {
+        vertical-align:top;    
+        float:left;  
+    }
+}
+.OBNavIcons {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.OBNavIcon {
+    &:hover, &:focus, &:active { @include opacity(.9); }
+}
+.TreePane hr {
+    display: none;
+}
+.ContentTreePane {
+    overflow:hidden; 
+    float:left; 
+    height:100%;
+    width:30%;
+    border-right: 1px solid #ccc;
+}
+.TreeHeaderPaneText {
+    padding:3px;
+    font-weight: bold;  
+}
+.RootList {
+    width:98%;
+}
+.ContentListUpdatePanel {
+    height:100% !important;
+    width: 100%;
+}
+.ContentContainerPane {
+    height: 100% !important; 
+    width:100%;
+    position: relative;       
+}
+.ObjectBrowserContentList {
+    width:100%;
+    padding-left: 5px;
+}
+.ContentSummaryPane {
+    width: 99%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #CCCCCC;   
+    background-color: #ffffff;
+}
+.ObjectBrowserIcon {
+    padding-left:18px; 
+    background-repeat:no-repeat;
+    min-height:18px;
+}
+.ObjectBrowserContentList td {
+    overflow:hidden;
+    padding:4px 20px 3px 3px;/* the 20px right padding is here for IE 7*/
+    vertical-align:top;
+    text-align: left;
+}
+.MenuPane {
+    overflow: visible !important;
+    white-space: nowrap;
+}
+.ObjectBrowserWrapper .RadMenu {
+    float: none;
+}
+#Toolbars {
+    overflow: hidden;
+}
+
+.AddressPane  {
+    white-space: nowrap;    
+}
+.FilenamePane {  
+    clear: both;
+    padding: 3px;
+    padding-left: 0;
+
+    label,
+    input[type="text"] {  
+        white-space: nowrap;
+        display: inline-block; 
+    }
+
+    label {
+        float: left;
+        padding-right: 3px; 
+    }
+}
+.TreeHeaderPane {
+    background-color: #f0f0f0;       
+    padding:3px;
+    select { width: 100%; }
+}
+
+.CompletionList {
+    border: solid 1px $border-color;
+    height: auto;
+    max-height: 250px;           
+    overflow: auto;
+    background-color: #FFFFFF;
+    @include unstyled-list();
+}
+
+/* style used on the text that is displayed next to a 
+   node while its content is being retrieved from the server */
+.LoadingMessage {
+    background-color: InfoBackground;
+    color: InfoText;
+}
+
+.ObjectBrowserContentList .even {
+    background-color:#F0F4FA;
+}
+.ObjectBrowserContentList .hover {
+    background-color: #97CFFB;
+    cursor: pointer;
+}
+.ObjectBrowserContentList .selected {
+    background-color: #316AC5;
+    color: #FFFFFF;  
+}
+.ObjectBrowserContentList div, 
+.dragItem {
+    cursor: default;
+    padding: 1px;
+    height: 1.5em;
+}
+/* Handles objects that have very long names and prevents the name from wrapping or overflowing the container */
+.ObjectBrowserContentListName {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.ShowDescription {
+    white-space: normal !important;
+}
+.ObjectBrowserContentListDescription {
+    width:60%;
+}
+
+.ObjectBrowserContentListEmpty {
+    font-style: italic;
+    font-weight: bolder;
+    width: 97%;
+    height: 97%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.unPublishedNode, 
+.unPublishedRow {
+    border-right: solid 4px red;
+    margin-right: 2px;
+}
+.unPublishedPendingNode, 
+.unPublishedPendingRow {
+    border-right: solid 4px gold;
+    margin-right: 2px;
+}
+.breakNode { font-style: italic; }
+
+.HomePageNode {
+    background-image: url(../images/icon_homepage.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+/* Read only nodes
+   ========================================================================== */
+/* The following adds a lock icon overlay on the document type icon on IsSystem documents */
+.ReadOnlyRow, 
+.ReadOnlyNode .TreeNode {
+    position: relative;
+}
+
+.ReadOnlyRow:before,
+.ReadOnlyNode .TreeNode:before {
+    content: url(../images/icon_lock.png);
+    position: absolute;
+}
+
+.ReadOnlyRow:before {
+    left: 8px;
+}
+.ReadOnlyNode .TreeNode:before {
+    left: -12px;
+    top: 5px;
+}
+
+/*  Quick find
+   ========================================================================== */
+/* The quick find search box in the top right corner of object browser */
+.QuickFindWrapper {
+    float: right;
+    
+    label {
+        float: left;
+        padding-top: .2em;            /* Force the label before the input field */
+    }
+    input {
+        margin-left:.2em;
+        margin-right:.2em;
+    }
+}

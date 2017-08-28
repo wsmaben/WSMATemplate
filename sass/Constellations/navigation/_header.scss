@@ -1,0 +1,205 @@
+﻿/* ==========================================================================
+   HEADER NAVIGATION
+   ========================================================================== */
+
+.header {
+    min-height: $navbar-top-height;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    background-color: $navbar-top-bg;
+
+    .obo-on & { background-color: $navbar-top-obo-bg; }
+}
+
+/* Toggles and auxiliary navigation
+   ========================================================================== */
+.account-menu > li > a, 
+.header .NavigationUnorderedList > li > a {
+    font-weight: $font-weight-bold;
+    display: inline-block;
+    /* make sure the top & bottom padding make it exactly the height of the header bar */
+    padding: ($navbar-top-height - $line-height-computed)/2 $navbar-padding-horizontal;
+
+    &, &:hover, &:visited, &:active { 
+        text-decoration: none;
+        color: $navbar-top-link-color; 
+    }
+}
+
+.account-menu > li > a, 
+.header .NavigationUnorderedList > li > a,
+.ste-toggle, 
+.navbar-toggle {
+    &:hover, &:focus, &:active { 
+        /* need to provide a fallback color for IE8, which doesn't support rgba */
+        @include alpha-background-color($navbar-top-link-hover-bg, white); 
+    }
+}
+
+.ste-toggle,
+.navbar-toggle,
+.obo-toggle,
+.nav-aux-button a {
+    border-radius: $border-radius-base;
+    border: none !important;
+    vertical-align: middle;
+}
+
+.ste-toggle,
+.navbar-toggle,
+.obo-toggle,
+.nav-aux-button .nav-text {
+    @include text-hide();
+}
+
+.nav-expanded .primary-nav-toggle,
+.search-dropdown.open .search-toggle,
+.ste-toggle.on,
+.obo-toggle.on {
+    background-color: $navbar-default-toggle-active-bg;
+    &:hover, &:focus, &:active { background-color: $navbar-default-toggle-hover-bg; }
+}
+
+.navbar-toggle {
+    margin-left: 0;
+    @include vertical-align($navbar-toggle-height, $navbar-top-height);
+    background-color: transparent;
+}
+
+.primary-nav-toggle .icon-bar { 
+    @include center-block();
+    background-color: $navbar-default-toggle-icon-bar-bg; 
+
+    .nav-expanded & { background-color: $navbar-default-toggle-icon-bar-active-bg; }
+}
+
+$sprite-start-position: $navbar-icon-height * 14;
+
+//.obo-toggle, 
+//.ste-toggle,
+.nav-aux-button a,
+.search-toggle {
+    &:before { @extend %nav-aux-sprite-setup; }
+    
+    padding: 0 !important;
+    background-image: none;
+    @include square($navbar-toggle-height);
+
+    //&:hover, &:focus, &:active { border: none !important; }
+}
+
+//.obo-toggle {
+//    &:before { background-position: -($sprite-start-position) 0; }
+//    &.on:before { background-position: -($sprite-start-position + $navbar-top-icon-width) 0; }
+//}
+//
+//.SurfEdit {
+//    &:before { background-position: -($sprite-start-position + $navbar-top-icon-width * 2) 0; }
+//    &.DisableSurfToEditButton:before { background-position: -($sprite-start-position + $navbar-top-icon-width * 3) 0; }
+//}
+
+.nav-aux-cart a {
+    &:before { background-position: -($sprite-start-position + $navbar-top-icon-width * 4) 0; }
+}
+
+.search-toggle {
+    &:before { background-position: -($sprite-start-position + $navbar-top-icon-width * 5) 0; }
+    .open &:before { background-position: -($sprite-start-position + $navbar-top-icon-width * 6) 0; }
+}
+
+
+/* set up the header search magnifying glass icon */
+.header-search > .header-search {
+    position: relative;
+
+    &:before {
+        @extend %nav-aux-sprite-setup;
+        position:absolute;
+        background-position: -($sprite-start-position + $navbar-top-icon-width * 7) 0;
+        @include vertical-align($navbar-top-icon-width, $navbar-top-height);
+    }
+
+    .search-field { padding-left: $navbar-top-icon-width + 7px; }
+}
+
+/* Badges
+   ========================================================================== */
+/* Badges indicate numbers like the number of items in your cart */
+
+/* By default, put parentheses around the cart item count.
+ * This is overwritten when the class "nav-aux-cart" is applied.
+ */
+ .cartCenter span {
+    &:before { content: '('; }
+    &:after { content: ')'; }
+ }
+
+.nav-aux-cart {
+    a { position: relative; }
+    .nav-text + span {
+        /* Position the badge */
+        @include badge-position($top: -2px, $right: -1px);
+        min-width: 1.5em;
+    }
+    .cartCenter {
+        /* Style the badge */
+        @include badge-style();
+
+        span:before, span:after { 
+            /* Clear the parentheses put around the item count by default */
+            content: none;
+        }
+    }
+}
+
+/* Dropdowns
+   ========================================================================== */
+/* Dropdowns are used for the account area and the search toggle */
+.search-dropdown,
+.account-menu > .dropdown {
+    @include respond-to('grid small') {
+        /* this is necessary to allow the search box to span the full width */
+        position: static;
+        > .dropdown-menu {
+            width: 100%;
+        }
+    }
+}
+
+/* Account area
+   ========================================================================== */
+
+.account-menu .obo-actions {
+    a { text-decoration: none; }
+}
+
+.account-menu .profile-picture-wrapper .picture-secondary {
+    border: 2px solid $navbar-top-obo-bg;
+}
+
+/* Search
+   ========================================================================== */
+.search-field {
+    @include vertical-align($input-height-base, $navbar-top-height);
+    &.Watermarked { color: $gray-light; }
+}
+.header-search-submit {
+    display: none;
+}
+
+.navbar-left .header-search {
+    .search-field { width: 22em; }
+    @include respond-to('grid small') {
+        /* This is the search bar on the left - only displayed on large screens*/
+        display: none;
+    }
+}
+
+.search-dropdown { 
+    display: inline-block; 
+    vertical-align: bottom;
+    .dropdown-menu > .header-search { padding: 3px 20px; }
+    .search-field { width: 100%; }
+    @include respond-to('grid large') {
+        display: none;
+    }
+}

@@ -1,0 +1,193 @@
+﻿// VARIABLES
+// --------------------------------------------
+
+// GLOBAL ELEMENTS
+// --------------------------------------------
+
+$theme-family:          Constellation !default;
+$theme-name:            Orion !default;
+$view-type:             Responsive !default;
+
+// Spirtes
+// -------------------------
+$header-sprite-path:        'images/ResponsiveHeaderSprite.png' !default;
+
+// Color Palette
+// -------------------------
+
+$color-asi-blue:            #00a9e0 !default;
+$color-asi-teal:            #00abbe !default;
+$color-asi-green:           #68bd49 !default;
+$color-asi-orange:          #e98300 !default;
+$color-asi-purple:          #8e51ae !default;
+$color-asi-red:             #d03528 !default;
+$color-asi-pink:            #d980c1 !default;
+$color-asi-yellow:          #e8d92d !default;
+$color-asi-neutral:         #616365 !default;
+
+$brand-success:             darken($color-asi-green, 5%) !default;
+
+
+$color-base:                darken($color-asi-blue, 5%) !default;
+$color-callout:             $brand-success !default; 
+$color-secondary-a:         darken($color-base, 10%) !default;
+$color-secondary-b:         $color-asi-orange !default;
+
+$color-neutral:             hsl(hue($color-base), saturation($color-base), 15%) !default;
+$color-alt-bg:              #fff !default;
+
+$color-base-dark:           $color-secondary-a !default;
+
+$hover-highlight:           desaturate(lighten($color-base, 40%), 33%) !default; 
+$selected-highlight:        $color-base !default;
+
+// Scaffolding
+// -------------------------
+
+$body-bg:                 #e8ebf0 !default;
+$text-color:              #333 !default;
+$grid-gutter-width:       30px !default;
+
+// Links
+// -------------------------
+
+$link-color:            darken($color-base, 10%) !default;
+$link-color-visited:    $link-color !default;
+
+// Typography
+// -------------------------
+$font-family-base:      Open Sans, Helvetica, Arial, sans-serif !default;
+
+$font-size-base:        14px !default;
+
+$headings-font-family:  inherit !default; 
+$headings-font-weight:  600 !default;
+$headings-color:        inherit !default;
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
+$font-size-h1:          250% !default;
+$font-size-h2:          150% !default;
+$font-size-h3:          130% !default;
+$font-size-h4:          120% !default;
+$font-size-h5:          100% !default;
+$font-size-h6:          85% !default;
+
+$font-weight-bold:      600  !default;
+
+// Components
+// -------------------------
+$border-radius-base: 5px !default;
+$border-radius-large: 8px !default;
+$border-radius-small: 3px !default;
+
+// Buttons 
+// -------------------------
+$btn-default-bg:                $color-base !default;
+$btn-style:                     'light gradient' !default;
+$btn-default-shadow:            0 5px 10px rgba(0, 0, 0, 0.25) !default;
+$btn-primary-bg:                $color-secondary-b !default;
+
+// Components
+// -------------------------
+$component-active-color:         #fff !default;
+$component-active-bg:            $color-secondary-a !default;
+
+
+// Navbar
+// -------------------------
+
+$navbar-default-bg:                        $color-neutral !default; //#004B64 !default;
+
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             darken($navbar-default-bg, 5%) !default; // hsl(hue($color-base), saturation($color-base), 25%) !default;
+$navbar-default-link-active-color:         #fff !default;
+$navbar-default-link-active-border:        $color-base !default;
+//$navbar-default-link-active-bg:            $color-callout !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+$navbar-height:                         40px !default;
+$navbar-top-height:                     50px !default;
+$navbar-top-link-color:                 $text-color !default;
+$navbar-top-link-hover-color:           $text-color !default;
+$navbar-top-link-hover-bg:              rgba(black, 0.05);
+$navbar-top-bg:                         #fff !default;
+$navbar-padding-horizontal:             10px !default;
+
+$navbar-default-toggle-active-bg:          $color-neutral !default;
+$navbar-default-toggle-hover-bg:           lighten($navbar-default-toggle-active-bg, 8%) !default;
+$navbar-default-toggle-icon-bar-bg:        $text-color !default;
+$navbar-default-toggle-icon-bar-active-bg: #fff !default;
+$navbar-default-toggle-border-color:       transparent !default;
+
+$navbar-default-dropdown-bg:                    darken($navbar-default-bg, 5%) !default; //$navbar-default-link-hover-bg !default;
+$navbar-default-dropdown-link-color:            hsl(hue($navbar-default-bg), 30%, 70%) !default;  //lighten($navbar-default-bg, 15%) !default; //#fff !default;
+$navbar-default-dropdown-link-hover-bg:         transparent !default;
+$navbar-default-dropdown-link-hover-color:      #fff !default; //desaturate(lighten($navbar-default-link-active-bg, 10%), 10%);
+$navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
+
+// Badges
+//-------------------------
+
+$badge-color:                 #fff !default;
+//** Linked badge text color on hover
+$badge-link-hover-color:      #fff !default;
+$badge-bg:                    $color-callout !default;
+
+$badge-font-weight:           bold !default;
+$badge-line-height:           1 !default;
+$badge-border-radius:         2px !default;
+
+
+// Cart icon
+//-------------------------
+$cart-count-color:              $badge-color !default;
+$cart-count-bg:                 $badge-bg !default;
+
+
+// Communities
+// -------------------------
+$communities-nav-hover-bg:          $hover-highlight !default;
+$communities-nav-select-bg:         $component-active-bg !default;
+$communities-link-hover-bg:         $communities-nav-select-bg !default;
+$communities-alt-bg:                $color-alt-bg !default;
+
+// Alerts iPart
+// -------------------------
+$alert-iPart-bg:               #fff !default;
+
+// Logo
+// -------------------------
+$logo-default-url:          url('images/logo.png') !default;
+$logo-default-url-2x:       url('images/logo@2x.png') !default;
+$logo-default-width-sm:     110px !default;
+$logo-default-height-sm:    35px !default;
+
+// Footer
+// -------------------------
+
+$footer-top-color:          lighten($text-color, 10%) !default;
+$footer-top-link-color:     $footer-top-color !default;
+
+
+// Staff site only stuff
+// -------------------------
+$action-icon-sprite-bg:     url('images/IconSprite.png') !default;
+
+$navbar-width:              220px !default;
+$navbar-icon-width:         16px !default;
+$navbar-icon-height:        16px !default;
+$navbar-top-icon-width:     24px !default;
+$navbar-top-icon-height:    24px !default;
+$navbar-sprite-bg:          url('images/NavSprite.png') !default;
+$navbar-sprite-bg-2x:       url('images/NavSprite@2x.png') !default;
+$navbar-sprite-bg-size:     496px 24px !default; // Note: these dimensions MUST be updated if the sprite size changes
+$navbar-top-obo-bg:         $color-asi-orange !default;
+$navbar-transition-time:    0.5s !default;
+
+$footer-height:             90px !default;
+$footer-height-sm:          50px !default;
+
+$box-shadow-base:           0 2px 3px 0px rgba(0,0,0,.05) !default;

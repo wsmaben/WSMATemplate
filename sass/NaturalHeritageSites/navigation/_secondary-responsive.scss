@@ -1,0 +1,102 @@
+/* ==========================================================================
+   SECONDARY NAVIGATION
+   ========================================================================== */
+
+/**** Telerik overrides ****/
+.RadTreeView.RadTreeView_#{$theme-name} {
+    white-space: normal;
+
+    .rtLI,
+    .rtTop,
+    .rtMid,
+    .rtBot { padding: 0 }
+
+    .rtIn {
+        font-weight:bold !important;
+        display:block;
+    }
+
+    .rtIn,
+    .rtHover .rtIn,
+    .rtSelected .rtIn {
+        padding: $nav-link-padding-vertical $nav-link-padding-horizontal;
+        border: none;
+    }
+
+    .rtSelected > a.rtIn,
+    .child-is-selected.rtIn { 
+        background-color: $nav-link-active-bg;
+        color: $nav-link-active-color;
+    }
+
+    .rtSelected > a.rtIn {
+        &:hover, &:active, &:focus { background-color: $nav-link-active-bg; }
+    }
+
+    .rtUL .rtUL {
+        padding-left: $nav-link-padding-horizontal;
+    }
+
+    > .rtUL > .rtLI {
+        /* add a separator border to the first-level sub-nav items only */
+        border-top: 1px $border-style $border-color;
+        &:first-child { border-top: none; }
+
+        .rtLI .rtIn {
+            /* children should have less padding */
+            padding: ($nav-link-padding-vertical / 2) $nav-link-padding-horizontal;
+        }
+        > .rtUL { 
+            /* this makes the children section padding even */
+            padding-right: $nav-link-padding-horizontal;
+            padding-bottom: $nav-link-padding-vertical;
+        }
+    }
+
+    > .rtUL {
+        /* add a boundary for hovered navs */
+        margin: 0 1px 1px 1px;
+    }
+
+    .rtSp,
+    .rtPlus,
+    .rtMinus { 
+        /* we don't want to display the expand/collapse icons in this theme */
+        display: none;
+    }
+
+    a.rtIn { 
+        color: $link-color; 
+        @include transition(all $transition-speed ease-in);
+        margin: 0;
+
+        &:hover, &:focus, &:active {
+            background-color: $nav-link-hover-bg;
+        }
+    }
+}
+
+.nav-secondary  {
+    background-color: $nav-secondary-bg;
+    margin-bottom: 1em;  
+
+    .sub-nav-head {
+        background-color: $nav-secondary-header-bg;
+        color: $nav-secondary-header-color;
+        font-weight: bold;
+        font-size: 120%;
+        padding: $nav-link-padding;
+        text-transform:uppercase;
+    }
+
+    .SubNavigationSeparator {
+        border: none;
+        height: 4px;
+        background-color: $nav-secondar-divider-bg;
+
+        .rtIn { 
+            padding: 0;
+            color:$nav-secondary-link-color;
+        }
+    }
+}

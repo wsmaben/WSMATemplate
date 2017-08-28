@@ -1,0 +1,63 @@
+/* ==========================================================================
+   UNORGANIZED
+   ========================================================================== */
+/* use this area to define styles that need to be organized later */
+
+.ButtonActions{ 
+    margin-bottom: -3px;
+    margin-right: 3px;
+}
+
+/* ==========================================================================
+   Utility Navigation iPart
+   ========================================================================== */
+/* Used in design time edit */
+
+.RadDockItem, .rdPlaceHolder {
+  margin-left: 3px;		
+}
+
+.RadDockItem .rdContent {
+  margin: 0!important;
+}
+
+.RadDockItem .RadDockContent {
+  padding: 7px;
+  text-align: center;
+}
+
+.RadDockItem .rdTitleWrapper {
+  display: none !important;		
+}
+
+/* UtilityNavigation Account Area
+   ========================================================================== */ 
+.UtilityNavigation .account-toggle .nav-text {
+  margin-left: 42px;
+  display: inline-block;
+  max-width: 15em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: text-bottom;
+}
+
+.UtilityNavigation .account-menu > li > a, .UtilityNavigation .header .NavigationUnorderedList > li > a {
+  font-weight: 600;
+  display: inline-block;
+  /* make sure the top & bottom padding make it exactly the height of the header bar */
+  padding: 10px 10px;
+}
+.UtilityNavigation .account-menu > li > a, .UtilityNavigation .account-menu > li > a:hover, .UtilityNavigation .account-menu > li > a:visited, .UtilityNavigation .account-menu > li > a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+@if ($view-type != Responsive) {
+  .UtilitySection.UtilityNavigationToggle, .searchbar-collapse {
+    display: none !important;
+  }
+  .navbar-collapse.nav-primary {
+    display: block !important;   
+  }
+}

@@ -1,0 +1,79 @@
+﻿//
+// Badges
+// --------------------------------------------------
+
+
+// Base class
+.badge,
+%badge-base {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: $badge-font-size;
+    font-weight: $badge-font-weight;
+    color: $badge-color;
+    line-height: $badge-line-height;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    background-color: $badge-bg;
+    border-radius: $badge-border-radius;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+.badge {
+    // Empty badges collapse automatically (not available in IE8)
+    &:empty {
+        display: none;
+    }
+
+    // Quick fix for badges in buttons
+    .TextButton & {
+        position: relative;
+        top: -1px;
+    }
+
+    .btn-xs &,
+    .btn-group-xs > .btn & {
+        top: 0;
+        padding: 1px 5px;
+    }
+
+    // Account for badges in navs
+    .list-group-item.active > &,
+    .nav-pills > .active > a > & {
+        color: $badge-active-color;
+        background-color: $badge-active-bg;
+    }
+
+    .list-group-item > & {
+        float: right;
+    }
+
+    .list-group-item > & + & {
+        margin-right: 5px;
+    }
+
+    .nav-pills > li > a > & {
+        margin-left: 3px;
+    }
+}
+
+// Hover state, but only for links
+a.badge {
+    &:hover,
+    &:focus {
+        color: $badge-link-hover-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+/* Indicator on links that are part of the Plus package */
+.PlusLink:after,
+.PlusFeature label:after {
+    @extend %badge-base;
+    background-color: $brand-success;
+    content: 'PLUS';
+    margin-left: 6px;
+    vertical-align: baseline;
+}

@@ -1,0 +1,363 @@
+/* ==========================================================================
+   ICONS
+   ========================================================================== */
+/**
+  * Sprites and other styles that define various icons used throughout iMIS 
+  */
+
+// set up some variables to be used for sprites
+$iconSizeSmall: 20px;
+$spriteGridSizeSmall: -35px;
+
+/* System icons
+   ========================================================================== */
+/**
+  * Icons used for actions such as add, edit, delete, move up, move down, etc.
+  */
+
+.sysicon--container {
+    display: inline-block;
+}
+
+%icon-base {
+    display: inline-block;
+    background-image: url(../images/IconSprite.png);
+    background-repeat: no-repeat;
+    width: $iconSizeSmall;
+    height: $iconSizeSmall;
+    vertical-align: text-bottom;
+}
+
+.IconSprite,
+.DeleteImage, .EditImage, .ArrowUp, .ArrowUpOff, .ArrowDown, .ArrowDownOff,
+.obo-action, 
+.obo-toggle, 
+.ste-toggle {
+    @extend %icon-base;
+    margin-left: .2em; 
+}
+
+.obo-action, 
+.obo-toggle, 
+.ste-toggle {
+    @include text-hide();
+    display: inline-block;
+}
+
+.sysicon, .sysicon--before:before, .sysicon--after:after {
+    @extend %icon-base;
+}
+
+.sysicon--before:before, .sysicon--after:after {
+    content: '';
+}
+
+/* Disabled up and down arrows */
+.ArrowUpOff, .ArrowDownOff {
+  opacity: .4;
+  filter: alpha(opacity=40); /* filter needed for IE compatibility */ 
+}
+
+/* Larger Icons for Angular */
+.CancelChange, .Refresh {
+     @extend %icon-base;
+     width: $navbar-toggle-height;
+     height: $navbar-toggle-height;
+     background-position: -875px 0;
+}
+.Refresh {
+     background-position: -909px 0;
+}
+
+$icons: (
+    add: 0,
+    edit: 1,
+    delete: 2,
+    move-up: 3,
+    move-down: 4,
+    select: 5,
+    check: 7,
+    undo: 8,
+    find: 9,
+    cancel: 10,
+    contact-find: 11,
+    configure: 12,
+    obo-change: 13,
+    obo-clear: 14,
+    download: 15,
+    group: 16,
+    person: 17,
+    organization: 18,
+    event: 19,
+    product: 20,
+    query: 21,
+    attachment: 22,
+    //obo-toggle: 23,
+    //ste-toggle: 24
+);
+
+
+@each $iconName, $multiplier in $icons {
+    .sysicon-#{$iconName} {
+        &.sysicon, &.sysicon--before:before, &.sysicon--after:after {
+            &, a[disabled]:hover &, a.aspNetDisabled:hover & {
+                background-position: $spriteGridSizeSmall*$multiplier 0;
+            }
+
+            a:hover &, a:focus & {
+                background-position: $spriteGridSizeSmall*$multiplier $spriteGridSizeSmall;
+            }
+        }
+    }
+}
+
+@mixin file-type-icon($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+
+.file-icon--before:before {
+    content: '';
+    margin-right: 8px;
+}
+
+.file-icon, .file-icon--before:before {
+    background-image: url('../images/file-type-sprite.png');    
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.file-icon-csv {
+    &.file-icon, &.file-icon--before:before {
+        @include file-type-icon(-5px, -5px, 24px, 24px);
+    }
+}
+
+.file-icon-excel {
+    &.file-icon, &.file-icon--before:before {
+        @include file-type-icon(-39px, -5px, 24px, 24px);
+    }
+}
+
+.file-icon-pdf {
+    &.file-icon, &.file-icon--before:before {
+        @include file-type-icon(-73px, -5px, 24px, 24px);
+    }
+}
+
+.file-icon-word {
+    &.file-icon, &.file-icon--before:before {
+        @include file-type-icon(-107px, -5px, 24px, 24px);
+    }
+}
+
+.file-icon-xml {
+    &.file-icon, &.file-icon--before:before {
+        @include file-type-icon(-141px, -5px, 24px, 24px);
+    }
+}
+
+/* Payment Method Icons (size: 40px by 36px, 10px gap between icons) */
+@mixin payment-method-icon($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    display:block;    
+    content:" ";
+    position:absolute;
+    top:0;
+    left:0;
+    background-repeat:no-repeat;
+    background-image: url('../images/PaymentMethodSprite.png');   
+}
+
+.payment-method-icon-americanexpress::before {
+    @include payment-method-icon(0, 0, 40px, 36px);   
+}
+.payment-method-icon-mastercard::before {
+    @include payment-method-icon(-50px, -2px, 40px, 36px);   
+}
+.payment-method-icon-visa::before {
+    @include payment-method-icon(-100px, -2px, 40px, 36px);   
+}
+.payment-method-icon-discover::before {
+    @include payment-method-icon(-150px, -2px, 40px, 36px);   
+}
+.payment-method-icon-jcb::before  {
+    @include payment-method-icon(-200px, -2px, 40px, 36px);   
+}
+.payment-method-icon-checking::before, .payment-method-icon-saving::before{
+    @include payment-method-icon(0, -48px, 40px, 36px);   
+}
+.payment-method-icon-other::before{
+    @include payment-method-icon(-100px, -48px, 40px, 36px);   
+}
+
+.payment-method-icon-americanexpress, .payment-method-icon-mastercard,
+.payment-method-icon-visa, .payment-method-icon-discover, .payment-method-icon-jcb,
+.payment-method-icon-checking, .payment-method-icon-saving, .payment-method-icon-other{
+    position:relative;
+    padding:5px 0 5px 50px;
+    display:block;
+}
+
+
+/* Toggles */
+.obo-toggle, 
+.ste-toggle {
+    width: $navbar-toggle-height;
+    height: $navbar-toggle-height;
+    border-radius: $navbar-toggle-border-radius;
+    vertical-align: middle;
+
+    &:hover, &:focus, &:active { 
+        /* need to provide a fallback color for IE8, which doesn't support rgba */
+        @include alpha-background-color($navbar-top-link-hover-bg, white); 
+    }
+
+    &.on {
+        background-color: $navbar-default-toggle-active-bg;
+        &:hover, &:focus, &:active { background-color: $navbar-default-toggle-hover-bg; }
+    }
+}
+
+// this is for toggles which change the background color when they are on
+@mixin toggle-sprite($multiplier: 0) {
+    background-position: $spriteGridSizeSmall*$multiplier 0;
+
+    &.on {
+        background-position: $spriteGridSizeSmall*$multiplier $spriteGridSizeSmall;
+    }
+}
+
+.obo-toggle {
+    @include toggle-sprite(23);
+}
+.ste-toggle {
+    @include toggle-sprite(24);
+}
+
+//.obo-toggle.on { background-position: $spriteGridSizeSmall*map-get($icons, obo-toggle) $spriteGridSizeSmall; }
+//.easy-edit-toggle.on { background-position: $spriteGridSizeSmall*map-get($icons, easy-edit-toggle) $spriteGridSizeSmall; }
+
+/* These are the old-style icons. We will soon update them to use the same code as the block above, instead of repeating. */
+.IconSprite.AddIcon, .IconSprite.SaveIcon       { @include sprite-bg($spriteGridSizeSmall, 0) }
+.IconSprite.EditIcon, .EditImage                { @include sprite-bg($spriteGridSizeSmall, 1) }
+.IconSprite.DeleteIcon, .DeleteImage            { @include sprite-bg($spriteGridSizeSmall, 2) }
+.IconSprite.UpIcon, .ArrowUp, .ArrowUpOff       { @include sprite-bg($spriteGridSizeSmall, 3) }
+.IconSprite.DownIcon, .ArrowDown, .ArrowDownOff { @include sprite-bg($spriteGridSizeSmall, 4) }
+.IconSprite.SelectIcon                          { @include sprite-bg($spriteGridSizeSmall, 5) }
+.IconSprite.CheckIcon                           { @include sprite-bg($spriteGridSizeSmall, 7) }
+.IconSprite.UndoIcon, .IconSprite.ResetIcon     { @include sprite-bg($spriteGridSizeSmall, 8) }
+.IconSprite.FindIcon                            { @include sprite-bg($spriteGridSizeSmall, 9) }
+.IconSprite.CancelIcon                          { @include sprite-bg($spriteGridSizeSmall, 10) }
+.IconSprite.ContactIcon                         { @include sprite-bg($spriteGridSizeSmall, 11) }
+.IconSprite.ConfigureIcon                       { @include sprite-bg($spriteGridSizeSmall, 12) }
+.obo-action.obo-change-contact                  { @include sprite-bg($spriteGridSizeSmall, 13) }
+.obo-action.obo-clear                           { @include sprite-bg($spriteGridSizeSmall, 14) }
+
+
+/* Feature icons
+   ========================================================================== */
+/**
+  * Icons used to identify core pieces of iMIS 
+  * Currently used by the recent history content item
+  */
+
+// Set up sprite sizes for feature icons
+$iconSizeSmall: 18px;
+$spriteGridSizeSmall: -30px;
+
+.FeatureSprite {
+    display: inline-block;
+    background-image: url(../images/FeatureSprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: baseline;
+    background-position: 0 40px; /* Default to keep the wrong icon from appearing by default */
+    @include opacity(.7);
+    @include transition(opacity $transition-speed ease-out);
+    
+    &:hover, &:focus, a:hover &, a:focus & {
+        @include opacity(1);
+    }
+}
+.FeatureSprite.SmallIcon {
+    width: $iconSizeSmall;
+    height: $iconSizeSmall;
+}
+.FeatureSprite.SmallIcon.GroupIcon          { @include sprite-bg($spriteGridSizeSmall, 0, false) }
+.FeatureSprite.SmallIcon.PersonIcon         { @include sprite-bg($spriteGridSizeSmall, 1, false) }
+.FeatureSprite.SmallIcon.EventIcon          { @include sprite-bg($spriteGridSizeSmall, 2, false) }
+.FeatureSprite.SmallIcon.CartIcon           { @include sprite-bg($spriteGridSizeSmall, 3, false) }
+.FeatureSprite.SmallIcon.FindIcon           { @include sprite-bg($spriteGridSizeSmall, 4, false) }
+.FeatureSprite.SmallIcon.PaperclipIcon      { @include sprite-bg($spriteGridSizeSmall, 5, false) }
+
+/* Device icons
+   ========================================================================== */
+/**
+  * Icons used to identify specific devices.
+  * Currently used in RWD configuration options.
+  * Note: these options also use the utility class 'text-hide-label' for 
+  * image replacelment.
+  */
+
+.checkbox-display-xs,
+.checkbox-display-sm,
+.checkbox-display-md,
+.checkbox-display-lg {
+    label {
+        @include text-hide();
+        background-image: url(../images/DeviceSprite.png);
+        height: 60px;
+        vertical-align: middle;
+        margin: 0 8px 0 3px;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        /* middle-align the checkboxes */
+        margin-top: 19px;
+    }
+}
+
+.checkbox-display-xs label {
+    background-position: 0 0;
+    width: 9px !important;
+}
+
+.checkbox-display-sm label {
+    background-position: -20px 0;
+    width: 24px !important;
+}
+
+.checkbox-display-md label {
+    background-position: -50px 0;
+    width: 55px !important;
+}
+
+.checkbox-display-lg label {
+    background-position: -120px 0;
+    width: 68px !important;
+}
+/* ==========================================================================
+   Title Bar Icons
+   ========================================================================== */
+// Set up sprite sizes for feature icons
+$iconSizeSmall: 20px;
+
+.TemplateTitleIcon:before{
+    background-image: url("../images/TitleSprite.png");
+    background-repeat: no-repeat;
+    background-position: -15px -15px;
+    content: '';
+    height: $iconSizeSmall;
+    width: $iconSizeSmall;
+    display: block;
+    float: left;
+    padding: 0 0.7em;
+    margin: 0.3em 0 0 0;
+}
+/**** End Title Bar Icons Styling ****/

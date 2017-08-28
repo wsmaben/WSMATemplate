@@ -1,0 +1,249 @@
+/* ==========================================================================
+   AUXILIARY NAVIGATION
+   ========================================================================== */
+
+.navbar-header {
+    float: right;
+
+    > div,
+    > a,
+    .NavigationUnorderedList,
+    .NavigationLink {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.navbar-toggle {
+    @include vertical-align(39px, $navbar-top-height);
+    vertical-align:middle;
+    background-color: $navbar-default-toggle-active-bg; // by default, assign it the active bg color
+    border-color: $navbar-default-toggle-border-color;
+
+    @if ($theme-name != 'Toronto') {
+        border-top-left-radius: $border-radius-base;
+        border-top-right-radius: $border-radius-base;
+
+        /* extend the toggle down when it's open */
+        margin-bottom: 0;
+        padding-bottom: 18px;
+    
+        &.collapsed {
+            /* then tighten it back up when it's closed */
+            margin-bottom: 6.5px;
+            padding-bottom: 9px;
+            border-bottom-left-radius: $border-radius-base;
+            border-bottom-right-radius: $border-radius-base;
+        }
+    }
+    @else {
+        border-radius: $border-radius-base;
+    }
+
+    &.collapsed {
+        background-color: $navbar-default-toggle-bg; // use the regular bg color when it's collapsed
+    }
+    &:hover,
+    &:focus { background-color: $navbar-default-toggle-hover-bg; }
+    .icon-bar { background-color: $navbar-default-toggle-icon-bar-bg; }
+}
+
+.nav-auxiliary {
+    .TextButton,
+    .navbar-toggle {
+        margin-left: $navbar-toggle-margin-left;
+        //@include navbar-vertical-align(34px);
+    }
+
+    a {
+        /* Utility navigation links */
+        color: lighten($text-color, 30%);
+    }
+
+    @include respond-to('grid large') {
+        .NavigationListItem, 
+        .header-social .SocialSprite {
+            margin-left: floor($navbar-padding-horizontal / 2);
+         }
+    }
+
+    .nav-image {
+        vertical-align: baseline;
+        padding-right: 8px;
+    }
+}
+
+/* Cart item count
+   ========================================================================== */
+/* By default, put parentheses around the cart item count.
+ * This is overwritten when the class "nav-aux-cart" is applied.
+ */
+ .cartCenter span {
+    &:before { content: '('; }
+    &:after { content: ')'; }
+ }
+
+/* Auxiliary toggle buttons
+   ========================================================================== */
+/* Toggles that display on x-small screens to display the primary nav and search */
+.navbar-toggle {
+    float: none;
+    .icon-bar {
+        height: 3px;
+        border-radius: 0;
+        + .icon-bar {
+            margin-top: 5px;
+        }
+    }
+    .icon-search {
+        display: inline-block;
+        float: left;
+        background: url($header-sprite-path) no-repeat center top;
+        @include size(22px, 21px);
+        margin: -1px 0; /* this makes it line up properly with the hamburger */
+    }
+}
+
+/* Auxiliary button links
+   ========================================================================== */
+/* These links are styled like the toggles on x-small screens */
+.nav-auxiliary {
+    .NavigationListItem {
+        position:relative; /* this is required for the cart indicator placement */
+        display: inline-block;
+    }
+    
+    .nav-aux-account .nav-text,
+    .nav-aux-cart .nav-text {
+        /* add the background sprite for the provided CSS classes */
+        background-image: url($header-sprite-path);
+        background-repeat: no-repeat;
+        padding-left: 26px;
+    }
+
+    .nav-aux-account .nav-text {
+        background-position: 0 -125px;
+    }
+    .nav-aux-cart .nav-text {
+        background-position: 0 -75px;
+    }
+
+    .nav-aux-cart {
+        .cartFull {
+            /* This is the flag indicating how many items are in your cart */
+            /* left postion is padding plus placement */
+            @include badge-position($top: -5px, $left: (($navbar-padding-horizontal / 2) + 2.5));
+            line-height: $badge-line-height;
+            width: 1.6em;
+        }
+
+        .cartCenter {
+            @include badge-style($cart-count-color, $cart-count-bg, 2px);
+
+            span:before, span:after { 
+                /* Clear the parentheses put around the item count by default */
+                content: none;
+            }
+        }
+    }
+}
+
+.nav-auxiliary .nav-aux-button {
+    @include respond-to('grid small') {
+        .NavigationLink {
+            /* This makes the link look like the toggle buttons */
+            background-color: $navbar-default-toggle-bg;
+            margin-left: $navbar-toggle-margin-left;
+            padding: 9px 10px;
+            @include vertical-align(39px, $navbar-top-height);
+            border: 1px solid transparent;
+            border-radius: $border-radius-base;
+            
+            &:hover, &:focus {
+                background-color: $navbar-default-toggle-hover-bg;
+            }
+
+            &:active {
+                background-color: $navbar-default-toggle-active-bg;
+            }
+        }
+
+        &.nav-aux-account .nav-text,
+        &.nav-aux-cart .nav-text {
+            /* hide the cart text on small devices */
+            display: inline-block;
+            white-space: nowrap;
+            float:left;
+            overflow: hidden;
+            @include size(22px, 19px);
+            padding-left: 22px;
+        }
+
+        &.nav-aux-account .nav-text {
+            background-position: 0 -100px;
+        }
+
+        &.nav-aux-cart .nav-text {
+            background-position: 0 -50px;
+        }
+
+        &.nav-aux-cart {
+            .cartFull {
+                /* This is the flag indicating how many items are in your cart */
+                left: ($navbar-padding-horizontal + 9 + 5); /* margin, padding, plus placement */
+                top: 8px;
+            }
+            .cartCenter {
+                background-color: $cart-count-xs-bg;
+                color: $cart-count-xs-color;
+            }
+        }
+    }
+}
+
+@if($theme-name == 'Toronto') {
+    .search-container-sm {
+        @include vertical-align(($input-height-base + 2), $navbar-top-height); // +2 to account for border
+    }
+}
+
+.header-search {
+        padding: $navbar-padding-vertical ($grid-gutter-width / 2);
+
+    > .header-search {
+        padding: 0; /* don't double the padding */
+    }
+
+    @include respond-to('grid small') {
+        .search-field {
+            width: 100%;
+        }
+    }
+
+    @include respond-to('grid large') {
+        padding: 0 0 0 floor($navbar-padding-horizontal / 2);
+    }
+}
+
+/* Auxiliary/Primary switch
+   ========================================================================== */
+/**
+ * A class that allows a navigation to display in the primary nav on xs screens 
+ * and the auxiliary nav on wider screens. 
+ * To use this configure the nav item to not be hidden and also display in the 
+ * auxiliary navigaiton item. 
+ */
+@include breakpoint(max-width $screen-xs-max) {
+  @include responsive-invisibility('.nav-auxiliary .nav-aux-primary-switch');
+}
+@include breakpoint($screen-sm-min) {
+  @include responsive-invisibility('.nav-primary .nav-aux-primary-switch');
+}
+// Have to write this as a separate declaration for now due to breakpoint root bug
+.no-mqs {
+    @include responsive-invisibility('.nav-primary .nav-aux-primary-switch');
+}
+
+.searchbar-collapse {
+    margin-left: calc(-1.4 * ((100vw - 100%) / 2));
+}

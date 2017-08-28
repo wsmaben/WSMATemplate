@@ -1,0 +1,114 @@
+﻿/* ==========================================================================
+   PRIMARY NAVIGATION
+   ========================================================================== */
+
+.RadMenu_#{$theme-name}.RadMenu {
+    float: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    .rmLink {
+        color: lighten($text-color, 30%);
+        padding: 5px 11px;
+        text-decoration: none;
+        .rmText {
+            padding: 0;
+        }
+        &.rmRootLink {
+            @if $theme-name == Brighton {
+                background-color: $color-neutral;
+                color: $white;
+                border-radius: $border-radius-base;
+                margin: 0 2px;
+            }
+            @else {
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+        &.rmFocused, &.rmSelected, &.rmExpanded, &:hover, &:active {
+            color: $white;
+            background-color: $color-callout;
+        }
+        @if $theme-name == Brighton {
+            &.rmRootLink.rmExpanded {
+                border-radius: $border-radius-base $border-radius-base 0 0;
+            }
+        }
+    }
+    .rmVertical {
+        .rmItem {
+            border-bottom: 1px solid $border-color;
+        }
+        @if $view-type == Mobile {
+            a.rmLink {
+                display: block;
+                width: auto!important;
+                padding: 8px 12px;
+            }
+        }
+    }
+    .rmSlide .rmVertical .rmItem .rmText {
+            padding: 5px 24px 5px 12px;
+        }
+    .rmGroup {
+        border: 1px solid $color-callout;
+        margin-top: -1px;
+        background: $white;
+        padding: 0;
+        @if $theme-name == Brighton {
+            margin-left: 2px;
+        }
+        .rmItem {
+            border-bottom: 1px $border-style $text-color;
+            &:last-child {
+                border-bottom: none;
+            }
+            &.rmSeparator {
+                background-color: $gray-lighter;
+            }
+        }
+        .rmExpandRight:after {
+            content: '»';
+            position: absolute;
+            right: 8px;
+        }
+    }
+    .rmRootGroup .rmItem .rmGroup { padding-bottom: 0; }
+}
+
+@if $view-type == Desktop {
+    /* <MegaDropDownMenu Styling> */
+
+    .RadMenu .rmGroup .MegaDropDownMenuOuter .rmText {
+        padding: 0;
+        margin: 0;
+        min-width: 600px;
+    }
+
+    div.MegaDropDownMenu
+    {
+        padding-left: 5px;
+        padding-right: 5px;   
+    }
+
+    .MegaDropDownMenuToolTip
+    { 
+        padding: 5px;
+    }
+
+    .MegaDropDownMenuSeperator
+    {
+        border: 1px $border-style $border-color;
+        height: 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 150px;
+    }
+    /* </MegaDropDownMenu Styling> */
+}
+
+/**** End Primary Navigation Styling ****/

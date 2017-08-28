@@ -1,0 +1,25 @@
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+/* 6.1 Thumbnails
+   ========================================================================== */
+/* The thumbnail class is currently being used by the GroupListEditor control 
+ * to render the group member thumbnails */
+/* Makes tree thumbnail images a fixed size */
+.MediumThumbnail img.rtImg {
+    width: 32px;
+    height: 32px;
+}
+
+/* Makes thumbnail images medium size */
+.MediumThumbnail img.Thumbnail {
+    width: 32px;
+    height: 32px;
+    padding-right: 3px;
+}
+
+.LargeThumbnail {
+    width: 100px;
+      
+}

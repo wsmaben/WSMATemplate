@@ -1,0 +1,103 @@
+/* ==========================================================================
+   RELATED ITEMS
+   ========================================================================== */
+
+/* Horizontal display
+   ========================================================================== */
+
+.RelatedItemsHorizontal {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.RelatedItemsHorizontal div.rrRelativeWrapper {
+    padding-top: 10px;
+}
+
+.RelatedItemsHorizontalBlock {       
+    text-align: center;
+    width: 100%;
+}
+
+.RelatedItemsHorizontalCentered {
+    display: inline-block;
+}
+
+ul.RelatedItemsHorizontal li,
+.RelatedItemsHorizontal ul.rrItemsList li {        
+    list-style: none;
+    float: left;
+    margin: 9px 9px 18px;
+    text-align: center;    
+    width: 120px;
+    height: 130px; 
+} 
+
+ul.RelatedItemsHorizontal li a[disabled=disabled], 
+ul.RelatedItemsHorizontal li a.LabelLinkDisabled,
+.HorizontalScrollItem a[disabled=disabled],
+.HorizontalScrollItem a.LabelLinkDisabled {
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+    display: block;   
+}
+
+ul.RelatedItemsHorizontal li a.LabelLink,
+.HorizontalScrollItem a.LabelLink {
+    display: block;
+}
+
+.RelatedItemsHorizontalLessSpace li {
+    padding: 3px!important;
+    width: 75px!important;
+    height: 75px!important;    
+}
+
+/* Horizontal with hover transition */ 
+.RelatedItemsHorizontalEffect li a.ImageLink {
+    margin-bottom: -5px;
+    display: block;
+}
+
+.RelatedItemsHorizontalEffect li {
+     -webkit-transition: all .2s ease-in-out;
+}
+
+.RelatedItemsHorizontalEffect li:hover {
+    background-color: #EEE;
+    -webkit-transform: scale(1.5);       
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;       
+}
+
+/* Vertical display
+   ========================================================================== */ 
+ul.RelatedItemsVertical li {
+    display: block;   
+    padding: .5em;
+    white-space: normal;
+    overflow: hidden; 
+} 
+
+ul.RelatedItemsVertical li img {           
+    padding-right: 5px;
+    float: left;     
+}
+
+ul.RelatedItemsVertical li a {           
+    vertical-align: middle    
+}
+
+ul.RelatedItemsVertical li a[disabled=disabled] {
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit; 
+}
+
+ul.RelatedItemsVertical li label {
+    font-weight: normal;
+    vertical-align: middle;
+    display: block; 
+}

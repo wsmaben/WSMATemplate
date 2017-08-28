@@ -1,0 +1,42 @@
+﻿/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer-main {
+    font-size: 90%;
+    text-align: center;
+    color: $footer-top-color;
+    
+    .footer-inner { border-top: 1px solid $border-color; }
+
+    .footer-left, .footer-right {
+        padding-top: 11px; 
+        padding-bottom: 9px; 
+    }
+
+    a {
+        &, &:visited { color: $footer-top-color; }
+        &:hover, &:active { color: lighten($footer-top-color, 10%); }
+    }
+
+    .NavigationListItem {
+        border-left: 1px solid $gray-light;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    select {
+        /* shrink the language switcher for better alignment */
+        height: 24px;
+        padding: 2px 5px;
+    }
+    .PageTasksPanel {
+        min-height: 24px;
+        vertical-align: middle;
+    }
+    
+    .footer-left, 
+    .PageTasksPanel a {
+        /* vertically align links with the translation drop-down */
+        @include vertical-align($line-height-computed, 24px);
+    }
+}

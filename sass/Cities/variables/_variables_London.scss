@@ -1,0 +1,135 @@
+﻿// VARIABLES
+// --------------------------------------------
+
+// GLOBAL ELEMENTS
+// --------------------------------------------
+
+$theme-family:          Cities !default;
+$theme-name:            London !default;
+$view-type:             Desktop !default;
+
+// Spirtes
+// -------------------------
+$header-sprite-path:        'images/CommonSprite.png' !default;
+
+// Color Palette
+// -------------------------
+
+$color-base:                #40C0CB !default; 
+$color-callout:             #7fa900 !default; 
+$color-secondary-a:         #00A8C6 !default;
+$color-secondary-b:         #006c81 !default;
+
+$color-neutral:             #424242 !default;
+$color-alt-bg:              #f7f3ed !default;
+
+$color-base-dark:         desaturate(darken($color-base, 10%), 5%) !default;
+
+$hover-highlight:           desaturate(lighten($color-base, 20%), 10%) !default;
+
+// Scaffolding
+// -------------------------
+
+$border-style:          dotted !default;
+
+// Links
+// -------------------------
+
+$link-color:            $color-secondary-a !default;
+
+// Typography
+// -------------------------
+$font-family-base:      Calibri, Helvetica Neue, Roboto, sans-serif !default;
+
+$font-size-base:        14px !default;
+
+$headings-font-family:  Bevan, Georgia, serif !default; 
+$headings-font-weight:  200 !default;
+$headings-color:        $color-neutral !default;
+
+@import url("//fonts.googleapis.com/css?family=Bevan");
+
+
+$font-size-h1:          350% !default;
+$font-size-h2:          170% !default;
+$font-size-h3:          130% !default;
+$font-size-h4:          120% !default;
+$font-size-h5:          100% !default;
+$font-size-h6:          85% !default;
+
+$h1-color:              $color-callout !default;
+$h4-color:              $color-secondary-b !default;
+$h5-color:              $color-secondary-b !default;
+
+// Buttons 
+// -------------------------
+$btn-default-bg:                $color-base-dark !default;
+
+// Components
+// -------------------------
+$border-radius-base:             5px !default;
+$border-radius-large:            10px !default;
+$border-radius-small:            3px !default;
+$component-active-color:         #fff !default;
+$component-active-bg:            $color-base-dark !default;
+
+
+// Navbar
+// -------------------------
+
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             $color-neutral !default;
+$navbar-default-link-active-color:         #fff !default;
+$navbar-default-link-active-bg:            $color-callout !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+$navbar-default-bg:                        #d5d5d5 !default;
+
+$navbar-default-toggle-bg:                 $color-base-dark !default;
+$navbar-default-toggle-hover-bg:           darken($navbar-default-toggle-bg, 8%) !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       transparent !default;
+
+$navbar-default-dropdown-bg:                    $navbar-default-link-hover-bg;
+$navbar-default-dropdown-link-color:            #fff !default;
+$navbar-default-dropdown-link-hover-bg:         transparent !default;
+$navbar-default-dropdown-link-hover-color:      desaturate(lighten($navbar-default-link-active-bg, 10%), 10%) !default;
+$navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
+
+
+// Cart icon
+//-------------------------
+$cart-count-bg:                     lighten(desaturate($color-callout, 10%), 10%) !default;
+
+
+// Communities
+// -------------------------
+$communities-nav-hover-bg:          $hover-highlight !default;
+$communities-nav-select-bg:         $component-active-bg !default;
+$communities-link-hover-bg:         $communities-nav-select-bg !default;
+$communities-alt-bg:                hsl(hue($color-neutral), saturation($color-neutral), 95%) !default;
+
+
+// CalloutPanelFields
+// -------------------------
+// used by CalloutPanelField1 (currently used in tribute donation creator)
+$callout1-bg:                       $color-secondary-a;
+
+
+// Logo
+// -------------------------
+@if ($view-type == 'Responsive') {
+    $logo-default-margin-top:               38px !global !default;
+}
+@else if ($view-type == 'Desktop') {
+    $logo-default-margin-top:               25px !global !default;
+}
+
+
+// Jumbotron
+// -------------------------
+
+$jumbotron-background-url:     url(images/jumbotron.jpg) !default;
+$jumbotron-h1-size-xs:         150% !default;
+$jumbotron-h1-size:            270% !default;

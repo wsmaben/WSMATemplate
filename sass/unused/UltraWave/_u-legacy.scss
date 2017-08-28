@@ -1,0 +1,112 @@
+/* ==========================================================================
+   LEGACY
+   ========================================================================== */
+/* These styles support old functionality such as Marketing suite.
+ * They should not be used for any new functionality. */
+
+/* Adjusts height for legacy tabs used input areas like Certification*/
+.ajax__tab_xp .ajax__tab_tab {
+    height: 21px !important;
+}
+
+/* TitleBar: Header controls used by legacy iParts
+   ========================================================================== */
+
+/* This makes the bottom border on TitleBarCaptions extend all the way to the border of its container */
+.ContentBorder .TitleBarCaption {
+    margin-top: -$panel-body-padding;
+    margin-left: -$panel-body-padding;
+    margin-right: -$panel-body-padding;
+    padding-left: $panel-body-padding;
+    padding-right: $panel-body-padding;
+}
+
+/* The title in the TitleBarCaption */
+.TitleBarTitle {
+    float: left;
+}
+
+.TitleBarActionBox {
+    @include text-hide();
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url('../images/titlebaractionbox.gif');
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+/* The option controls on title bar captions */
+.InLineOption_Controls, .InLineOption_Controls_Always_Display {
+    float: right;
+}
+
+/* The drop-down button on title bar captions */
+.InLineOption_Controls input, .InLineOption_Controls_Always_Display input {
+    vertical-align: middle;
+}
+
+/* .InLineOption <div> used in the top title area of iParts */
+.InLineOption .InLineOption_Controls {
+    display: none;
+    cursor: pointer;
+    background-color: #F4F4F4;
+}
+
+/* Can be used to enable a hover effect for the .InLineOption <div> used in the top title area of iParts */
+.InLineOption:hover .InLineOption_Controls, .InLineOption .InLineOption_Controls_Always_Display {
+    display: block;
+    cursor: pointer;
+}
+
+/* Headings
+   ========================================================================== */
+.mdTitle, #mainTitle {
+    padding-top:.3em;
+    font-weight: bold;
+}
+
+.mdTitle {
+    font-size:130%;
+}
+
+#mainTitle {
+    font-size: 150%;
+    line-height: 2em;
+    white-space: nowrap;
+}
+
+/* Process Manager/Marketing Suite
+   ========================================================================== */
+.StageHeader {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.StageHeader.StageSetup {
+    cursor:pointer;
+    border-top: 1px solid $border-color;
+}
+
+.StageBlock {
+    border: 1px solid $border-color; 
+    margin: .5em;
+    clear: both;
+}
+
+.TaskHeading, .TaskBar, .WorkSpace {
+    padding: 3px;
+}
+
+/* Navigation
+   ========================================================================== */
+.NavBullet li {
+    color: #fe7921;
+    list-style-type: square;
+}
+
+.NavSpan li span {
+    color: #000;
+}
+

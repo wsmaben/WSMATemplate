@@ -1,0 +1,48 @@
+/* ==========================================================================
+   SEARCH
+   ========================================================================== */
+.SearchField * {
+    vertical-align: middle;
+}
+
+.SearchField {
+    padding: 8px 12px;
+}
+
+.SearchResult {
+    margin: .5em 0;
+}
+
+.SearchResultSummary .ImageSection {
+    float: left;
+    width: 8em;
+    text-align: center;
+}
+
+.SearchResultSummary .ImageSection img {
+    max-width: 7.5em;
+}
+
+.SearchResultSummary .ListItemTitle a {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.SearchResultSummary .ListItemTitle img {
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+.SearchResultSummary .Description {
+    float: none;
+    text-align: left;
+    
+    @include respond-to('tablets and up') {
+        margin-left: 8.5em; 
+    }
+}
+
+.SearchResultSummary .PublishDate {
+    color: #666;
+}
+

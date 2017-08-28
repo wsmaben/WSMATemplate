@@ -1,0 +1,353 @@
+/* ==========================================================================
+   CART CHARGES
+   ========================================================================== */
+.CartCharges {
+    max-width: 30em;
+    padding: 3px;
+}
+.CartCharges label, .CartCharges .Label {
+    width: auto!important;
+    padding-right: 2em;
+}
+.CartCharges .PanelFieldValue {
+    float: right!important;
+    text-align: right;
+}
+.CartCharges .PanelField {
+    border-bottom: 1px solid #ddd;
+}
+.CartCharges .GrandTotal {
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   OPEN INVOICES
+   ========================================================================== */
+
+.OpenInvoicesTotals {
+    float: right;
+
+    .PanelFieldValue, 
+    .TextButton {
+        float:right;
+        clear: right;
+    }
+
+    .SelectedTotal { 
+        font-weight: bold;
+    }
+}
+
+/* ==========================================================================
+   GROUP LIST EDITOR
+   ========================================================================== */
+.RadTreeView.GLE {
+    white-space: normal;
+}
+/* hide the expand image when the list is not expandable*/
+.DoNotShowExpandImage > .rtUL > .rtLI {
+    > .rtTop, > .rtMid, > .rtBot { padding-left: 0; }
+    .rtSp, .rtPlus { display: none; }
+}
+
+/* Style GLE nodes differntly since they include 2 links */
+.RadTreeView.GLE .rtHover .rtIn, 
+.RadTreeView.GLE .rtSelected .rtIn {
+    border-color: transparent;
+    background: none;
+}
+.RadTreeView.GLE a
+{
+    padding: 1px 6px 3px 6px;
+}
+.RadTreeView.GLE a, 
+.RadTreeView.GLE span[onclick] {
+    &:hover, &:focus, &:active {
+        background-color: #c7edf9;
+    }
+}
+.RadTreeView.GLE a[onclick].rtIn:hover {
+    padding: 3px 5px 3px 5px;
+    color: #000;
+    border-color: transparent;
+    background: none;
+}
+
+/* ==========================================================================
+   SSRS REPORT
+   ========================================================================== */
+/* Remove the blank.gif icon due to a missing parm that results in a broken image 
+ * icon in non-IE browsers... 
+ * https://connect.microsoft.com/VisualStudio/feedback/details/556989/#tabs */
+img[src*="OpType=ReportImage&ResourceStreamID=Blank.gif"] {
+    display: none;
+}
+
+.SSRSReportViewer { overflow-x: auto; }
+
+.SSRSReportViewer table > tbody > tr > td > div:first-of-type {
+    background-image: none!important;
+	padding-top: 3px;
+	padding-bottom:3px;
+	padding-right: 5px;
+}
+
+.SSRSReportViewer table > tbody > tr > td > div > div table > tbody > tr > td {
+	vertical-align: middle;
+}
+
+.SSRSReportViewer table > tbody > tr > td > div > div > table > tbody > tr > td:last-of-type {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.SSRSReportViewer table > tbody > tr:nth-child(4) {
+	background-color: #ffffff;
+}
+
+.SSRSReportViewer table > tbody > tr > td input[type="image"] {
+	height: auto!important;
+	width: auto!important;
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   BIG BUTTON PANEL
+   ========================================================================== */
+.HorizontalButtons, .HorizontalButtonsLeft, .HorizontalButtonsRight {
+    .BigButtonWrapper {
+        padding: 0;
+
+        br { display: none; }
+    } 
+
+    a.btn { margin-bottom: .3em; }
+}
+
+.HorizontalButtons .BigButtonWrapper {
+    text-align: center;
+}
+
+.HorizontalButtonsLeft .BigButtonWrapper {
+    text-align: left;
+}
+
+.HorizontalButtonsRight .BigButtonWrapper {
+    text-align: right;
+}
+
+.BigButtonWrapper.HasImage{
+    img {
+        max-width: 100px;
+        margin-right: 5px;
+        float: left;
+    }
+    .BigButtonLinkList { display: table-cell; }
+} 
+
+
+/* ==========================================================================
+   QUERY MENU
+   ========================================================================== */
+/* The map canvas when the Query Menu is configured to show a map of the results */
+.MapCanvas {
+    width: 100%; 
+    height: 728px; 
+    margin-bottom: 2px;  
+}
+
+/* ==========================================================================
+   RECENT HISTORY
+   ========================================================================== */
+.RecentHistoryList {
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+.RecentHistoryList .RecentHistoryItem {
+    list-style-type: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.RecentHistoryItem img {
+    margin-right: 3px;
+}
+
+/* ==========================================================================
+   CONTENT COLLECTION ORGANIZER
+   ========================================================================== */
+.ContentWizardDisplay {
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: $border-color;
+    padding: $panel-body-padding;
+}
+
+/* ==========================================================================
+   SIGN IN
+   ========================================================================== */
+/* SignIn iPart */
+.SignIn {
+    max-width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+    input[type="submit"],
+    input[type="text"], 
+    input[type="password"] {
+        width:100%;
+    }
+}
+
+/* ==========================================================================
+   SIGN UP
+   ========================================================================== */
+/* Content Account Creator iPart */
+.SignUp {
+    max-width: 18em;
+    input[type="submit"] {
+        width:100%;
+    }
+}
+
+/* ==========================================================================
+   COMMUNICATION PREFERENCES
+   ========================================================================== */
+.CommunicationPreferencesSection {
+    @include clearfix();
+    background-color: $color-alt-bg;
+    padding: $panel-body-padding;
+}
+
+/* ==========================================================================
+   CONTENT BLOCK AND COMMUNITIES
+   ========================================================================== */
+.ContentBlock img, 
+.ContentBlockPost img,
+.CommunityAttachmentImage img,
+.CommunityItemBody img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.ContentBlockPostBody, 
+.ContentBlockCommentBody {
+    word-wrap: break-word;
+}
+
+.CommunityItemBody,
+.CommunityItemDescription {
+    // NOTE: Repeater items are in tables, which this does not work with. 
+    // We'll need to remove the tables for this fix to be complete.
+    word-wrap: break-word;
+
+    .PanelFieldValue {
+        max-width: 100%;
+    }
+}
+
+/* ==========================================================================
+   QUERY PROFILE PICTURE LIST
+   ========================================================================== */
+.ListThumbnail {
+    margin-right: 1px;
+    margin-bottom: 1px; 
+    vertical-align: middle;  
+} 
+.NameHyperlink {
+    margin-left: 2px; 
+}       
+
+/* ==========================================================================
+   DIRECT DEBITS
+   ========================================================================== */
+.Ui-helper-hidden-accessible {
+     position: absolute !important; 
+     clip: rect(1px 1px 1px 1px); 
+     clip: rect(1px,1px,1px,1px); 
+}
+     
+/* ==========================================================================
+   EMBEDDED WEB PAGE
+   ========================================================================== */
+.EmbeddedWebPage {
+    border: none;
+    margin: 0;
+}
+
+/* ==========================================================================
+   MAIN CONTENT PLACEHOLDER
+   ========================================================================== */
+/* Some placeholder content when the iPart is displayed in edit mode */
+.EditModePlaceholder,
+.MainContentPlaceholder {
+    width: 100%;
+    display: table;
+    max-width: none;
+    background-color: $gray-darker;
+    color: #fff;
+    text-align: center;
+}
+.EditModePlaceholderInner,
+.MainContentPlaceholderInner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 200px;
+}
+     
+/* ==========================================================================
+   PLACEHOLDER BLOCKS
+   ========================================================================== */
+/* Some placeholder content when the iPart is displayed in edit mode */
+.EditModePlaceholder,
+.MainContentPlaceholder {
+    width: 100%;
+    display: table;
+    max-width: none;
+    background-color: $gray;
+    color: #fff;
+    text-align: center;
+
+}
+
+.EditModePlaceholderInner,
+.MainContentPlaceholderInner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 45px;
+}
+
+.MainContentPlaceholder { background-color: $gray-darker; }
+.MainContentPlaceholderInner { height: 200px; }
+
+.ContentDisplayPlaceholder { background-color: $gray-dark; }
+.ContentDisplayPlaceholderInner, 
+.EditModePlaceholder  { 
+    height: 45px; 
+}
+
+/* Utility Navigation
+   ========================================================================== */
+.UtilitySection {
+    display: inline-block;
+}
+
+.UtilitySearch, 
+.UtilityNavigationList,
+.UtilityAuthentication,
+.UtilitySTEToggle,
+.UtilityTranslation  {
+    vertical-align: middle;
+}
+.UtilitySearch,
+.UtilitySTEToggle,
+.UtilityAuthentication,
+.UtilityTranslation {
+    margin-left: $navbar-padding-horizontal / 2;
+}
+
+.UtilityNavigationList .NavigationUnorderedList {
+    > li > a {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,241 @@
+﻿/* ==========================================================================
+   ORION THEME STYLES
+   ========================================================================== */
+
+/* Headings
+   ========================================================================== */
+/* make h2s match up with panel headings */
+h2 {
+    padding-bottom: $panel-body-padding;
+    margin-bottom: $panel-body-padding;
+}
+
+.Distinguish .panel-heading-options,
+.TitleBarCaption .InLineOption_Controls_Always_Display {
+    margin-top: 7px;
+}
+
+.panel-heading-options {
+    .IconSprite, 
+    .panel-heading-collapse-img {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-right: 0;
+    }
+}
+
+.panel-heading-collapse-img,
+.PanelHeadCollapseImage {
+    @include opacity(.7);
+
+    &:hover { @include opacity(1); }
+}
+
+
+/* Boxed style
+   ========================================================================== */
+%border-rounded {
+    border-radius: $border-radius-small;
+}
+
+%boxed-style,
+.panel-border,
+.panel-group .panel,
+.ContentBorder,
+.WizardDisplay,
+.ContentTabbedDisplay,
+.TagBrowserWrapper {
+    border-radius: $border-radius-small;
+    background-color: $color-alt-bg;
+    @include box-shadow($box-shadow-base);
+}
+
+.WizardDisplay, 
+.ContentTabbedDisplay,
+.TagBrowserWrapper {
+    border-radius: 0 0 $border-radius-small $border-radius-small;
+}
+
+.TagBrowserWrapper {
+    border: 1px solid $border-color;
+}
+
+
+/* Styled grids
+   ========================================================================== */
+/* Use iPart class "SearchResultsCards" to display card-style search results */
+.GridCardStyle .RadGrid.RadGrid {
+    background-color: transparent;
+    border: none;
+
+    .rgRow, .rgAltRow {
+        @extend %border-rounded;
+        display: block;
+        margin-bottom: 1em;
+        border: 1px solid transparent;
+        background-color: #fff;
+        border-radius: $border-radius-small;
+
+        &:hover { 
+            @extend %boxed-style;
+            border-color: $border-color; 
+        }
+
+        td { 
+            border: none;
+            padding-top: 12px !important; 
+            padding-bottom: 12px !important;
+        }
+    }
+}
+.GridCardStyle .panel-border .RadGrid.RadGrid {
+    .rgRow, .rgAltRow { background-color: $gray-very-light; }
+}
+
+
+/* Alerts
+   ========================================================================== */
+.Alerts {
+    .AlertSet { @extend %boxed-style; }
+    .AlertItem { background-color: $alert-iPart-bg; }
+}
+
+/* Icons
+   ========================================================================== */
+%nav-sprite-setup {
+    background-image: $navbar-sprite-bg;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    
+    @include respond-to('HD') {
+        background-image: $navbar-sprite-bg-2x;
+        background-size: $navbar-sprite-bg-size;
+    }
+}
+
+%nav-primary-sprite-setup {
+    @extend %nav-sprite-setup;
+    @include square($navbar-icon-width);
+}
+
+%nav-aux-sprite-setup {
+    @extend %nav-sprite-setup;
+    @include square($navbar-top-icon-width);
+    margin: ($navbar-toggle-height - $navbar-top-icon-width)/2;
+}
+
+.dropdown .caret {
+    @extend %nav-primary-sprite-setup;
+    border: none;
+    display: inline-block;
+    background-position: -($navbar-icon-width * 13) 0;
+}
+
+
+/* Staff sign in page
+   ========================================================================== */
+.page-sign-in {
+    .col-secondary, .header { display: none; }
+    .col-primary, .footer { margin-left: 0; }
+}
+
+.SignInPusher {
+    min-height: 10vh;
+    @include respond-to('tablets and up') {
+        min-height: 20vh;
+    }
+}
+
+.SignInPage {
+    .panel-heading.Distinguish {
+        border-bottom: none;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .TextButton {
+        margin-bottom: 1em;
+    }
+}
+
+.PersonDisplay.SelectedItem a {
+    &, &:hover, &:focus, &:active {
+        color: $text-color;
+    }
+}
+
+
+/* Banner images
+   ========================================================================== */
+/* Support background image with text overlay */
+.bg-img-conference-tall {
+    background-color: #081337;
+    background-image: url('../../images/SampleSites/conferencebannertall.jpg');
+}
+
+.bg-img-conference-small {
+    background-color: #081337;
+    background-image: url('../../images/SampleSites/Member/cairnsnight.jpg');
+}
+
+.bg-img-tiger-tall {
+  background-color: #04080B;
+  background-image: url("../../images/ImageLibrary/tiger-tall.jpg");
+  background-position: center center;
+}
+
+.banner-tall, .banner-short {
+    text-decoration: none;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+
+    &,&:visited, &:active, &:hover, &:focus, h2 {
+        color: #fff;
+    }
+    
+}
+
+.banner-text h2 {
+    font-size: 100%;
+}
+
+.banner-tall {
+    height: 500px;
+    max-width: 300px;
+
+    .banner-text {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+
+        background-color: #000;
+        background-color: rgba(0,0,0,.75);
+
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.banner-short {
+    min-height: 150px;
+    max-width: 300px;
+     
+    .banner-text {
+        padding: 5px;
+        min-height: 150px;
+        background-color: #000;
+        background-color: rgba(0,0,0,.2);
+        border-radius: 5px;
+    }
+}
+
+/* Other
+   ========================================================================== */
+/* Green badges, currently used for the PLUS indicator */
+.PlusLink:after,
+.PlusFeature label:after {
+    background-color: $brand-success;
+}

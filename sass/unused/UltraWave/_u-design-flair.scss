@@ -1,0 +1,72 @@
+/* ==========================================================================
+   DESIGN FLAIR
+   ========================================================================== */
+/* Reusable classes that give a particular emphasis or deemphasis to a piece of content */
+
+/* Callout Bubble
+   ========================================================================== */
+/* Puts the content it wraps in a lightly shaded bubble (similar to a conversation bubble) */
+.CalloutBubbleItem {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.CalloutBubble {
+    position: relative;
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+    padding: 3px 10px;
+    background: $gray-lighter;
+    box-sizing: border-box;
+}
+
+.CalloutBubble:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent $gray-lighter;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+/* Line Thru
+   ========================================================================== */
+/* A small piece of text with a line on either side */
+/* E.g. the "or" text on the sign in iPart (when social networking sign in is enabled) */
+.LineThruContainer {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.LineThruBlock 
+{
+    border-bottom: 1px solid $gray-lighter;
+    cursor: default;
+    line-height: 1px;
+    margin: 10px;
+    text-align: center;        
+}
+.LineThru 
+{
+    background-color: #fff;
+    font-size: 88%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 2px;
+}
+
+/* Shading
+   ========================================================================== */
+/* A neutral background color that can be applied to any element */
+
+.NeutralShading {
+	background-color: $color-alt-bg;
+	padding: $panel-body-padding;
+}

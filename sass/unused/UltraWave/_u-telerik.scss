@@ -1,0 +1,407 @@
+/* ==========================================================================
+   TELERIK CONTROLS
+   ========================================================================== */
+
+/* Reset fonts on various Telerik Controls */
+.RadUpload_Default, .RadUpload_Default a, .RadUpload_Default input, 
+.RadUploadProgressArea_Default, .RadUploadProgressArea_Default input, .RadUploadSubmit, 
+.RadGrid, .RadGrid .rgMasterTable, .RadGrid .rgDetailTable, .RadGrid .rgGroupPanel table, .RadGrid .rgCommandRow table, 
+.RadGrid .rgEditForm table, .RadGrid .rgPager table, .GridToolTip, .RadTreeView, .RadTreeView a.rtIn, .RadTreeView .rtEdit .rtIn input,
+.RadSplitter, .reToolbar a, .reDropdown, .reSpinBox input, .RadEditor input, .reModule, .reModule td, .reEditorModes a, .reDropDownBody, 
+.reDropDownBody td, .reAjaxspell_wrapper, .reAjaxspell_button, .reAjaxspell_addicon, .reAjaxspell_ignoreicon, .reAjaxspell_okicon, 
+.reInsertTable .reTlbVertical ul a.reTool_text span.reButton_text, .reColorPicker .reCustomColor, .RadUploadProgressArea_Bootstrap  {
+    font: inherit!Important;
+    font-family:inherit!Important;
+}
+
+/* For IE the Rad date and time input field height behave different that Chrome & FF */
+/*html body .PanelFieldValue .riSingle [type='text'].riTextBox {
+    height: 1.75em !important;
+}*/
+
+/* RadTreeView
+   ========================================================================== */
+/* Gives tree nodes a clickable look */
+.RadTreeView .rtIn:hover {
+    cursor:pointer;
+}
+
+/* Remove bullets from list items in tree nodes */
+.RadTreeView ul li.rtLI {
+    list-style: none;
+}
+
+/* RadTooTip
+   ========================================================================== */
+/* Links in the RadToolTip control were not obvious enough. Needed a little bit of tweeking.
+ * Example usage: the QueryMenu control's "Select a query" drop-down
+ */
+/* This is needed so that any StyledHyperlinks within a RadToolTip will show the 'hand' cursor on hover. */
+.RadToolTip_Telerik a {
+    cursor: pointer !important;
+    color: Black;
+}
+
+.RadToolTip_Telerik a:hover {
+    background-color:#DDD;
+}
+
+.RadToolTip_Telerik a.fb_button:hover {
+    background-color:#29447e;
+}
+.RadToolTip .radToolTip_CloseButton{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-radius: 45px;
+    margin: -5px -5px 0 0;
+    background-image:url(../images/IconSprite.png);
+    background-position: -486px 4px;
+    background-color: #f9f9f9;
+	right: -9px;
+    top: -10px;
+    display: block;
+    position: absolute;
+}
+.RadToolTip .radToolTip_CloseButton:hover{
+    background-position: -486px -31px;   
+}
+/* Style of the QueryMenu popup column headers. */
+.ColumnHeader {
+    font-weight: bold !important;
+}
+/* Style of the QueryMenu result grid headers. */
+.ResultsHeader {
+    font-weight: bold !important;
+}
+
+/* The RadToolTip used by the GroupListEditor for the hover pop-up */
+.AdvancedToolTip {
+    background: #ffffff;
+    padding: 5px;
+    font-size: 90%;
+}
+
+/* RadUpload
+   ========================================================================== */
+/* Fixes an alignment issue for the rad uploader */
+.RadUpload .ruFileInput, 
+.RadUpload .ruFakeInput, 
+.RadUpload .ruButton, 
+.RadUploadProgressArea .ruButton, 
+.RadUpload .ruFileWrap {
+    vertical-align:middle!important;
+}
+
+/* Upload Image displayed as a list and Upload buton is off */
+.RadUpload .ruInputs li {
+    list-style-type:none;
+}
+
+.RadUpload.RadUpload .ruBrowse,
+.RadUpload.RadUpload .ruButton {
+    height: auto;
+    width: auto;
+    font-size: inherit;
+}
+
+/* Sets Button position next to the radUpload element */
+.RadUpload + .TextButton {
+    float: left;
+    //margin-top: .1em!Important;
+    margin-left: 5px;
+}
+
+/* Special Style Override styles for Telerik RadUpload control */
+.RadUploadProgressArea ul li {
+    list-style-type:none!Important;
+    display: block;
+}
+
+.RadUpload .RadUpload_Default, 
+.RadUpload .ruFileWrap {
+    padding-right: 2px!Important;
+    width:auto!Important;
+}
+
+/* Sets left Padding for elements inside PanelTableValue */
+.PanelTableValue img, .PanelTableValue .RadUpload {
+    padding-left: 0.250em;
+}
+
+.RadUpload .ruFileWrap {
+    height: auto !important;
+}
+
+/* RadButton
+   ========================================================================== */
+/* Text on RadButtons in image mode are was not available for screen readers.
+ * This fixes that issue.
+*/
+.rbText.rbHideElement {
+    display: inline;
+    @include text-hide();
+}
+
+/* RadGrid
+   ========================================================================== */
+/* Resolve missing left border in the header and footer paging sections when rendered in Firefox */
+.RadGrid_Default .rgPager .rgPagerCell {
+    border-width: 1px 0 1px 0 !important;   
+}
+
+.RadGrid .rgPager .rgAdvPart {
+    @include respond-to('smartphones and down') {
+        /* Hide the Page Size dropdown on smaller screens */
+        display: none;
+    }
+}
+
+.RadGrid .rgHeader a {
+    text-decoration:underline!important;
+}
+
+/* add a wide border to sub-grids to create visual separation */
+.RadGrid .rgMasterTable .rgDetailTable, .ChildGridWrapper .rgMasterTable {
+    border: 10px solid #ddd;
+}
+
+/* Use to style the lister grid when use in a compact view */
+.SimpleGrid tr td {
+    padding-bottom: 0.188em;
+    padding-top: 0.188em;
+}
+
+.RadGrid .rgNoRecords TD {
+    padding: 4px 7px;
+    color: #707070;
+}
+.ListSearchPrompt {
+    padding: 4px 12px;
+}
+
+.rgHeader.rgExpandCol {
+    @include text-hide();
+}
+
+.rgEditForm {
+    padding: $panel-body-padding;
+}
+
+/* RadEditor
+   ========================================================================== */
+/* Used in configuration for the HTML iPart */
+.RadEditor.reWrapper.HtmlEditor {
+    height: auto !important;
+}
+
+.reDropDownBody table td {
+    padding-left: 5px;
+}
+
+/* Inserting an image when we don't have access to the image gallery
+   e.g. the Content Block iPart
+*/
+.reInsertImageWrapper {
+    label {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .reConfirmCancelButtonsTblLight .reAllPropertiesLight button {
+        width: auto !important;
+    }
+}
+
+/* The image properties window was exceeding its bounds */
+.RadWindow[id*='_dialogOpenerImageProperties'] {
+    overflow-y: auto;
+}
+
+/* the image for the Insert Content Link button */
+.reTool .InsertContentLink {      
+    background-position: -3696px center;
+}
+.reAjaxspell_button {
+    border: 1px solid #d7d7d7!important; 
+    background-color: #ebebeb!important; 
+    color: #000!important;
+}
+
+// Need the text on the editor buttons to display for screen readers, 
+// but not for sighted users.
+span + .reButton_text {
+    @extend %sr-only;
+}
+
+// Hide the editing tools on specific pages 
+#EventDescriptionDiv .reToolCell, #EventDescriptionDiv .reToolZone {
+    display: none;
+}       
+#EventDescriptionDiv .reContentCell {
+    border: none !important;
+}
+
+/* RadScheduler
+   ========================================================================== */
+/* Used by the Event Calendar iPart */
+/*IE8 browser hack so that the RadScheduler displays correctly */
+.rsHorizontalHeaderTable, .rsContentTable {
+    width/*\**/: 100%\9;    
+}
+/* Adds an ellipsis to long event titles in the Event Calendar */
+.rsAptContent {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+/* Keeps Calendar Header on top of grid */
+.rsEventCalendar div.rsHeader {
+    z-index: 999 !important;
+}
+
+/* RadMenu
+   ========================================================================== */
+/* Used by the primary navigation bar (PageNavR) and ObjectBrowser */
+/* Apply z-Index to RadMenu generally */
+.RadMenu {
+    z-Index: 100 !Important;	
+}
+/* Make the navigation menu items overlay other RadMenu instances */
+.rmSized, .MainMenu {
+    z-Index: 1001 !Important;
+}	
+
+/* Applies to links in navigation menu */
+.RadMenu .rmItem a.rmLink {
+    min-width: 10px !important;
+    cursor: pointer;
+}
+.RadMenu .rmItem a.rmLink.rmDisabled {
+    cursor: default;
+}
+/* Handle the case where the menu bar does not expand horizontally to the size of the parent container */
+.RadMenu ul.rmHorizontal {
+    float: none !important;
+}
+
+/* The RadContextMenu is used by the options drop-down control on TitleBar */
+.RadMenu.RadMenu_Context {
+    /* This is required to display the On Behalf Of control's action dropdown 
+       on top of the primary nav menu in the Staff Site  */
+    z-Index: 7000 !Important;
+}  
+
+/* RadWindow
+   ========================================================================== */
+/* Remove the space in the RadWindow title bar where the window icon would display */
+.RadWindow .rwIcon {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Styles for the Title in the Lister2 control */
+.GridTitlePanel .Title {
+    font-weight:bold;
+    font-size:120%;
+}
+
+/* To improve accessibility, this applies a style when RadWindow control buttons receive focus, so that keyboard users can see what is selected */
+.RadWindow .rwControlButtons a:focus {
+    @include tab-focus();
+}
+
+/* RadSplitter
+   ========================================================================== */
+/* Lighten up the RadSplitter border color to better match the rest of Object Browser */
+.RadSplitter_Default, .RadSplitter_Default .rspPaneTabContainer, .RadSplitter_Default .rspPane, 
+.RadSplitter_Default .rspResizeBar, .RadSplitter_Default .rspSlideContainerResize, 
+.RadSplitter_Default .rspPaneHorizontal, .RadSplitter_Default .rspResizeBarHorizontal, 
+.RadSplitter_Default .rspSlideContainerResizeHorizontal {
+    border-color: #ccc !important;
+}
+
+/* RadTabStrip
+   ========================================================================== */
+/* These styles needed for accessibility - underline focused tabs */
+a.rtsLink:focus, a.rtsLink.rtsSelected:focus {
+    text-decoration:underline;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+a.rtsLink:hover {
+    text-decoration:underline!important;
+}
+a.rtsLink.rtsDisabled:hover {
+    text-decoration: none !important;
+}
+/**
+ * SubTabStrip 
+ */
+/* RadTabStrip using the SubTabs skin id. Used in IQA */
+.SubTabStrip {
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1 );
+}
+
+.SubTabStrip a.rtsLink.rtsSelected {
+    font-weight: bold;
+    border-bottom: 3px solid #c0c0c0;
+    border-bottom: 3px solid rgba( 0, 0, 0, 0.3 );
+    color: #000000;
+    color: rgba( 0, 0, 0, 0.8 );
+}
+
+.SubTabStrip a.rtsLink {
+    float: left;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: sans-serif;	
+    transition: border-color 0.2s linear;
+}
+
+.SubTabStrip a.rtsLink.rtsDisabled {
+    opacity:0.5;
+    filter:Alpha(opacity=50);
+}
+
+
+/* RadChart
+   ========================================================================== */
+/* Wrapper class "CenterChart" will force a RadChart to display in the center of its content zone */
+.CenterChart .RadChart {
+    display: block; 
+    margin: 1em auto;
+}
+/* Wrapper class "Chart" will give a RadChart a little extra spacing */
+.Chart .RadChart {
+    display: block; 
+    margin: 1em;
+}
+
+
+/* RadComboBox
+   ========================================================================== */
+/* Add the WideTextBox class to a RadComboBox to widen its display */
+.RadComboBox.WideTextBox {
+    width: 26.5em !important;
+}
+
+/* RadSocialShare
+   ========================================================================== */
+/* Using the same selector twice makes it more specific,
+ * which means we don't have to use !important. :)
+ */
+.RadSocialShare.RadSocialShare {
+    border: none;
+    background-color: transparent;
+}
+.RadSocialShare .sshContent .sshText {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}

@@ -1,0 +1,210 @@
+﻿// VARIABLES
+// --------------------------------------------
+
+// GLOBAL ELEMENTS
+// --------------------------------------------
+
+$theme-family:          Cities !default;
+$theme-name:            Toronto !default;
+$view-type:             Responsive !default;
+
+// Spirtes
+// -------------------------
+$header-sprite-path:        'images/ResponsiveHeaderSprite.png' !default;
+
+// Color Palette
+// -------------------------
+
+$color-base:                #00a8b4 !default; 
+$color-callout:             #cc3366 !default; 
+$color-secondary-a:         #195366 !default;
+$color-secondary-b:         #006c81 !default;
+
+$color-neutral:             #333 !default;
+$color-alt-bg:              #f9f7f2 !default;
+
+$hover-highlight:           hsl(hue($color-base), 38%, 76%) !default;
+
+// Social colors
+$color-facebook:            #3B5998 !default;
+$color-linkedin:            #0077B5 !default;
+
+
+// Scaffolding
+// -------------------------
+
+$grid-gutter-width:     30px !default;
+
+$border-style:          solid !default;
+
+// Links
+// -------------------------
+
+$link-color:            darken($color-base, 2%) !default;
+
+// Typography
+// -------------------------
+$font-family-base:      Open Sans, Helvetica Neue, Arial, sans-serif !default;
+
+$font-size-base:        16px !default;
+$line-height-base:      1.6 !default;
+$line-height-computed:  floor($font-size-base * $line-height-base) !default;
+
+$headings-font-family:  Open Sans, Helvetica Neue, Arial, sans-serif !default; 
+$headings-font-weight:  700 !default;
+$headings-color:        $color-neutral !default;
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+
+
+$font-size-h1:          250% !default;
+$font-size-h2:          170% !default;
+$font-size-h3:          130% !default;
+$font-size-h4:          120% !default;
+$font-size-h5:          100% !default;
+$font-size-h6:          85% !default;
+
+$h1-color:              $color-callout !default;
+$h4-color:              $color-secondary-b !default;
+$h5-color:              $color-secondary-b !default;
+
+// Components
+// -------------------------
+$padding-base-vertical:          5px !default;
+$padding-base-horizontal:        10px !default;
+
+$border-radius-base:             5px !default;
+$border-radius-large:            10px !default;
+$border-radius-small:            3px !default;
+$component-active-color:         #fff !default;
+$component-active-bg:            $color-secondary-a !default;
+
+
+// Forms
+// -------------------------
+$input-height-base:             ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+
+
+// Buttons 
+// -------------------------
+$btn-style:                     pushable !default;
+
+$btn-default-bg:                $color-secondary-a !default;
+$btn-default-border:            darken($btn-default-bg, 10%) !default;
+$btn-default-shadow:            $btn-default-border !default;
+
+$btn-primary-border:            darken($color-callout, 14%) !default;
+$btn-primary-shadow:            $btn-primary-border !default;
+
+$btn-facebook-border:           darken($color-facebook, 10%) !default;
+$btn-linkedin-border:           darken($color-linkedin, 10%) !default;
+
+
+// Navbar
+// -------------------------
+
+$navbar-top-height:                        46px !default;
+$navbar-height:                            57px !default;
+
+$navbar-default-color:                     #fff !default;
+$navbar-default-bg:                        $color-neutral !default;
+$navbar-padding-vertical:                  15px !default;
+
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             $color-base !default;
+$navbar-default-link-active-color:         $color-base !default;
+$navbar-default-link-active-bg:            transparent !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+$navbar-default-link-weight:               normal !default;
+$navbar-default-link-letter-spacing:       1px !default;
+$navbar-default-link-font-size:            105% !default;
+
+// Callout link
+$navbar-feature-link-color:                #fff !default;
+$navbar-feature-link-bg:                   $color-callout !default;
+
+$navbar-default-toggle-bg:                 transparent !default;
+$navbar-default-toggle-hover-bg:           $color-callout !default;
+$navbar-default-toggle-active-bg:          $navbar-default-toggle-hover-bg !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       transparent !default;
+$navbar-toggle-margin-left:                14px !default;
+
+$navbar-default-dropdown-bg:                    $navbar-default-link-hover-bg !default;
+$navbar-default-dropdown-link-color:            #fff !default;
+$navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
+$navbar-default-dropdown-link-hover-bg:         transparent !default;
+$navbar-default-dropdown-link-hover-color:      #000 !default;
+$navbar-default-dropdown-link-active-bg:        $navbar-default-dropdown-link-hover-bg !default;
+$navbar-default-dropdown-link-active-color:     $navbar-default-dropdown-link-hover-color !default;
+$navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
+
+
+// Navs
+// -------------------------
+
+// iMIS
+
+$nav-secondary-bg:                          $color-alt-bg !default;
+$nav-secondary-header-bg:                   darken($nav-secondary-bg, 10%) !default;
+$nav-secondary-header-color:                $color-neutral !default;
+$nav-secondar-divider-bg:                   $nav-secondary-header-bg !default;
+
+
+// Cart icon
+//-------------------------
+$cart-count-color:              #fff !default;
+$cart-count-xs-color:           #fff !default;
+$cart-count-bg:                 lighten(desaturate($color-callout, 10%), 10%) !default;
+$cart-count-xs-bg:              $cart-count-bg !default;
+
+// Communities
+// -------------------------
+$communities-nav-hover-bg:          $hover-highlight !default;
+$communities-nav-select-bg:         $component-active-bg !default;
+$communities-link-hover-bg:         $communities-nav-select-bg !default;
+$communities-alt-bg:                hsl(hue($color-neutral), saturation($color-neutral), 95%) !default;
+
+// CalloutPanelFields
+// -------------------------
+// used by CalloutPanelField1 (currently used in tribute donation creator)
+$callout1-bg:                       $color-secondary-a !default;
+
+
+// Logo 
+// -------------------------
+$logo-default-position-md:          0 -47px !default;
+$logo-default-width-sm:             46px !default;
+$logo-default-height-sm:            46px !default;
+$logo-default-width-md:             120px !default;
+
+$logo-donor-url:                    url('images/DonorHeaderLogo.png') !default;
+$logo-donor-position-md:            null !default;
+$logo-donor-width-md:               169px !default;
+
+// Jumbotron
+// -------------------------
+
+$jumbotron-background-url:     url(images/HomeBanner.jpg) !default;
+$jumbotron-home-height:        31em !default;
+//$jumbotron-interior-height:    29em !default;
+$jumbotron-h1-size-xs:         200% !default;
+$jumbotron-h1-size:            250% !default;
+
+
+// Footer
+// -------------------------
+
+$footer-top-color:          #fff !default;
+$footer-top-link-color:     $footer-top-color !default; //hsl(hue($link-color), saturation($link-color), 80%) !default;
+$footer-top-bg:             $color-secondary-a !default;
+$footer-top-h1-color:       $color-base !default;
+
+$footer-bottom-color:       #999 !default;
+$footer-bottom-link-color:  #fff !default;
+$footer-bottom-bg:          $color-neutral !default;
+
+// Telerik controls
+// --------------------------
+$radmenu-bg:                $color-secondary-a !default;

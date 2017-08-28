@@ -1,0 +1,154 @@
+﻿/* ==========================================================================
+   BOOTSTRAP GRIDS
+   ========================================================================== */
+// Note: this code comes from the Sass version of Bootstrap 3.0.2:
+// https://github.com/jlong/sass-bootstrap
+
+// Set the container width, and override it for fixed navbars in media queries
+.container {
+    @include container-fixed();
+    @include clearfix();
+}
+
+///* Add padding to the CCO to give room for row negative margins */
+//.ContentWizardDisplay {
+//    padding-left: $grid-gutter-width / 2;
+//    padding-right: $grid-gutter-width / 2;
+//}
+
+// mobile first defaults
+.row {
+    @include make-row();
+}
+
+.EmptyMasterContentPanel > div > .row {
+    /* remove the negative margins in pop-ups */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// Common styles for small and large grid columns
+@include make-grid-columns();
+
+
+// Extra small grid
+//
+// Grid classes for extra small devices like smartphones. No offset, push, or
+// pull classes are present here due to the size of the target.
+//
+// Note that '.col-xs-12' doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@include make-grid-columns-float(xs);
+@include make-grid($grid-columns, xs, width);
+@include make-grid($grid-columns, xs, pull);
+@include make-grid($grid-columns, xs, push);
+@include make-grid($grid-columns, xs, offset);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+//
+// Note that '.col-sm-12' doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@include breakpoint($screen-sm-min) {
+    //.container {
+    //    width: $container-sm;
+    //}
+
+    @include make-grid-columns-float(sm);
+    @include make-grid($grid-columns, sm, width);
+    @include make-grid($grid-columns, sm, pull);
+    @include make-grid($grid-columns, sm, push);
+    @include make-grid($grid-columns, sm, offset);
+}
+@if($view-type == 'Responsive') {
+    .no-mqs{
+        @include make-grid-columns-float(sm);
+        @include make-grid($grid-columns, sm, width);
+        @include make-grid($grid-columns, sm, pull);
+        @include make-grid($grid-columns, sm, push);
+        @include make-grid($grid-columns, sm, offset);
+    }
+}
+@else {
+    @include make-grid-columns-float(sm);
+    @include make-grid($grid-columns, sm, width);
+    @include make-grid($grid-columns, sm, pull);
+    @include make-grid($grid-columns, sm, push);
+    @include make-grid($grid-columns, sm, offset);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+//
+// Note that '.col-md-12' doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@include breakpoint($screen-md-min) {
+    //.container {
+    //    width: $container-md;
+    //}
+
+    @include make-grid-columns-float(md);
+    @include make-grid($grid-columns, md, width);
+    @include make-grid($grid-columns, md, pull);
+    @include make-grid($grid-columns, md, push);
+    @include make-grid($grid-columns, md, offset);
+}
+@if($view-type == 'Responsive') {
+    .no-mqs{
+        @include make-grid-columns-float(md);
+        @include make-grid($grid-columns, md, width);
+        @include make-grid($grid-columns, md, pull);
+        @include make-grid($grid-columns, md, push);
+        @include make-grid($grid-columns, md, offset);
+    }
+}
+@else {
+    @include make-grid-columns-float(md);
+    @include make-grid($grid-columns, md, width);
+    @include make-grid($grid-columns, md, pull);
+    @include make-grid($grid-columns, md, push);
+    @include make-grid($grid-columns, md, offset);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+//
+// Note that '.col-lg-12' doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@include breakpoint($screen-lg-min) {
+  //.container {
+  //  width: $container-lg;
+  //}
+
+  @include make-grid-columns-float(lg);
+  @include make-grid($grid-columns, lg, width);
+  @include make-grid($grid-columns, lg, pull);
+  @include make-grid($grid-columns, lg, push);
+  @include make-grid($grid-columns, lg, offset);
+}
+@if($view-type == 'Responsive') {
+    .no-mqs{
+        @include make-grid-columns-float(lg);
+        @include make-grid($grid-columns, lg, width);
+        @include make-grid($grid-columns, lg, pull);
+        @include make-grid($grid-columns, lg, push);
+        @include make-grid($grid-columns, lg, offset);
+    }
+}
+@else {
+    @include make-grid-columns-float(lg);
+    @include make-grid($grid-columns, lg, width);
+    @include make-grid($grid-columns, lg, pull);
+    @include make-grid($grid-columns, lg, push);
+    @include make-grid($grid-columns, lg, offset);
+}

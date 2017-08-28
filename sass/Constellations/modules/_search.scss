@@ -1,0 +1,36 @@
+﻿/* ==========================================================================
+   SEARCH
+   ========================================================================== */
+.SearchField { 
+    float: left; 
+    padding-left: 0;
+}
+
+.SearchResultSummary{
+    .ListItemTitle.SearchResultLink {
+        margin-left: 8.5em;
+
+        a {
+            font-weight: $font-weight-bold;
+            font-size: 135%;
+            text-decoration: none;
+        }
+    }
+
+    .ImageSection { 
+        margin-top: -$line-height-computed * 1.35 - $font-size-base * .5;
+        margin-right: .8em;
+        margin-bottom: .8em;
+    }
+
+    @include respond-to('desktops and up') { 
+        .ImageSection {
+            width: 12em;
+            /* Line the picture up with the top of the row */
+            img { max-width: 12em; }
+        }
+
+        .ListItemTitle.SearchResultLink,
+        .Description { margin-left: 12.8em; }
+    }
+}

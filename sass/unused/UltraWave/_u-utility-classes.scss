@@ -1,0 +1,325 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+/* Styling of the iMIS logo (Not currently in use)
+.iMIS {}*/
+
+/* ClearFix - place on the container of floating elements to fix alignment 
+ * issues usually solved with a <div style="clear:both"></div> 
+ * For more information on this fix visit http://nicolasgallagher.com/micro-clearfix-hack/ 
+ */
+.ClearFix, 
+.PanelHead, 
+.StandardPanel, 
+.PanelBody, 
+.CommandBar, 
+.GridTitlePanel, 
+.ContentTabbedDisplay, 
+.BigButtonWrapper,
+.ContentItemContainer {
+    @include clearfix();
+}
+
+/*Used for Website Layouts*/
+.clear-right{
+    clear:right;
+}
+
+.clear-left{
+    clear:left;
+}
+
+/* Hide a section from both sighted and screen reader users.
+ * DisplayNone is the preferred class out of these two. */
+.DisplayNone, 
+.hidden {
+    display: none;
+}
+
+/* Use to display an element as inline-block */
+.DisplayInlineBlock {
+    display: inline-block;
+}
+
+/* Hide text visually but allow it to be used by screen reader and tab-only users*/
+%sr-only,
+.screen-reader-text, 
+.CaptionTextInvisible .rgCaption,
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    z-index: 2000;
+    font-size: 70%;
+}
+/* Display the text when focused so tab-only users can use it */
+%sr-only-focusable,
+.screen-reader-text.show-on-focus {
+    &:focus, &:active {
+    padding: 3px;
+    left: 3px;
+    background-color: white;
+}
+}
+
+.text-hide {
+  @include text-hide();
+}
+
+.text-strikethrough {
+    text-decoration: line-through;
+}
+
+/* Float a section to the right*/
+.FloatRight, 
+.PanelField.FloatRight {
+    float: right;
+    width: auto;
+    clear: right;
+}
+.pull-right {
+    float: right;
+}
+.FloatLeft, 
+.pull-left {
+    float: left;
+}
+
+/* Place an element in the top right hand corner of the screen (e.g. the iPart help icon) */
+.PositionTopRight {
+    position:absolute;
+    right:0;
+    margin-right:2em; /* needed to give room for the scroll bar */
+    margin-top: .5em;
+}
+
+/* Relatively position an element. Useful if containing an absolutely positioned element. */
+.PositionRelative {
+    position: relative;
+}
+
+.FullSize {
+    width:100%;
+    height:100%;
+}
+
+/* Turns off borders at the level at which it is placed */
+.NoBorder {
+    border:none;
+}
+
+/* Adds some padding - particularly useful when the required indicator is cut off */
+.AddPadding {
+    padding: $panel-body-padding;
+}
+.AddPaddingVertical {
+    padding-top: $panel-body-padding;
+    padding-bottom: $panel-body-padding;
+}
+.AddPaddingHorizontal {
+    padding-left: $panel-body-padding;
+    padding-right: $panel-body-padding;
+}
+
+/* To break words that are too long (eg. email addresses) */
+.BreakWord {      
+    -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;   
+}
+
+.Wrap {      
+    white-space: normal;    
+}
+
+.Scroll, 
+.StandardPanel .AutoScroll div {
+    overflow:auto;
+}
+
+.ScrollHorizontal {
+    overflow-x:auto;
+}
+
+/* Used by legacy iParts to display a border. Can also be used anywhere else to add a border to an object. */
+.ContentBorder {
+    border: 1px solid $border-color;
+    padding: $panel-body-padding;
+}
+
+/* This puts a border around content below a set of tabs (e.g. Contact Address Editor iPart)*/
+.ContentTabbedDisplay {
+    border: 1px solid $border-color;
+    border-top: none !important; 
+    /* !important needed for overriding StandardPanel styles*/
+}
+
+/* Used for styling of currency values */
+.DisplayCurrency {
+    text-align: right;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+/* Align text */
+.AlignRight {
+    text-align: right;
+}
+/* Note: AlignCenter is the preferred class to use for centering text*/
+.AlignCenter,
+.Center, 
+.CenterText {
+    text-align: center;
+}
+
+.AlignLeft {
+    text-align: left;
+}
+
+.VAlignMiddle {
+    vertical-align: middle;
+}
+
+.VAlignTop {
+    vertical-align: top;
+}
+
+/*generic width specifiers*/
+.FullWidth {
+    width: 100%;
+}
+.TwoColumns {
+    width: 50%;
+}
+.ThreeColumns {
+    width: 33%;
+}
+
+/* Used to bold text (Note: not sure if this is a necessary class - you should be able to use <strong> or <b> if it is non-symantic) */
+.Significant {
+    font-weight: bold;
+}
+
+/* Reset the font to the normal body font.
+ * This can be used on labels or headers for example to make them look like normal body text.
+ */
+.ResetFont {
+    font-size: 100%;
+    font-weight: normal;
+    color: $text-color;
+}
+
+/* Apply padding to the Document specific icon */
+.icon {
+    /* since you can't set width on an inline element, just set enough padding so our background image (the icon) will show */
+    padding: 3px 7px 3px 7px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Use this class to remove text-decoration applied to images inside links: <a><img></a> */
+a.link-image {
+   text-decoration: none; 
+}
+
+/* This class visually separates pieces of content */
+.Section  {
+    @include clearfix();
+    margin-bottom: $section-margin-bottom;
+}
+
+/* use to make sure parts of text are never broken */
+.NoWrap {
+    white-space: nowrap;
+}
+
+/* Scrolling boxes will use vertical scrollbars if over a determined height */
+.ScrollBox200, .ScrollBox300, .ScrollBox500 {
+    overflow: auto;
+}
+.ScrollBox200 { max-height: 200px; }
+.ScrollBox300 { max-height: 300px; }
+.ScrollBox500 { max-height: 500px; }
+
+.MarginLeft {
+    margin-left: 1em;
+}
+
+.MarginRight {
+    margin-right: 1em;
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled,
+.UnstyledList, 
+.UnstyledListWrapper ul {
+    @include unstyled-list();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @extend .list-unstyled;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+/* Usually for code blocks you should use the <code> or <pre> elements,
+ * but sometimes these are not available, such as on a textbox element.
+ * Use this class to make other elements use a monospace font.
+*/
+.CodeBlock {
+    &, & textarea, & input {
+        font-family: Consolas, Courier New, Courier, monospace;
+    }
+}
+
+.DisplayInlineBlock {
+    display: inline-block;
+}
+
+.address-display, .address-display-wrapper span {
+    white-space: pre-line;
+}
+
+/* iPart Classes
+   ========================================================================== */
+/* Utility classes to modify the look and feel of certain iParts */
+
+/* Use the iPartChain class along with the appropriate placement class (FirstPart, MiddlePart or LastPart) 
+to give several stacked iParts a conjoined look. */
+.iPartChain {
+    &.FirstPart > .panel { 
+        border-bottom-width: 0 !important; 
+        > .panel-body { padding-bottom: 0; }
+    }
+    &.LastPart > .panel { border-top-width: 0 !important; 
+        > .panel-body { padding-top: 0; }
+    }
+    &.MiddlePart > .panel {
+        border-top-width: 0 !important;
+        border-bottom-width: 0 !important;
+        > .panel-body { 
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &.MiddlePart, 
+    &.LastPart { margin-top: -$iPart-margin-bottom; }
+}

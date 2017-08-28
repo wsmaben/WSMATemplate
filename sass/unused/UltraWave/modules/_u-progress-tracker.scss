@@ -1,0 +1,170 @@
+/* ==========================================================================
+   PROGRESS TRACKER
+   ========================================================================== */
+/* The progress tracker is a visual display of progress toward a goal */
+/**
+ * Example HTML:
+ * <div class="ProgressTracker"> <!-- this is the class defined in iPart configuration -->
+ *   <div class="ProgressTrackerPanel">
+ *     <ul>
+ *       <li>
+ *         <span class="inset">
+ *           <!-- the percentage of the goal reached -->
+ *           <span class="count">80%</span>
+ *           <span class="label">achieved</span>
+ *         </span>
+ *       </li>
+ *       <li>
+ *         <span class="inset">
+ *           <!-- the amount acheived -->
+ *           <span class="count">30,548</span>
+ *           <span class="label">given this year</span>
+ *         </span>
+ *       </li>
+ *       <li>
+ *         <span class="inset">
+ *           <!-- days left before the end date -->
+ *           <span class="count">7</span>
+ *           <span class="label">days remaining</span>
+ *         </span>
+ *       </li>
+ *     </ul>
+ *     <div class="ProgessBar">
+ *       <span style="width:80%"></span><!-- the width is equal to the percentage achieved -->
+ *     </div>
+ *   </div>
+ * </div>
+ */
+/* Default progress tracker
+   ========================================================================== */
+/**
+ * This class is configured by default on the progress tracker, but the content editor may assign
+ * a different class, or remove it all together (which would make it display with default list item styles).
+ * The default class will display small, with the three numbers displaying in a row above or below the progress bar.
+ */
+.ProgressTracker ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.ProgressTracker li {
+    list-style-type: none;
+    display: inline;  
+}
+
+.ProgressTracker .inset {
+    width: 32%;
+    display: inline-block;
+}
+
+.ProgressTracker .label {
+    display: block;  
+}
+
+.ProgressTracker p {
+    color: #999;
+}
+
+.ProgressTracker .SuccessfulMessage {
+    background: #316ac5;
+    color: #fff;
+    padding: 5px;
+    margin: 3px 0;
+    display: block;
+    width: 100%;	
+}
+.ProgressTracker .ProgressBar, .ProgressTracker .ProgressBar > span {
+    position: relative;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+}
+
+.ProgressTracker .ProgressBar  {
+    height: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: #ddd;
+    width:100%;
+}
+
+.ProgressTracker .ProgressBar > span {
+    display: block;
+    height: 100%;
+    background-color: #316ac5;
+}
+
+/* Progress tracker 2
+   ========================================================================== */
+/**
+ * The alternative view for the progress tracker.
+ * Displays in a large block format with each number on its own row.
+ */
+.ProgressTracker2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.ProgressTracker2 li {
+    list-style-type: none;
+    display: inline;
+}
+
+.ProgressTracker2 .ProgressTrackerPanel {
+    margin: 0;
+}
+
+.ProgressTracker2 .ProgressTrackerPanel .inset {
+    text-align:center;
+    line-height: 0.8;
+    padding: 15px;
+    display: block; 
+}
+
+.ProgressTracker2 .ProgressTrackerPanel .count {
+    margin-bottom: 5px;
+    font-size: 350%;
+    line-height: 1em;
+    display:block;
+}
+
+.ProgressTracker2 .ProgressTrackerPanel .label {
+    color: #333;
+    font-size: 130%;
+    display:block;	
+}
+
+.ProgressTracker2 div p {
+    color: #333;
+}
+/* The progress bar */
+.ProgressTracker2 .ProgressBar, .ProgressTracker2 .ProgressBar > span {
+    position: relative;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+.ProgressTracker2 .ProgressBar {
+    height: 40px;  /* Can be anything */
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: #555;
+    padding: 10px;
+}
+.ProgressTracker2 .ProgressBar > span {
+    display: block;
+    height: 100%;
+    background-color: #73a5f3;
+}
+
+/* The message that displays when the goal is reached.
+ * When it displays the progress bar is hidden. */
+.ProgressTracker2 .SuccessfulMessage {
+    background: #316ac5;
+    color: white;
+    padding: 5px;
+    margin: 3px 0;
+    display: block;
+}

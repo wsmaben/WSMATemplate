@@ -1,0 +1,90 @@
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+/* A few components that are used site-wide */
+
+/* Loading Panels  
+   ========================================================================== */
+/* displays a loading indicator when the page is loading */
+.ProgressDiv {
+    height: (1.25em + $line-height-base) !important;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 45%;
+    z-index: 10000;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0.1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    background-color: #efefef;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+
+    &.Interior {
+        /* For use on an interior progress bar, such as within a single iPart 
+         * Must be contained within something with position:relative.
+         * You man use the class "PositionRelative" as a wrapper.
+         */
+        position: absolute;
+    }
+}
+
+/* Page Tasks: print, email and text-only buttons
+   ========================================================================== */
+.PrintButton, .TextOnlyButton, .ExitTextOnlyButton, .EmailButton {
+    @include text-hide();
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.PrintButton {
+    background-image: url('../images/icon_printthispage.gif');
+}
+.TextOnlyButton {
+    background-image: url('../images/icon_textonly.gif');
+}
+.ExitTextOnlyButton {
+    background-image: url('../images/icon_exittextonly.gif');
+}
+.EmailButton {
+    background-image: url('../images/icon_email.gif');
+}
+
+/* On Behalf Of control
+   ========================================================================== */
+ul.obo-actions {
+    @include inline-list();
+    > li { 
+        margin-left: .4em; 
+
+        &:first-child { margin-left: .2em; }
+    }
+}
+
+
+/* Sub (Left) Navigation
+   ========================================================================== */
+
+#pagesubnav {
+    width:10em;
+    min-width:10em;
+}
+
+#pagesubnav .RadTabStripVertical .rtsLink {
+    text-align:left;
+}
+
+.SubNavPanelHead {
+    font-size:180%;
+    font-weight:bold;
+    padding:10px;
+}
+

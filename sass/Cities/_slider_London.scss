@@ -1,0 +1,99 @@
+﻿/**************************************/
+/*        Homepage Hero Area          */
+/**************************************/
+
+.HeroArea {
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.HeroBackground {
+    height: 100%;
+    background: #009FD9 url(images/MobileCairnsBanner.jpg) bottom center no-repeat;
+    background-size: cover;
+}
+
+.HeroContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: $black; /* Fallback for IE8, which doesn't support rgba */
+    background-color: fade-out($black, .25);
+    
+    h1, h2, h3, h4, h5, .HeroText {
+        color: $white;
+        margin: 0 8px 8px 8px;
+    }
+
+    .TextButton {
+        float: right;
+    }
+}
+
+.Slider.FullWidth {
+    height: $slider-height;
+    background: #0C161F $slider-background-url center center no-repeat;
+    background-size: cover;
+    position: relative; 
+
+    h1 {
+        font-size: 150%;
+        @include respond-to('tablets and up') {
+            font-size: 270%;
+        }
+    }
+
+    .SliderPage1 {
+        height: 100%;
+
+        h1 {
+            color: $white;
+            margin-top: 5px; 
+            line-height: 1.2;
+            text-shadow:1px 1px 3px #000;
+        }
+
+        .SliderContent {
+            /* remove the margins put on by the container */
+            margin-left: -($grid-gutter-width / 2);
+            margin-right: -($grid-gutter-width / 2);
+            /* then add it back on */
+            padding: ($grid-gutter-width /2);
+            /* Fallback for IE8, which doesn't support rgba */
+            background-color: #000; 
+            background-color: fade-out(#000, .25);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            max-height: $slider-height;
+            overflow: auto;
+
+            @include respond-to('tablets and up') {
+                padding: 1em;
+                border-radius: $border-radius-base + 5px;
+                position: inherit;
+                float: right;
+                width: 34em;
+                margin: 15px;
+                max-height: $slider-height - 1em;
+            }
+        }
+
+        .SliderText {
+            overflow-y: auto;
+            line-height: 1.7em;
+            color: $white;
+            h2, h3, h4, h5 {
+                color: inherit;
+            }
+        }
+
+        .ActionButton {
+            float: right;
+            clear: right;
+        }
+    }
+}
+/**** End Hero Area ***/

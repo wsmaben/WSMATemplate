@@ -1,0 +1,14 @@
+//////////////// TEMPORARY FILE - these styles should be moved elsewhere
+
+/* To call attention to a top-level primary navigation item, apply the 'nav-primary-feature' class to a navigation item's Css Class in 'Manage sitemaps' */
+.RadMenu .rmRootGroup .nav-primary-feature.rmRootLink {
+    &, &.rmExpanded, &:hover, &:focus {
+        background-color: $navbar-feature-link-bg;
+        color: $navbar-feature-link-color;
+    }
+
+    +.rmSlide .rmGroup {
+        background-color: $navbar-feature-link-bg;
+        color: $navbar-feature-link-color;
+    }
+}

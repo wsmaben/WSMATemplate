@@ -1,0 +1,171 @@
+﻿/* ==========================================================================
+   MASTER PAGE LAYOUT
+   ========================================================================== */
+
+.body-main, 
+.col-primary {
+    background-color: $body-bg;
+}
+
+/* Primary Navigation and Main Content
+   ========================================================================== */
+
+/* required to make the left bar span the full height */
+.wrapper {
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    min-width: 290px;
+
+    .sidebar-fixed &
+    {
+        min-height: 100%;
+        height: 100%;
+        position: static;
+        &.nav-expanded {
+            overflow-x: hidden;
+        }
+    }
+
+    .no-mqs & {
+        min-width: $container-md;
+    }
+}
+
+.header, .breadcrumb, .sidebar, .main, .footer-main, .CommandBar {
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+}
+
+.col-secondary { 
+    width: $navbar-width;
+    position: absolute;
+    min-height: 100%;
+
+    //@include transition(visibility $navbar-transition-time); //, width $navbar-transition-time);
+    @include respond-to('grid small') {
+        /* hide the nav by default on small screens */
+        visibility: hidden;
+    }
+
+    .sidebar-fixed & {
+        position: fixed;
+        height: 100%;
+    }
+}
+
+.col-primary {
+    min-height: 100%;
+    position: relative;
+}
+
+.col-primary,
+.footer-main {
+    // AR - transitions weren't working properly - leaving this here to revisit later
+    //-webkit-transition: -webkit-transform $navbar-transition-time, margin $navbar-transition-time;
+    // -moz-transition: -moz-transform $navbar-transition-time, margin $navbar-transition-time;
+    //   -o-transition: -o-transform $navbar-transition-time, margin $navbar-transition-time;
+    //      transition: transform $navbar-transition-time, margin $navbar-transition-time;
+    @include respond-to('grid large') { 
+        /* on desktop make sure to give room for the left nav */
+        margin-left: $navbar-width; 
+    }
+}
+
+.nav-expanded {
+    @include respond-to('grid small') {
+        .col-secondary { visibility: visible; }
+
+        .col-primary, 
+        .footer-main {
+            @include translate3d($navbar-width, 0, 0);
+        }
+    }
+}
+
+.container {
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+}
+.header { margin-bottom: $grid-gutter-width / 2; }
+
+.CommandBar { margin-bottom: 1em; }
+
+/* Auxiliary & Footer Areas
+   ========================================================================== */
+/* This applies to the navigation list in the auxiliary area and the footer area */
+.NavigationUnorderedList { @include inline-list(); }
+.navbar-left { float: left; }
+.navbar-right { float: right; }
+
+.footer-main {
+    @include respond-to('tablets and up') {
+        .footer-left { float: left; }
+        .footer-right { float: right; }
+    }
+}
+
+
+/* This applies to the breadcrumb area */
+.breadcrumb {
+    float: none;
+    display: inline-block;
+    line-height: 2.2em;
+}
+
+.PageTasksPanel { display: inline-block; }
+
+
+/* Sticky Footer
+   ========================================================================== */
+.col-primary {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+    @include respond-to('tablets and up') {
+        margin-bottom: -$footer-height-sm;
+    }
+    &:after {
+        content: '';
+        display: block;
+    }
+}
+
+.col-primary:after, 
+.footer-main {
+    height: $footer-height;
+    @include respond-to('tablets and up') {
+        height: $footer-height-sm;
+    }
+}
+
+.footer-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .sidebar-fixed & {
+        position: relative;
+    }
+
+    @include respond-to('tablets and up') {
+        .footer-left { float: left; }
+        .footer-right { float: right; }
+    }
+}
+
+/* Sidebar
+   ========================================================================== */
+/* This is used in Communities to display the navigation */
+.has-sidebar {
+    @include respond-to('desktops and up') {
+        .sidebar {
+            width: 28%;
+            float:left;
+        }
+        .main {
+            width:72%;
+            float:right;
+        }
+    }
+}

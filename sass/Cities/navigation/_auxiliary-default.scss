@@ -1,0 +1,71 @@
+/* ==========================================================================
+   AUXILIARY NAVIGATION
+   ========================================================================== */
+
+#masterTopBarAuxiliary {
+    .NavigationLink {
+        /* Utility navigation links */
+        color: lighten($text-color, 30%);
+    }
+}
+
+/* Cart Indicator
+   ========================================================================== */
+
+.cartSprite
+{
+    background-image: url($header-sprite-path);
+    background-repeat: no-repeat;
+    height: 14px;
+    display: inline-block;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    vertical-align: top;
+    @if $view-type == Desktop {
+        margin-top: 6px;
+    }
+    @else if $view-type == Mobile {
+        margin-top: 8px;
+    }
+    @else {
+        margin-top: 12px;
+    }
+
+    .cartEmpty & {
+        width:23px;
+        background-position: 0 0;
+    }
+
+    &.cartLeft {
+        width:11px;
+        background-position: -55px 0;
+    }
+
+    &.cartCenter {
+        background-position: -66px 0;
+
+        span {
+            color: $color-callout;
+            font-weight:bold;
+            position: relative;
+            @if $view-type != Mobile {
+                top: -8px;
+            }
+            @else {
+                top: -12px;
+            }
+        }
+    }
+
+    &.cartRight {
+        width:9px;
+        background-position: -170px 0;
+    }
+}
+
+/* Don't display the cart indicator in the footer */
+#masterFooterNavigation .cartEmpty, 
+#masterFooterNavigation .cartFull
+{
+    display:none;
+}

@@ -1,0 +1,232 @@
+/* ==========================================================================
+   MASTER PAGE LAYOUT
+   ========================================================================== */
+/**
+ * Styles necessary to properly align the Cities master page
+ **/
+
+#masterWrapper.yui-t2 {
+    width: auto;
+}
+
+/* Class used to contain the various pieces of the master page */
+.container,
+.header-container,
+.SliderPage1 {
+    @if $view-type == Desktop {
+        width: $container-md;
+    }
+    @else {
+        max-width: $container-lg;
+
+        .no-mqs & {
+            min-width: $container-md;
+        }
+    }
+    @include container-fixed();
+}
+
+.container, 
+.body-container {
+    @include clearfix();
+}
+
+/* handle secondary column layout */
+.has-secondary-col {
+    @include respond-to('desktops and up') {
+        .col-primary { width: 76%; }
+        .col-secondary { width: 22%; }
+        
+        &.col-on-right {
+            .col-primary { 
+                float: left;
+                margin-right: 2%; 
+            }
+
+            .col-secondary { float: right; }
+        }
+
+        &.col-on-left {
+            .col-primary { 
+                float: right; 
+                margin-left: 2%;
+            }
+
+            .col-secondary { float: left; }
+        }
+    }
+}
+
+/* Header
+   ========================================================================== */
+
+/**
+ * The following declarations are required to reposition the search bar and
+ * Sign In/Out link at different sizes via appendAround 
+ */
+.search-container,
+.auth-link-container {
+    display: block;
+
+    @include respond-to('tablets and up') {
+        display: none;
+    }
+}
+
+.search-container-sm,
+.auth-link-container-sm {
+    display: none !important;
+
+    @include respond-to('tablets and up') {
+        display: inline-block !important;
+    }
+}
+
+/* This applies to the area behind the header logo and auxiliary navigation */
+
+@if ($theme-name == 'Toronto') {
+    .header-container {
+        @include clearfix();
+    }
+    .header-top-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@else {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .nav-primary {
+        @include respond-to('grid large') {
+            margin-top: 10px;
+        }
+    }
+}
+
+.navbar-collapse {
+    clear: both;
+
+    @include respond-to('grid small') {
+        /* expand to the full width of the page */
+        margin-left: -($grid-gutter-width/2);
+        margin-right: -($grid-gutter-width/2);
+    }
+
+    @include respond-to('grid large') { 
+        clear: right; 
+    }
+}
+
+.nav-primary {
+    @include respond-to('grid large') {
+        float: right;
+        clear: right;
+    }
+}
+
+.header-logo-container {
+    float: left;
+}
+
+.header-social {
+    @include respond-to('smartphones and down') {
+        display: none !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+/* These styles apply to the auxiliary and footer navigation */
+.NavigationUnorderedList {
+    padding-left: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.NavigationListItem {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 0;
+}
+.NavigationLink {
+    padding-left: ($navbar-padding-horizontal / 2);
+    padding-right: ($navbar-padding-horizontal / 2);
+    white-space: nowrap;
+}
+.ste-section {
+    @include respond-to('smartphones and down') {
+        display: none !important;
+    }
+}
+
+/* Main
+   ========================================================================== */
+   
+#masterContentArea {
+    margin-top: 10px;
+}
+
+/* This applies to the breadcrumb area */
+.breadcrumb {
+    float: none;
+    display:inline;
+    line-height:33px;
+}
+
+/***** Proxy Panel Styling *****/
+/* This applies to the on behalf of (proxy) area */
+.obo-container {
+    float: right;
+}
+.obo-panel {
+    line-height:2.4em;
+    white-space:nowrap;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+
+    &.on {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .account-menu & {
+        /* within the account area dropdown make the padding match the other items*/
+        padding: 3px 10px;
+    }
+}
+.obo-label,
+.obo-actions {
+    display: inline-block;
+}
+.obo-label {
+    font-weight: bold;
+    
+    span:after { content: ':'; }
+}
+
+/* This applies to the button area at the bottom of the page (e.g., Save, Cancel) */
+.CommandBar {
+    margin: .5em 0;
+}
+
+/* Sticky Footer
+   ========================================================================== */
+/**
+ * Responsive sticky footer.
+ * See http://www.joshrcook.com/a-responsive-sticky-footer/ 
+ */
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: table-row;
+    height: 1px;
+}

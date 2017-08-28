@@ -1,0 +1,221 @@
+﻿/* ==========================================================================
+   COMMUNITIES
+   ========================================================================== */
+
+/* Community name, picture and description */
+.CommunitySummaryBlock {
+    @include clearfix;
+    border: 1px solid $border-color;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    .PanelFieldValue { float: none; }
+}
+
+.CommunitySummaryImage img {
+    max-width: 170px;
+}
+
+/* Community left nav */
+.CommunityLinksBlock a {
+    display: block;
+    text-decoration: none;
+    padding: 8px $panel-body-padding;
+    border-bottom: 1px solid $border-color;
+    color: $communities-nav-color;
+
+    &:first-child {
+        border-top: 1px solid $border-color;
+    }
+    &:hover {
+        background-color: $communities-nav-hover-bg;
+        text-decoration: none;
+    }
+    &:hover, &:visited, &:active {
+        color: $communities-nav-color;
+    }
+    &.CommunityLinksSelected, 
+    &.CommunityLinksSelected:hover {
+        background-color: $communities-nav-select-bg;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.CommunityActionButtons {
+    text-align: center;
+
+    a { 
+        display: inline-block;
+        margin-bottom: .3em;
+    }
+}
+
+/* CommunityBreadCrumb */
+.BreadCrumbCurrent {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.CommunityRepeaterList {
+    margin: $panel-body-padding 0 0;
+    padding: 0;
+
+    > li { list-style-type: none; }
+
+    ul { list-style-type: disc; }
+}
+
+.CommunityItemBody {
+    .PanelField, .PanelFieldValue {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*** Communities common elements ***/
+.CommunityItemActionLinks {
+    clear: both;
+    text-align: right;
+    padding:.25em 0;
+
+    a {
+        display: inline-block;
+        padding: 0 4px 2px 4px;
+        margin-left: -4px;
+        border-left: 1px solid $border-color;
+
+        &:hover {
+            background-color: $communities-link-hover-bg;
+            color: $white;
+            text-decoration: none;
+        }
+
+        &:first-child {
+            border-left: none;
+        }
+
+        &.aspNetDisabled {
+            background-color: transparent;
+            text-decoration: none;
+        }
+    }
+}
+
+.CommunityItemTitle {
+    font-size: 110%;
+    padding: .25em 0;
+}
+
+.CommunityDateLine {
+    @include publish-date;
+    div {
+        float: none!important;
+        display: inline!important;
+        padding: 0!important;
+    }
+}
+
+.CommunityNewItem {
+    color: red;
+    text-align: right;
+    float: right;
+}
+
+.CommunitySideBarSearch {
+    width: 70% !important;
+    margin-right:.25em;
+}
+
+.CommunityProfileTitle,
+.CommunityTitleDate {
+    /* this makes the title display to the right of the image and 
+       makes it so it will not wrap under. */
+    overflow: hidden;
+    zoom: 1;
+}
+
+.CommunityProfileTitle { margin-bottom: 10px; }
+
+.CommunityProfilePicture {
+    float:left;
+    margin-right: 10px;
+}
+
+.CommunityLastComment {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    float: right;
+    color: $gray-light;   
+    font-size: 85%;
+}
+
+.CommunityCommentItem {
+    background: $communities-alt-bg;
+    border-left: 10px solid $border-color;
+    padding: $panel-body-padding;
+    margin-left: 15px;
+    @include respond-to('tablets and up') {
+        margin-left: 40px;
+    }
+}
+
+.CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem {
+    background: $communities-alt-bg;
+    border-left: 0;
+    margin-left: 0;
+}
+
+/* For adding comments */
+.CommunityWikiReplyForm {
+    padding: $panel-body-padding;
+    background: $communities-alt-bg;
+}
+
+.CommunityReplyForm {
+    @extend .CommunityWikiReplyForm;
+    border-left: 10px solid $border-color;
+    margin-left: 15px + $panel-body-padding;   
+    margin-right: $panel-body-padding; 
+    @include respond-to('tablets and up') {
+        margin-left: 40px + $panel-body-padding;
+    }
+}
+
+/*** Contents List ***/
+.ContentsListHeader {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.ContentsListItem {
+    padding: .2em 0;
+}
+
+/* Paging styles used in forums, blogs, and other community areas  */
+.CommunityListPager {			
+    text-align: center !important;	
+    margin-left:auto; 
+    margin-right:auto;	
+    
+    td {
+        text-align: center !important;	
+        padding: 5px;
+    }
+    
+    a {
+        padding: 2px;
+        
+        &.CurrentPage {
+            font-weight: bold;
+            text-decoration: none;
+            color: $text-color;
+            
+            &:hover {
+                text-decoration: none; 
+            }
+        } 
+    }
+}
