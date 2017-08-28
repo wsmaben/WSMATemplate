@@ -1,0 +1,494 @@
+/* ==========================================================================
+   RiSE
+   ========================================================================== */
+
+/* Easy Edit
+   ========================================================================== */
+/* The border that surrounds 'hidden' iParts when in Easy Edit mode */
+.NoContentSTEContainer {	
+    border: 1px dashed #D8D8D8;
+    padding: 0.313em;
+}
+
+// does not apply for non-responsive sites
+.SurfEdit, .ste-toggle,
+.ContentItemButtonPanel, 
+.ContentRecordPageButtonPanel, 
+.NoContentSTEContainer {
+    @include respond-to('smartphones and down') {
+        /* We do not want surf-to-edit to appear in a mobile phone environment, but it should be available in desktop */
+        display:none !important;
+    }
+}
+
+.ContentRecordPageAnchor {
+    /* iPart and page edit icons */
+    display: block;  
+}
+
+.ContentItemButtonPanel {
+    clear:both;
+    cursor: pointer;
+}
+
+.ContentRecordPageButtonPanel > a, 
+.ContentItemButtonPanel > a { 
+    /* Content configuration */
+    @include opacity(.4); 
+    &:hover {
+        @include opacity(1);
+    }
+}
+.ContentItemButtonPanel img {
+    padding: 2px 2px 1px 0;  
+    display: block;   
+}
+
+.ContentRecordPageAnchor img{
+    padding: 4px 2px 2px 2px;
+    display: block;
+}
+
+/**
+ * Easy Edit hover outlines
+ */
+/* Hover outlines when in EasyEdit (Surf to Edit) */
+/* Only display if the screen is wider than 768px (ie. don't display on a mobile phone) */
+// Note: this does not use the Breakpoint mixin because
+// we don't want to display this on small screens even in non-responsive themes
+@media (min-width: $screen-sm-min)
+{
+    .EasyEditOn {
+
+        .body-container, 
+        .ContentPanel, 
+        .EmptyMasterContentPanel, 
+        .EasyEditContent, 
+        .WebPartZoneDesignTime {
+            border: 1px solid transparent;
+        }
+
+        .WebPartZoneDesignTime .EasyEditContent {
+            border: none;
+        }
+
+        .EasyEditContent, 
+        .WebPartZoneDesignTime {
+            &:hover {
+                /* iPart Areas */
+                border-color: $easyedit-content-border;
+                background-color: $easyedit-content-bg;
+            }
+        }
+
+        .EasyEditContent, 
+        .NoContentSTEContainer {
+            &:hover > .ContentItemButtonPanel > a,
+            &:hover > div > .ContentItemButtonPanel > a,
+            &:hover + .ContentItemButtonPanel > a {
+                background-color: $easyedit-content-link-bg;
+            }
+        }
+
+        .body-container:hover, 
+        .ContentPanel:hover, 
+        .EmptyMasterContentPanel:hover {
+            /* Content item area */
+            border-style: dotted;
+            border-color: $easyedit-page-border;
+            background-color: $easyedit-page-bg;
+            .ContentRecordPageButtonPanel > a {
+                background-color: $easyedit-page-link-bg;
+            }
+        }
+    }
+
+    /* Master page template areas with no iPart or Content Item */
+    .TemplateAreaEasyEditOn .body-container:hover, .TemplateAreaEasyEditOn .ContentPanel:hover, .TemplateAreaEasyEditOn .EmptyMasterContentPanel:hover {
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+}
+
+@include breakpoint(max-width $screen-xs-max) { 
+    // Only include this in responsive themes
+    /**
+      * Usually we don't hide content items in easy edit mode,
+      * but on xs screens we do to avoid showing content on mobile
+      * with no way of toggling off easy edit (since the toggle is hidden).
+      */
+    @include responsive-invisibility('.hidden-xs-ste-on');
+}
+
+//@include respond-to('tablets only') {
+//    .hidden-sm-ste-on {
+//        @include hidden-easy-edit();
+//    }
+//}
+
+/* Content Designer
+   ========================================================================== */
+
+// Adds an exclaimation point icon to the publishing status message in content desiger.
+// The color of the icon will depend on the content record's publishing status.
+.PublishStatusTitle .panel-title::before {
+    content: "\a0!\a0";
+    padding: 2px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    width: 20px;
+    height: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.Working .panel-title::before {
+    background-color: #ff0000;
+}
+
+.Pending .panel-title::before {
+    background-color: #ffcc00;
+}
+
+.PublishRequested .panel-title::before {
+    background-color: #ff9900;
+}
+
+//  **** ///
+
+.WebPartsPanel {
+    clear: both;
+    width: 100%;
+}
+
+.WebPartZoneDesignTime {
+    width: 99%;
+    background-color: #ffffff;
+    padding-bottom: 0.7em;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.WebPartZoneDesignTimeAction, 
+.WebPartZoneDesignTimeEmptyZoneText {
+    text-align: center;
+}
+
+.WebPartZoneDesignTimeAction a, .WebPartZoneDesignTimeAction a:visited,
+.WebPartZoneDesignTimeEmptyZoneText a, .WebPartZoneDesignTimeEmptyZoneText a:visited {
+    color: #23749d !important;
+    text-decoration: underline !important;
+    font-weight: normal !important;    
+}
+
+.WebPartZoneDesignTimeAction a.Disabled, .WebPartZoneDesignTimeAction a:visited.Disabled {
+    color: #999999 !important;
+    text-decoration: none !important;
+}
+
+.WebPartZoneDesignTimeEmptyZoneText {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+    color: #333333 !important;
+}
+
+.pull-left .WebPartZoneDesignTime, 
+        .pull-right .WebPartZoneDesignTime{
+            width:auto;
+        }
+
+.WebPartsTitleBar, 
+.ConnectionTitleBar {
+    background-position: left center;
+    font-weight: bold;
+    color: #000;
+    background-color: #f3f3f3;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-right: 8px;
+    font-size: 80%;
+    background-image: url("../../AsiCommon/Images/draggable.gif");
+    background-repeat: repeat-y;
+    border-bottom-color: #E5E5E5;
+    border-bottom-width: 1px;
+    border-bottom-style: Solid;
+}
+.WebPartsTitleBar {
+    cursor: move;
+}
+
+.WebPartsTitleBar a, 
+.WebPartsTitleBar a:hover {
+    font-weight: normal;
+    color: #000;
+    font-size: 80%;
+    text-decoration: none;
+    padding-left: 2px;
+}
+.WebPartsTitleBar a:hover {
+    color: #dedede;
+}
+
+.WebPartDesignMenu {
+    border:1px solid #293c7c;
+    width:10px;
+    font-family:Verdana;
+}
+
+/* iParts Connection Panel */
+.ConnectionWebPartsPanel {
+    clear: both;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.ConnectionWebPartLabel {
+    text-align: left;
+    min-width: 15em;
+    padding: 3px;
+    white-space: nowrap;	
+}
+.ConnectionWebPartsPanel td table td {
+    padding-left: 5px;
+    color: #000000;
+    border-color: #e5e5e5;
+    border-width: 1px;
+    border-style: Solid;
+}
+
+.ConnectionTitleBar img {
+    max-width: none !important; 
+
+}
+
+/* Define overflow so Content Edit page will properly display oversized iParts. */
+.LayoutBorder {
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0;
+}
+
+/* Content editor drag-and-drop (used by jQueryUI)
+ * Adds our indicators when we drag iParts around to show where they can be dropped*/
+.ui-state-hover,.ui-state-active {
+    background: repeating-linear-gradient(
+        -55deg,
+        #7A7A7A,
+        #7A7A7A 10px,
+        #999999 10px,
+        #999999 20px
+    ); 
+}
+
+.ui-state-hover {
+    height: 3em !important;
+}
+
+.ui-state-active {
+    height: 3em !important;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -webkit-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+}
+
+/* Theme selector
+   ========================================================================== */
+/* Website theme selector grid */
+.theme-item {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid $border-color;
+    background-color: $border-color;
+}
+
+.theme-caption {
+    cursor: default;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 80%;
+
+    &.theme-deprecated { background-color: rgba(175, 0, 0, 0.8); }
+}
+
+.theme-image {
+    width: 300px !important;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    
+    &.selected-preview { border: 1px solid $border-color; }
+}
+
+h3.theme-title {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    /* the following make the text overflow to */
+    width: 300px - 20px; // full width minus the 20px of left and right padding
+    @include overflow-ellipsis();
+}
+
+.theme-details {
+    color: #fff;
+    display:block;
+    clear:both;
+}
+
+.theme-title, .theme-details {
+    margin: 10px;
+}
+
+.theme-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.theme-item .theme-image,
+.theme-caption {
+    transition: all 0.5s ease;
+}
+
+.theme-item:hover {
+    .theme-caption {
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.87);
+
+        &.theme-deprecated { background-color: rgba(175, 0, 0, 0.87); }
+    }
+
+    .theme-title {
+        /* when the details are expanded, allow the title to wrap */
+        white-space: normal;
+    }
+}
+
+/* Tagged List Editor
+   ========================================================================== */
+/* Icons used in tagged lists */
+.ImportantContent, .MembersOnlyContent {
+    padding: 0 10px;
+}
+/* The "new" icon in tagged lists */
+.reToolbar .reTool .iMISNewContentTool, .ImportantContent {
+    background: url(../../AsiCommon/Images/AtomPainter/iMISNewContentTool.gif) no-repeat center center;
+}
+
+/* The key icon to indicate member-only content in tagged lists */
+.reToolbar .reTool .iMISMembersOnlyTool, .MembersOnlyContent {
+    background: url(../../AsiCommon/Images/AtomPainter/iMISMembersOnlyTool.gif) no-repeat center center;
+}
+
+/* The "{...}" icon used for conditional display in the HTML editor */
+.reToolbar .reTool .iMISConditionalDisplayTool {
+    background: url(../../AsiCommon/Images/AtomPainter/iMISConditionalDisplayTool.gif) no-repeat center center;
+}
+
+/* The iMIS link icon used in the HTML editor */
+.reToolbar .reTool .iMISLinkTool {
+    background: url(../../AsiCommon/Images/AtomPainter/iMISLinkTool.gif) no-repeat center center;
+}
+
+/* The iMIS label icon used in the HTMl editor */
+.reToolbar .reTool .iMISLabelTool {   
+    background: url(../../AsiCommon/Images/AtomPainter/iMISLabelTool.gif) no-repeat center center;
+}
+
+/* Tag Selector
+   ========================================================================== */
+/* The area displaying selected tags */
+.SelectedTagList {
+    margin:  .5em 0 0 0;
+    padding: 0;
+}
+
+.SelectedTagList li {
+    list-style-type: none;
+    display: inline-block;
+    padding: .2em .5em;
+    margin: 0 .5em .5em 0;
+}
+
+/* A tag within the selected tag area */
+.SelectedTagList .Tag {
+    background-color: #eee;
+}
+
+/* The (None Selected) message within a tag selector */
+.NoResults {
+    font-style: italic;
+}
+
+/* Panel Editor
+   ========================================================================== */
+/* Used in ObjectBrowser2 and PanelEditor when dragging/dropping */
+.dragContainer { 
+    position: absolute;
+    z-index: 999;
+    cursor: move; 
+    background-repeat:no-repeat;
+    cursor: move; 
+    background-color: White;
+    border: solid 1px black;
+    padding:2px;
+}
+.dragItem {
+    cursor: default;
+    padding-left:18px; 
+    background-repeat:no-repeat;
+    min-height:20px;
+    font-weight:bold;
+}
+
+/* Process Automation
+   ========================================================================== */
+/* Task defintion UI */
+.TaskDefinition {
+    .chosen-container,
+    .chosen-container-multi {
+        /* for some reason the multi-selects were not sizing properly - need to force it here*/
+        width: 30em!important;
+        max-width: 100%;
+    } 
+    .reModule { display: none; }
+}
+
+/* Pages and iParts
+   ========================================================================== */
+/* A zone that can contain iParts*/
+.WebPartZone {
+    width: 100%;
+}
+/* Put a little padding between iParts */
+/* the second line is necessary because iParts within a CCO do not have the wrapper class ".iMIS-WebPart" */
+.iMIS-WebPart > .ContentItemContainer,
+.WebPartZone > .ContentItemContainer {
+    margin-bottom: $iPart-margin-bottom;
+    display:block;
+}
+/* Add extra padding to content that uses the CommandBar to prevent overlap. */
+.EmptyMasterContentPanel > .ContentItemContainer{
+    padding-bottom:4em;
+}
+
+/* Other
+   ========================================================================== */
+/* The status indicator for the publish progress */
+.PublishServerStatusProgressBar {
+    height: 10px !important;
+}
+/* This is the table of avilable permissions when editing a Content Authority Group members */
+.PermissionTable td {
+    padding: 5px;
+}

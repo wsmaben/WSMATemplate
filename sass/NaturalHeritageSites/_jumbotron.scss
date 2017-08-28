@@ -109,7 +109,7 @@
                 float: right;
                 width: 36em;
                 margin: 1em;
-                max-height: $jumbotron-home-height - 2em;
+                // max-height: $jumbotron-home-height - 2em;
             }
         }
 
@@ -259,8 +259,23 @@
    
     h1, h2, h3, h4, h5 {
         font-weight: $font-weight-bold;
-        display: inline-block;
+        display: block;
     }
+    h1 {
+        font-weight: 300;
+        font-size: 380%;
+        margin-bottom: 0px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 380%;
+        color: $color-wsma-teal;
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: 100%;
+    }
+    clip-path: polygon(100% 0, 100% 68%, 58% 100%, 0% 78%, 0 0);
     @include respond-to('tablets and down') {
         h1 {  font-size: 200%; }
     }
@@ -287,13 +302,13 @@
 .carousel-indicators { display: none; }
 .carousel-caption {  
     @include respond-to('grid large') {
-        width: 30%;
+        width: 25%;
         left: auto;
-        right: 15%!important;
+        right: auto;
     }       
-    padding: 15px;
+    //padding: 15px;
     font-family: $carousel-caption-font-family;
-    bottom: $navbar-height + $navbar-padding-vertical + 10;
+    top: $navbar-height + $navbar-padding-vertical + 10;
     background-color: $carousel-caption-bg-color;
     text-align: $carousel-caption-text-alignment!important;   
     h1:after { display: none; }
@@ -326,12 +341,21 @@
     /* Overwrite slideshow height setting on homepage only */
     .carousel-inner .item {
         height: $jumbotron-home-height!important;
+        /*Make one for small width*/
+        background-color: #ffffff;
+    }
+
+    @media all {
+        .carousel-inner .item {
+            height: $jumbotron-home-height-sm;
+            background-color: #ffffff;
+        }
     }
     /* darker gradient to improve legibility of auxiliary nav */
     .carousel-inner:before { 
         content: '';
         display: block;
-        @include gradient-vertical(rgba(0,0,0,0.5), rgba(0,0,0,0), 0, 100%);
+        //@include gradient-vertical(rgba(0,0,0,0.5), rgba(0,0,0,0), 0, 100%);
         height: 6em; 
         width: 100%;
         position: absolute;

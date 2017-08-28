@@ -1,0 +1,304 @@
+﻿/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+/* Basics
+   ========================================================================== */
+table
+{
+    border-width: 0;
+}
+
+th,td {
+    border: none;
+    padding:0;
+}
+
+th {
+    /*distinguishing table headers from data cells*/
+    font-weight:bold;
+    text-align:center;
+}
+
+caption {
+    /*coordinated margin to match cell's padding*/
+    margin-bottom:.5em;
+    /*centered so it doesn't blend in to other content*/
+    text-align:center;
+}
+
+/* SimpleTable
+   ========================================================================== */
+/* A simple table - currently used in Promotion Creator design mode and
+ * Communication Creator attachments grid */
+
+.SimpleTable {
+    border: 1px solid #999;
+    width: 100%;
+
+    th, .TableHeaderCell {
+        border-bottom: 2px solid #999;
+        text-align: left;
+    }
+
+    td, th {
+        padding: 4px 11px;
+    }
+}
+.SimpleTable.ShowTableBorders {
+    tr {
+        border-top: 1px solid #999;
+
+        &:first-child { border-top: none;}
+    }
+
+    td, th { 
+        border-left: 1px solid #999; 
+
+        &:first-child { border-left: none; }
+    }
+}
+
+.SimpleTable.VAlignTop {
+    th, td { vertical-align: top; }
+}
+
+
+/* Form
+   ========================================================================== */
+/* A table-based form */
+.Form {
+    padding: 5px;
+}
+.Form th {
+    font-weight: normal;
+    text-align: left;
+}
+.Form th,
+.Form td {
+    padding: 0.188em;
+    vertical-align: top;
+}
+
+/* Grid
+   ========================================================================== */
+/* These styles are used to style Grids like the default Telerik RadGrid */
+/* Use class "RowGridlinesOnly" to turn off column gridlines */
+
+/* define the width of a column that contains only icons such as edit, delete */
+.grid-icon-column {
+    width: 50px;
+}
+
+.GridTitlePanel, 
+.GridFooterPanel {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.GridTitlePanel .Title { float: left; }
+
+table.Grid {
+    margin: 5px;
+    border: #768ca5 1px solid !important;
+}
+
+table.Grid, 
+table.Grid td, 
+table.Grid th {
+    border-collapse: collapse;
+}
+
+table.Grid, 
+table.Grid th,
+table.Grid tr.GridHeader td  {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+td.ListerColumnHeader {
+    text-align:center;
+}
+
+/* Column Row with Name, Total Revenue, Target Revenue, Overhead Cost, ROI %, Start Date, End Date, Status */
+tr.ExpGridHeader th,
+tr.ExpGridRow1 td,
+tr.ExpGridRow2 td,
+table.Grid th, 
+table.Grid tr.GridHeader td {
+    background: $gray-lighter;
+}
+
+table.Grid th, 
+table.Grid tr.GridHeader td {
+    color: black !important;
+    height: 28px !important;
+    text-align: left;
+}
+
+table.Grid td {
+    padding: 4px 7px;
+    border-style: solid;
+    border-color: $gray-light;
+    border-width: 0 1px 1px 1px;
+}
+
+.Grid.RowGridlinesOnly td {
+    /* turn off the column grid lines */
+    border-width: 0 0 1px 0;
+}
+
+table.Grid .ajax__calendar_container td {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+table.Grid th a,
+tr.GridHeader th.NumberStyle,
+tr.GridHeader th.PriceStyles {
+    white-space: nowrap;
+}
+
+tr.GridHeader th.NumberStyle,
+tr.GridHeader th.PriceStyles,
+th.AlignCenter {
+    text-align: center !important;
+}
+
+table.Grid td,
+table.Grid tr.GridAlternateRow td, 
+table.Grid tr.tableRowAlt td,
+table.Grid tr.GridRowHover:hover td,
+table.Grid tr.GridAlternateRowHover:hover td {
+    background-color: #fff;
+}
+
+table.Grid th, 
+table.Grid tr.GridHeader td,
+tr.ExpGridHeader th,
+tr.ExpGridRow1 td,
+tr.ExpGridRow2 td,
+table.ExpGrid td {	
+    border-top: solid 1px #777;
+    border-bottom: solid 1px #777;
+    height: 28px !important;
+}
+
+table.Grid th, 
+table.Grid tr.GridHeader td,
+tr.ExpGridHeader th,
+tr.ExpGridRow1 td,
+tr.ExpGridRow2 td {
+    color: #000;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+tr.GridHeader th, 
+tr.GridHeader td {
+	font-weight: bold;	
+	vertical-align: middle;
+}
+
+table.Grid tr.ExpGridAlternateRow td {
+    background-color: #ffffff;
+}
+
+/* Header row with Code, Segments, 1st Resp, Last Drop, Type, Member Type, Status */
+table.ExpGrid tr.ExpGridHeaderSourceCode td, 
+table.ExpGrid tr.ExpTableRowAlt td {
+    background-color: #CCC;
+    height: 28px !important;
+}
+
+table.ExpGrid .DisplayCurrency {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+table.Grid .GridRowSelected,
+table.Grid .eventSelectedRegistrant {
+    background-color: #e0e3e6;
+}
+
+table.Grid .eventSelectedRegistrant {
+    color: #000000;
+    font-weight: bold;
+}
+
+.DeleteImage, 
+.EditImage {
+    margin: 1px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border: 0;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+}
+
+table.Grid .DisplayCurrency {
+    width: auto;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.NavBullet li {
+    color: #fe7921;
+    list-style-type: square;
+}
+
+.NavSpan li span {
+    color: #000000;
+}
+
+td.DisplayCurrency {
+    text-align: right !important;
+    width: auto;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* = Campaign Management using the expandable grid = */
+table.ExpGrid, 
+table.ExpGrid td, 
+Table.ExpGrid th {
+    border-collapse: collapse;
+}
+
+table.ExpGrid {
+    margin: 3px;
+    border: #898d8f 1px solid !important;
+}
+
+/* Cart check out process tables */
+.CartGridTable,
+span.CartGridTable table.Grid {
+    width: 375px;
+}
+
+.GridPrice,
+.GridSelect {
+    width: 40px;
+}
+
+.GridTableTitle {
+    width: 60%;
+}
+
+.rgWrap {
+    white-space:normal !important;
+}
+
+/* Nested table IQA query filter popup calendar */
+table.GridFilterCalendar,
+table.GridFilterCalendar td, 
+table.GridFilterCalendar th  {
+    border-collapse: collapse !important;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0px !important;
+}

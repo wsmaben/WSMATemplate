@@ -12,7 +12,7 @@ $golden-ratio:           1.6;
 
 // Grays
 // -------------------------
-$black:                 #000 !default;
+$black:                 #120A0A !default;
 $gray-darker:           lighten(#000, 13.5%) !default; // #222
 $gray-dark:             lighten(#000, 20%) !default;   // #333
 $gray:                  lighten(#000, 33.5%) !default; // #555
@@ -24,18 +24,29 @@ $white:                 #fff !default;
 // Brand colors
 // -------------------------
 
-$color-asi-blue:            #00a9e0 !default;
-$color-asi-teal:            #00abbe !default;
-$color-asi-green:           #68bd49 !default;
-$color-asi-orange:          #e98300 !default;
-$color-asi-purple:          #8e51ae !default;
-$color-asi-red:             #d03528 !default;
-$color-asi-pink:            #d980c1 !default;
-$color-asi-yellow:          #e8d92d !default;
-$color-asi-neutral:         #616365 !default;
+// $color-asi-blue:            #00a9e0 !default;
+// $color-asi-teal:            #00abbe !default;
+// $color-asi-green:           #68bd49 !default;
+// $color-asi-orange:          #e98300 !default;
+// $color-asi-purple:          #8e51ae !default;
+// $color-asi-red:             #d03528 !default;
+// $color-asi-pink:            #d980c1 !default;
+// $color-asi-yellow:          #e8d92d !default;
+// $color-asi-neutral:         #616365 !default;
 
-$color-base:                darken($color-asi-blue, 5%) !default;
-$color-callout:             $color-asi-orange !default;
+$color-wsma-dkgrey:         #36424a !default;
+$color-wsma-mdgrey:         #6c6f70 !default;
+$color-wsma-ltgrey:         #d0cfcb !default;
+$color-wsma-red:            #a62d38 !default;
+$color-wsma-forest:         #00837e !default;
+$color-wsma-teal:           #4bc8b6 !default;
+$color-wsma-seafoam:        #9fe6d9 !default;
+$color-wsma-green:          #8fd400 !default;
+
+
+
+$color-base:                darken($color-wsma-red, 5%) !default;
+$color-callout:             $color-wsma-teal !default;
 $color-secondary-a:         #00a8b4 !default;
 $color-secondary-b:         #69be28 !default;
 
@@ -463,12 +474,12 @@ $alert-iPart-bg:               lighten(#DFE9F5, 5%) !default;
 
 // Logo
 // -------------------------
-$logo-default-url:              url('images/HeaderLogo.png') !default;
+$logo-default-url:              url('images/wsma-white.png') !default;
 $logo-default-url-2x:           null !default;
 $logo-default-position-md:      null !default;
-$logo-default-width-sm:         122px !default;
-$logo-default-height-sm:        38px !default;
-$logo-default-width-md:         null !default; 
+$logo-default-width-sm:         150px !default;
+$logo-default-height-sm:        60px !default;
+$logo-default-width-md:         300px !default; 
 $logo-default-height-md:        null !default;
 $logo-default-margin-top:       0 !default;
 

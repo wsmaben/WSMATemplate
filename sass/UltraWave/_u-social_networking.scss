@@ -1,0 +1,146 @@
+/* Social networking icons
+   ========================================================================== */
+/**
+  * Social Share
+  */
+
+// Set up sprite sizes for feature icons
+$iconSizeSmall: 16px;
+$iconSizeMedium: 24px;
+$iconSizeLarge: 32px;
+$spriteGridSizeSmall: -40px;
+
+.RadSocialShare.SmallButtons .sshCustomIcon {
+   background-image: url(../images/social-small.png);
+   width: $iconSizeSmall;
+   height: $iconSizeSmall;
+}
+.RadSocialShare.MediumButtons .sshCustomIcon {
+    background-image: url(../images/social-medium.png);
+    width: $iconSizeMedium;
+    height: $iconSizeMedium;
+}
+.RadSocialShare.LargeButtons .sshCustomIcon {
+    background-image: url(../images/social-large.png);
+    width: $iconSizeLarge;
+    height: $iconSizeLarge;
+}
+.sshLinkItem:hover .sshCustomIcon {
+    opacity: .7;
+    filter: Alpha(opacity=70);
+}
+.sshCustomShareOnFacebook       { background-position: 0 0!important; }
+.sshCustomShareOnTwitter        { background-position: $spriteGridSizeSmall 0!important; }
+.sshCustomLinkedIn              { background-position: $spriteGridSizeSmall*2 0!important; }
+.sshCustomMailTo                { background-position: $spriteGridSizeSmall*6 0!important; }
+.sshCustomCompactButton         { background-position: $spriteGridSizeSmall*7 0!important; }
+
+/* PBI 53440 & 53739 SocialShare icons added to DisplayTaggedList */
+.ShareThisInline {
+    display: inline;
+    float: left;
+}
+.ShareThisInline:before,
+.ShareThisInline:after { clear:none; }
+.ShareThisInline .panel-body { padding: 0; }
+.ShareThisInline .RadSocialShare { padding: 0 0 0 5px; }
+.CommunityRepeaterTable .SectionTitle {
+    padding-right: 10px;
+    float: left;
+}
+
+/**
+  * Social Profiles & "Connect With Us" content areas
+  */
+.SocialSprite
+{
+    background-image: url(../images/SocialSprite.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: $iconSizeMedium;
+    height: $iconSizeMedium;
+    vertical-align: top;
+    background-position: 0 40px; /* Default to keep the wrong icon from appearing by default */
+    /* Hide text for sighted users */
+    text-indent: 100%;
+    overflow: hidden;
+ }
+.SocialSprite.LargeButtons 
+{
+    width: $iconSizeLarge;
+    height: $iconSizeLarge; 
+}
+.SocialSprite.FacebookIcon                      { @include sprite-bg($spriteGridSizeSmall, 0) }
+.SocialSprite.FacebookIcon.LargeButtons         { @include sprite-bg($spriteGridSizeSmall, 0, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.TwitterIcon                       { @include sprite-bg($spriteGridSizeSmall, 1) }
+.SocialSprite.TwitterIcon.LargeButtons          { @include sprite-bg($spriteGridSizeSmall, 1, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.LinkedInIcon                      { @include sprite-bg($spriteGridSizeSmall, 2) }
+.SocialSprite.LinkedInIcon.LargeButtons         { @include sprite-bg($spriteGridSizeSmall, 2, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.YouTubeIcon                       { @include sprite-bg($spriteGridSizeSmall, 3) }
+.SocialSprite.YouTubeIcon.LargeButtons          { @include sprite-bg($spriteGridSizeSmall, 3, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.EmailIcon                         { @include sprite-bg($spriteGridSizeSmall, 4) }
+.SocialSprite.EmailIcon.LargeButtons            { @include sprite-bg($spriteGridSizeSmall, 4, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.PinterestIcon                     { @include sprite-bg($spriteGridSizeSmall, 5) }
+.SocialSprite.PinterestIcon.LargeButtons        { @include sprite-bg($spriteGridSizeSmall, 5, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.GPlusIcon                         { @include sprite-bg($spriteGridSizeSmall, 6) }
+.SocialSprite.GPlusIcon.LargeButtons            { @include sprite-bg($spriteGridSizeSmall, 6, $startingX: $spriteGridSizeSmall*2) }
+
+.SocialSprite.SkypeIcon                         { @include sprite-bg($spriteGridSizeSmall, 7) }
+.SocialSprite.SkypeIcon.LargeButtons            { @include sprite-bg($spriteGridSizeSmall, 7, $startingX: $spriteGridSizeSmall*2) }
+
+
+/**
+  * Social sign in buttons
+  */
+
+// For future reference: this block can be used to generate gradients for the other social links
+//.SignInButton.LinkedIn {
+//    @include gradient-vertical($color-linkedin, darken($color-linkedin,8%));
+//    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+//    line-height: 1.9em;
+//    border: 1px solid darken($color-linkedin, 12%);
+//    &:hover, &:active, &:visited {
+//        @include gradient-vertical(lighten($color-linkedin,8%), $color-linkedin);
+//    }
+//}
+
+$socialSpriteGridSize: -40px;
+$socialSpriteChangeImageOnHover: 0;
+/* The network icons within the sign in buttons */
+.SignInButton {
+
+    &.TextButton {
+        /* had to make this a little more specific to override theme styles */
+        width: 100%;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    i {
+        background-image: url(../images/SocialIcons.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: bottom;
+        margin-right: .5em;
+    }
+    &.Facebook {
+        @include button-variant($btn-facebook-color, $btn-facebook-bg, $btn-facebook-border, $btn-style, $btn-facebook-shadow);
+
+        i { background-position: $socialSpriteGridSize*8 0; }
+    }
+    &.LinkedIn {
+        @include button-variant($btn-linkedin-color, $btn-linkedin-bg, $btn-linkedin-border, $btn-style, $btn-linkedin-shadow);
+
+        i { background-position: $socialSpriteGridSize*2 0; }
+    }
+}
+
+/**** End Social Netowrking Icon Styling ****/

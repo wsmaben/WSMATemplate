@@ -4,7 +4,7 @@
 // GLOBAL ELEMENTS
 // --------------------------------------------
 $theme-family:          NaturalHeritageSites !default;
-$theme-name:            GreatBarrierReef !default;
+$theme-name:            WSMA !default;
 $view-type:             Responsive !default;
 
 // Sprites
@@ -14,12 +14,22 @@ $theme-icons-sprite-path:        'images/ThemeIconsSprite.png' !default;
 
 // Color Palette
 // -------------------------
-$color-base:                #0d0d0d !default; 
-$color-callout:             #3d00a3 !default; 
-$color-secondary-a:         #66ffcc !default;
-$color-secondary-b:         #3d00a3 !default;
 
-$color-neutral:             #888 !default;
+$color-wsma-dkgrey:         #36424a !default;
+$color-wsma-mdgrey:         #6c6f70 !default;
+$color-wsma-ltgrey:         #d0cfcb !default;
+$color-wsma-red:            #a62d38 !default;
+$color-wsma-forest:         #00837e !default;
+$color-wsma-teal:           #4bc8b6 !default;
+$color-wsma-seafoam:        #9fe6d9 !default;
+$color-wsma-green:          #8fd400 !default;
+
+$color-base:                $color-wsma-dkgrey !default; 
+$color-callout:             $color-wsma-red !default; 
+$color-secondary-a:         $color-wsma-forest !default;
+$color-secondary-b:         $color-wsma-green !default;
+
+$color-neutral:             $color-wsma-mdgrey !default;
 $color-alt-bg:              #f0edf2!default; 
 $color-alt-bg2:             #222122;
 
@@ -41,17 +51,17 @@ $link-color:            darken($color-secondary-b, 2%) !default;
 
 // Typography
 // -------------------------
-$font-family-base:      'Raleway', Arial, sans-serif !default;
-$font-size-base:        14px !default;
+$font-family-base:      "Gotham A", "Gotham B", sans-serif !default;
+$font-size-base:        13px !default;
 $line-height-base:      1.8 !default;
 $line-height-computed:  floor($font-size-base * $line-height-base) !default;
 $text-color:            #0c0c0c !default;
 
-$headings-font-family:  'Abel', Helvetica Neue, sans-serif !default; 
-$headings-font-weight:  700 !default;
+$headings-font-family:  "Gotham A", "Gotham B", sans-serif !default; 
+$headings-font-weight:  500 !default;
 $headings-color:        $color-neutral !default;
 
-@import url("//fonts.googleapis.com/css?family=Raleway|Abel");
+@import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
 
 $font-size-h1:          250% !default;
 $font-size-h2:          200% !default;
@@ -176,10 +186,10 @@ $callout1-bg:                        #222122 !default;
 
 // Logo 
 // -------------------------
-$logo-default-position-md:          0 -47px !default;
-$logo-default-width-sm:             46px !default;
-$logo-default-height-sm:            46px !default;
-$logo-default-width-md:             120px !default;
+$logo-default-position-md:          0 0px !default;
+//$logo-default-width-sm:             46px !default;
+//$logo-default-height-sm:            46px !default;
+//$logo-default-width-md:             300px !default;
 
 $logo-donor-url:                    url('images/DonorHeaderLogo.png') !default;
 $logo-donor-position-md:            null !default;
@@ -188,15 +198,16 @@ $logo-donor-width-md:               169px !default;
 // Jumbotron
 // -------------------------
 $jumbotron-background-url:     url(images/HomeBanner.jpg) !default;
-$jumbotron-home-height:        39em !default;
+$jumbotron-home-height:        700px !default;
+$jumbotron-home-height-sm:     200px !default;
 $jumbotron-h1-size-xs:         200% !default;
 $jumbotron-h1-size:            250% !default;
 
 // Carousel
 // -------------------------
 $carousel-caption-color:            #fff;
-$carousel-caption-text-alignment:   right;
-$carousel-caption-bg-color:         rgba($color-base, 0.85);
+$carousel-caption-text-alignment:   left;
+$carousel-caption-bg-color:         null;
 $carousel-caption-font-family:      $headings-font-family;
 $carousel-caption-font-size:        $font-size-base + 4;
 

@@ -8,7 +8,7 @@
     background-color: #ffdd6f;
 }
 
-@if ($theme-name != 'Toronto') {
+@if not ($theme-name == 'WSMA') or not ($theme-name == 'Toronto') {
     #masterHeaderBackground,
     .header {
         border-bottom: 2px $border-style $gray-lighter;
@@ -38,6 +38,8 @@
 #masterHeaderImage {
     background-image: $logo-default-url;
     background-repeat: no-repeat;
+    //background-size: contain;
+    @include background-size(contain); 
     width: $logo-default-width-sm;
     height: $logo-default-height-sm;
     /* The following are needed to hide the text, but allow it to be read by screen readers */

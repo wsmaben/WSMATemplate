@@ -22,7 +22,8 @@
 /* Class used to contain the various pieces of the master page */
 .container,
 .header-container,
-.SliderPage1 {
+.SliderPage1,
+.carousel-link {
     @if $view-type == Desktop {
         width: $container-md;
     }
@@ -33,6 +34,9 @@
         }
     }
     @include container-fixed();
+    a {
+        text-decoration: none;
+    }
 }
 
 .container, 

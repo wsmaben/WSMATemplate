@@ -14,12 +14,27 @@ $theme-icons-sprite-path:        'images/ThemeIconsSprite.png' !default;
 
 // Color Palette
 // -------------------------
-$color-base:                #0d0d0d !default; 
-$color-callout:             #3d00a3 !default; 
-$color-secondary-a:         #66ffcc !default;
-$color-secondary-b:         #3d00a3 !default;
+//$color-base:                #0d0d0d !default; 
+//$color-callout:             #3d00a3 !default; 
+//$color-secondary-a:         #66ffcc !default;
+//$color-secondary-b:         #3d00a3 !default;
 
-$color-neutral:             #888 !default;
+// WSMA Brand Colors
+$color-wsma-dkgrey:         #36424a !default;
+$color-wsma-mdgrey:         #6c6f70 !default;
+$color-wsma-ltgrey:         #d0cfcb !default;
+$color-wsma-red:            #a62d38 !default;
+$color-wsma-forest:         #00837e !default;
+$color-wsma-teal:           #4bc8b6 !default;
+$color-wsma-seafoam:        #9fe6d9 !default;
+$color-wsma-green:          #8fd400 !default;
+
+$color-base:                $color-wsma-dkgrey !default; 
+$color-callout:             $color-wsma-red !default; 
+$color-secondary-a:         $color-wsma-red !default;
+$color-secondary-b:         $color-wsma-green !default;
+
+$color-neutral:             $color-wsma-mdgrey !default;
 $color-alt-bg:              #f0edf2!default; 
 $color-alt-bg2:             #222122;
 

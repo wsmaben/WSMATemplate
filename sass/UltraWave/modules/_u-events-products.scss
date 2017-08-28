@@ -1,0 +1,449 @@
+/* ==========================================================================
+   EVENTS AND PRODUCTS
+   ========================================================================== */
+/**
+ * Event and product display - the overall layout of the event, program item or product display
+ * Includes the image, description, price, etc.
+ * 
+ * Example HTML:
+ * <div class="EventDisplay">
+ *   <div class="EventSummary">...</div>
+ *   <div class="EventDetails">...</div>
+ * </div>
+ */
+/*.EventSummary, .EventSummary .DetailsBlock, 
+.ProductSummary, .ProductSummary .DetailsBlock {
+    display: table;
+    width: 100%;
+}*/
+
+/**
+ * 10.3.2 Event summary */
+/* Contains the event or product image and description
+ *
+ * Example event HTML:
+ * <div class="EventSummary">
+ *   <div class="PhotoArea">
+ *     <img src="path/to/image.jpg" alt="Cairns at night" />
+ *   </div> 
+ *   <div class="Description">Come to our super-cool event!</div>
+ */
+.EventSummary {
+    @include clearfix();
+
+    .PhotoArea {
+        text-align: center;
+        
+        @include respond-to('tablets and up') {
+            float: left;
+        }
+    }
+
+    .Description .PanelField {
+        float: none;
+        clear: none;
+        padding: 0;
+    }
+}
+
+.EventDisplay .PricingData {
+    padding-top: 1em;
+}
+
+/**
+ * Program item summary
+ * Contains all details of the program item and 
+ * the itenerary information and displays them a grid-like format in the program item list iPart
+ * 
+ * Example program item HTML:
+ * <div class="ProgramItemSummary">
+ *
+ *   <div class="DescriptionColumn">
+ *     <div class="ListItemTitle">The title of the program item <span class="InItinerary">In Itenerary</span></div>
+ *     <div class="Description">Some info about the program item.</div>
+ *     <div class="PanelBlock Details">
+ *       <div class="PanelField">
+ *         <span class="Label">Track:</span>
+ *         <div class="PanelFieldValue">Technical</div>
+ *       </div>
+ *     </div>
+ *   </div>
+ *
+ *   <div class="WhenColumn">9:00 AM</div>
+ *
+ *   <div class="ItineraryColumn">
+ *     <input type="button" class="TextButton" value="Add" />
+ *   </div>
+ * </div>
+ * 
+ */
+
+.ProgramItemSummary {
+    .DeleteColumn {
+        width: 7em;
+        float: right;
+        clear: right;
+    }
+
+    @include respond-to('tablets and up') {
+        .WhenColumn, 
+        .IteneraryColumn {
+            width: 28%;
+            float: left;
+            clear: left;
+            padding-right: .5em
+        }
+        .DescriptionColumn {
+            width: 72%;
+            float: right;
+            clear: right;
+        }
+    }
+
+    @include respond-to('smartphones and down')  {
+        .WhenColumn {
+            clear: both;
+            border-top: 1px solid $border-color;
+            padding-top: .5em;
+        }
+    }
+        
+    .WhenData {
+        display: block;
+    }
+
+    .ListItemTitle,
+    .WhenData {
+        font-weight: bold;
+        padding-bottom: .25em;
+        line-height: 1.7em; /* to ensure none of the title is covered when the InItinerary indicator wraps */
+    }
+
+    .InItinerary, 
+    .HasConflict,
+    .OnWaitlist {
+        /* Program item itenerary indicators */
+        padding: .15em .25em .2em;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+    }
+
+    .InItinerary {
+        /* Indicator when the program item is in your itenarary - Note the spelling mistake... */
+        background-color: yellow;
+    }
+
+    .HasConflict {
+        /* Indicator when the program item is in your itenarary 
+         * but confilcts with another program item in your itenaray */
+        background-color: #D8000C;
+        color: #FFFFFF;  
+    }
+    .OnWaitlist {
+        /* Indicator when you are on the waitlist for the program item */
+        background-color: #FFCCBA;
+    }
+}
+
+/**
+ * Event details
+ * Contains event details such as date/time, price, and location.
+ * Also includes the registration buttons and badge edit button.
+ * 
+ * Example program item HTML:
+ * <div class="EventDetails">
+ *
+ *   <div class="ContactLocationArea">
+ *       <div class="PanelField Left">
+ *         <span class="Label">Price:</span>
+ *         <div class="PanelFieldValue">450.00</div>
+ *       </div>
+ *       <div class="PanelField Left">
+ *         <span class="Label">When:</span>
+ *         <div class="PanelFieldValue">5/15/13 1:00 PM - 5/16/13 5:00 PM</div>
+ *       </div>
+ *     </div>
+ *   </div>
+ *
+ *   <div class="RegistrationArea">
+ *     <input type="button" class="TextButton PrimaryButton" value="Register Myself" />
+ *     <input type="button" class="TextButton" value="Register Someone Else" />
+ *     <div class="PanelField Left">
+ *       <span class="Label">My Registration Status:</span>
+ *       <div class="PanelFieldValue">Not Registered</div>
+ *     </div>
+ *   </div>
+ *
+ * </div>
+ * 
+ */
+.EventDetails {
+    display: block; 
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.RegistrationArea .TextButton {
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    @include respond-to('tablets and up') {
+        width: 80%;
+    }
+}
+
+.RegistrationEditSection {
+    margin-top: .8em;
+}
+
+.ContactLocationArea .PanelField {
+    label, .Label {
+        width: 5em;  
+    }
+
+    .PanelField  {  
+        padding-bottom: .5em;
+    }
+}
+
+.PricingData .rgMasterTable label {
+    font-weight: normal;
+}
+
+.EventQuestions {
+    margin-top: 1em;
+}
+
+/** 
+ * Registrant info center - contains badge information for a registrant in an editable format
+ *
+ * Example HTML:
+ * <div class="ReginstrantInfoContainer">
+ *   <a href="javascript(...)">Add a new address</a>
+ *   <div class="RegistrantInfoAddressList">
+ *     <div class="RegistrantInfoAddressListItem">
+ *        <a href="javascript(...)">Use this address</a>
+ *        <!-- One available address -->
+ *     </div>
+ *     ...
+ *   </div>
+ *
+ *   <div class="RegistrantInfoEntry">
+ *     <div class="RegistrantInfoBadgeBackground">
+ *       <div class="RegistrantInfoBadge">
+ *         <img src="path/to/event/image.jpg" alt="Cairns at night" />
+ *         <fieldset>
+ *           ... <!-- Name (read only), informal name, title and organization -->
+ *         </fildset>
+ *       </div>
+ *     </div>
+ *
+ *     <div class="RegistrantInfoAddressEntry">
+ *       <h3>Home Address</h3>
+ *       <table>
+ *         <!-- address entry -->
+ *       </table>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+.RegistrantInfoContainer {
+    padding: 1em;
+    position: relative;
+}
+
+.RegistrantInfoEntry {
+    @include respond-to('tablets and up') {
+        position: absolute;
+        top: .375em;
+        left: 1em;
+        width: 69%;
+    }
+    border-right: 1px dotted darkgray;
+    padding-right: 1.5em;
+}
+
+.RegistrantInfoAddressList {
+    @include respond-to('tablets and up') {  margin-left: 77%; }
+}
+
+.RegistrantInfoAddressListItem {
+    border-bottom: 1px dotted darkgray;
+    padding-top: .5em;
+}
+
+.RegistrantInfoBadgeBackground {
+    background-color: #ececeb;
+    padding: 1em;
+    margin-bottom: .375em;
+}
+
+.RegistrantInfoBadge {
+    background-color: white;
+    border: 1px solid #adadad;
+    padding: 1em;
+    margin: .625em;
+
+    img {
+        float: left;
+        width: 130px;
+        height: auto;
+        padding-right: 10px;
+    }
+
+    label,
+    .Label {
+        width: 8em;
+    }
+}
+
+.RegistrantInfoAddressEntry {
+    background-color: #f8f7f6;
+    padding: 1em;
+    
+    .SectionTitle {
+        padding-bottom: 8px;
+        padding-left: 8px;
+    }
+}
+
+/** 
+ * Currently registering area (aka PeoplePanel)
+ * Displays a list of people the current user is regitering (using "Register someone else")
+ * as selectable toggles to choose the active record.
+ *
+ * Example HTML:
+ * <div class="PeoplePanel">
+ *   <div class="PersonDisplay SelectedItem">
+ *     <img src="path/to/profile/picture1.jpg" alt="[Selected Registrant's Name]" />
+ *     <span>[Selected Registrant's Name]</span>
+ *   </div>
+ *   <div class="PersonDisplay">
+ *     <a href="javascript(...)">
+ *       <img src="path/to/profile/picture2.jpg" alt="[Unselected Registrant's Name]" />
+ *       <span>Unselected Registrant's Name</span>
+ *     </a>
+ *   </div>
+ * </div>
+ */
+.PeoplePanel {
+    display:block;
+}
+
+.PersonDisplay {
+    margin:.25em;
+    padding:1em .5em;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    opacity:0.7;
+    filter:Alpha(opacity=70); /* Sets the opacity for IE8 */
+    min-width: 7em;
+    max-width: 9em;
+    word-wrap: break-word;
+
+    &:hover,
+    &.SelectedItem {
+        @include opacity(1);
+    }
+}
+
+.PersonDisplay span {
+    display:block;
+    padding-top:.25em;
+}
+
+/* Remove underline from selectable items in person list */
+.PersonDisplay a:link {
+    text-decoration:none;
+}
+
+/**
+ * Product display */
+/* Contains the product image and description
+ *
+ * Example product HTML:
+ * <div class="ProductDisplay">
+ *   <div class="ProductImageArea">
+ *     <img class="ProductImage" src="path/to/image.jpg" alt="Mug with organization logo" />
+ *   </div> 
+ *   <div class="ProductDetails">
+ *        <div class="PricingSection">
+ *        </div>
+ *        <div class="AddToCartSection">
+ *        </div>
+ *   </div>
+ */
+
+ .ProductDisplay {
+    overflow: auto;
+
+    .ProductTitle {
+        display: block;
+    }
+
+    .ProductImageArea {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .PricingSection {
+        padding-top: 1.5em;
+    }
+
+    .ProductLabel {
+        padding-right: .3em;
+        margin-left: 0;
+        vertical-align: top;
+    }
+
+    .AddToCartSection {
+        padding-top: .3em;
+    }
+
+    .AddToCartButton {
+        width: 100%;
+        margin-top: 1.5em;
+        @include respond-to('tablets and up') {
+            width: auto;
+            margin-left: .3em;
+            margin-top: 0;
+            vertical-align: top;
+        }
+    }
+    
+}
+
+.Horizontal .ProductDisplay {
+
+    .ProductImageArea {
+        @include respond-to('tablets and up') {
+            float: left;
+        }
+    }
+
+    .ProductDetails {
+        overflow: hidden;
+        zoom: 1;
+
+        @include respond-to('smartphones and up') {
+            padding: 1em;
+        }
+    }
+
+    .ProductLabel {
+        width: 12em;
+        text-align: right;
+        display: inline-block;
+    }
+
+}
+
+@if ($view-type == 'Responsive') {
+    /* In IE8 this prevents the image from disappearing */
+    #{$mq-fallback-class} .ProductImage,
+    #{$mq-fallback-class} .EventSummary .PhotoArea img {
+        max-width: inherit;
+    }
+}
