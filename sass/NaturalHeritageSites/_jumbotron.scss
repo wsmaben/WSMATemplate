@@ -302,7 +302,6 @@
 .carousel-indicators { display: none; }
 .carousel-caption {  
     @include respond-to('grid large') {
-        width: 25%;
         left: auto;
         right: auto;
     }       

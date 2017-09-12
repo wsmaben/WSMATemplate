@@ -3375,11 +3375,9 @@ input[type="checkbox"]:focus {
   text-align: left !important; }
   @media (min-width: 768px) {
     .carousel-caption {
-      width: 25%;
       left: auto;
       right: auto; } }
   .no-mqs .carousel-caption {
-    width: 25%;
     left: auto;
     right: auto; }
   .carousel-caption h1:after {
@@ -4073,5 +4071,11 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   .StaffDashboard .PanelHead.Distinguish.Collapsible,
   .StaffDashboard .TitleBarCaption.Collapsible {
     border-bottom-color: #ddd; }
+
+#masterHeaderImage {
+  margin-top: 30px; }
+
+.carousel-caption {
+  top: 170px; }
 
 /*# sourceMappingURL=99-WSMA_GBR_Responsive.css.map */
