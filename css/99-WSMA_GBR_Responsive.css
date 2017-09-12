@@ -574,7 +574,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
 .ProgressTracker2 {
   text-align: center; }
   .ProgressTracker2 .ProgressTrackerPanel .label, .ProgressTracker2 .ProgressTrackerPanel a {
-    color: #fff; }
+    color: #313E48; }
   .ProgressTracker2 .SuccessfulMessage {
     width: 95%;
     margin: 0 auto;
@@ -801,10 +801,6 @@ img.ImgNoResize, .ImgNoResize img {
 /* This applies to the loading bar at the top of the page */
 .ProgressDiv {
   background-color: #ffdd6f; }
-
-#masterHeaderBackground,
-.header {
-  border-bottom: 2px solid #eeeeee; }
 
 /* Universal search control */
 .search-field {
@@ -3131,9 +3127,9 @@ input[type="checkbox"]:focus {
   bottom: 0;
   width: 100%;
   padding: 8px 0;
-  background-color: #120A0A;
+  background-color: #313E48;
   /* Fallback for IE8, which doesn't support rgba */
-  background-color: rgba(18, 10, 10, 0.75); }
+  background-color: rgba(49, 62, 72, 0.75); }
   .HeroContent h1, .HeroContent h2, .HeroContent h3, .HeroContent h4, .HeroContent h5, .HeroContent .HeroText {
     color: #fff;
     margin: 0 8px 8px 8px; }
@@ -4073,9 +4069,17 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     border-bottom-color: #ddd; }
 
 #masterHeaderImage {
-  margin-top: 30px; }
+  margin-top: 35px; }
 
 .carousel-caption {
   top: 170px; }
+
+.UtilityNavigation {
+  text-align: right; }
+
+.RadMenu a.rmLink {
+  color: #ffffff; }
+.RadMenu a:visited {
+  color: #ffffff; }
 
 /*# sourceMappingURL=99-WSMA_GBR_Responsive.css.map */

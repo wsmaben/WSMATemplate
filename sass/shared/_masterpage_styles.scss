@@ -8,12 +8,12 @@
     background-color: #ffdd6f;
 }
 
-@if not ($theme-name == 'WSMA') or not ($theme-name == 'Toronto') {
-    #masterHeaderBackground,
-    .header {
-        border-bottom: 2px $border-style $gray-lighter;
-    }
-}
+// @if not ($theme-name == 'WSMA') or not ($theme-name == 'Toronto') {
+//     #masterHeaderBackground,
+//     // .header {
+//     //     border-bottom: 2px $border-style $gray-lighter;
+//     // }
+// }
 
 /* Universal search control */
 .search-field {
