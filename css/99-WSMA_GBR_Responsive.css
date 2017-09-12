@@ -196,8 +196,7 @@
 .Wrapper-HomePage .FullWidthArea-StyleBg3,
 .Wrapper-HomePage .FullWidthArea-StyleBg4,
 .Wrapper-HomePage .FullWidthArea-StyleBg5 {
-  padding: 50px 1%;
-  min-height: 450px; }
+  padding: 50px 1%; }
 
 /***** Proxy Panel Styling *****/
 /* This applies to the on behalf of (proxy) area */
@@ -325,7 +324,7 @@ h1 {
   /* Arrow shaped containers for nice browsers only. */ }
   .Wrapper-HomePage .FullWidthArea-StyleBg2 {
     background: #222122 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
-    color: #fff; }
+    color: #313E48; }
     .Wrapper-HomePage .FullWidthArea-StyleBg2 h2 {
       color: #fff; }
       .Wrapper-HomePage .FullWidthArea-StyleBg2 h2:before {
@@ -344,7 +343,7 @@ h1 {
     background: #f0edf2; }
   .Wrapper-HomePage .FullWidthArea-StyleBg4 {
     background: #222122 url(images/FullWidthArea_Bg4.jpg) center top no-repeat;
-    color: #fff;
+    color: #313E48;
     font-family: "Gotham A", "Gotham B", sans-serif;
     padding: 20px 1%;
     line-height: 1.5; }
@@ -589,7 +588,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
       background-color: #00837e !important;
       border-radius: 0; }
   .ProgressTracker2 div p {
-    color: #000 !important; }
+    color: #313E48 !important; }
 
 .Wrapper-HomePage .ProgressTracker2 .ProgressTrackerPanel {
   background-color: transparent; }
@@ -597,7 +596,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   text-align: left;
   font-size: 125%; }
 .Wrapper-HomePage .ProgressTracker2 span.count {
-  color: #fff; }
+  color: #313E48; }
   .Wrapper-HomePage .ProgressTracker2 span.count:before {
     content: '';
     display: block;
@@ -4081,5 +4080,10 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   color: #ffffff; }
 .RadMenu a:visited {
   color: #ffffff; }
+
+.ProgressTracker2 {
+  font-size: 135%;
+  width: 75%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=99-WSMA_GBR_Responsive.css.map */

@@ -80,7 +80,7 @@ h1 {
 .Wrapper-HomePage {
     .FullWidthArea-StyleBg2 {
         background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
-        color: #fff;
+        color: $black;
          h2 {
              @include LargeIconMultiLineHeading(#fff, -65px, 0px);
          }
@@ -90,7 +90,7 @@ h1 {
     }
     .FullWidthArea-StyleBg4 {
         background: $color-alt-bg2 url(images/FullWidthArea_Bg4.jpg) center top no-repeat;
-        color: #fff;
+        color: $black;
         font-family: $headings-font-family;
         padding: 20px 1%;
         line-height: 1.5;
@@ -321,7 +321,7 @@ html.t-safari {
             border-radius: 0;
         }    
     }
-    div p { color:#000!important; }
+    div p { color:#313E48!important; }
 }
 
 .Wrapper-HomePage .ProgressTracker2 {
@@ -333,7 +333,7 @@ html.t-safari {
         font-size:125%;
     }
     span.count {
-        @include LargeIconMultiLineHeading(#fff, -65px, 0px);
+        @include LargeIconMultiLineHeading(#313E48, -65px, 0px);
     }
 }
 
