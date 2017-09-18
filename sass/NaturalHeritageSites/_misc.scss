@@ -299,12 +299,12 @@ a.FeatureActionLink {
     @include clearfix();
     @include respond-to('tablets and up') {
         
-        &.ThreeAcross .Spotlight {
-            float: left;
-            width: 33%;
-            padding-left: 2%;
-            padding-right: 2%;
-        }
+        // &.ThreeAcross .Spotlight {
+        //     float: left;
+        //     width: 33%;
+        //     padding-left: 2%;
+        //     padding-right: 2%;
+        // }
     }
 }
 

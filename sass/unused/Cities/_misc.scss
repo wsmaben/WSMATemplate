@@ -350,12 +350,12 @@ a.FeatureActionLink {
 
     @include respond-to('tablets and up') {
         
-        &.ThreeAcross .Spotlight {
-            float: left;
-            width: 33%;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
+        // &.ThreeAcross .Spotlight {
+        //     float: left;
+        //     width: 33%;
+        //     padding-left: 5%;
+        //     padding-right: 5%;
+        // }
     }
 }
 

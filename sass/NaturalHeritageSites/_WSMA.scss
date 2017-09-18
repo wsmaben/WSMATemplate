@@ -79,7 +79,7 @@ h1 {
 // -------------------------
 .Wrapper-HomePage {
     .FullWidthArea-StyleBg2 {
-        background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
+        //background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
         color: $black;
          h2 {
              @include LargeIconMultiLineHeading(#fff, -65px, 0px);
@@ -107,17 +107,17 @@ h1 {
         }
     }
     /* Arrow shaped containers for nice browsers only. */
-    .FullWidthArea-StyleBg1, .FullWidthArea-StyleBg2,
-    .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg4,
-    .FullWidthArea-StyleBg5 {
-        -webkit-clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-                clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-                margin: -60px 0 15px 0;     
-    }
-    .FullWidthArea-StyleBg5 { // Last arrow shape container
-        margin: -60px 0 0 0;
-        padding-bottom: 60px;
-    }
+    // .FullWidthArea-StyleBg1, .FullWidthArea-StyleBg2,
+    // .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg4,
+    // .FullWidthArea-StyleBg5 {
+    //     -webkit-clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
+    //             clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
+    //             margin: -60px 0 15px 0;     
+    // }
+    // .FullWidthArea-StyleBg5 { // Last arrow shape container
+    //     margin: -60px 0 0 0;
+    //     padding-bottom: 60px;
+    // }
 }
 
 // Buttons
@@ -169,9 +169,9 @@ html.t-safari {
 .BigButtonPanelArea1 { 
    position: relative;
    padding: 15px 5px;
-   @include dottedBoxCenter(lighten($color-neutral,25%));   
-   @include dottedBoxTop(lighten($color-neutral,25%));
-   @include dottedBoxBottom(lighten($color-neutral,25%));
+   //@include dottedBoxCenter(lighten($color-neutral,25%));   
+   //@include dottedBoxTop(lighten($color-neutral,25%));
+   //@include dottedBoxBottom(lighten($color-neutral,25%));
    .btn {     
      color: transparent!important;     
      width: 30%; 
@@ -216,18 +216,23 @@ html.t-safari {
     &:after {
         width: 25%;
     }
-    @include dottedBoxCenter(lighten($color-neutral,25%));  
-    @include dottedBoxTop(lighten($color-neutral,25%));    
-    @include underlinedTitles($color-secondary-b,2px,30%);
+    //@include dottedBoxCenter(lighten($color-neutral,25%));  
+    //@include dottedBoxTop(lighten($color-neutral,25%));    
+    //@include underlinedTitles($color-secondary-b,2px,30%);
 }
 .Spotlight {
     margin-bottom: 20px;
+    box-shadow: $box-shadow-base;
+    &:hover {
+        box-shadow: $box-shadow-darken;
+        border-bottom: 5px solid $color-wsma-forest;
+    }
     p {    
-        @include dottedBoxCenter(lighten($color-neutral,25%));
+        //@include dottedBoxCenter(lighten($color-neutral,25%));
         padding: 3px 20px;
         margin: -3px 0 0 0;
         position: relative;
-        @include dottedBoxBottom(lighten($color-neutral,25%));
+        //@include dottedBoxBottom(lighten($color-neutral,25%));
     }
     a { text-decoration: none; }
     img { margin-bottom: 15px; }

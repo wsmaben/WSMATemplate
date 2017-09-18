@@ -79,7 +79,7 @@ h1 {
 // -------------------------
 .Wrapper-HomePage {
     .FullWidthArea-StyleBg2 {
-        background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
+        //background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
         color: #fff;
          h2 {
              @include LargeIconMultiLineHeading(#fff, -65px, 0px);
@@ -107,17 +107,17 @@ h1 {
         }
     }
     /* Arrow shaped containers for nice browsers only. */
-    .FullWidthArea-StyleBg1, .FullWidthArea-StyleBg2,
-    .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg4,
-    .FullWidthArea-StyleBg5 {
-        -webkit-clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-                clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-                margin: -60px 0 15px 0;     
-    }
-    .FullWidthArea-StyleBg5 { // Last arrow shape container
-        margin: -60px 0 0 0;
-        padding-bottom: 60px;
-    }
+    // .FullWidthArea-StyleBg1, .FullWidthArea-StyleBg2,
+    // .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg4,
+    // .FullWidthArea-StyleBg5 {
+    //     -webkit-clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
+    //             clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
+    //             margin: -60px 0 15px 0;     
+    // }
+    // .FullWidthArea-StyleBg5 { // Last arrow shape container
+    //     margin: -60px 0 0 0;
+    //     padding-bottom: 60px;
+    // }
 }
 
 // Buttons
