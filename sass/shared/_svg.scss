@@ -1,0 +1,104 @@
+.smile {
+    svg {
+        width: 50%;
+        .cls-1 {
+            fill:rgb(245, 245, 245);
+        }
+            
+        .cls-2 {
+            fill:$color-wsma-green;
+        }
+    }
+    &:hover {
+        svg {
+            .cls-1 {
+                fill:$color-wsma-green;
+                }
+                
+            .cls-2 {
+                fill:rgb(255, 255, 255);
+                }
+        }
+    }
+    .Spotlight:hover {
+        border-bottom: 5px solid $color-wsma-green;
+    }
+}
+
+.heads {
+    svg {
+        width: 50%;
+        .st0 {
+            fill:rgb(245, 245, 245);
+        }
+        .st1{
+            fill:$color-wsma-red;
+        }
+    }
+    
+    &:hover {
+        svg {
+            .st0 {
+                fill:$color-wsma-red;
+            }
+            .st1{
+                fill:rgb(245, 245, 245);
+            }
+        }
+    }
+    .Spotlight:hover {
+        border-bottom: 5px solid $color-wsma-red;
+    }
+}
+
+.bubbles {
+    svg {
+        width: 50%;
+        .st0 {
+            fill:rgb(245, 245, 245);
+        }
+        .st1{
+            fill:$color-wsma-teal;
+        }
+    }
+    
+    &:hover {
+        svg {
+            .st0 {
+                fill:$color-wsma-teal;
+            }
+            .st1{
+                fill:rgb(245, 245, 245);
+            }
+        }
+    }
+    .Spotlight:hover {
+        border-bottom: 5px solid $color-wsma-teal;
+    }
+}
+
+.shift {
+    svg {
+        width: 50%;
+        .st0 {
+            fill:rgb(245, 245, 245);
+        }
+        .st1{
+            fill:$color-wsma-forest;
+        }
+    }
+    
+    &:hover {
+        svg {
+            .st0 {
+                fill:$color-wsma-forest;
+            }
+            .st1{
+                fill:rgb(245, 245, 245);
+            }
+        }
+    }
+    .Spotlight:hover {
+        border-bottom: 5px solid $color-wsma-forest;
+    }
+}

@@ -222,10 +222,11 @@ html.t-safari {
 }
 .Spotlight {
     margin-bottom: 20px;
+    padding-top: 20px;
     box-shadow: $box-shadow-base;
     &:hover {
         box-shadow: $box-shadow-darken;
-        border-bottom: 5px solid $color-wsma-forest;
+        //border-bottom: 5px solid $color-wsma-forest;
     }
     p {    
         //@include dottedBoxCenter(lighten($color-neutral,25%));

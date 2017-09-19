@@ -149,8 +149,8 @@ $component-active-bg:            $brand-primary !default;
 $caret-width-base:               4px !default;
 $caret-width-large:              5px !default;
 
-$box-shadow-base:                1px 1px 28px 3px rgba(250,250,250,1) !default;
-$box-shadow-darken:              1px 1px 28px 3px rgba(227,227,227,1) !default;
+$box-shadow-base:                1px 1px 28px 3px rgba(227,227,227,1) !default;
+$box-shadow-darken:              1px 1px 28px 3px rgb(204, 204, 204) !default;
 
 // Buttons
 // -------------------------
