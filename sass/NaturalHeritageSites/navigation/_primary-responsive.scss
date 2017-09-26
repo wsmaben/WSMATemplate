@@ -19,7 +19,7 @@
     }
 }
 .navbar {
-    min-height: 52px;
+    min-height: 72px;
     @include respond-to ('grid small') {
         background-color: $navbar-default-bg;
     }

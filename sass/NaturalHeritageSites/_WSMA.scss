@@ -120,14 +120,17 @@ h1 {
     // }
 }
 
+
+
+
 // Buttons
 // -------------------------
 /* Diamond shaped button, excluding Safari */
 html:not(.t-safari) {
     .btn, .TextButton {   
-        background: url(images/DiamondButton.svg#color-base) no-repeat top center!important;  
-        background-size: 100% 100%!important; 
-        padding: 5px 25px !important;     
+        //background: url(images/DiamondButton.svg#color-base) no-repeat top center!important;  
+        //background-size: 100% 100%!important; 
+        //padding: 5px 25px !important;     
     }
 
     .PrimaryButton, .SaveAndClose, .SaveAs, 
@@ -136,9 +139,9 @@ html:not(.t-safari) {
     #masterHeaderActionArea a, .RadGrid input.PrimaryButton,
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
-        background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center!important; 
-        background-size: 100% 100%!important;
-        color: $color-base!important;
+        //background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center!important; 
+        //background-size: 100% 100%!important;
+        //color: $color-base!important;
     }
 }
 
@@ -212,7 +215,8 @@ html.t-safari {
     display: block;
     position: relative;
     padding: 15px 0 10px 0;
-    
+    font-size: 160%;
+    font-weight: normal;
     &:after {
         width: 25%;
     }
@@ -224,6 +228,7 @@ html.t-safari {
     margin-bottom: 20px;
     padding-top: 20px;
     box-shadow: $box-shadow-base;
+    min-height: 440px;
     &:hover {
         box-shadow: $box-shadow-darken;
         //border-bottom: 5px solid $color-wsma-forest;
@@ -237,6 +242,19 @@ html.t-safari {
     }
     a { text-decoration: none; }
     img { margin-bottom: 15px; }
+    .spLnk {
+        background: none!important;
+        // border-color: transparent;
+        font-weight: bold;
+        // color: #3c4a53;
+        // position: absolute;
+        // bottom: 40px;
+        // left: 30%;
+        // text-align: center;
+        display: block;
+        margin-top: 15px;
+        font-size: 130%;
+    }
 }
 
 
@@ -401,3 +419,6 @@ h2, .h2, .PanelHead.Distinguish,
     color: #fff!important;
 }
  
+.RadMenu .rmGroup .rmText {
+    padding: 0 0 0 5px;
+}

@@ -132,13 +132,15 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 666; } }
+    z-index: 666;
+    background: #ffffff; } }
 .no-mqs .header-top-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 666; }
+  z-index: 666;
+  background: #ffffff; }
 
 .header-logo-container {
   float: left;
@@ -191,12 +193,37 @@
   padding-right: 15px;
   margin: 0 auto; }
 
-.Wrapper-HomePage .FullWidthArea-StyleBg1,
-.Wrapper-HomePage .FullWidthArea-StyleBg2,
-.Wrapper-HomePage .FullWidthArea-StyleBg3,
-.Wrapper-HomePage .FullWidthArea-StyleBg4,
-.Wrapper-HomePage .FullWidthArea-StyleBg5 {
-  padding: 50px 1%; }
+.Wrapper-HomePage {
+  /* Homepage logo and banner differences */ }
+  .Wrapper-HomePage .FullWidthArea-StyleBg1,
+  .Wrapper-HomePage .FullWidthArea-StyleBg2,
+  .Wrapper-HomePage .FullWidthArea-StyleBg3,
+  .Wrapper-HomePage .FullWidthArea-StyleBg4,
+  .Wrapper-HomePage .FullWidthArea-StyleBg5 {
+    padding: 50px 1%; }
+  @media (min-width: 768px) {
+    .Wrapper-HomePage .header-top-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 666;
+      background: transparent; } }
+  .no-mqs .Wrapper-HomePage .header-top-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 666;
+    background: transparent; }
+  .Wrapper-HomePage #masterHeaderImage svg .cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 3.86; }
+  .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
+    fill: #fff; }
+  .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
+    fill: #a22a2e; }
 
 /***** Proxy Panel Styling *****/
 /* This applies to the on behalf of (proxy) area */
@@ -289,7 +316,7 @@
   padding-top: 0 !important; }
 
 .HelperText {
-  color: #a62d38; }
+  color: #a22a2e; }
 
 .EasyEditOn .EasyEditContent:hover,
 .EasyEditOn .WebPartZoneDesignTime:hover {
@@ -307,10 +334,10 @@ h1 {
     bottom: 0;
     width: 45%;
     margin: 5px auto 0 auto;
-    border-bottom: 3px solid white; }
+    border-bottom: 3px solid #d3dadf; }
 
 .Wrapper-HomePage h2.panel-title {
-  color: #8fd400;
+  color: #36424a;
   display: table; }
   .Wrapper-HomePage h2.panel-title:after {
     content: '';
@@ -318,12 +345,11 @@ h1 {
     bottom: 0;
     width: 30%;
     margin: 5px auto 0 auto;
-    border-bottom: 2px solid white; }
+    border-bottom: 2px solid #d3dadf; }
 
 .Wrapper-HomePage {
   /* Arrow shaped containers for nice browsers only. */ }
   .Wrapper-HomePage .FullWidthArea-StyleBg2 {
-    background: #222122 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
     color: #313E48; }
     .Wrapper-HomePage .FullWidthArea-StyleBg2 h2 {
       color: #fff; }
@@ -358,31 +384,8 @@ h1 {
       font-size: 50%;
       display: table;
       margin-top: 1em; }
-  .Wrapper-HomePage .FullWidthArea-StyleBg1, .Wrapper-HomePage .FullWidthArea-StyleBg2,
-  .Wrapper-HomePage .FullWidthArea-StyleBg3, .Wrapper-HomePage .FullWidthArea-StyleBg4,
-  .Wrapper-HomePage .FullWidthArea-StyleBg5 {
-    -webkit-clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-    clip-path: polygon(0 15px, 47% 15px, 50% 30px, 53% 15px, 100% 15px, 100% 100%, 0 100%);
-    margin: -60px 0 15px 0; }
-  .Wrapper-HomePage .FullWidthArea-StyleBg5 {
-    margin: -60px 0 0 0;
-    padding-bottom: 60px; }
 
 /* Diamond shaped button, excluding Safari */
-html:not(.t-safari) .btn, html:not(.t-safari) .TextButton {
-  background: url(images/DiamondButton.svg#color-base) no-repeat top center !important;
-  background-size: 100% 100% !important;
-  padding: 5px 25px !important; }
-html:not(.t-safari) .PrimaryButton, html:not(.t-safari) .SaveAndClose, html:not(.t-safari) .SaveAs,
-html:not(.t-safari) .UsePrimaryButton .TextButton,
-html:not(.t-safari) .UsePrimaryButton .TextButtonWithImage,
-html:not(.t-safari) #masterHeaderActionArea a, html:not(.t-safari) .RadGrid input.PrimaryButton,
-html:not(.t-safari) .Spotlight .TextButton, html:not(.t-safari) .BigButtonPanelArea2 .btn,
-html:not(.t-safari) .RadUpload .ruButton, html:not(.t-safari) .ruButton, html:not(.t-safari) .ruFileInput {
-  background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center !important;
-  background-size: 100% 100% !important;
-  color: #36424a !important; }
-
 /* Button styles for all browsers */
 .btn, .TextButton, .ruButton {
   font-size: 15px !important;
@@ -412,28 +415,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
 
 .BigButtonPanelArea1 {
   position: relative;
-  padding: 15px 5px;
-  border-left: dotted 2px #acaeaf; }
-  .BigButtonPanelArea1:before {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 15px;
-    border-bottom: dotted 2px #acaeaf;
-    border-right: dotted 2px #acaeaf;
-    position: absolute;
-    left: 0px;
-    top: -15px; }
-  .BigButtonPanelArea1:after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 15px;
-    border-top: dotted 2px #acaeaf;
-    border-right: dotted 2px #acaeaf;
-    position: absolute;
-    left: 0px;
-    bottom: -15px; }
+  padding: 15px 5px; }
   .BigButtonPanelArea1 .btn {
     color: transparent !important;
     width: 30%;
@@ -466,51 +448,33 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   display: block;
   position: relative;
   padding: 15px 0 10px 0;
-  border-left: dotted 2px #acaeaf; }
+  font-size: 160%;
+  font-weight: normal; }
   .Spotlight .SectionLabel:after,
   .Spotlight h4:after {
     width: 25%; }
-  .Spotlight .SectionLabel:before,
-  .Spotlight h4:before {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 15px;
-    border-bottom: dotted 2px #acaeaf;
-    border-right: dotted 2px #acaeaf;
-    position: absolute;
-    left: 0px;
-    top: -15px; }
-  .Spotlight .SectionLabel:after,
-  .Spotlight h4:after {
-    content: '';
-    display: block;
-    bottom: 0;
-    width: 30%;
-    margin: 5px auto 0 auto;
-    border-bottom: 2px solid white; }
 
 .Spotlight {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 1px 1px 28px 3px #e3e3e3;
+  min-height: 440px; }
+  .Spotlight:hover {
+    box-shadow: 1px 1px 28px 3px #cccccc; }
   .Spotlight p {
-    border-left: dotted 2px #acaeaf;
     padding: 3px 20px;
     margin: -3px 0 0 0;
     position: relative; }
-    .Spotlight p:after {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 15px;
-      border-top: dotted 2px #acaeaf;
-      border-right: dotted 2px #acaeaf;
-      position: absolute;
-      left: 0px;
-      bottom: -15px; }
   .Spotlight a {
     text-decoration: none; }
   .Spotlight img {
     margin-bottom: 15px; }
+  .Spotlight .spLnk {
+    background: none !important;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    font-size: 130%; }
 
 @media (min-width: 768px) {
   .TestimonialArea {
@@ -662,6 +626,9 @@ h2, .h2, .PanelHead.Distinguish,
 .SelectedItem a, .ProxyPanelContact a {
   color: #fff !important; }
 
+.RadMenu .rmGroup .rmText {
+  padding: 0 0 0 5px; }
+
 /* ==========================================================================
    Basic setup
    ========================================================================== */
@@ -669,25 +636,25 @@ body {
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-size: 13px;
   line-height: 1.8;
-  color: #0c0c0c; }
+  color: #313E48; }
 
 a {
-  color: #88ca00 ;
+  color: #323d44 ;
   text-decoration: underline; }
   a:visited {
-    color: #99e300 ; }
+    color: #3c4a53 ; }
   a:hover, a:focus, a:active {
-    color: #669700 ; }
+    color: #1c2227 ; }
   a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
     color: #999999 ; }
 
 .RadGrid a, .RadToolTip a {
-  color: #88ca00  !important;
+  color: #323d44  !important;
   text-decoration: underline; }
   .RadGrid a:visited, .RadToolTip a:visited {
-    color: #99e300  !important; }
+    color: #3c4a53  !important; }
   .RadGrid a:hover, .RadGrid a:focus, .RadGrid a:active, .RadToolTip a:hover, .RadToolTip a:focus, .RadToolTip a:active {
-    color: #669700  !important; }
+    color: #1c2227  !important; }
   .RadGrid a.aspNetDisabled, .RadGrid a.aspNetDisabled:hover, .RadGrid a.aspNetDisabled:focus, .RadGrid a.aspNetDisabled:active, .RadGrid a.aspNetDisabled:visited, .RadToolTip a.aspNetDisabled, .RadToolTip a.aspNetDisabled:hover, .RadToolTip a.aspNetDisabled:focus, .RadToolTip a.aspNetDisabled:active, .RadToolTip a.aspNetDisabled:visited {
     color: #999999  !important; }
 
@@ -709,12 +676,12 @@ h1, .h1, .PageTitle {
   margin-top: 0; }
 
 h1, .h1, .PageTitle {
-  color: #a62d38;
+  color: #a22a2e;
   font-size: 250%; }
 
 h1.BigHeader, .h1.BigHeader {
   color: #fff;
-  background-color: #a62d38;
+  background-color: #a22a2e;
   padding: 20px;
   margin: 0; }
 
@@ -735,10 +702,10 @@ h4, .SectionLabel, h5 {
   margin: 0 0 .2em; }
 
 h4, .h4, .SectionLabel {
-  color: #8fd400; }
+  color: #36424a; }
 
 h5, .h5 {
-  color: #8fd400; }
+  color: #36424a; }
 
 h6, .h6 {
   margin: 0; }
@@ -814,7 +781,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 /* header logo */
 #masterHeaderImage {
-  background-image: url("images/wsma-white.png");
+  background-image: url("images/wsma-logo.svg");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -823,7 +790,6 @@ img.ImgNoResize, .ImgNoResize img {
   width: 150px;
   height: 60px;
   /* The following are needed to hide the text, but allow it to be read by screen readers */
-  text-indent: -9999px;
   overflow: hidden;
   float: left; }
   @media (min-width: 768px) {
@@ -833,6 +799,14 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs #masterHeaderImage {
     background-position: 0 0px;
     width: 300px; }
+  #masterHeaderImage svg .cls-1 {
+    fill: none;
+    stroke: #36424a;
+    stroke-miterlimit: 3.86; }
+  #masterHeaderImage svg .cls-2 {
+    fill: #36424a; }
+  #masterHeaderImage svg .cls-3 {
+    fill: #a22a2e; }
 
 #masterDonorHeaderImage {
   background-image: url("images/DonorHeaderLogo.png");
@@ -856,11 +830,11 @@ img.ImgNoResize, .ImgNoResize img {
 
 /* On Behalf Of with target set */
 .ProxyPanelContact {
-  background-color: #8fd400; }
+  background-color: #36424a; }
   .ProxyPanelContact, .ProxyPanelContact .obo-label {
     color: #fff; }
   .ProxyPanelContact a {
-    color: #ddff97; }
+    color: #92a4b0; }
 
 /* Sub (Left) Navigation
    ========================================================================== */
@@ -870,7 +844,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 .SubNavPanelHead {
   background-color: #f0edf2;
-  color: #0c0c0c;
+  color: #313E48;
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-weight: 500; }
 
@@ -1048,20 +1022,20 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 @media (min-width: 768px) {
   .primary-navigation-area .MegaDropDownMenuOuter {
-    text-align: center; } }
+    text-align: left; } }
 .no-mqs .primary-navigation-area .MegaDropDownMenuOuter {
-  text-align: center; }
+  text-align: left; }
 
 @media (min-width: 768px) {
   .header-bottom-container {
-    background-color: rgba(54, 66, 74, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 555; } }
 .no-mqs .header-bottom-container {
-  background-color: rgba(54, 66, 74, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1069,13 +1043,13 @@ img.ImgNoResize, .ImgNoResize img {
   z-index: 555; }
 
 .navbar {
-  min-height: 52px; }
+  min-height: 72px; }
   @media (max-width: 767px) {
     .navbar {
-      background-color: #36424a; } }
+      background-color: #ffffff; } }
 
 .navbar-collapse, .searchbar-collapse {
-  background-color: #36424a; }
+  background-color: #ffffff; }
   @media (min-width: 768px) {
     .navbar-collapse, .searchbar-collapse {
       padding-left: 0;
@@ -1092,7 +1066,7 @@ img.ImgNoResize, .ImgNoResize img {
   /* container for the sign in link when the browser is <768px wide */
   padding: 8px 15px;
   text-align: center;
-  background-color: #273035; }
+  background-color: #ededed; }
 
 /* Reset some Telerik defaults */
 .RadMenu.RadMenu_WSMA {
@@ -1202,7 +1176,7 @@ img.ImgNoResize, .ImgNoResize img {
     background-color: transparent;
     color: #00837e; }
   .RadMenu.RadMenu_WSMA .rmGroup {
-    background-color: #36424a; }
+    background-color: #ffffff; }
   .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink,
   .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink {
     color: #fefefe; }
@@ -1443,7 +1417,7 @@ img.ImgNoResize, .ImgNoResize img {
   .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn,
   .RadTreeView.RadTreeView_WSMA .child-is-selected.rtIn {
     background-color: transparent;
-    color: #0c0c0c; }
+    color: #313E48; }
   .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:hover, .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:active, .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:focus {
     background-color: transparent; }
   .RadTreeView.RadTreeView_WSMA .rtUL .rtUL {
@@ -1469,7 +1443,7 @@ img.ImgNoResize, .ImgNoResize img {
     /* we don't want to display the expand/collapse icons in this theme */
     display: none; }
   .RadTreeView.RadTreeView_WSMA a.rtIn {
-    color: #88ca00;
+    color: #323d44;
     -webkit-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
@@ -1481,7 +1455,7 @@ img.ImgNoResize, .ImgNoResize img {
   background-color: transparent;
   margin-bottom: 1em; }
   .nav-secondary .sub-nav-head {
-    background-color: #36424a;
+    background-color: #ffffff;
     color: #00837e;
     font-weight: bold;
     font-size: 120%;
@@ -1490,7 +1464,7 @@ img.ImgNoResize, .ImgNoResize img {
   .nav-secondary .SubNavigationSeparator {
     border: none;
     height: 4px;
-    background-color: #36424a; }
+    background-color: #ffffff; }
     .nav-secondary .SubNavigationSeparator .rtIn {
       padding: 0;
       color: #fff; }
@@ -1520,7 +1494,7 @@ img.ImgNoResize, .ImgNoResize img {
   .navbar-toggle:hover, .navbar-toggle:focus {
     background-color: #fff; }
   .navbar-toggle .icon-bar {
-    background-color: #36424a; }
+    background-color: #ffffff; }
 
 .header-container .nav-auxiliary .TextButton,
 .header-container .nav-auxiliary .navbar-toggle {
@@ -2558,7 +2532,7 @@ input[type="checkbox"]:focus {
 /* Open Invoices
    ========================================================================== */
 .OpenInvoicesTotals .SelectedTotal .PanelFieldValue {
-  color: #a62d38; }
+  color: #a22a2e; }
 
 /* Group List Editor
    ========================================================================== */
@@ -2567,7 +2541,7 @@ input[type="checkbox"]:focus {
 .RadTreeView.GLE .rtIn, .RadTreeView.GLE .rtHover .rtIn, .RadTreeView.GLE .rtSelected .rtIn {
   background-color: transparent;
   border: none;
-  color: #88ca00; }
+  color: #323d44; }
 .RadTreeView.GLE a:hover, .RadTreeView.GLE a:focus, .RadTreeView.GLE span[onclick]:hover, .RadTreeView.GLE span[onclick]:focus {
   background-color: #22272b;
   color: #fff; }
@@ -2591,7 +2565,7 @@ input[type="checkbox"]:focus {
 
 .SearchResultSummary .ListItemTitle a {
   text-decoration: none;
-  color: #0c0c0c !important;
+  color: #313E48 !important;
   margin: -4px -7px 0; }
 
 .SearchResultSummary .ListItemTitle a:hover {
@@ -2661,10 +2635,10 @@ input[type="checkbox"]:focus {
 .ProgressTracker2 .ProgressBar {
   margin: 10px; }
   .ProgressTracker2 .ProgressBar > span {
-    background-color: #db707a; }
+    background-color: #db7074; }
 .ProgressTracker2 .SuccessfulMessage {
   background-color: #10f2ea;
-  color: #0c0c0c; }
+  color: #313E48; }
 
 /* </Progress Tracker 2> */
 /* Filter Panel (Query Menu)
@@ -2700,9 +2674,9 @@ input[type="checkbox"]:focus {
     background-color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    color: #a62d38; }
+    color: #a22a2e; }
     .CartCharges .GrandTotal .PanelField .Label {
-      color: #a62d38; }
+      color: #a22a2e; }
 
 /* ==========================================================================
    TELERIK OVERRIDES
@@ -3382,7 +3356,10 @@ input[type="checkbox"]:focus {
 
 /* Internal page carousel */
 .InternalHeaderArea {
-  background: #36424a;
+  background-image: url(images/banner2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
   overflow: hidden; }
   @media (min-width: 768px) {
     .InternalHeaderArea .carousel {
@@ -3435,10 +3412,10 @@ input[type="checkbox"]:focus {
    ========================================================================== */
 /* Community left nav */
 .CommunityLinksBlock a {
-  color: #0c0c0c; }
+  color: #313E48; }
   .CommunityLinksBlock a:hover {
     background-color: #475762;
-    color: #0c0c0c;
+    color: #313E48;
     text-decoration: none; }
   .CommunityLinksBlock a.CommunityLinksSelected, .CommunityLinksBlock a.CommunityLinksSelected:hover {
     background-color: #00837e;
@@ -3463,8 +3440,8 @@ input[type="checkbox"]:focus {
 .CommunityCommentItem {
   background: #f2f2f2;
   border-left: 10px solid #ddd;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
+  box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
 .CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem {
   background: #f2f2f2; }
@@ -3472,8 +3449,8 @@ input[type="checkbox"]:focus {
 /* For adding comments */
 .CommunityWikiReplyForm {
   background: #f2f2f2;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
+  box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
 /*****************************************************/
 /*            Donor Sample Site Styles               */
@@ -3545,7 +3522,7 @@ input[type="checkbox"]:focus {
 /* Titles */
 h1.BigHeader, .h1.BigHeader {
   background-color: transparent;
-  color: #a62d38; }
+  color: #a22a2e; }
 
 /* Use class ContentBlockPrimary to give a block of content extra emphasis */
 .ContentBlockPrimary {
@@ -3610,7 +3587,7 @@ h1.BigHeader, .h1.BigHeader {
 .BlockList a span {
   text-decoration: underline; }
 .BlockList p {
-  color: #0c0c0c;
+  color: #313E48;
   margin-bottom: 0; }
 
 /* Tagged list format, styled similar to BlockList */
@@ -3678,7 +3655,7 @@ h1.BigHeader, .h1.BigHeader {
   padding: 15px;
   margin: 0 0 1em;
   color: #fff;
-  background: #a62d38;
+  background: #a22a2e;
   /*$callout1-bg*/
   width: auto;
   border-radius: 3px; }
@@ -3695,7 +3672,7 @@ h1.BigHeader, .h1.BigHeader {
     border-width: 8px 8px 0;
     /* vary these values to change the angle of the vertex */
     border-style: solid;
-    border-color: #a62d38 transparent;
+    border-color: #a22a2e transparent;
     /*$callout1-bg*/
     /* reduce the damage in FF3.0 */
     display: block;
@@ -3706,7 +3683,7 @@ h1.BigHeader, .h1.BigHeader {
   border-color: #ddd; }
 
 .TotalBox label {
-  background-color: #a62d38;
+  background-color: #a22a2e;
   color: #fff;
   padding: .25em .75em;
   color: #fff; }
@@ -3724,7 +3701,7 @@ h1.BigHeader, .h1.BigHeader {
 
 /* Use the FeatureText class to make a block of text larger for emphasis */
 .FeatureText {
-  color: #323232;
+  color: #506576;
   font-size: 150%;
   line-height: 170%; }
 
@@ -3786,22 +3763,11 @@ a.FeatureActionLink {
     display: table; }
   .SpotlightRow:after {
     clear: both; }
-  @media (min-width: 768px) {
-    .SpotlightRow.ThreeAcross .Spotlight {
-      float: left;
-      width: 33%;
-      padding-left: 2%;
-      padding-right: 2%; } }
-  .no-mqs .SpotlightRow.ThreeAcross .Spotlight {
-    float: left;
-    width: 33%;
-    padding-left: 2%;
-    padding-right: 2%; }
 
 /* Feature Header
    ========================================================================== */
 .feature-header {
-  color: #a62d38;
+  color: #a22a2e;
   border-bottom: none;
   margin-bottom: .8em; }
 
@@ -3830,11 +3796,11 @@ a.FeatureActionLink {
     .feature-link-with-image .feature-link-text h1, .feature-link-with-image .feature-link-text h2, .feature-link-with-image .feature-link-text h3, .feature-link-with-image .feature-link-text h4, .feature-link-with-image .feature-link-text h5 {
       margin-top: 0; }
   .feature-link-with-image.feature-link-1 .feature-link-text {
-    background-color: #a62d38;
-    background-color: rgba(166, 45, 56, 0.75); }
+    background-color: #a22a2e;
+    background-color: rgba(162, 42, 46, 0.75); }
   .feature-link-with-image.feature-link-1:hover .feature-link-text {
-    background-color: #7e222a;
-    background-color: rgba(126, 34, 42, 0.75); }
+    background-color: #7a2023;
+    background-color: rgba(122, 32, 35, 0.75); }
   .feature-link-with-image.feature-link-2 .feature-link-text {
     background-color: #36424a;
     background-color: rgba(54, 66, 74, 0.75); }
@@ -3845,7 +3811,7 @@ a.FeatureActionLink {
 /* Feature Text Inline
    ========================================================================== */
 .feature-text-inline {
-  color: #a62d38; }
+  color: #a22a2e; }
 
 /* Header Links
    ========================================================================== */
@@ -3854,9 +3820,9 @@ a.FeatureActionLink {
   .header-link a {
     text-decoration: none; }
     .header-link a, .header-link a:visited {
-      color: #0c0c0c; }
+      color: #313E48; }
     .header-link a:hover, .header-link a:active, .header-link a:focus {
-      color: #88ca00; }
+      color: #323d44; }
 
 /* Image Banners
    ========================================================================== */
@@ -3955,7 +3921,7 @@ a.FeatureActionLink {
    ========================================================================== */
 /* To enhance the display of a donation page, apply the donate-page class to the Donation Creator iPart's CSS Class */
 .donate-page .GiftItemName {
-  color: #a62d38;
+  color: #a22a2e;
   font-size: 250%; }
 
 .donate-page .GiftItemDescription {
@@ -4023,7 +3989,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   .ProgressTracker_Dashboard_Overview .ProgressBar > span {
     display: block;
     height: 100%;
-    background-color: #a62d38;
+    background-color: #a22a2e;
     position: relative;
     overflow: hidden; }
 .ProgressTracker2 p,
@@ -4067,6 +4033,58 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   .StaffDashboard .TitleBarCaption.Collapsible {
     border-bottom-color: #ddd; }
 
+.smile svg {
+  width: 50%; }
+  .smile svg .cls-1 {
+    fill: whitesmoke; }
+  .smile svg .cls-2 {
+    fill: #8fd400; }
+.smile:hover svg .cls-1 {
+  fill: #8fd400; }
+.smile:hover svg .cls-2 {
+  fill: white; }
+.smile .Spotlight:hover {
+  border-bottom: 5px solid #8fd400; }
+
+.heads svg {
+  width: 50%; }
+  .heads svg .st0 {
+    fill: whitesmoke; }
+  .heads svg .st1 {
+    fill: #a22a2e; }
+.heads:hover svg .st0 {
+  fill: #a22a2e; }
+.heads:hover svg .st1 {
+  fill: whitesmoke; }
+.heads .Spotlight:hover {
+  border-bottom: 5px solid #a22a2e; }
+
+.bubbles svg {
+  width: 50%; }
+  .bubbles svg .st0 {
+    fill: whitesmoke; }
+  .bubbles svg .st1 {
+    fill: #4bc8b6; }
+.bubbles:hover svg .st0 {
+  fill: #4bc8b6; }
+.bubbles:hover svg .st1 {
+  fill: whitesmoke; }
+.bubbles .Spotlight:hover {
+  border-bottom: 5px solid #4bc8b6; }
+
+.shift svg {
+  width: 50%; }
+  .shift svg .st0 {
+    fill: whitesmoke; }
+  .shift svg .st1 {
+    fill: #00837e; }
+.shift:hover svg .st0 {
+  fill: #00837e; }
+.shift:hover svg .st1 {
+  fill: whitesmoke; }
+.shift .Spotlight:hover {
+  border-bottom: 5px solid #00837e; }
+
 #masterHeaderImage {
   margin-top: 35px; }
 
@@ -4077,8 +4095,13 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   text-align: right; }
 
 .RadMenu a.rmLink {
-  color: #ffffff; }
+  color: #313E48; }
 .RadMenu a:visited {
+  color: #313E48; }
+
+.Wrapper-HomePage .RadMenu a.rmLink {
+  color: #ffffff; }
+.Wrapper-HomePage .RadMenu a:visited {
   color: #ffffff; }
 
 .ProgressTracker2 {

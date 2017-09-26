@@ -14,11 +14,12 @@ $theme-icons-sprite-path:        'images/ThemeIconsSprite.png' !default;
 
 // Color Palette
 // -------------------------
-
+$color-black:               #313E48 !default;
+$color-white:               #ffffff !default;
 $color-wsma-dkgrey:         #36424a !default;
 $color-wsma-mdgrey:         #6c6f70 !default;
 $color-wsma-ltgrey:         #d0cfcb !default;
-$color-wsma-red:            #a62d38 !default;
+$color-wsma-red:            #a22a2e !default;
 $color-wsma-forest:         #00837e !default;
 $color-wsma-teal:           #4bc8b6 !default;
 $color-wsma-seafoam:        #9fe6d9 !default;
@@ -55,7 +56,7 @@ $font-family-base:      "Gotham A", "Gotham B", sans-serif !default;
 $font-size-base:        13px !default;
 $line-height-base:      1.8 !default;
 $line-height-computed:  floor($font-size-base * $line-height-base) !default;
-$text-color:            #0c0c0c !default;
+$text-color:            $color-black !default;
 
 $headings-font-family:  "Gotham A", "Gotham B", sans-serif !default; 
 $headings-font-weight:  500 !default;
@@ -112,9 +113,9 @@ $btn-linkedin-border:           darken($color-linkedin, 10%) !default;
 // -------------------------
 $navbar-top-height:                        46px !default;
 $navbar-height:                            65px !default;
-$navbar-horizontal-alignment:              center; /* left, center, right */
+$navbar-horizontal-alignment:              left; /* left, center, right */
 $navbar-default-color:                     $color-secondary-a !default;
-$navbar-default-bg:                        $color-base !default;
+$navbar-default-bg:                        $color-white !default;
 $navbar-padding-vertical:                  8px !default;
 
 $navbar-default-link-hover-color:          $color-secondary-a !default;

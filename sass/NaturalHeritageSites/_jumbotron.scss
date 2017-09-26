@@ -316,7 +316,11 @@
 
 /* Internal page carousel */
 .InternalHeaderArea {    
-    background: $navbar-default-bg;
+    //background: $navbar-default-bg;
+    background-image: url(images/banner2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
     overflow: hidden;
     .carousel {
         @include respond-to('grid large') { height:200px; }

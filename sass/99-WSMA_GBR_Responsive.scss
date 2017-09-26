@@ -61,10 +61,21 @@
 
 .RadMenu {
     a.rmLink {
-        color: #ffffff;
+        color: $color-black;
     }
     a:visited {
-        color: #ffffff;
+        color: $color-black;
+    }
+}
+
+.Wrapper-HomePage {
+    .RadMenu {
+        a.rmLink {
+            color: $color-white;
+        }
+        a:visited {
+            color: $color-white;
+        }
     }
 }
 

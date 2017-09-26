@@ -134,8 +134,11 @@
         left: 0;
         right: 0;
         z-index: 666;
+        background: $color-white;
     }
 }
+
+
 
 .header-logo-container {
     float: left;
@@ -212,6 +215,35 @@
     .FullWidthArea-StyleBg5 {
         padding: 50px 1%;
         //min-height: 450px;
+    }
+    /* Homepage logo and banner differences */
+    .header-top-container {
+        @include respond-to('grid large') { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 666;
+            background: transparent;
+        }
+    }
+    #masterHeaderImage {
+        svg {
+            .cls-1 {
+                fill: none;
+                stroke: #fff;
+                stroke-miterlimit: 3.86;
+                //stroke-width: 0.36px;
+              }
+        
+              .cls-2 {
+                fill: #fff;
+              }
+        
+              .cls-3 {
+                fill: $color-wsma-red;
+              }
+        }
     }
 }
 
