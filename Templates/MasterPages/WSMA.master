@@ -165,6 +165,7 @@
         </asp:UpdateProgress>
 
         <asp:Panel ID="masterWrapper" runat="server" CssClass="wrapper">
+            <a name="PageTop" class="sr-only">Top of the Page</a>
             <header id="hd" class="header ClearFix navbar" data-height-offset="true">
                 <div class="header-top-container">
                     <div class="header-container">
@@ -173,35 +174,39 @@
                             <asiweb:ContentTemplateArea ID="HeaderLogo" TemplateAreaName="HeaderLogo" HonorContentRecordLayout="false" runat="server" />
                         </div>
                         <!-- Auxiliary area -->
-                        <div class="navbar-header nav-auxiliary" id="auxiliary-container">
-                            <div class="auth-link-container-sm" data-set="auth-link"></div>
-                            <%-- Get the Auxiliary Navigation Items from the site map --%>
-                            <asiweb:NavigationList ID="Auxiliary" runat="server" NavigationPaneCode="4" UseGenericMenu="true"
-                                AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
-                            <div id="masterSocialNetworking" class="header-social">
-                                <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
-                            </div>
-                            <!-- Buttons to toggle the search bar and primary navigation on xs screens -->
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse" data-parent=".navbar">
-                                <span class="sr-only">Toggle search</span>
-                                <span class="icon-search"></span>
-                            </button>
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" data-parent=".navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <div class="search-container-sm" data-set="searchbar"><%-- The search bar goes here when the screen is wider than 767px --%></div>
-                            <div>
-                                <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />
-                            </div>
-                            <div class="ste-section">
-                                <%-- This control will display the Surf-to-Edit button --%>
-                                <asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
-                                <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " />
-                                <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
-                            </div>
+                        <div class="navbar-header nav-auxiliary pull-right" id="auxiliary-container">
+                            <!-- Utility Block -->
+                                <!-- Universal Search -->
+                                <!-- Buttons to toggle the search bar and primary navigation on xs screens -->
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse" data-parent=".navbar">
+                                    <span class="sr-only">Toggle search</span>
+                                    <span class="icon-search"></span>
+                                </button>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" data-parent=".navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="search-container-sm" data-set="searchbar"><%-- The search bar goes here when the screen is wider than 767px --%></div>
+                                <!-- Navigation Links -->
+                                <%-- Get the Auxiliary Navigation Items from the site map --%>
+                                <asiweb:NavigationList ID="Auxiliary" runat="server" NavigationPaneCode="4" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
+                                <!-- Navigation Toggle -->
+                                <!-- Auth -->
+                                <div class="auth-link-container-sm" data-set="auth-link"></div>
+                                <!-- Translation -->
+                                <div>
+                                        <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />
+                                </div>
+                                <!-- Easy Edit -->
+                                <div class="ste-section">
+                                        <%-- This control will display the Surf-to-Edit button --%>
+                                        <asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
+                                        <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " />
+                                        <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
+                                </div>
+                            <!-- END: Utility Block -->                           
                         </div>
                     </div>
                     <!-- /.header-container -->
@@ -330,6 +335,10 @@
                 <div class="footer-content">
                     <div class="container">
                         <asiweb:ContentTemplateArea ID="FooterCommunications" TemplateAreaName="FooterCommunications" HonorContentRecordLayout="true" runat="server" />
+                    </div>
+                    <!-- Just stashing the Social Networking stuff here for now. -->
+                    <div id="masterSocialNetworking" class="header-social">
+                            <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
                     </div>
                 </div>
                 <!-- /.footer-content -->
