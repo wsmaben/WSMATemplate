@@ -164,18 +164,37 @@
             </ProgressTemplate>
         </asp:UpdateProgress>
 
-        <asp:Panel ID="masterWrapper" runat="server" CssClass="wrapper">
+        <asp:Panel ID="masterWrapper" runat="server" CssClass="wrapper has-secondary-col col-on-right">
             <a name="PageTop" class="sr-only">Top of the Page</a>
             <header id="hd" class="header ClearFix navbar" data-height-offset="true">
                 <div class="header-top-container">
                     <div class="header-container">
-                        <div id="masterLogoArea" class="header-logo-container">
+                        <div id="masterLogoArea" class="header-logo-container pull-left">
                             <!-- Logo -->
                             <asiweb:ContentTemplateArea ID="HeaderLogo" TemplateAreaName="HeaderLogo" HonorContentRecordLayout="false" runat="server" />
                         </div>
                         <!-- Auxiliary area -->
                         <div class="navbar-header nav-auxiliary pull-right" id="auxiliary-container">
                             <!-- Utility Block -->
+                            <div class="collapse navbar-collapse" id="search-collapse">
+                                <div class="search-container" data-set="searchbar">
+                                    <%-- Universal search --%>
+                                    <%-- Note: on screens > 768px wide this search bar will display after the social networking link --%>
+                                    <div class="header-search">
+                                        <asiweb:SimpleSearchField ID="SearchField" runat="server" AdvancedLinkVisible="false" PromptText="Keyword Search"
+                                            InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse nav-primary" id="navbar-collapse">
+                                <div class="auth-link-container" data-set="auth-link">
+                                    <%-- This template required to display the (Sign In/Out Link) --%>
+                                    <%-- Note: on screens > 768px wide this link will display before the auxiliary navigation --%>
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign In" LogoutText="Sign Out"
+                                        AccessKey="l" OnLoggedOut="LoginStatus1_OnLoggedOut" OnPreRender="LoginStatus1_OnPreRender" CssClass="auth-link" />
+                                </div>
+                                
+                            </div>
                             <div class="UtilityNavigation nav-auxiliary">
                                 <!-- Universal Search -->
                                 <!-- Buttons to toggle the search bar and primary navigation on xs screens -->
@@ -196,10 +215,10 @@
                                 <!-- Navigation Toggle -->
                                 <!-- Auth -->
                                 <div class="auth-link-container-sm" data-set="auth-link"></div>
-                                <!-- Translation -->
-                                <div>
+                                <!-- Translation -- Don't need-->
+                                <!-- <div>
                                         <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />
-                                </div>
+                                </div> -->
                                 <!-- Easy Edit -->
                                 <div class="ste-section">
                                         <%-- This control will display the Surf-to-Edit button --%>
@@ -221,37 +240,23 @@
                     <!-- /.header-container -->
                 </div>
                 <!-- /.header-top-container -->
-                <div class="header-bottom-container">
+                <div class="ClearFix header-bottom-container">
+                    <!-- Cities Serch was here. Moving it within the top header -->
                     <div class="header-container">
-                        <div class="collapse navbar-collapse" id="search-collapse">
-                            <div class="search-container" data-set="searchbar">
-                                <%-- Universal search --%>
-                                <%-- Note: on screens > 768px wide this search bar will display after the social networking link --%>
-                                <div class="header-search">
-                                    <asiweb:SimpleSearchField ID="SearchField" runat="server" AdvancedLinkVisible="false" PromptText="Keyword Search"
-                                        InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse navbar-collapse nav-primary" id="navbar-collapse">
-                            <div class="auth-link-container" data-set="auth-link">
-                                <%-- This template required to display the (Sign In/Out Link) --%>
-                                <%-- Note: on screens > 768px wide this link will display before the auxiliary navigation --%>
-                                <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign In" LogoutText="Sign Out"
-                                    AccessKey="l" OnLoggedOut="LoginStatus1_OnLoggedOut" OnPreRender="LoginStatus1_OnPreRender" CssClass="auth-link" />
-                            </div>
-                            
-                        </div>
+                        <!-- This is the full screen search bar -->
                     </div>
                     <!-- /.header-container -->
                 </div>
                 <!-- /.header-bottom-container -->
             </header>
             <!-- /.header -->
-
+            <!-- This is the Homepage Hero slider -->
             <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
                 <asiweb:ContentTemplateArea ID="HomepageContentArea1" TemplateAreaName="HomepageContentArea1" HonorContentRecordLayout="false" runat="server" />
             </asp:Panel>
+            <!-- <asp:Panel ID="InternalHeaderArea" runat="server" Visible="false" CssClass="InteranlFullWidthArea">
+                <asiweb:ContentTemplateArea ID="InternalContentArea1" TemplateAreaName="InternalContentArea1" HonorContentRecordLayout="false" runat="server" />
+            </asp:Panel> -->
             <div id="masterContentArea" class="container">
                 <!-- Group Breadcrumbs, Proxy and Page Tasks so they can be controlled together -->
                 <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
