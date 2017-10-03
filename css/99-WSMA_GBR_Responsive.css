@@ -384,6 +384,20 @@ h1 {
       font-size: 50%;
       display: table;
       margin-top: 1em; }
+  .Wrapper-HomePage h2.panel-title {
+    color: #36424a;
+    display: table; }
+    .Wrapper-HomePage h2.panel-title:after {
+      content: '';
+      display: block;
+      bottom: 0;
+      width: 30%;
+      margin: 5px auto 0 auto;
+      border-bottom: 2px solid #d3dadf; }
+  .Wrapper-HomePage .auth-link-container-sm a {
+    color: #ffffff; }
+  .Wrapper-HomePage .auth-link-container-sm a:visited {
+    color: #ffffff; }
 
 /* Diamond shaped button, excluding Safari */
 /* Button styles for all browsers */
@@ -627,7 +641,7 @@ h2, .h2, .PanelHead.Distinguish,
   color: #fff !important; }
 
 .RadMenu .rmGroup .rmText {
-  padding: 0 0 0 5px; }
+  padding: 0 0 0 5px !important; }
 
 /* ==========================================================================
    Basic setup
@@ -1043,7 +1057,7 @@ img.ImgNoResize, .ImgNoResize img {
   z-index: 555; }
 
 .navbar {
-  min-height: 72px; }
+  min-height: 0px; }
   @media (max-width: 767px) {
     .navbar {
       background-color: #ffffff; } }
@@ -1189,9 +1203,9 @@ img.ImgNoResize, .ImgNoResize img {
     position: relative; }
   .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
     text-transform: uppercase;
-    color: #00837e;
+    color: #313E48;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-size: 164%;
+    font-size: 100%;
     font-weight: normal;
     letter-spacing: 1px; }
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
@@ -1456,7 +1470,7 @@ img.ImgNoResize, .ImgNoResize img {
   margin-bottom: 1em; }
   .nav-secondary .sub-nav-head {
     background-color: #ffffff;
-    color: #00837e;
+    color: #313E48;
     font-weight: bold;
     font-size: 120%;
     padding: 10px 15px;
@@ -1478,7 +1492,7 @@ img.ImgNoResize, .ImgNoResize img {
   .navbar-header > a,
   .navbar-header .NavigationUnorderedList,
   .navbar-header .NavigationLink {
-    display: inline-block;
+    display: block;
     vertical-align: middle;
     color: #fff; }
 
@@ -1499,13 +1513,13 @@ img.ImgNoResize, .ImgNoResize img {
 .header-container .nav-auxiliary .TextButton,
 .header-container .nav-auxiliary .navbar-toggle {
   margin-left: 10px; }
-.header-container .nav-auxiliary .UtilityAuthentication a {
+.header-container .nav-auxiliary .auth-link a {
   color: #fff;
   font-size: 107%;
   text-decoration: none;
   font-weight: bold;
   padding-top: 5px; }
-  .header-container .nav-auxiliary .UtilityAuthentication a:hover, .header-container .nav-auxiliary .UtilityAuthentication a:focus {
+  .header-container .nav-auxiliary .auth-link a:hover, .header-container .nav-auxiliary .auth-link a:focus {
     text-decoration: underline; }
 @media (min-width: 768px) {
   .header-container .nav-auxiliary .NavigationListItem,
