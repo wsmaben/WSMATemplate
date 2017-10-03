@@ -240,6 +240,7 @@
                     <!-- /.header-container -->
                 </div>
                 <!-- /.header-top-container -->
+                <!-- We're not using the following section. There was nothing here in the auto template. -->
                 <div class="ClearFix header-bottom-container">
                     <!-- Cities Serch was here. Moving it within the top header -->
                     <div class="header-container">
@@ -248,12 +249,13 @@
                     <!-- /.header-container -->
                 </div>
                 <!-- /.header-bottom-container -->
+                <!-- This is the Homepage Hero slider -->
+                <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
+                    <asiweb:ContentTemplateArea ID="HomepageContentArea1" TemplateAreaName="HomepageContentArea1" HonorContentRecordLayout="false" runat="server" />
+                </asp:Panel>
             </header>
             <!-- /.header -->
-            <!-- This is the Homepage Hero slider -->
-            <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
-                <asiweb:ContentTemplateArea ID="HomepageContentArea1" TemplateAreaName="HomepageContentArea1" HonorContentRecordLayout="false" runat="server" />
-            </asp:Panel>
+
             <!-- <asp:Panel ID="InternalHeaderArea" runat="server" Visible="false" CssClass="InteranlFullWidthArea">
                 <asiweb:ContentTemplateArea ID="InternalContentArea1" TemplateAreaName="InternalContentArea1" HonorContentRecordLayout="false" runat="server" />
             </asp:Panel> -->
