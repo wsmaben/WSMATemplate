@@ -19,7 +19,7 @@
     }
 }
 .navbar {
-    min-height: 72px;
+    min-height: 0px;
     @include respond-to ('grid small') {
         background-color: $navbar-default-bg;
     }
@@ -229,7 +229,7 @@
         }
 
         > .rmItem > .rmLink  {
-            text-transform: uppercase;
+            text-transform: capitalize;
             color: $navbar-default-color;
             font-family: $navbar-default-link-font-family;
             font-size: $navbar-default-link-font-size;
@@ -409,7 +409,7 @@
         .rmRootLink:hover,
         .rmRootLink:focus,
         .rmRootLink.rmFocused {
-             border-top: 3px solid $navbar-default-link-hover-color;
+             border-bottom: 3px solid $navbar-default-link-hover-color;
         }
 
         .rmSlide {

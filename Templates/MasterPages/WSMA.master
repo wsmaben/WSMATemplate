@@ -176,6 +176,7 @@
                         <!-- Auxiliary area -->
                         <div class="navbar-header nav-auxiliary pull-right" id="auxiliary-container">
                             <!-- Utility Block -->
+                            <div class="UtilityNavigation nav-auxiliary">
                                 <!-- Universal Search -->
                                 <!-- Buttons to toggle the search bar and primary navigation on xs screens -->
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse" data-parent=".navbar">
@@ -206,7 +207,15 @@
                                         <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " />
                                         <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
                                 </div>
-                            <!-- END: Utility Block -->                           
+                            <!-- END: Utility Block -->
+                            </div>
+                            <div class="primary-navigation-area">
+                                <div class="collapse navbar-collapse nav-primary" id="navbar-collapse">
+                                    <!-- Primary navigation -->
+                                    <asi:PageNavR ID="Primary" runat="server" NavigationPaneCode="1" StartFromRootNode="true" SelectDefaultNode="true" />
+                                </div>
+                            </div>
+                                
                         </div>
                     </div>
                     <!-- /.header-container -->
@@ -231,9 +240,7 @@
                                 <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign In" LogoutText="Sign Out"
                                     AccessKey="l" OnLoggedOut="LoginStatus1_OnLoggedOut" OnPreRender="LoginStatus1_OnPreRender" CssClass="auth-link" />
                             </div>
-                            <!-- Primary navigation -->
-                            <asi:PageNavR ID="Primary" runat="server" NavigationPaneCode="1" StartFromRootNode="true"
-                                SelectDefaultNode="true" />
+                            
                         </div>
                     </div>
                     <!-- /.header-container -->

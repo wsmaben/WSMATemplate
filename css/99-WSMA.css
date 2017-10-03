@@ -384,6 +384,20 @@ h1 {
       font-size: 50%;
       display: table;
       margin-top: 1em; }
+  .Wrapper-HomePage h2.panel-title {
+    color: #36424a;
+    display: table; }
+    .Wrapper-HomePage h2.panel-title:after {
+      content: '';
+      display: block;
+      bottom: 0;
+      width: 30%;
+      margin: 5px auto 0 auto;
+      border-bottom: 2px solid #d3dadf; }
+  .Wrapper-HomePage .auth-link-container-sm a {
+    color: #ffffff; }
+  .Wrapper-HomePage .auth-link-container-sm a:visited {
+    color: #ffffff; }
 
 /* Diamond shaped button, excluding Safari */
 /* Button styles for all browsers */
@@ -627,7 +641,11 @@ h2, .h2, .PanelHead.Distinguish,
   color: #fff !important; }
 
 .RadMenu .rmGroup .rmText {
-  padding: 0 0 0 5px; }
+  padding: 0 0 0 5px !important; }
+
+.rmRootGroup > .rmItem {
+  padding-bottom: 23px;
+  border-bottom: 5px solid #4bc8b6; }
 
 /* ==========================================================================
    Basic setup
@@ -799,13 +817,31 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs #masterHeaderImage {
     background-position: 0 0px;
     width: 300px; }
-  #masterHeaderImage svg .cls-1 {
+  @media (max-width: 767px) {
+    #masterHeaderImage svg .cls-1 {
+      fill: none;
+      stroke: #36424a;
+      stroke-miterlimit: 3.86; }
+    #masterHeaderImage svg .cls-2 {
+      fill: #36424a; }
+    #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; } }
+  @media (min-width: 768px) {
+    #masterHeaderImage svg .cls-1 {
+      fill: none;
+      stroke: #36424a;
+      stroke-miterlimit: 3.86; }
+    #masterHeaderImage svg .cls-2 {
+      fill: #36424a; }
+    #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; } }
+  .no-mqs #masterHeaderImage svg .cls-1 {
     fill: none;
     stroke: #36424a;
     stroke-miterlimit: 3.86; }
-  #masterHeaderImage svg .cls-2 {
+  .no-mqs #masterHeaderImage svg .cls-2 {
     fill: #36424a; }
-  #masterHeaderImage svg .cls-3 {
+  .no-mqs #masterHeaderImage svg .cls-3 {
     fill: #a22a2e; }
 
 #masterDonorHeaderImage {
@@ -1043,7 +1079,7 @@ img.ImgNoResize, .ImgNoResize img {
   z-index: 555; }
 
 .navbar {
-  min-height: 72px; }
+  min-height: 0px; }
   @media (max-width: 767px) {
     .navbar {
       background-color: #ffffff; } }
@@ -1167,14 +1203,14 @@ img.ImgNoResize, .ImgNoResize img {
     margin: 0; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected {
     /* root item selected styles */
-    color: #00837e;
+    color: #4bc8b6;
     background-color: transparent; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
     /* root item hover and focus styles */
     background-color: transparent;
-    color: #00837e; }
+    color: #4bc8b6; }
   .RadMenu.RadMenu_WSMA .rmGroup {
     background-color: #ffffff; }
   .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink,
@@ -1188,10 +1224,10 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem {
     position: relative; }
   .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-    text-transform: uppercase;
-    color: #00837e;
+    text-transform: capitalize;
+    color: #313E48;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-size: 164%;
+    font-size: 100%;
     font-weight: normal;
     letter-spacing: 1px; }
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
@@ -1325,7 +1361,7 @@ img.ImgNoResize, .ImgNoResize img {
     .RadMenu.RadMenu_WSMA .rmRootLink:hover,
     .RadMenu.RadMenu_WSMA .rmRootLink:focus,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-      border-top: 3px solid #00837e; }
+      border-bottom: 3px solid #4bc8b6; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
       margin: 0; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -1369,7 +1405,7 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-    border-top: 3px solid #00837e; }
+    border-bottom: 3px solid #4bc8b6; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
     margin: 0; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -1456,7 +1492,7 @@ img.ImgNoResize, .ImgNoResize img {
   margin-bottom: 1em; }
   .nav-secondary .sub-nav-head {
     background-color: #ffffff;
-    color: #00837e;
+    color: #313E48;
     font-weight: bold;
     font-size: 120%;
     padding: 10px 15px;
@@ -1479,18 +1515,18 @@ img.ImgNoResize, .ImgNoResize img {
   .navbar-header .NavigationUnorderedList,
   .navbar-header .NavigationLink {
     display: block;
-    vertical-align: middle;
+    vertical-align: right;
     color: #fff; }
 
 .navbar-toggle {
   margin-top: 3.5px;
   margin-bottom: 3.5px;
   vertical-align: middle;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #36424a;
   border-color: transparent;
   border-radius: 0px; }
   .navbar-toggle.collapsed {
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: #36424a; }
   .navbar-toggle:hover, .navbar-toggle:focus {
     background-color: #fff; }
   .navbar-toggle .icon-bar {
@@ -1499,13 +1535,13 @@ img.ImgNoResize, .ImgNoResize img {
 .header-container .nav-auxiliary .TextButton,
 .header-container .nav-auxiliary .navbar-toggle {
   margin-left: 10px; }
-.header-container .nav-auxiliary .auth_link a {
+.header-container .nav-auxiliary .UtilityAuthentication a {
   color: #fff;
   font-size: 107%;
   text-decoration: none;
   font-weight: bold;
   padding-top: 5px; }
-  .header-container .nav-auxiliary .auth_link a:hover, .header-container .nav-auxiliary .auth_link a:focus {
+  .header-container .nav-auxiliary .UtilityAuthentication a:hover, .header-container .nav-auxiliary .UtilityAuthentication a:focus {
     text-decoration: underline; }
 @media (min-width: 768px) {
   .header-container .nav-auxiliary .NavigationListItem,
@@ -1558,7 +1594,7 @@ img.ImgNoResize, .ImgNoResize img {
   /* Cart Item Flag indicating how many items are in your cart */ }
   .nav-auxiliary .nav-aux-button .NavigationLink {
     /* This makes the link look like the toggle buttons */
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #36424a;
     margin-left: 10px;
     padding: 5px;
     margin-top: 3.5px;
@@ -1568,7 +1604,7 @@ img.ImgNoResize, .ImgNoResize img {
     .nav-auxiliary .nav-aux-button .NavigationLink:hover, .nav-auxiliary .nav-aux-button .NavigationLink:focus {
       background-color: #fff; }
     .nav-auxiliary .nav-aux-button .NavigationLink:active {
-      background-color: rgba(255, 255, 255, 0.8); }
+      background-color: #36424a; }
   .nav-auxiliary .nav-aux-button.NavigationListItem {
     position: relative;
     /* this is required for the cart indicator placement */
@@ -1693,7 +1729,8 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
     height: 32px; }
     @media (max-width: 767px) {
       .header-search .search-field {
-        width: 100%; } }
+        width: 100%;
+        background-color: #ffffff; } }
     @media (min-width: 768px) {
       .header-search .search-field {
         padding: 0 0 0 7px;
@@ -1701,7 +1738,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
         height: 31px;
         padding-left: 34px !important;
         background-position: 7px -17px !important;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: #ffffff;
         border: none;
         margin: 0 0 0 -5px;
         -webkit-transition: width;
@@ -1721,7 +1758,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
       height: 31px;
       padding-left: 34px !important;
       background-position: 7px -17px !important;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: #ffffff;
       border: none;
       margin: 0 0 0 -5px;
       -webkit-transition: width;
@@ -4086,7 +4123,8 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   border-bottom: 5px solid #00837e; }
 
 #masterHeaderImage {
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-bottom: 5px; }
 
 .carousel-caption {
   top: 170px; }
@@ -4100,13 +4138,13 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   color: #313E48; }
 
 .Wrapper-HomePage .RadMenu a.rmLink {
-  color: #ffffff; }
+  color: #ffffff !important; }
 .Wrapper-HomePage .RadMenu a:visited {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .ProgressTracker2 {
   font-size: 135%;
   width: 75%;
   margin: 0 auto; }
 
-/*# sourceMappingURL=99-WSMA_GBR_Responsive.css.map */
+/*# sourceMappingURL=99-WSMA.css.map */

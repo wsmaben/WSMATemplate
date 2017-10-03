@@ -106,6 +106,20 @@ h1 {
             margin-top: 1em;
         }
     }
+    h2.panel-title {
+        color: $color-secondary-b;
+        display: table;
+        @include underlinedTitles($color-secondary-b,2px,30%);
+    }
+
+    .auth-link-container-sm {
+        a {
+            color:$color-white;
+        }
+        a:visited {
+            color:$color-white;
+        }
+    }
     /* Arrow shaped containers for nice browsers only. */
     // .FullWidthArea-StyleBg1, .FullWidthArea-StyleBg2,
     // .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg4,
@@ -420,5 +434,10 @@ h2, .h2, .PanelHead.Distinguish,
 }
  
 .RadMenu .rmGroup .rmText {
-    padding: 0 0 0 5px;
+    padding: 0 0 0 5px!important;
+}
+
+.rmRootGroup > .rmItem {
+    padding-bottom: 23px;
+    border-bottom: 5px solid $color-wsma-teal;
 }

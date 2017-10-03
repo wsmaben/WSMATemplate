@@ -67,21 +67,41 @@
          }
     }
     //Colors for The logo
-    svg {
-        .cls-1 {
-            fill: none;
-            stroke: $color-wsma-dkgrey;
-            stroke-miterlimit: 3.86;
-            //stroke-width: 0.36px;
-          }
-    
-          .cls-2 {
-            fill: $color-wsma-dkgrey;
-          }
-    
-          .cls-3 {
-            fill: $color-wsma-red;
-          }
+    @include respond-to('grid small') {
+        svg {
+            .cls-1 {
+                fill: none;
+                stroke: $color-wsma-dkgrey;
+                stroke-miterlimit: 3.86;
+                //stroke-width: 0.36px;
+              }
+        
+              .cls-2 {
+                fill: $color-wsma-dkgrey;
+              }
+        
+              .cls-3 {
+                fill: $color-wsma-red;
+              }
+        }
+    }
+    @include respond-to('grid large') {
+        svg {
+            .cls-1 {
+                fill: none;
+                stroke: $color-wsma-dkgrey;
+                stroke-miterlimit: 3.86;
+                //stroke-width: 0.36px;
+            }
+        
+            .cls-2 {
+                fill: $color-wsma-dkgrey;
+            }
+        
+            .cls-3 {
+                fill: $color-wsma-red;
+            }
+        }
     }
 }
 
