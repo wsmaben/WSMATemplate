@@ -259,90 +259,94 @@
             <!-- <asp:Panel ID="InternalHeaderArea" runat="server" Visible="false" CssClass="InteranlFullWidthArea">
                 <asiweb:ContentTemplateArea ID="InternalContentArea1" TemplateAreaName="InternalContentArea1" HonorContentRecordLayout="false" runat="server" />
             </asp:Panel> -->
-            <div id="masterContentArea" class="container">
-                <!-- Group Breadcrumbs, Proxy and Page Tasks so they can be controlled together -->
-                <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
-                    <div class="breadcrumb" role="navigation">
-                        <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
-                        <asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider">
-                            <NodeTemplate>
-                                <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
-                                    CssClass="BreadCrumbLink"></asp:HyperLink>
-                            </NodeTemplate>
-                            <CurrentNodeTemplate>
-                                <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'></asp:Label>
-                            </CurrentNodeTemplate>
-                        </asiweb:SiteMapPath>
-                    </div>
-
-                    <%--<div id="masterPageTasks">
-                                <!-- This control will display the print, text-only and email buttons -->
-                                <asp:Panel ID="PageTasksPanel" runat="server" CssClass="PageTasksPanel NotPrinted">
-                                        <asp:ContentPlaceHolder ID="TemplatePageTasks" runat="server"></asp:ContentPlaceHolder>
-                                </asp:Panel>
-                            </div>--%>
-
+            <div id="masterContentArea" class="ClearFix">
+                <div role="main" class="body-container" id="ContentPanel">
+                    <!-- Group Breadcrumbs, Proxy and Page Tasks so they can be controlled together -->
                     <%-- This control displays the On Behalf Of control --%>
                     <div class="obo-container">
                         <asi:ProxyPanel ID="panProxy" runat="server" TargetContactProfileShortcut="~/Party.aspx"></asi:ProxyPanel>
                     </div>
-                </div>
+                    <!-- This is full width to display the banner -->
+                    <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
+                        <div class="breadcrumb container" role="navigation">
+                            <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
+                            <asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider">
+                                <NodeTemplate>
+                                    <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
+                                        CssClass="BreadCrumbLink"></asp:HyperLink>
+                                </NodeTemplate>
+                                <CurrentNodeTemplate>
+                                    <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'></asp:Label>
+                                </CurrentNodeTemplate>
+                            </asiweb:SiteMapPath>
+                        </div>
 
-                <!-- This panel contains the Main content area for a page -->
-                <a id="contentstart" tabindex="-1"></a>
-                <asp:Panel role="main" class="body-container" runat="server" ID="ContentPanel">
-                    <%-- This update panel is needed so that any user messages that get configured in the main
-                                content area will cause the TemplateUserMessages panel to be updated --%>
-
-                    <asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server">
-                        <ContentTemplate>
-                            <%-- This provides a placeholder for any applicable User Messages that a page needs to display --%>
-                            <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server">
-                            </asp:ContentPlaceHolder>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
-
-                    <asp:Panel ID="TemplatePrintDisplay" runat="server" Visible="False">
-                        <%-- displays a message when the page is displayed in printer-friendly mode --%>
-                    </asp:Panel>
-
-                    <div class="col-primary">
-                        <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
-                        </asp:ContentPlaceHolder>
-
-                        <%-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) --%>
-                        <asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel">
-                            <div id="masterMainButtonBar" class="CommandBar" data-height-offset="true">
-                                <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
-                                <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server">
-                                </asp:ContentPlaceHolder>
-                            </div>
-                        </asp:Panel>
-                        <!-- /.ButtonPanel -->
+                        <!-- <%--<div id="masterPageTasks">
+                                    <!-- This control will display the print, text-only and email buttons -->
+                                    <!--<asp:Panel ID="PageTasksPanel" runat="server" CssClass="PageTasksPanel NotPrinted">
+                                            <asp:ContentPlaceHolder ID="TemplatePageTasks" runat="server"></asp:ContentPlaceHolder>
+                                    </asp:Panel>
+                                </div>--%> -->
                     </div>
-                    <!-- /.col-primary -->
 
-                    <!-- Sub Navigation -->
-                    <asp:Panel ID="SubNavPanel" runat="server" class="col-secondary NotPrinted">
-                        <asp:ContentPlaceHolder ID="PageSubNavigationPlaceHolder" runat="server">
-                            <nav class="nav-secondary">
-                                <asp:Panel ID="SubNavHead" runat="server" class="sub-nav-head" translate="yes">
-                                    <asp:Literal ID="SubNavPanelTitle" runat="server" />
-                                </asp:Panel>
-                                <asp:Panel ID="SubNavBody" runat="server" class="sub-nav-body">
-                                    <asi:SubNavigation ID="Secondary" runat="server" NavigationPaneCode="2"
-                                        StartingNodeOffset="1" StartFromCurrentNode="true"
-                                        StartingNodeOffsetAutoSet="true" SelectDefaultNode="false" />
-                                </asp:Panel>
-                            </nav>
-                        </asp:ContentPlaceHolder>
-                        <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server"></asp:ContentPlaceHolder>
-                        <asiweb:ContentTemplateArea ID="SideBarContent" TemplateAreaName="SideBarContent" HonorContentRecordLayout="false" runat="server" />
-                    </asp:Panel>
-                    <!-- /.sub-nav-container -->
+                    <!-- This panel contains the Main content area for a page -->
+                    <a id="contentstart" tabindex="-1"></a>
+                    <div class="container ClearFix">
+                        <asp:Panel role="main" class="body-container" runat="server" ID="ContentPanel">
+                            <%-- This update panel is needed so that any user messages that get configured in the main
+                                        content area will cause the TemplateUserMessages panel to be updated --%>
 
-                </asp:Panel>
-                <!-- /.body-container -->
+                            <asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server">
+                                <ContentTemplate>
+                                    <%-- This provides a placeholder for any applicable User Messages that a page needs to display --%>
+                                    <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+
+                            <asp:Panel ID="TemplatePrintDisplay" runat="server" Visible="False">
+                                <%-- displays a message when the page is displayed in printer-friendly mode --%>
+                            </asp:Panel>
+
+                            <div class="col-primary">
+                                <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+                                </asp:ContentPlaceHolder>
+
+                                <%-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) --%>
+                                <asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel">
+                                    <div id="masterMainButtonBar" class="CommandBar" data-height-offset="true">
+                                        <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+                                        <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </asp:Panel>
+                                <!-- /.ButtonPanel -->
+                            </div>
+                            <!-- /.col-primary -->
+
+                            <!-- Sub Navigation -->
+                            <asp:Panel ID="SubNavPanel" runat="server" class="col-secondary NotPrinted">
+                                <asp:ContentPlaceHolder ID="PageSubNavigationPlaceHolder" runat="server">
+                                    <nav class="nav-secondary">
+                                        <asp:Panel ID="SubNavHead" runat="server" class="sub-nav-head" translate="yes">
+                                            <asp:Literal ID="SubNavPanelTitle" runat="server" />
+                                        </asp:Panel>
+                                        <asp:Panel ID="SubNavBody" runat="server" class="sub-nav-body">
+                                            <asi:SubNavigation ID="Secondary" runat="server" NavigationPaneCode="2"
+                                                StartingNodeOffset="1" StartFromCurrentNode="true"
+                                                StartingNodeOffsetAutoSet="true" SelectDefaultNode="false" />
+                                        </asp:Panel>
+                                    </nav>
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                                <asiweb:ContentTemplateArea ID="SideBarContent" TemplateAreaName="SideBarContent" HonorContentRecordLayout="false" runat="server" />
+                            </asp:Panel>
+                            <!-- /.sub-nav-container -->
+
+                        </asp:Panel>
+                    </div>
+                    <!-- /.body-container -->
+                </div>
             </div>
 
             <footer id="ft" class="footer">
