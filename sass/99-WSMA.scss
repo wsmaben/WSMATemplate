@@ -89,3 +89,20 @@
 .ste-section {
     display: inline-block;
 }
+
+.breadcrumb-obo-container {
+    height: 250px;
+    background-image: url(images/Banner2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb {
+    display: block;
+    & > span {
+        vertical-align: bottom;
+        top:120px;
+        position: absolute;
+        color:white;
+    }
+}
