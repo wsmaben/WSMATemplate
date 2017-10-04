@@ -208,6 +208,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
+                                <!-- This is the append around code. data-set is the marker. The class sets the visibility. -->
                                 <div class="search-container-sm" data-set="searchbar"><%-- The search bar goes here when the screen is wider than 767px --%></div>
                                 <!-- Navigation Links -->
                                 <%-- Get the Auxiliary Navigation Items from the site map --%>
@@ -396,6 +397,8 @@
         // in conjuntion with display styles defined in the stylesheet
         jQuery(".header-search").appendAround();
         jQuery(".auth-link").appendAround();
+        // Move Page Titles
+        jQuery(".PageTitle").appendTo(".breadcrumb");
     //]]>
     </script>
 
