@@ -35,6 +35,16 @@ $color-neutral:             $color-wsma-mdgrey !default;
 $color-alt-bg:              #f0edf2!default; 
 $color-alt-bg2:             #222122;
 
+
+$black:                     $color-black !default;
+$gray-darker:               lighten(#000, 13.5%) !default; // #222
+$gray-dark:                 lighten(#000, 20%) !default;   // #333
+$gray:                      lighten(#000, 33.5%) !default; // #555
+$gray-light:                lighten(#000, 60%) !default;   // #999
+$gray-lighter:              lighten(#000, 93.5%) !default; // #eee
+$gray-very-light:           #f5f5f5; // whitesmoke
+$white:                     #fff !default;
+
 $hover-highlight:           lighten($color-base,8%) !default; /*progress tracker */
 
 // Social colors
@@ -125,9 +135,9 @@ $navbar-default-link-active-color:         $color-wsma-teal !default;
 $navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       $color-secondary-a !default;
 $navbar-default-link-disabled-bg:          transparent !default;
-$navbar-default-link-weight:               normal !default;
+$navbar-default-link-weight:               400 !default;
 $navbar-default-link-letter-spacing:       1px !default;
-$navbar-default-link-font-size:            100% !default;
+$navbar-default-link-font-size:            105% !default;
 $navbar-default-link-font-family:          $headings-font-family;
 
 // Callout link
@@ -146,7 +156,7 @@ $navbar-auxiliary-link-color:              #fff;
 $navbar-auxiliary-font-size:               107%;
 
 $navbar-default-dropdown-bg:                    $navbar-default-bg !default;
-$navbar-default-dropdown-link-color:            #fefefe !default;
+$navbar-default-dropdown-link-color:            $color-wsma-dkgrey !default;
 $navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
 $navbar-default-dropdown-link-hover-bg:         transparent !default;
 $navbar-default-dropdown-link-hover-color:      $color-secondary-a !default;
@@ -189,9 +199,16 @@ $callout1-bg:                        #222122 !default;
 // Logo 
 // -------------------------
 $logo-default-position-md:          0 0px !default;
-//$logo-default-width-sm:             46px !default;
-//$logo-default-height-sm:            46px !default;
-//$logo-default-width-md:             300px !default;
+$logo-default-url:                  url('images/wsma-logo.svg') !default;
+$logo-default-url-2x:           null !default;
+$logo-default-position-md:      null !default;
+$logo-default-width-sm:         150px !default;
+$logo-default-height-sm:        60px !default;
+$logo-default-width-sm:         150px !default;
+$logo-default-height-sm:        60px !default;
+$logo-default-width-md:         300px !default; 
+$logo-default-height-md:        null !default;
+$logo-default-margin-top:       0 !default;
 
 $logo-donor-url:                    url('images/DonorHeaderLogo.png') !default;
 $logo-donor-position-md:            null !default;

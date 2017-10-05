@@ -1,57 +1,57 @@
-﻿// VARIABLES
-// --------------------------------------------
+﻿// // VARIABLES
+// // --------------------------------------------
 
-// Global elements
-// -------------------------
+// // Global elements
+// // -------------------------
 
-$theme-family:          UltraWave !default;
-$theme-name:            UltraWave !default;
-$view-type:             Desktop !default;
+// $theme-family:          UltraWave !default;
+// $theme-name:            UltraWave !default;
+// $view-type:             Desktop !default;
 
-$golden-ratio:           1.6;
+// $golden-ratio:           1.6;
 
-// Grays
-// -------------------------
-$black:                 #313E48 !default;
-$gray-darker:           lighten(#000, 13.5%) !default; // #222
-$gray-dark:             lighten(#000, 20%) !default;   // #333
-$gray:                  lighten(#000, 33.5%) !default; // #555
-$gray-light:            lighten(#000, 60%) !default;   // #999
-$gray-lighter:          lighten(#000, 93.5%) !default; // #eee
-$gray-very-light:       #f5f5f5; // whitesmoke
-$white:                 #fff !default;
+// // Grays
+// // -------------------------
+// $black:                 #313E48 !default;
+// $gray-darker:           lighten(#000, 13.5%) !default; // #222
+// $gray-dark:             lighten(#000, 20%) !default;   // #333
+// $gray:                  lighten(#000, 33.5%) !default; // #555
+// $gray-light:            lighten(#000, 60%) !default;   // #999
+// $gray-lighter:          lighten(#000, 93.5%) !default; // #eee
+// $gray-very-light:       #f5f5f5; // whitesmoke
+// $white:                 #fff !default;
 
-// Brand colors
-// -------------------------
+// // Brand colors
+// // -------------------------
 
-// $color-asi-blue:            #00a9e0 !default;
-// $color-asi-teal:            #00abbe !default;
-// $color-asi-green:           #68bd49 !default;
-// $color-asi-orange:          #e98300 !default;
-// $color-asi-purple:          #8e51ae !default;
-// $color-asi-red:             #d03528 !default;
-// $color-asi-pink:            #d980c1 !default;
-// $color-asi-yellow:          #e8d92d !default;
-// $color-asi-neutral:         #616365 !default;
+// // $color-asi-blue:            #00a9e0 !default;
+// // $color-asi-teal:            #00abbe !default;
+// // $color-asi-green:           #68bd49 !default;
+// // $color-asi-orange:          #e98300 !default;
+// // $color-asi-purple:          #8e51ae !default;
+// // $color-asi-red:             #d03528 !default;
+// // $color-asi-pink:            #d980c1 !default;
+// // $color-asi-yellow:          #e8d92d !default;
+// // $color-asi-neutral:         #616365 !default;
 
-// $color-wsma-dkgrey:         #36424a !default;
-// $color-wsma-mdgrey:         #6c6f70 !default;
-// $color-wsma-ltgrey:         #d0cfcb !default;
-// $color-wsma-red:            #a62d38 !default;
-// $color-wsma-forest:         #00837e !default;
-// $color-wsma-teal:           #4bc8b6 !default;
-// $color-wsma-seafoam:        #9fe6d9 !default;
-// $color-wsma-green:          #8fd400 !default;
+// // $color-wsma-dkgrey:         #36424a !default;
+// // $color-wsma-mdgrey:         #6c6f70 !default;
+// // $color-wsma-ltgrey:         #d0cfcb !default;
+// // $color-wsma-red:            #a62d38 !default;
+// // $color-wsma-forest:         #00837e !default;
+// // $color-wsma-teal:           #4bc8b6 !default;
+// // $color-wsma-seafoam:        #9fe6d9 !default;
+// // $color-wsma-green:          #8fd400 !default;
 
 
 
-$color-base:                darken($color-wsma-red, 5%) !default;
-$color-callout:             $color-wsma-teal !default;
-$color-secondary-a:         #00a8b4 !default;
-$color-secondary-b:         #69be28 !default;
+// $color-base:                darken($color-wsma-red, 5%) !default;
+// $color-callout:             $color-wsma-teal !default;
+// $color-secondary-a:         #00a8b4 !default;
+// $color-secondary-b:         #69be28 !default;
 
-$color-neutral:             #616365 !default;
-$color-alt-bg:              #eee !default;
+// $color-neutral:             #616365 !default;
+// $color-alt-bg:              #eee !default;
 
 $color-base-dark:         desaturate(darken($color-base, 10%), 5%) !default;
 $color-base-darker:       hsl(hue($color-base), saturation($color-base), 15%) !default;
@@ -60,16 +60,16 @@ $color-base-light:        desaturate(darken($color-base, 20%), 10%) !default;
 $hover-highlight:           $color-base-light !default; 
 $selected-highlight:        $color-base-dark !default; 
 
-$brand-primary:             $color-base !default;
-$brand-success:             #69be28 !default;
-$brand-warning:             #e98300 !default;
-$brand-danger:              #d52b1e !default;
-$brand-info:                #5bc0de !default;
+// $brand-primary:             $color-base !default;
+// $brand-success:             #69be28 !default;
+// $brand-warning:             #e98300 !default;
+// $brand-danger:              #d52b1e !default;
+// $brand-info:                #5bc0de !default;
 
-// Social network colors
-// --------------------------
-$color-facebook:            #3B5998 !default;
-$color-linkedin:            #0077B5 !default;
+// // Social network colors
+// // --------------------------
+// $color-facebook:            #3B5998 !default;
+// $color-linkedin:            #0077B5 !default;
 
 
 // Scaffolding
@@ -89,65 +89,65 @@ $link-hover-color:      $link-color-hover !default;
 $link-color-visited:    lighten($link-color, 5%) !default;
 $link-color-disabled:   $gray-light !default;
 
-// Typography
-// -------------------------
-$font-family-base:      "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// // Typography
+// // -------------------------
+// $font-family-base:      "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
-$font-size-base:        13px !default;
-$font-size-large:       125% !default;
-$font-size-small:       85% !default;
+// $font-size-base:        13px !default;
+// $font-size-large:       125% !default;
+// $font-size-small:       85% !default;
 
-$font-size-h1:          250% !default;
-$font-size-h2:          190% !default;
-$font-size-h3:          130% !default;
-$font-size-h4:          120% !default;
-$font-size-h5:          100% !default;
-$font-size-h6:          85% !default;
+// $font-size-h1:          250% !default;
+// $font-size-h2:          190% !default;
+// $font-size-h3:          130% !default;
+// $font-size-h4:          120% !default;
+// $font-size-h5:          100% !default;
+// $font-size-h6:          85% !default;
 
-$h1-color:              $text-color !default;
-$h2-color:              $text-color !default;
-$h3-color:              $text-color !default;
-$h4-color:              $text-color !default;
-$h5-color:              $text-color !default;
-$h6-color:              $text-color !default;
+// $h1-color:              $text-color !default;
+// $h2-color:              $text-color !default;
+// $h3-color:              $text-color !default;
+// $h4-color:              $text-color !default;
+// $h5-color:              $text-color !default;
+// $h6-color:              $text-color !default;
 
-$line-height-base:      1.428571429 !default; // 20/14
-$line-height-computed:  floor($font-size-base * $line-height-base) !default; // ~20px
+// $line-height-base:      1.428571429 !default; // 20/14
+// $line-height-computed:  floor($font-size-base * $line-height-base) !default; // ~20px
 
-$headings-font-family:  $font-family-base !default; 
-$headings-font-weight:  bold !default;
-$headings-line-height:  normal !default;
-$headings-color:        $text-color !default;
+// $headings-font-family:  $font-family-base !default; 
+// $headings-font-weight:  bold !default;
+// $headings-line-height:  normal !default;
+// $headings-color:        $text-color !default;
 
-$label-color:           #444 !default;
+// $label-color:           #444 !default;
 
-$font-weight-bold:      bold !default; // in case we want to use semi-bold in place of bold
+ $font-weight-bold:      bold !default; // in case we want to use semi-bold in place of bold
 
-// Components
-// -------------------------
-// Based on 14px font-size and 1.428 line-height (~20px to start)
+// // Components
+// // -------------------------
+// // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-$padding-base-vertical:          5px !default;
-$padding-base-horizontal:        10px !default;
+// $padding-base-vertical:          5px !default;
+// $padding-base-horizontal:        10px !default;
 
-$padding-large-vertical:         10px !default;
-$padding-large-horizontal:       $padding-large-vertical !default;
+// $padding-large-vertical:         10px !default;
+// $padding-large-horizontal:       $padding-large-vertical !default;
 
-$padding-small-vertical:         5px !default;
-$padding-small-horizontal:       $padding-small-vertical !default;
+// $padding-small-vertical:         5px !default;
+// $padding-small-horizontal:       $padding-small-vertical !default;
 
-$line-height-large:              1.33 !default;
-$line-height-small:              1.5 !default;
+// $line-height-large:              1.33 !default;
+// $line-height-small:              1.5 !default;
 
-$border-radius-base:             0 !default;
-$border-radius-large:            0 !default;
-$border-radius-small:            0 !default;
+// $border-radius-base:             0 !default;
+// $border-radius-large:            0 !default;
+// $border-radius-small:            0 !default;
 
-$component-active-color:         #fff !default;
-$component-active-bg:            $brand-primary !default;
+// $component-active-color:         #fff !default;
+// $component-active-bg:            $brand-primary !default;
 
-$caret-width-base:               4px !default;
-$caret-width-large:              5px !default;
+// $caret-width-base:               4px !default;
+// $caret-width-large:              5px !default;
 
 $box-shadow-base:                1px 1px 28px 3px rgba(227,227,227,1) !default;
 $box-shadow-darken:              1px 1px 28px 3px rgb(204, 204, 204) !default;
@@ -198,36 +198,36 @@ $input-height-base:             ($line-height-computed + ($padding-base-vertical
 //$input-height-large:            (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 //$input-height-small:            (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-// Dropdowns
-// -------------------------
+// // Dropdowns
+// // -------------------------
 
-$dropdown-bg:                    #fff !default;
-$dropdown-border:                rgba(0,0,0,.15) !default;
-$dropdown-fallback-border:       #ccc !default;
-$dropdown-divider-bg:            #e5e5e5 !default;
+// $dropdown-bg:                    #fff !default;
+// $dropdown-border:                rgba(0,0,0,.15) !default;
+// $dropdown-fallback-border:       #ccc !default;
+// $dropdown-divider-bg:            #e5e5e5 !default;
 
-$dropdown-link-color:            $gray-dark !default;
-$dropdown-link-hover-color:      darken($gray-dark, 5%) !default;
-$dropdown-link-hover-bg:         #f5f5f5 !default;
+// $dropdown-link-color:            $gray-dark !default;
+// $dropdown-link-hover-color:      darken($gray-dark, 5%) !default;
+// $dropdown-link-hover-bg:         #f5f5f5 !default;
 
-$dropdown-link-active-color:     $component-active-color !default;
-$dropdown-link-active-bg:        $component-active-bg !default;
+// $dropdown-link-active-color:     $component-active-color !default;
+// $dropdown-link-active-bg:        $component-active-bg !default;
 
-$dropdown-link-disabled-color:   $gray-light !default;
+// $dropdown-link-disabled-color:   $gray-light !default;
 
-$dropdown-header-color:          lighten($gray, 15%) !default;
+// $dropdown-header-color:          lighten($gray, 15%) !default;
 
-$dropdown-caret-color:           #000 !default;
+// $dropdown-caret-color:           #000 !default;
 
 
-// Easy Edit
-// -------------------------
-$easyedit-content-bg: #fff;
-$easyedit-content-border: #c5e2f9;
-$easyedit-content-link-bg: #c5e2f9;
-$easyedit-page-bg: #F7F9FD;
-$easyedit-page-border: #7899CE;
-$easyedit-page-link-bg: #6695DE;
+// // Easy Edit
+// // -------------------------
+// $easyedit-content-bg: #fff;
+// $easyedit-content-border: #c5e2f9;
+// $easyedit-content-link-bg: #c5e2f9;
+// $easyedit-page-bg: #F7F9FD;
+// $easyedit-page-border: #7899CE;
+// $easyedit-page-link-bg: #6695DE;
 
 // COMPONENT VARIABLES
 // --------------------------------------------------
@@ -276,11 +276,11 @@ $grid-gutter-width:         20px !default;
 // Point at which the navbar stops collapsing
 $grid-float-breakpoint:     $screen-sm-min !default; // *
 
-// Other breakpoints
-// --------------------------------------------------
+// // Other breakpoints
+// // --------------------------------------------------
 
-// Point at which the sub navigation drops under the content
-//$sub-nav-breakpoint:        $screen-md-min !default; // *
+// // Point at which the sub navigation drops under the content
+// //$sub-nav-breakpoint:        $screen-md-min !default; // *
 
 
 // Navbar
@@ -311,7 +311,7 @@ $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
-$navbar-default-link-weight:               bold !default;
+// $navbar-default-link-weight:               bold !default;
 $navbar-default-link-letter-spacing:       0 !default;
 $navbar-default-link-font-size:            100% !default;
 
@@ -330,11 +330,11 @@ $navbar-toggle-height:                     34px !default;
 $navbar-toggle-margin-left:                $navbar-padding-horizontal !default;
 $navbar-toggle-border-radius:              3px;
 
-$navbar-default-separator-color:           #fff !default;
+$navbar-default-separator-color:           $color-white !default;
 
 // Navbar dropdown group
 $navbar-default-dropdown-bg:                    $color-neutral !default;
-$navbar-default-dropdown-link-color:            #fff !default;
+$navbar-default-dropdown-link-color:            $color-white !default;
 $navbar-default-dropdown-header-color:          lighten($navbar-default-dropdown-bg, 30%) !default;
 $navbar-default-dropdown-link-hover-bg:         $component-active-bg !default;
 $navbar-default-dropdown-link-hover-color:      $component-active-color !default;
@@ -346,23 +346,23 @@ $navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-co
 // -------------------------
 
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         #fff !default;
+$nav-link-hover-bg:                         $color-white !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
-$nav-open-link-hover-color:                 #fff !default;
-$nav-open-caret-border-color:               #fff !default;
+$nav-open-link-hover-color:                 $color-white !default;
+$nav-open-caret-border-color:               $color-white !default;
 
 // iMIS
 $nav-link-padding-vertical:                 10px !default;
-$nav-link-padding-horizontal:               $grid-gutter-width / 2 !default;
+$nav-link-padding-horizontal:               0; //$grid-gutter-width / 2 !default;
 $nav-link-active-bg:                        transparent !default;
 $nav-link-active-color:                     $text-color !default;
 
 $nav-secondary-bg:                          $color-alt-bg !default;
 $nav-secondary-header-bg:                   $color-callout !default;
-$nav-secondary-header-color:                #fff !default;
+$nav-secondary-header-color:                $color-white !default;
 
 $nav-secondar-divider-bg:                   darken($nav-secondary-bg, 10%) !default;
 
@@ -387,13 +387,13 @@ $panel-default-heading-bg:    #f5f5f5 !default;
 
 $badge-color:                 #fff !default;
 //** Linked badge text color on hover
-$badge-link-hover-color:      #fff !default;
+$badge-link-hover-color:      $color-white !default;
 $badge-bg:                    $gray-light !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
-$badge-active-bg:             #fff !default;
+$badge-active-bg:             $color-white !default;
 
 $badge-font-weight:           bold !default;
 $badge-font-size:             78% !default;
@@ -402,44 +402,44 @@ $badge-border-radius:         10px !default;
 $badge-box-shadow:            -1px 1px 0 rgba($gray-darker, .6) !default;
 
 
-// Modals
-//-------------------------
+// // Modals
+// //-------------------------
 
-//** Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+// //** Padding applied to the modal body
+// $modal-inner-padding:         15px !default;
 
-//** Padding applied to the modal title
-$modal-title-padding:         15px !default;
-//** Modal title line-height
-$modal-title-line-height:     $line-height-base !default;
+// //** Padding applied to the modal title
+// $modal-title-padding:         15px !default;
+// //** Modal title line-height
+// $modal-title-line-height:     $line-height-base !default;
 
-//** Background color of modal content area
-$modal-content-bg:                             #fff !default;
-//** Modal content border color
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
-//** Modal content border color **for IE8**
-$modal-content-fallback-border-color:          #999 !default;
+// //** Background color of modal content area
+// $modal-content-bg:                             $color-white !default;
+// //** Modal content border color
+// $modal-content-border-color:                   rgba(0,0,0,.2) !default;
+// //** Modal content border color **for IE8**
+// $modal-content-fallback-border-color:          #999 !default;
 
-//** Modal backdrop background color
-$modal-backdrop-bg:           #000 !default;
-//** Modal backdrop opacity
-$modal-backdrop-opacity:      .5 !default;
-//** Modal header border color
-$modal-header-border-color:   #e5e5e5 !default;
-//** Modal footer border color
-$modal-footer-border-color:   $modal-header-border-color !default;
+// //** Modal backdrop background color
+// $modal-backdrop-bg:           #000 !default;
+// //** Modal backdrop opacity
+// $modal-backdrop-opacity:      .5 !default;
+// //** Modal header border color
+// $modal-header-border-color:   #e5e5e5 !default;
+// //** Modal footer border color
+// $modal-footer-border-color:   $modal-header-border-color !default;
 
-$modal-lg:                    900px !default;
-$modal-md:                    600px !default;
-$modal-sm:                    300px !default;
+// $modal-lg:                    900px !default;
+// $modal-md:                    600px !default;
+// $modal-sm:                    300px !default;
 
 
-// Cart icon
-//-------------------------
-$cart-count-xs-color:           #000 !default;
-$cart-count-color:              #fff !default;
-$cart-count-xs-bg:              hsl(hue($color-base), 100%, 80%) !default;
-$cart-count-bg:                 lighten(desaturate($color-callout, 20%), 20%) !default;
+// // Cart icon
+// //-------------------------
+// $cart-count-xs-color:           #000 !default;
+// $cart-count-color:              $color-white !default;
+// $cart-count-xs-bg:              hsl(hue($color-base), 100%, 80%) !default;
+// $cart-count-bg:                 lighten(desaturate($color-callout, 20%), 20%) !default;
 
 
 // Container sizes
@@ -465,7 +465,7 @@ $communities-alt-bg:                $gray-lighter !default;
 // CalloutPanelFields
 // -------------------------
 // used by CalloutPanelField1 (currently used in tribute donation creator)
-$callout1-color:                    #fff !default;
+$callout1-color:                    $color-white !default;
 $callout1-bg:                       lighten($color-callout, 10%) !default;
 $callout1-border-radius:            3px !default;
 
@@ -473,16 +473,16 @@ $callout1-border-radius:            3px !default;
 // -------------------------
 $alert-iPart-bg:               lighten(#DFE9F5, 5%) !default; 
 
-// Logo
-// -------------------------
-$logo-default-url:              url('images/wsma-logo.svg') !default;
-$logo-default-url-2x:           null !default;
-$logo-default-position-md:      null !default;
-$logo-default-width-sm:         150px !default;
-$logo-default-height-sm:        60px !default;
-$logo-default-width-md:         300px !default; 
-$logo-default-height-md:        null !default;
-$logo-default-margin-top:       0 !default;
+// // Logo
+// // -------------------------
+// $logo-default-url:              url('images/wsma-logo.svg') !default;
+// $logo-default-url-2x:           null !default;
+// $logo-default-position-md:      null !default;
+// $logo-default-width-sm:         150px !default;
+// $logo-default-height-sm:        60px !default;
+// $logo-default-width-md:         300px !default; 
+// $logo-default-height-md:        null !default;
+// $logo-default-margin-top:       0 !default;
 
 // By default the donor logo is the same as the member logo.
 // This can be overwritten at the theme level
@@ -495,48 +495,48 @@ $logo-donor-height-md:          null !default;
 $logo-donor-margin-top:         $logo-default-margin-top !default;
 
 
-// Jumbotron
-// -------------------------
+// // Jumbotron
+// // -------------------------
 
-$jumbotron-home-height:        24em !default;
-$jumbotron-background-url:     url(images/sliderpage6.jpg) !default;
-$jumbotron-h1-size-xs:         280% !default;
-$jumbotron-h1-size:            320% !default;
+// $jumbotron-home-height:        24em !default;
+// $jumbotron-background-url:     url(images/sliderpage6.jpg) !default;
+// $jumbotron-h1-size-xs:         280% !default;
+// $jumbotron-h1-size:            320% !default;
 
-$jumbotron-interior-height:    $jumbotron-home-height !default;
+// $jumbotron-interior-height:    $jumbotron-home-height !default;
 
-//== Carousel
-// -------------------------
+// //== Carousel
+// // -------------------------
 
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
+// $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
-$carousel-control-color:                      #fff !default;
-$carousel-control-width:                      15% !default;
-$carousel-control-opacity:                    .5 !default;
-$carousel-control-font-size:                  50px !default;
+// $carousel-control-color:                      #fff !default;
+// $carousel-control-width:                      15% !default;
+// $carousel-control-opacity:                    .5 !default;
+// $carousel-control-font-size:                  50px !default;
 
-$carousel-indicator-active-bg:                #fff !default;
-$carousel-indicator-border-color:             #fff !default;
+// $carousel-indicator-active-bg:                #fff !default;
+// $carousel-indicator-border-color:             #fff !default;
 
-$carousel-caption-color:                      #fff !default;
+// $carousel-caption-color:                      #fff !default;
 
-// Footer
-// -------------------------
+// // Footer
+// // -------------------------
 
-$footer-top-color:          #fff !default;
-$footer-top-link-color:     hsl(hue($link-color), saturation($link-color), 80%) !default;
-$footer-top-h1-color:       $footer-top-color !default;
-$footer-top-bg:             $color-neutral !default;
+// $footer-top-color:          #fff !default;
+// $footer-top-link-color:     hsl(hue($link-color), saturation($link-color), 80%) !default;
+// $footer-top-h1-color:       $footer-top-color !default;
+// $footer-top-bg:             $color-neutral !default;
 
-$footer-bottom-color:       #999 !default; // *
-$footer-bottom-link-color:  #fff !default; // *
-$footer-bottom-bg:          darken($footer-top-bg, 12.5%) !default; // *
+// $footer-bottom-color:       #999 !default; // *
+// $footer-bottom-link-color:  #fff !default; // *
+// $footer-bottom-bg:          darken($footer-top-bg, 12.5%) !default; // *
 
 
-// Telerik controls
-// --------------------------
-$radmenu-bg:                $color-base-dark !default;
-$radwindow-header-bg:       $btn-default-bg !default; // Make it match the Save and Cancel buttons
+// // Telerik controls
+// // --------------------------
+// $radmenu-bg:                $color-base-dark !default;
+// $radwindow-header-bg:       $btn-default-bg !default; // Make it match the Save and Cancel buttons
 
 
 // Miscellaneous
@@ -551,12 +551,12 @@ $helper-text-color:             #0064cd !default;
 $hr-border-style:               $border-style !default;
 $hr-border:                     $border-color !default;
 
-// used for the bottom margin on iParts for separation 
-$iPart-margin-bottom:           0.9em !default;
+// // used for the bottom margin on iParts for separation 
+// $iPart-margin-bottom:           0.9em !default;
 
-// used to separate sections in content
-$section-margin-bottom:         1em !default;
+// // used to separate sections in content
+// $section-margin-bottom:         1em !default;
 
 
 
-// Variables marked with a * only apply to the responsive versions of the themes
+// // Variables marked with a * only apply to the responsive versions of the themes

@@ -111,7 +111,7 @@
     .rmText, 
     .rmHorizontal .rmText,
     .rmSlide .rmText {
-        padding: $navbar-padding-vertical $navbar-padding-horizontal;
+        padding: 8px 15px 8px 15px; //$navbar-padding-vertical $navbar-padding-horizontal;
     }
 
     .rmSlide .MegaDropDownMenuOuter > .rmText {
@@ -229,7 +229,7 @@
         }
 
         > .rmItem > .rmLink  {
-            text-transform: capitalize;
+            //text-transform: capitalize;
             color: $navbar-default-color;
             font-family: $navbar-default-link-font-family;
             font-size: $navbar-default-link-font-size;
