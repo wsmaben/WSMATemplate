@@ -26,7 +26,7 @@
     .rtMid,
     .rtBot {
         border-left: 5px solid transparent;
-        & .rtSelected {
+        .rtSelected {
             border-left: 5px solid #8cdbd0;
         }
         &:hover, &:active, &:focus {

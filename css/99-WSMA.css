@@ -143,8 +143,7 @@
   background: #ffffff; }
 
 .header-logo-container {
-  float: left;
-  margin: 0.5em 0; }
+  float: left; }
 
 @media (max-width: 767px) {
   .header-social {
@@ -1352,15 +1351,14 @@ img.ImgNoResize, .ImgNoResize img {
         float: left;
         clear: none; }
         .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-          margin: 0; }
-    .RadMenu.RadMenu_WSMA .rmRootLink {
-      border-top: 3px solid transparent; }
+          margin: 0 0 -7px 0;
+          padding-bottom: 15px; }
     .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
     .RadMenu.RadMenu_WSMA .rmRootLink:hover,
     .RadMenu.RadMenu_WSMA .rmRootLink:focus,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-      border-bottom: 3px solid #4bc8b6; }
+      border-bottom: 4px solid #4bc8b6; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
       margin: 0; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -1396,15 +1394,14 @@ img.ImgNoResize, .ImgNoResize img {
       float: left;
       clear: none; }
       .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        margin: 0; }
-  .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink {
-    border-top: 3px solid transparent; }
+        margin: 0 0 -7px 0;
+        padding-bottom: 15px; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-    border-bottom: 3px solid #4bc8b6; }
+    border-bottom: 4px solid #4bc8b6; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
     margin: 0; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -4139,8 +4136,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   border-bottom: 5px solid #00837e; }
 
 #masterHeaderImage {
-  margin-top: 32px;
-  margin-bottom: 10px; }
+  margin-top: 32px; }
 
 .carousel-caption {
   top: 170px; }
@@ -4172,7 +4168,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  margin-bottom: 25px; }
+  margin-bottom: 60px; }
   .Wrapper-HomePage .breadcrumb-obo-container {
     display: none;
     background-image: none; }

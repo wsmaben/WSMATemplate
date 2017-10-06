@@ -397,19 +397,20 @@
                 clear: none;
 
                 > .rmLink {
-                    margin: 0;
+                    margin: 0 0 -7px 0;
+                    padding-bottom: 15px;
                 }
             }
         }
-        .rmRootLink{
-            border-top: 3px solid transparent;
-        }
+        // .rmRootLink{
+        //     border-top: 3px solid transparent;
+        // }
         .rmRootLink.rmSelected,
         .rmRootLink.rmExpanded,
         .rmRootLink:hover,
         .rmRootLink:focus,
         .rmRootLink.rmFocused {
-             border-bottom: 3px solid $navbar-default-link-hover-color;
+             border-bottom: 4px solid $navbar-default-link-hover-color;
         }
 
         .rmSlide {
