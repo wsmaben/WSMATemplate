@@ -292,7 +292,7 @@
 
                     <!-- This panel contains the Main content area for a page -->
                     <a id="contentstart" tabindex="-1"></a>
-                    <div class="container ClearFix">
+                    <div id="PageMain" class="container ClearFix">
                         <asp:Panel role="main" class="body-container" runat="server" ID="ContentPanel">
                             <%-- This update panel is needed so that any user messages that get configured in the main
                                         content area will cause the TemplateUserMessages panel to be updated --%>

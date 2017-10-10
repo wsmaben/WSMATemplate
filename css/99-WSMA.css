@@ -327,24 +327,10 @@
 h1 {
   position: relative;
   display: table; }
-  h1:after {
-    content: '';
-    display: block;
-    bottom: 0;
-    width: 45%;
-    margin: 5px auto 0 auto;
-    border-bottom: 3px solid #d3dadf; }
 
 .Wrapper-HomePage h2.panel-title {
   color: #36424a;
   display: table; }
-  .Wrapper-HomePage h2.panel-title:after {
-    content: '';
-    display: block;
-    bottom: 0;
-    width: 30%;
-    margin: 5px auto 0 auto;
-    border-bottom: 2px solid #d3dadf; }
 
 .Wrapper-HomePage {
   /* Arrow shaped containers for nice browsers only. */ }
@@ -509,8 +495,8 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   height: 100px;
   top: -100px;
   right: 20%;
-  border-top: 2px dotted #acaeaf;
-  border-right: 2px dotted #acaeaf; }
+  border-top: 2px dotted #6c8494;
+  border-right: 2px dotted #6c8494; }
 .TestimonialArea blockquote {
   background: #fff;
   position: relative;
@@ -686,14 +672,14 @@ p {
 h1, .h1, .PageTitle,
 h2, .h2, .PanelTitle {
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500;
-  color: #6c6f70; }
+  font-weight: 300;
+  color: #36424a; }
 
 h1, .h1, .PageTitle {
   margin-top: 0; }
 
 h1, .h1, .PageTitle {
-  color: #a22a2e;
+  color: #36424a;
   font-size: 250%; }
 
 h1.BigHeader, .h1.BigHeader {
@@ -881,7 +867,7 @@ img.ImgNoResize, .ImgNoResize img {
   background-color: #f0edf2;
   color: #313E48;
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .SubNavigationSeparator {
   border-width: 1px 0 0 0;
@@ -986,7 +972,7 @@ img.ImgNoResize, .ImgNoResize img {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.075), 0 1px 0 rgba(255, 255, 255, 0.1); }
 .footer-promo-container .lead {
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: .25em;
   font-size: 130%;
   line-height: inherit; }
@@ -1025,7 +1011,7 @@ img.ImgNoResize, .ImgNoResize img {
   #ft h4 {
     color: #000;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-weight: 500; }
+    font-weight: 300; }
 
 #masterFooterConnectWithUs {
   border-style: solid;
@@ -1435,7 +1421,7 @@ img.ImgNoResize, .ImgNoResize img {
   white-space: normal;
   padding-bottom: 30px;
   font-size: 14px !important;
-  color: #6c6f70; }
+  color: #36424a; }
   .RadTreeView.RadTreeView_WSMA .rtLI,
   .RadTreeView.RadTreeView_WSMA .rtTop,
   .RadTreeView.RadTreeView_WSMA .rtMid,
@@ -1493,7 +1479,7 @@ img.ImgNoResize, .ImgNoResize img {
     /* we don't want to display the expand/collapse icons in this theme */
     display: none; }
   .RadTreeView.RadTreeView_WSMA a.rtIn {
-    color: #6c6f70;
+    color: #36424a;
     margin: 0 20px 0 20px;
     border-bottom: 1px solid white; }
     .RadTreeView.RadTreeView_WSMA a.rtIn:hover, .RadTreeView.RadTreeView_WSMA a.rtIn:active, .RadTreeView.RadTreeView_WSMA a.rtIn:focus {
@@ -2556,7 +2542,7 @@ input[type="checkbox"]:focus {
 .CalloutArea2 .TextButton.PrimaryButton,
 .CalloutArea2 .TextButtonWithImage.PrimaryButton {
   color: #fff;
-  background-color: #6c6f70; }
+  background-color: #36424a; }
   .CalloutArea1 .btn.PrimaryButton:hover, .CalloutArea1 .btn.PrimaryButton:active, .CalloutArea1 .btn.PrimaryButton:focus,
   .CalloutArea1 .TextButton.PrimaryButton:hover,
   .CalloutArea1 .TextButton.PrimaryButton:active,
@@ -2574,7 +2560,7 @@ input[type="checkbox"]:focus {
   .CalloutArea2 .TextButtonWithImage.PrimaryButton:active,
   .CalloutArea2 .TextButtonWithImage.PrimaryButton:focus {
     color: #fff;
-    background-color: #4e5051; }
+    background-color: #1c2227; }
 
 /* ==========================================================================
    CONTENT ITEMS
@@ -2677,7 +2663,7 @@ input[type="checkbox"]:focus {
   .ProgressTracker2 .ProgressTrackerPanel .count {
     color: #fff;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-weight: 500; }
+    font-weight: 300; }
 .ProgressTracker2 div p {
   background-color: #fff;
   color: #00837e;
@@ -3488,17 +3474,17 @@ input[type="checkbox"]:focus {
 
 .CommunityReplyForm,
 .CommunityCommentItem {
-  background: #f2f2f2;
+  background: #f0f3f4;
   border-left: 10px solid #ddd;
   -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
   box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
 .CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem {
-  background: #f2f2f2; }
+  background: #f0f3f4; }
 
 /* For adding comments */
 .CommunityWikiReplyForm {
-  background: #f2f2f2;
+  background: #f0f3f4;
   -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
   box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
@@ -3572,7 +3558,7 @@ input[type="checkbox"]:focus {
 /* Titles */
 h1.BigHeader, .h1.BigHeader {
   background-color: transparent;
-  color: #a22a2e; }
+  color: #36424a; }
 
 /* Use class ContentBlockPrimary to give a block of content extra emphasis */
 .ContentBlockPrimary {
@@ -3769,7 +3755,7 @@ a.FeatureActionLink {
   transition: all 0.2s ease 0;
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-size: 110%;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.5em;
   padding: 8px 0;
   text-decoration: none; }
@@ -4135,6 +4121,97 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 .shift .Spotlight:hover {
   border-bottom: 5px solid #00837e; }
 
+/* ==========================================================================
+   BASE 
+   ========================================================================== */
+/* Defaults for HTML elements */
+h1,
+.h1,
+.PageTitle {
+  font-size: 250%;
+  line-height: normal;
+  margin: .3em 0; }
+
+/* .PanelTitle <span> Title of a StandardPanel - Used inside .PanelHead */
+/* h2s are styled in the same way */
+h2,
+.h2,
+.PanelTitle {
+  font-size: 200%;
+  line-height: normal; }
+
+h2,
+.h2,
+div.PanelTitle {
+  border-bottom: 1px solid #ddd;
+  margin: .2em 0; }
+
+h3,
+.h3,
+.SectionTitle {
+  font-size: 180%;
+  line-height: normal;
+  margin: .1em 0; }
+
+h4,
+.h4,
+.SectionLabel {
+  font-size: 155%;
+  line-height: normal; }
+
+h5,
+.h5,
+.SectionLabelSmaller {
+  font-size: 100%;
+  display: block;
+  margin: .2em 0 .2em 0;
+  padding-left: 0; }
+
+h1, h2, h3, h4, h5, h6, strong,
+h1, .h2, .h3, .h4, .h5, .h6,
+.PageTitle, .PanelTitle, .SectionTitle, .SectionLabel, .SectionLabelSmaller {
+  /*bringing boldness back to headers and the strong element*/
+  font-weight: 300; }
+
+abbr, acronym {
+  /*indicating to users that more info is available */
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+em {
+  /*bringing italics back to the em element*/
+  font-style: italic; }
+
+blockquote, ul, ol, dl {
+  /*giving blockquotes and lists room to breath*/
+  margin: 1em; }
+
+ol, ul, dl {
+  /*bringing lists on to the page with breathing room */
+  margin-left: 2em; }
+
+ol li {
+  /*giving OL's LIs generated numbers*/
+  list-style: decimal outside; }
+
+ul li {
+  /*giving UL's LIs generated disc markers*/
+  list-style: disc outside; }
+
+dl dd {
+  /*giving UL's LIs generated numbers*/
+  margin-left: 1em; }
+
+p, fieldset, table, pre {
+  /*so things don't run into each other*/
+  margin-bottom: 0.1em; }
+
+/* disabled links */
+a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
+  color: #999999;
+  text-decoration: none;
+  cursor: default; }
+
 #masterHeaderImage {
   margin-top: 32px; }
 
@@ -4187,5 +4264,11 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     color: white; }
     .breadcrumb a:visited, .breadcrumb span:visited {
       color: white; }
+
+.expander-container .expander {
+  background-color: #fbf7f7;
+  border-bottom: 1px solid #A02A31;
+  margin-bottom: 15px;
+  margin-top: 25px; }
 
 /*# sourceMappingURL=99-WSMA.css.map */

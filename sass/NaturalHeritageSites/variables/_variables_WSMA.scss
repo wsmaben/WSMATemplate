@@ -31,7 +31,7 @@ $color-callout:             $color-wsma-red !default;
 $color-secondary-a:         $color-wsma-forest !default;
 $color-secondary-b:         $color-wsma-dkgrey !default;
 
-$color-neutral:             $color-wsma-mdgrey !default;
+$color-neutral:             $color-wsma-dkgrey !default;
 $color-alt-bg:              #f0edf2!default; 
 $color-alt-bg2:             #222122;
 
@@ -70,7 +70,7 @@ $line-height-computed:  floor($font-size-base * $line-height-base) !default;
 $text-color:            $color-black !default;
 
 $headings-font-family:  "Gotham A", "Gotham B", sans-serif !default; 
-$headings-font-weight:  500 !default;
+$headings-font-weight:  300 !default;
 $headings-color:        $color-neutral !default;
 
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
@@ -78,11 +78,11 @@ $headings-color:        $color-neutral !default;
 $font-size-h1:          250% !default;
 $font-size-h2:          200% !default;
 $font-size-h3:          180% !default;
-$font-size-h4:          160% !default;
+$font-size-h4:          155% !default;
 $font-size-h5:          100% !default;
 $font-size-h6:          85% !default;
 
-$h1-color:              $color-callout !default;
+$h1-color:              $color-neutral !default;
 $h4-color:              $color-secondary-b !default;
 $h5-color:              $color-secondary-b !default;
 

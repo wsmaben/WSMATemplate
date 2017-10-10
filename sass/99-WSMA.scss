@@ -46,6 +46,7 @@
 @import "shared/panel_callouts";
 @import "shared/dashboards";
 @import "shared/svg";
+@import "shared/fonts";
 
 #masterHeaderImage {
     margin-top: 32px;
@@ -122,4 +123,13 @@
         }
     }
 
+}
+
+.expander-container {
+    .expander {
+        background-color: #fbf7f7;
+        border-bottom: 1px solid #A02A31;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
 }

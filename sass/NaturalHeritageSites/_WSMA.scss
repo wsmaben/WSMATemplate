@@ -65,13 +65,13 @@
 h1 {
     position: relative;
     display: table;
-    @include underlinedTitles($color-secondary-b,3px,45%);    
+    //@include underlinedTitles($color-secondary-b,3px,45%);    
 } 
 
 .Wrapper-HomePage h2.panel-title {
     color: $color-secondary-b;
     display: table;
-    @include underlinedTitles($color-secondary-b,2px,30%);
+    //@include underlinedTitles($color-secondary-b,2px,30%);
 }
 
 
