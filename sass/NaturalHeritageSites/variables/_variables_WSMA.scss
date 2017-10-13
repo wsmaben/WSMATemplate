@@ -59,12 +59,12 @@ $border-style:          solid !default;
 
 // Links
 // -------------------------
-$link-color:            darken($color-secondary-b, 2%) !default;
+$link-color:            $color-wsma-red; //darken($color-secondary-b, 2%) !default;
 
 // Typography
 // -------------------------
 $font-family-base:      "Gotham A", "Gotham B", sans-serif !default;
-$font-size-base:        13px !default;
+$font-size-base:        14px !default;
 $line-height-base:      1.8 !default;
 $line-height-computed:  floor($font-size-base * $line-height-base) !default;
 $text-color:            $color-black !default;

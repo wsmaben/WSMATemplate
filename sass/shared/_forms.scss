@@ -12,6 +12,7 @@ button,
 select,
 textarea {
     font-family: $font-family-base; // Only set font-family here for those that need it (note the missing label element)
+    outline: none;
 }
 
 // Form controls
