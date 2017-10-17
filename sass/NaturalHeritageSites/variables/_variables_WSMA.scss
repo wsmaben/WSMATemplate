@@ -64,6 +64,7 @@ $link-color:            $color-wsma-red; //darken($color-secondary-b, 2%) !defau
 // Typography
 // -------------------------
 $font-family-base:      "Gotham A", "Gotham B", sans-serif !default;
+$font-family-icons:     "elegant-icons";
 $font-size-base:        14px !default;
 $line-height-base:      1.8 !default;
 $line-height-computed:  floor($font-size-base * $line-height-base) !default;
@@ -74,6 +75,7 @@ $headings-font-weight:  300 !default;
 $headings-color:        $color-neutral !default;
 
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
+@import url('elegant-icons.min.css');
 
 $font-size-h1:          250% !default;
 $font-size-h2:          200% !default;

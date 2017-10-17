@@ -3,6 +3,7 @@
 /* Not in use by family's themes, may be used by Ultrawave. */
 /*progress tracker */
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
+@import url("elegant-icons.min.css");
 /* left, center, right */
 /*lighten($nav-secondary-header-bg,70%) !default;*/
 /*hsl(hue($link-color), saturation($link-color), 80%) !default;*/
