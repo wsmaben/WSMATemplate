@@ -708,7 +708,8 @@ h4, .h4, .SectionLabel {
   color: #36424a; }
 
 h5, .h5 {
-  color: #36424a; }
+  color: #36424a;
+  font-weight: 500; }
 
 h6, .h6 {
   margin: 0; }
@@ -1337,7 +1338,7 @@ img.ImgNoResize, .ImgNoResize img {
         float: left;
         clear: none; }
         .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-          margin: 0 0 -7px 0;
+          margin: 0 0 -8px 0;
           padding-bottom: 15px; }
     .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
@@ -1380,7 +1381,7 @@ img.ImgNoResize, .ImgNoResize img {
       float: left;
       clear: none; }
       .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        margin: 0 0 -7px 0;
+        margin: 0 0 -8px 0;
         padding-bottom: 15px; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
@@ -4162,11 +4163,17 @@ h4,
 
 h5,
 .h5,
-.SectionLabelSmaller {
+.SectionLabelSmaller
+.expander-body > .h1 {
   font-size: 100%;
   display: block;
   margin: .2em 0 .2em 0;
-  padding-left: 0; }
+  padding-left: 0;
+  font-weight: 500 !important; }
+
+h6,
+.h6 {
+  font-weight: 500 !important; }
 
 h1, h2, h3, h4, h5, h6, strong,
 h1, .h2, .h3, .h4, .h5, .h6,
@@ -4189,7 +4196,9 @@ blockquote, ul, ol, dl {
 
 ol, ul, dl {
   /*bringing lists on to the page with breathing room */
-  margin-left: 2em; }
+  /*Fuck breathing room */
+  margin-left: 1.5em;
+  padding-left: 0em; }
 
 ol li {
   /*giving OL's LIs generated numbers*/

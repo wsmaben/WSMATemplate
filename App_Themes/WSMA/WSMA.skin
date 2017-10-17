@@ -1,18 +1,18 @@
 ﻿<%@ Register TagPrefix="asi" TagName="PageNavR" Src="~/AsiCommon/Controls/Navigation/PageNavR.ascx" %>
 <%@ Register TagPrefix="asi" TagName="SubNavigation" Src="~/AsiCommon/Controls/Navigation/SubNavigation.ascx" %>
 
-<asi:PageNavR runat="server" Skin="WSMA-GBR" EnableEmbeddedSkins="false" EnableMegaDropDownMenu="False" MenuRenderMode="Classic"
-    MegaDropDownMenuShowStartingNode="False" MaxDataBindDepth="3" MegaDropDownMenuRepeatColumns="2" EnableRootItemScroll="False"
+<asi:PageNavR runat="server" Skin="WSMA" EnableEmbeddedSkins="false" EnableMegaDropDownMenu="False" MenuRenderMode="Classic"
+    MegaDropDownMenuShowStartingNode="False" MaxDataBindDepth="2" MegaDropDownMenuRepeatColumns="2" EnableRootItemScroll="False"
     EnableAutoScroll="False" ShowToggleHandle="True" />
 
-<telerik:RadSiteMap runat="server" SkinID="MegaDropDown" EnableEmbeddedSkins="False" Skin="WSMA-GBR" />
+<telerik:RadSiteMap runat="server" SkinID="MegaDropDown" EnableEmbeddedSkins="False" Skin="WSMA" />
 
-<asi:SubNavigation runat="server" EnableEmbeddedSkins="False" Skin="WSMA-GBR" SingleExpandPath="true" ShowLineImages="false" TreeRenderMode="Lightweight" />
+<asi:SubNavigation runat="server" EnableEmbeddedSkins="False" Skin="WSMA" SingleExpandPath="true" ShowLineImages="false" TreeRenderMode="Lightweight" />
 
 <%-- Default RadToolTip - used by InfoIcon control --%>
 <telerik:RadToolTip runat="server" skin="Telerik" RenderInPageRoot="true" Animation="None" ShowDelay="0" />
 
-<telerik:RadAsyncUpload runat="server" skin="WSMA-GBR" EnableEmbeddedSkins="False" Width="350px">
+<telerik:RadAsyncUpload runat="server" skin="WSMA" EnableEmbeddedSkins="False" Width="350px">
     <Localization Select="Select" />  
     <Localization Remove="Remove" /> 
 </telerik:RadAsyncUpload>
@@ -28,7 +28,7 @@
 <telerik:RadTreeView runat="server" Skin="Vista" CollapseAnimation-Duration="1" ExpandAnimation-Duration="1" LoadingStatusPosition="None" />  
 <telerik:RadTabStrip runat="server" Skin="MetroTouch" />
 <telerik:RadTabStrip runat="server" SkinID="SubTabs" Skin="SubTabStrip" CssClass="SubTabStrip" EnableEmbeddedSkins="false" ShowBaseLine="false" />
-<telerik:RadUpload runat="server" Skin="WSMA-GBR" EnableEmbeddedSkins="False" />
+<telerik:RadUpload runat="server" Skin="WSMA" EnableEmbeddedSkins="False" />
 <telerik:RadScheduler runat="server" Skin="Metro" />
 
 <telerik:RadButton runat="server" SkinID="PanelCommandButtonEdit" CssClass="IconSprite EditIcon">
