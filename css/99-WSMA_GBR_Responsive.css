@@ -143,8 +143,7 @@
   background: #ffffff; }
 
 .header-logo-container {
-  float: left;
-  margin: 0.5em 0; }
+  float: left; }
 
 @media (max-width: 767px) {
   .header-social {
@@ -328,24 +327,10 @@
 h1 {
   position: relative;
   display: table; }
-  h1:after {
-    content: '';
-    display: block;
-    bottom: 0;
-    width: 45%;
-    margin: 5px auto 0 auto;
-    border-bottom: 3px solid #d3dadf; }
 
 .Wrapper-HomePage h2.panel-title {
   color: #36424a;
   display: table; }
-  .Wrapper-HomePage h2.panel-title:after {
-    content: '';
-    display: block;
-    bottom: 0;
-    width: 30%;
-    margin: 5px auto 0 auto;
-    border-bottom: 2px solid #d3dadf; }
 
 .Wrapper-HomePage {
   /* Arrow shaped containers for nice browsers only. */ }
@@ -402,7 +387,7 @@ h1 {
 /* Diamond shaped button, excluding Safari */
 /* Button styles for all browsers */
 .btn, .TextButton, .ruButton {
-  font-size: 15px !important;
+  font-size: 16px !important;
   -webkit-transition: all 0.2s ease-in-out !important;
   -o-transition: all 0.2s ease-in-out !important;
   transition: all 0.2s ease-in-out !important;
@@ -510,8 +495,8 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   height: 100px;
   top: -100px;
   right: 20%;
-  border-top: 2px dotted #acaeaf;
-  border-right: 2px dotted #acaeaf; }
+  border-top: 2px dotted #6c8494;
+  border-right: 2px dotted #6c8494; }
 .TestimonialArea blockquote {
   background: #fff;
   position: relative;
@@ -643,32 +628,36 @@ h2, .h2, .PanelHead.Distinguish,
 .RadMenu .rmGroup .rmText {
   padding: 0 0 0 5px !important; }
 
+.rmRootGroup > .rmItem {
+  padding-bottom: 23px;
+  border-bottom: 5px solid #4bc8b6; }
+
 /* ==========================================================================
    Basic setup
    ========================================================================== */
 body {
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   color: #313E48; }
 
 a {
-  color: #323d44 ;
+  color: #a22a2e ;
   text-decoration: underline; }
   a:visited {
-    color: #3c4a53 ; }
+    color: #b62f34 ; }
   a:hover, a:focus, a:active {
-    color: #1c2227 ; }
+    color: #7a2023 ; }
   a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
     color: #999999 ; }
 
 .RadGrid a, .RadToolTip a {
-  color: #323d44  !important;
+  color: #a22a2e  !important;
   text-decoration: underline; }
   .RadGrid a:visited, .RadToolTip a:visited {
-    color: #3c4a53  !important; }
+    color: #b62f34  !important; }
   .RadGrid a:hover, .RadGrid a:focus, .RadGrid a:active, .RadToolTip a:hover, .RadToolTip a:focus, .RadToolTip a:active {
-    color: #1c2227  !important; }
+    color: #7a2023  !important; }
   .RadGrid a.aspNetDisabled, .RadGrid a.aspNetDisabled:hover, .RadGrid a.aspNetDisabled:focus, .RadGrid a.aspNetDisabled:active, .RadGrid a.aspNetDisabled:visited, .RadToolTip a.aspNetDisabled, .RadToolTip a.aspNetDisabled:hover, .RadToolTip a.aspNetDisabled:focus, .RadToolTip a.aspNetDisabled:active, .RadToolTip a.aspNetDisabled:visited {
     color: #999999  !important; }
 
@@ -683,14 +672,14 @@ p {
 h1, .h1, .PageTitle,
 h2, .h2, .PanelTitle {
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500;
-  color: #6c6f70; }
+  font-weight: 300;
+  color: #36424a; }
 
 h1, .h1, .PageTitle {
   margin-top: 0; }
 
 h1, .h1, .PageTitle {
-  color: #a22a2e;
+  color: #36424a;
   font-size: 250%; }
 
 h1.BigHeader, .h1.BigHeader {
@@ -813,13 +802,31 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs #masterHeaderImage {
     background-position: 0 0px;
     width: 300px; }
-  #masterHeaderImage svg .cls-1 {
+  @media (max-width: 767px) {
+    #masterHeaderImage svg .cls-1 {
+      fill: none;
+      stroke: #36424a;
+      stroke-miterlimit: 3.86; }
+    #masterHeaderImage svg .cls-2 {
+      fill: #36424a; }
+    #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; } }
+  @media (min-width: 768px) {
+    #masterHeaderImage svg .cls-1 {
+      fill: none;
+      stroke: #36424a;
+      stroke-miterlimit: 3.86; }
+    #masterHeaderImage svg .cls-2 {
+      fill: #36424a; }
+    #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; } }
+  .no-mqs #masterHeaderImage svg .cls-1 {
     fill: none;
     stroke: #36424a;
     stroke-miterlimit: 3.86; }
-  #masterHeaderImage svg .cls-2 {
+  .no-mqs #masterHeaderImage svg .cls-2 {
     fill: #36424a; }
-  #masterHeaderImage svg .cls-3 {
+  .no-mqs #masterHeaderImage svg .cls-3 {
     fill: #a22a2e; }
 
 #masterDonorHeaderImage {
@@ -848,7 +855,7 @@ img.ImgNoResize, .ImgNoResize img {
   .ProxyPanelContact, .ProxyPanelContact .obo-label {
     color: #fff; }
   .ProxyPanelContact a {
-    color: #92a4b0; }
+    color: #eaaeb0; }
 
 /* Sub (Left) Navigation
    ========================================================================== */
@@ -860,7 +867,7 @@ img.ImgNoResize, .ImgNoResize img {
   background-color: #f0edf2;
   color: #313E48;
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .SubNavigationSeparator {
   border-width: 1px 0 0 0;
@@ -965,7 +972,7 @@ img.ImgNoResize, .ImgNoResize img {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.075), 0 1px 0 rgba(255, 255, 255, 0.1); }
 .footer-promo-container .lead {
   font-family: "Gotham A", "Gotham B", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: .25em;
   font-size: 130%;
   line-height: inherit; }
@@ -1004,7 +1011,7 @@ img.ImgNoResize, .ImgNoResize img {
   #ft h4 {
     color: #000;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-weight: 500; }
+    font-weight: 300; }
 
 #masterFooterConnectWithUs {
   border-style: solid;
@@ -1125,7 +1132,7 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu.RadMenu_WSMA .rmText,
   .RadMenu.RadMenu_WSMA .rmHorizontal .rmText,
   .RadMenu.RadMenu_WSMA .rmSlide .rmText {
-    padding: 8px 15px; }
+    padding: 8px 15px 8px 15px; }
   .RadMenu.RadMenu_WSMA .rmSlide .MegaDropDownMenuOuter > .rmText {
     /* when mega menus are on, don't add padding around the rmText */
     padding: 0; }
@@ -1181,32 +1188,31 @@ img.ImgNoResize, .ImgNoResize img {
     margin: 0; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected {
     /* root item selected styles */
-    color: #00837e;
+    color: #4bc8b6;
     background-color: transparent; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
     /* root item hover and focus styles */
     background-color: transparent;
-    color: #00837e; }
+    color: #4bc8b6; }
   .RadMenu.RadMenu_WSMA .rmGroup {
     background-color: #ffffff; }
   .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink,
   .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink {
-    color: #fefefe; }
+    color: #36424a; }
     .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink:hover, .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink:active,
     .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink:hover,
     .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink:active {
       background-color: transparent;
-      color: #fefefe; }
+      color: #36424a; }
   .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem {
     position: relative; }
   .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-    text-transform: uppercase;
     color: #313E48;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-size: 100%;
-    font-weight: normal;
+    font-size: 105%;
+    font-weight: 400;
     letter-spacing: 1px; }
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
     /* a clickable target to expand multi-level navigaiton */
@@ -1254,14 +1260,14 @@ img.ImgNoResize, .ImgNoResize img {
     float: none; }
   .RadMenu_WSMA .rmSlide .rmLink,
   .RadMenu_WSMA .rmSlide .rsmLink {
-    color: #fefefe;
+    color: #36424a;
     font-family: "Gotham A", "Gotham B", sans-serif;
     font-size: 114%;
     font-weight: normal; }
   .RadMenu_WSMA .rmSlide .rmSeparator,
   .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator,
   .RadMenu_WSMA .rmSlide .MegaDropDownMenuSeperator > .rsmLink {
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #ffffff; }
   .RadMenu_WSMA .rmSlide .rmSeparator, .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator {
     margin: 0 15px; }
   .RadMenu_WSMA .rmSlide .rmFocused > .rmLink,
@@ -1296,8 +1302,8 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:hover,
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:focus {
     text-transform: uppercase;
-    color: #fefefe;
-    font-weight: normal;
+    color: #36424a;
+    font-weight: 400;
     letter-spacing: 1px; }
   .RadMenu_WSMA .rmSlide .MegaDropDownMenuSeperator .rsmLink {
     padding: 0; }
@@ -1331,15 +1337,14 @@ img.ImgNoResize, .ImgNoResize img {
         float: left;
         clear: none; }
         .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-          margin: 0; }
-    .RadMenu.RadMenu_WSMA .rmRootLink {
-      border-top: 3px solid transparent; }
+          margin: 0 0 -7px 0;
+          padding-bottom: 15px; }
     .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
     .RadMenu.RadMenu_WSMA .rmRootLink:hover,
     .RadMenu.RadMenu_WSMA .rmRootLink:focus,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-      border-top: 3px solid #00837e; }
+      border-bottom: 4px solid #4bc8b6; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
       margin: 0; }
     .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -1375,15 +1380,14 @@ img.ImgNoResize, .ImgNoResize img {
       float: left;
       clear: none; }
       .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        margin: 0; }
-  .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink {
-    border-top: 3px solid transparent; }
+        margin: 0 0 -7px 0;
+        padding-bottom: 15px; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
-    border-top: 3px solid #00837e; }
+    border-bottom: 4px solid #4bc8b6; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
     margin: 0; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
@@ -1414,39 +1418,57 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 /**** Telerik overrides ****/
 .RadTreeView.RadTreeView_WSMA {
-  white-space: normal; }
+  white-space: normal;
+  padding-bottom: 30px;
+  font-size: 14px !important;
+  color: #36424a; }
   .RadTreeView.RadTreeView_WSMA .rtLI,
   .RadTreeView.RadTreeView_WSMA .rtTop,
   .RadTreeView.RadTreeView_WSMA .rtMid,
   .RadTreeView.RadTreeView_WSMA .rtBot {
     padding: 0; }
   .RadTreeView.RadTreeView_WSMA .rtIn {
-    font-weight: bold !important;
     display: block; }
+  .RadTreeView.RadTreeView_WSMA .rtTop,
+  .RadTreeView.RadTreeView_WSMA .rtMid,
+  .RadTreeView.RadTreeView_WSMA .rtBot {
+    border-left: 5px solid transparent; }
+    .RadTreeView.RadTreeView_WSMA .rtTop .rtSelected,
+    .RadTreeView.RadTreeView_WSMA .rtMid .rtSelected,
+    .RadTreeView.RadTreeView_WSMA .rtBot .rtSelected {
+      border-left: 5px solid #8cdbd0; }
+    .RadTreeView.RadTreeView_WSMA .rtTop:hover, .RadTreeView.RadTreeView_WSMA .rtTop:active, .RadTreeView.RadTreeView_WSMA .rtTop:focus,
+    .RadTreeView.RadTreeView_WSMA .rtMid:hover,
+    .RadTreeView.RadTreeView_WSMA .rtMid:active,
+    .RadTreeView.RadTreeView_WSMA .rtMid:focus,
+    .RadTreeView.RadTreeView_WSMA .rtBot:hover,
+    .RadTreeView.RadTreeView_WSMA .rtBot:active,
+    .RadTreeView.RadTreeView_WSMA .rtBot:focus {
+      border-left: 5px solid #8cdbd0;
+      background: rgba(255, 255, 255, 0.3); }
   .RadTreeView.RadTreeView_WSMA .rtIn,
   .RadTreeView.RadTreeView_WSMA .rtHover .rtIn,
   .RadTreeView.RadTreeView_WSMA .rtSelected .rtIn {
-    padding: 10px 15px;
+    padding: 10px 0;
     border: none; }
   .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn,
   .RadTreeView.RadTreeView_WSMA .child-is-selected.rtIn {
-    background-color: transparent;
-    color: #313E48; }
+    color: #313E48;
+    border-bottom: 1px solid white; }
   .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:hover, .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:active, .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn:focus {
     background-color: transparent; }
+  .RadTreeView.RadTreeView_WSMA .rtUL {
+    width: 100%; }
   .RadTreeView.RadTreeView_WSMA .rtUL .rtUL {
-    padding-left: 15px; }
+    padding-left: 0; }
   .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI {
-    /* add a separator border to the first-level sub-nav items only */
-    border-top: 1px solid #ddd; }
-    .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI:first-child {
-      border-top: none; }
+    /* add a separator border to the first-level sub-nav items only */ }
     .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI .rtLI .rtIn {
       /* children should have less padding */
-      padding: 5px 15px; }
+      padding: 5px 0; }
     .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI > .rtUL {
       /* this makes the children section padding even */
-      padding-right: 15px;
+      padding-right: 0;
       padding-bottom: 10px; }
   .RadTreeView.RadTreeView_WSMA > .rtUL {
     /* add a boundary for hovered navs */
@@ -1457,31 +1479,30 @@ img.ImgNoResize, .ImgNoResize img {
     /* we don't want to display the expand/collapse icons in this theme */
     display: none; }
   .RadTreeView.RadTreeView_WSMA a.rtIn {
-    color: #323d44;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    margin: 0; }
-    .RadTreeView.RadTreeView_WSMA a.rtIn:hover, .RadTreeView.RadTreeView_WSMA a.rtIn:focus, .RadTreeView.RadTreeView_WSMA a.rtIn:active {
-      background-color: #fff; }
+    color: #36424a;
+    margin: 0 20px 0 20px;
+    border-bottom: 1px solid white; }
+    .RadTreeView.RadTreeView_WSMA a.rtIn:hover, .RadTreeView.RadTreeView_WSMA a.rtIn:active, .RadTreeView.RadTreeView_WSMA a.rtIn:focus {
+      border-bottom: 1px solid white;
+      color: #313E48; }
 
 .nav-secondary {
-  background-color: transparent;
+  background-color: #C5F0E8;
   margin-bottom: 1em; }
   .nav-secondary .sub-nav-head {
-    background-color: #ffffff;
+    background-color: #C5F0E8;
     color: #313E48;
     font-weight: bold;
     font-size: 120%;
-    padding: 10px 15px;
-    text-transform: uppercase; }
+    padding: 10px 15px 10px 25px;
+    text-transform: capitalize; }
   .nav-secondary .SubNavigationSeparator {
     border: none;
     height: 4px;
-    background-color: #ffffff; }
+    background-color: #fff; }
     .nav-secondary .SubNavigationSeparator .rtIn {
       padding: 0;
-      color: #fff; }
+      color: #717271; }
 
 /* ==========================================================================
    AUXILIARY NAVIGATION
@@ -1493,18 +1514,18 @@ img.ImgNoResize, .ImgNoResize img {
   .navbar-header .NavigationUnorderedList,
   .navbar-header .NavigationLink {
     display: block;
-    vertical-align: middle;
+    vertical-align: right;
     color: #fff; }
 
 .navbar-toggle {
   margin-top: 3.5px;
   margin-bottom: 3.5px;
   vertical-align: middle;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #36424a;
   border-color: transparent;
   border-radius: 0px; }
   .navbar-toggle.collapsed {
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: #36424a; }
   .navbar-toggle:hover, .navbar-toggle:focus {
     background-color: #fff; }
   .navbar-toggle .icon-bar {
@@ -1513,13 +1534,13 @@ img.ImgNoResize, .ImgNoResize img {
 .header-container .nav-auxiliary .TextButton,
 .header-container .nav-auxiliary .navbar-toggle {
   margin-left: 10px; }
-.header-container .nav-auxiliary .auth-link a {
+.header-container .nav-auxiliary .UtilityAuthentication a {
   color: #fff;
   font-size: 107%;
   text-decoration: none;
   font-weight: bold;
   padding-top: 5px; }
-  .header-container .nav-auxiliary .auth-link a:hover, .header-container .nav-auxiliary .auth-link a:focus {
+  .header-container .nav-auxiliary .UtilityAuthentication a:hover, .header-container .nav-auxiliary .UtilityAuthentication a:focus {
     text-decoration: underline; }
 @media (min-width: 768px) {
   .header-container .nav-auxiliary .NavigationListItem,
@@ -1572,7 +1593,7 @@ img.ImgNoResize, .ImgNoResize img {
   /* Cart Item Flag indicating how many items are in your cart */ }
   .nav-auxiliary .nav-aux-button .NavigationLink {
     /* This makes the link look like the toggle buttons */
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #36424a;
     margin-left: 10px;
     padding: 5px;
     margin-top: 3.5px;
@@ -1582,7 +1603,7 @@ img.ImgNoResize, .ImgNoResize img {
     .nav-auxiliary .nav-aux-button .NavigationLink:hover, .nav-auxiliary .nav-aux-button .NavigationLink:focus {
       background-color: #fff; }
     .nav-auxiliary .nav-aux-button .NavigationLink:active {
-      background-color: rgba(255, 255, 255, 0.8); }
+      background-color: #36424a; }
   .nav-auxiliary .nav-aux-button.NavigationListItem {
     position: relative;
     /* this is required for the cart indicator placement */
@@ -1694,8 +1715,8 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
   width: 100%; }
 
 .search-container-sm {
-  margin-top: 4.5px;
-  margin-bottom: 4.5px; }
+  margin-top: 3.5px;
+  margin-bottom: 3.5px; }
 
 .header-search {
   padding: 8px 15px;
@@ -1707,7 +1728,8 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
     height: 32px; }
     @media (max-width: 767px) {
       .header-search .search-field {
-        width: 100%; } }
+        width: 100%;
+        background-color: #ffffff; } }
     @media (min-width: 768px) {
       .header-search .search-field {
         padding: 0 0 0 7px;
@@ -1715,7 +1737,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
         height: 31px;
         padding-left: 34px !important;
         background-position: 7px -17px !important;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: #ffffff;
         border: none;
         margin: 0 0 0 -5px;
         -webkit-transition: width;
@@ -1735,7 +1757,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
       height: 31px;
       padding-left: 34px !important;
       background-position: 7px -17px !important;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: #ffffff;
       border: none;
       margin: 0 0 0 -5px;
       -webkit-transition: width;
@@ -1867,7 +1889,8 @@ input,
 button,
 select,
 textarea {
-  font-family: "Gotham A", "Gotham B", sans-serif; }
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  outline: none; }
 
 select,
 textarea,
@@ -1887,7 +1910,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 35px;
+  height: 37px;
   padding: 5px 10px;
   font-size: 100%;
   line-height: 1.8;
@@ -2004,7 +2027,7 @@ input[type="color"],
   .RadComboBox.RadComboBox_MetroTouch .rcbInner, .RadComboBox.RadComboBox_MetroTouch .rcbInner .rcbInput, .RadComboBox.RadComboBox_MetroTouch .rcbFocused, .RadComboBox.RadComboBox_MetroTouch .rcbFocused .rcbInput, .RadComboBox.RadComboBox_MetroTouch .rcbHovered, .RadComboBox.RadComboBox_MetroTouch .rcbHovered .rcbInput {
     color: #555555; }
   .RadComboBox.RadComboBox_MetroTouch .rcbInner {
-    height: 35px;
+    height: 37px;
     padding: 0;
     font-size: 100%;
     line-height: 1.8;
@@ -2040,7 +2063,7 @@ input[type="color"],
     padding-bottom: 5px; }
 
 .RadInput.RadInput.riSingle .riTextBox, .RadInput.RadInput .riTextBox {
-  height: 35px;
+  height: 37px;
   padding: 5px 10px;
   border-color: #ccc;
   font: inherit;
@@ -2049,7 +2072,7 @@ input[type="color"],
     border-color: #66afe9; }
 
 .RadUpload.RadUpload .ruFakeInput {
-  height: 33px;
+  height: 35px;
   padding: 0;
   border-radius: 0px; }
 
@@ -2068,7 +2091,7 @@ input[type="color"],
 
 /* Chosen multi-select */
 .chosen-container-multi .chosen-choices {
-  min-height: 35px;
+  min-height: 37px;
   border-radius: 0px;
   border-color: #ccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2149,7 +2172,7 @@ input[type="checkbox"]:focus {
   white-space: normal;
   text-decoration: none;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   border-radius: 0px;
   -webkit-user-select: none;
@@ -2520,7 +2543,7 @@ input[type="checkbox"]:focus {
 .CalloutArea2 .TextButton.PrimaryButton,
 .CalloutArea2 .TextButtonWithImage.PrimaryButton {
   color: #fff;
-  background-color: #6c6f70; }
+  background-color: #36424a; }
   .CalloutArea1 .btn.PrimaryButton:hover, .CalloutArea1 .btn.PrimaryButton:active, .CalloutArea1 .btn.PrimaryButton:focus,
   .CalloutArea1 .TextButton.PrimaryButton:hover,
   .CalloutArea1 .TextButton.PrimaryButton:active,
@@ -2538,7 +2561,7 @@ input[type="checkbox"]:focus {
   .CalloutArea2 .TextButtonWithImage.PrimaryButton:active,
   .CalloutArea2 .TextButtonWithImage.PrimaryButton:focus {
     color: #fff;
-    background-color: #4e5051; }
+    background-color: #1c2227; }
 
 /* ==========================================================================
    CONTENT ITEMS
@@ -2555,7 +2578,7 @@ input[type="checkbox"]:focus {
 .RadTreeView.GLE .rtIn, .RadTreeView.GLE .rtHover .rtIn, .RadTreeView.GLE .rtSelected .rtIn {
   background-color: transparent;
   border: none;
-  color: #323d44; }
+  color: #a22a2e; }
 .RadTreeView.GLE a:hover, .RadTreeView.GLE a:focus, .RadTreeView.GLE span[onclick]:hover, .RadTreeView.GLE span[onclick]:focus {
   background-color: #22272b;
   color: #fff; }
@@ -2641,7 +2664,7 @@ input[type="checkbox"]:focus {
   .ProgressTracker2 .ProgressTrackerPanel .count {
     color: #fff;
     font-family: "Gotham A", "Gotham B", sans-serif;
-    font-weight: 500; }
+    font-weight: 300; }
 .ProgressTracker2 div p {
   background-color: #fff;
   color: #00837e;
@@ -2723,7 +2746,7 @@ input[type="checkbox"]:focus {
 .RadTabStrip.RadTabStrip_MetroTouch {
   font-family: "Gotham A", "Gotham B", sans-serif !important;
   font-weight: inherit;
-  font-size: 17px !important;
+  font-size: 18px !important;
   clear: both; }
   html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected:hover {
     border-color: #36424a;
@@ -3366,7 +3389,7 @@ input[type="checkbox"]:focus {
   .carousel-caption h1:after {
     display: none; }
   .carousel-caption p {
-    font-size: 17px; }
+    font-size: 18px; }
 
 /* Internal page carousel */
 .InternalHeaderArea {
@@ -3452,17 +3475,17 @@ input[type="checkbox"]:focus {
 
 .CommunityReplyForm,
 .CommunityCommentItem {
-  background: #f2f2f2;
+  background: #f0f3f4;
   border-left: 10px solid #ddd;
   -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
   box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
 .CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem {
-  background: #f2f2f2; }
+  background: #f0f3f4; }
 
 /* For adding comments */
 .CommunityWikiReplyForm {
-  background: #f2f2f2;
+  background: #f0f3f4;
   -webkit-box-shadow: 1px 1px 28px 3px #e3e3e3;
   box-shadow: 1px 1px 28px 3px #e3e3e3; }
 
@@ -3536,7 +3559,7 @@ input[type="checkbox"]:focus {
 /* Titles */
 h1.BigHeader, .h1.BigHeader {
   background-color: transparent;
-  color: #a22a2e; }
+  color: #36424a; }
 
 /* Use class ContentBlockPrimary to give a block of content extra emphasis */
 .ContentBlockPrimary {
@@ -3668,7 +3691,7 @@ h1.BigHeader, .h1.BigHeader {
   position: relative;
   padding: 15px;
   margin: 0 0 1em;
-  color: #fff;
+  color: #ffffff;
   background: #a22a2e;
   /*$callout1-bg*/
   width: auto;
@@ -3733,7 +3756,7 @@ a.FeatureActionLink {
   transition: all 0.2s ease 0;
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-size: 110%;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.5em;
   padding: 8px 0;
   text-decoration: none; }
@@ -3836,7 +3859,7 @@ a.FeatureActionLink {
     .header-link a, .header-link a:visited {
       color: #313E48; }
     .header-link a:hover, .header-link a:active, .header-link a:focus {
-      color: #323d44; }
+      color: #a22a2e; }
 
 /* Image Banners
    ========================================================================== */
