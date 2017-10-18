@@ -706,15 +706,17 @@ div.PanelTitle,
   min-height: 0;
   border-bottom-style: solid; }
 
-h4, .SectionLabel, h5 {
-  margin: 0 0 .2em; }
+h4, .SectionLabel {
+  margin: 0 0 .2em;
+  font-size: 155%;
+  font-weight: 300; }
 
 h4, .h4, .SectionLabel {
   color: #36424a; }
 
 h5, .h5 {
   color: #36424a;
-  font-weight: 500; }
+  font-weight: 300; }
 
 h6, .h6 {
   margin: 0; }
@@ -818,22 +820,26 @@ img.ImgNoResize, .ImgNoResize img {
     #masterHeaderImage svg .cls-3 {
       fill: #a22a2e; } }
   @media (min-width: 768px) {
-    #masterHeaderImage svg .cls-1 {
+    #masterHeaderImage {
+      margin-top: 40px; }
+      #masterHeaderImage svg .cls-1 {
+        fill: none;
+        stroke: #36424a;
+        stroke-miterlimit: 3.86; }
+      #masterHeaderImage svg .cls-2 {
+        fill: #36424a; }
+      #masterHeaderImage svg .cls-3 {
+        fill: #a22a2e; } }
+  .no-mqs #masterHeaderImage {
+    margin-top: 40px; }
+    .no-mqs #masterHeaderImage svg .cls-1 {
       fill: none;
       stroke: #36424a;
       stroke-miterlimit: 3.86; }
-    #masterHeaderImage svg .cls-2 {
+    .no-mqs #masterHeaderImage svg .cls-2 {
       fill: #36424a; }
-    #masterHeaderImage svg .cls-3 {
-      fill: #a22a2e; } }
-  .no-mqs #masterHeaderImage svg .cls-1 {
-    fill: none;
-    stroke: #36424a;
-    stroke-miterlimit: 3.86; }
-  .no-mqs #masterHeaderImage svg .cls-2 {
-    fill: #36424a; }
-  .no-mqs #masterHeaderImage svg .cls-3 {
-    fill: #a22a2e; }
+    .no-mqs #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; }
 
 #masterDonorHeaderImage {
   background-image: url("images/DonorHeaderLogo.png");
