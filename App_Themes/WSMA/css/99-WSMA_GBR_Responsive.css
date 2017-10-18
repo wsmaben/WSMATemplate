@@ -3,7 +3,9 @@
 /* Not in use by family's themes, may be used by Ultrawave. */
 /*progress tracker */
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
-@import url("elegant-icons.css");
+@font-face {
+  font-family: "elegant-icons";
+  src: url("https://cdn.rawgit.com/mdentinho/elegant-icons-sass/e48e7df0/fonts/ElegantIcons.woff"); }
 /* left, center, right */
 /*lighten($nav-secondary-header-bg,70%) !default;*/
 /*hsl(hue($link-color), saturation($link-color), 80%) !default;*/
@@ -216,14 +218,16 @@
     right: 0;
     z-index: 666;
     background: transparent; }
-  .Wrapper-HomePage #masterHeaderImage svg .cls-1 {
-    fill: none;
-    stroke: #fff;
-    stroke-miterlimit: 3.86; }
-  .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
-    fill: #fff; }
-  .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
-    fill: #a22a2e; }
+  .Wrapper-HomePage #masterHeaderImage {
+    margin-top: 40px; }
+    .Wrapper-HomePage #masterHeaderImage svg .cls-1 {
+      fill: none;
+      stroke: #fff;
+      stroke-miterlimit: 3.86; }
+    .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
+      fill: #fff; }
+    .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
+      fill: #a22a2e; }
 
 /***** Proxy Panel Styling *****/
 /* This applies to the on behalf of (proxy) area */

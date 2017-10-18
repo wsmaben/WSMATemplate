@@ -86,6 +86,7 @@
         }
     }
     @include respond-to('grid large') {
+        margin-top: 40px;
         svg {
             .cls-1 {
                 fill: none;
