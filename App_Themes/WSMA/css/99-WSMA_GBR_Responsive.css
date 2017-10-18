@@ -3,6 +3,7 @@
 /* Not in use by family's themes, may be used by Ultrawave. */
 /*progress tracker */
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
+@import url("elegant-icons.css");
 /* left, center, right */
 /*lighten($nav-secondary-header-bg,70%) !default;*/
 /*hsl(hue($link-color), saturation($link-color), 80%) !default;*/
@@ -708,7 +709,8 @@ h4, .h4, .SectionLabel {
   color: #36424a; }
 
 h5, .h5 {
-  color: #36424a; }
+  color: #36424a;
+  font-weight: 500; }
 
 h6, .h6 {
   margin: 0; }
@@ -1337,7 +1339,7 @@ img.ImgNoResize, .ImgNoResize img {
         float: left;
         clear: none; }
         .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-          margin: 0 0 -7px 0;
+          margin: 0 0 -8px 0;
           padding-bottom: 15px; }
     .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
@@ -1380,7 +1382,7 @@ img.ImgNoResize, .ImgNoResize img {
       float: left;
       clear: none; }
       .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        margin: 0 0 -7px 0;
+        margin: 0 0 -8px 0;
         padding-bottom: 15px; }
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,

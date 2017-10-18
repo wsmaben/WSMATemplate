@@ -3,7 +3,9 @@
 /* Not in use by family's themes, may be used by Ultrawave. */
 /*progress tracker */
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
-@import url("elegant-icons.min.css");
+@font-face {
+  font-family: "elegant-icons";
+  src: url("https://cdn.rawgit.com/mdentinho/elegant-icons-sass/e48e7df0/fonts/ElegantIcons.woff"); }
 /* left, center, right */
 /*lighten($nav-secondary-header-bg,70%) !default;*/
 /*hsl(hue($link-color), saturation($link-color), 80%) !default;*/
@@ -4123,105 +4125,6 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   fill: whitesmoke; }
 .shift .Spotlight:hover {
   border-bottom: 5px solid #00837e; }
-
-/* ==========================================================================
-   BASE 
-   ========================================================================== */
-/* Defaults for HTML elements */
-h1,
-.h1,
-.PageTitle {
-  font-size: 250%;
-  line-height: normal;
-  margin: .3em 0; }
-
-/* .PanelTitle <span> Title of a StandardPanel - Used inside .PanelHead */
-/* h2s are styled in the same way */
-h2,
-.h2,
-.PanelTitle {
-  font-size: 200%;
-  line-height: normal; }
-
-h2,
-.h2,
-div.PanelTitle {
-  border-bottom: 1px solid #ddd;
-  margin: .2em 0; }
-
-h3,
-.h3,
-.SectionTitle {
-  font-size: 180%;
-  line-height: normal;
-  margin: .1em 0; }
-
-h4,
-.h4,
-.SectionLabel {
-  font-size: 155%;
-  line-height: normal; }
-
-h5,
-.h5,
-.SectionLabelSmaller
-.expander-body > .h1 {
-  font-size: 100%;
-  display: block;
-  margin: .2em 0 .2em 0;
-  padding-left: 0;
-  font-weight: 500 !important; }
-
-h6,
-.h6 {
-  font-weight: 500 !important; }
-
-h1, h2, h3, h4, h5, h6, strong,
-h1, .h2, .h3, .h4, .h5, .h6,
-.PageTitle, .PanelTitle, .SectionTitle, .SectionLabel, .SectionLabelSmaller {
-  /*bringing boldness back to headers and the strong element*/
-  font-weight: 300; }
-
-abbr, acronym {
-  /*indicating to users that more info is available */
-  border-bottom: 1px dotted #000;
-  cursor: help; }
-
-em {
-  /*bringing italics back to the em element*/
-  font-style: italic; }
-
-blockquote, ul, ol, dl {
-  /*giving blockquotes and lists room to breath*/
-  margin: 1em; }
-
-ol, ul, dl {
-  /*bringing lists on to the page with breathing room */
-  /*Fuck breathing room */
-  margin-left: 1.5em;
-  padding-left: 0em; }
-
-ol li {
-  /*giving OL's LIs generated numbers*/
-  list-style: decimal outside; }
-
-ul li {
-  /*giving UL's LIs generated disc markers*/
-  list-style: disc outside; }
-
-dl dd {
-  /*giving UL's LIs generated numbers*/
-  margin-left: 1em; }
-
-p, fieldset, table, pre {
-  /*so things don't run into each other*/
-  margin-bottom: 0.1em; }
-
-/* disabled links */
-a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
-  color: #999999;
-  text-decoration: none;
-  cursor: default; }
 
 #masterHeaderImage {
   margin-top: 32px; }

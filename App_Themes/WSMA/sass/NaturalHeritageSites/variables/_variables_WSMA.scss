@@ -75,7 +75,11 @@ $headings-font-weight:  300 !default;
 $headings-color:        $color-neutral !default;
 
 @import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
-@import url('elegant-icons.min.css');
+
+@font-face {
+	font-family: "elegant-icons";
+	src: url("https://cdn.rawgit.com/mdentinho/elegant-icons-sass/e48e7df0/fonts/ElegantIcons.woff");
+    }
 
 $font-size-h1:          250% !default;
 $font-size-h2:          200% !default;
