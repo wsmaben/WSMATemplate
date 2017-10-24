@@ -399,7 +399,7 @@
         jQuery(".auth-link").appendAround();
         // Move Page Titles
         jQuery(".PageTitle").appendTo(".breadcrumb");
-        jQuery(".inner-banner").appendTo(".breadcrumb");
+        jQuery(".inner-banner").appendTo(".breadcrumb-obo-container");
     //]]>
     </script>
 

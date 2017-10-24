@@ -4215,4 +4215,13 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     background-color: transparent;
     width: 100%; }
 
+/****************************************
+/** imgBanner
+/***************************************/
+.imgBanner .breadcrumb-obo-container {
+  background-color: red;
+  height: 418px; }
+  .imgBanner .breadcrumb-obo-container .inner-banner {
+    color: white; }
+
 /*# sourceMappingURL=99-WSMA.css.map */
