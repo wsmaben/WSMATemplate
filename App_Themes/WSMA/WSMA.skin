@@ -2,7 +2,7 @@
 <%@ Register TagPrefix="asi" TagName="SubNavigation" Src="~/AsiCommon/Controls/Navigation/SubNavigation.ascx" %>
 
 <asi:PageNavR runat="server" Skin="WSMA" EnableEmbeddedSkins="False" EnableMegaDropDownMenu="True"
-MegaDropDownMenuShowStartingNode="False" MaxDataBindDepth="3" MegaDropDownMenuRepeatColumns="3"
+MegaDropDownMenuShowStartingNode="True" MaxDataBindDepth="3" MegaDropDownMenuRepeatColumns="3"
 MegaDropDownMenuLevelSettingLevel="3" MegaDropDownMenuRepeatDirection="Horizontal" EnableRootItemScroll="False"
 EnableAutoScroll="False" ShowToggleHandle="True" />
 
