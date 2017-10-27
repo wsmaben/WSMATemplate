@@ -1,0 +1,13 @@
+/* .RadMenu .rmSlide .rmGroup .rmTemplate {
+    width:100%!important;
+}
+
+.RadMenu .rmSlide, .RadMenu_Context {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    float: left;
+    top: 61px!important;
+    width: 1000px!important;
+    left: -250px!important;
+} */
