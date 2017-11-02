@@ -1171,7 +1171,16 @@ img.ImgNoResize, .ImgNoResize img {
     padding-left: 0;
     margin-right: 15px;
     font-weight: 500;
-    font-size: 105%; }
+    font-size: 100%; }
+  .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmItem .rsmItem,
+  .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLevel2 .rsmLink,
+  .RadMenu.RadMenu_WSMA .rsmThreeLevels .rsmItem .rsmItem,
+  .RadMenu.RadMenu_WSMA .rsmThreeLevels .rsmLevel2 .rsmLink {
+    /* make sure second-level rsm items are lined up properly */
+    padding-left: 0;
+    margin-right: 15px;
+    font-weight: 300;
+    font-size: 100%; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLink {
     margin-bottom: 0; }
   .RadMenu.RadMenu_WSMA .rsmColumn {
@@ -1387,7 +1396,10 @@ img.ImgNoResize, .ImgNoResize img {
       display: none; }
     .RadMenu.RadMenu_WSMA .rsmTwoLevels {
       /*Standard Width*/
-      min-width: 190px !important; }
+      min-width: 1170px !important; }
+    .RadMenu.RadMenu_WSMA .rsmThreeLevels {
+      /*Standard Width*/
+      min-width: 1170px !important; }
     .RadMenu.RadMenu_WSMA .LargerWidth10 {
       /*minimum width for more than menu items with 10-13 chars*/
       min-width: 210px !important; }
@@ -1431,7 +1443,10 @@ img.ImgNoResize, .ImgNoResize img {
     display: none; }
   .no-mqs .RadMenu.RadMenu_WSMA .rsmTwoLevels {
     /*Standard Width*/
-    min-width: 190px !important; }
+    min-width: 1170px !important; }
+  .no-mqs .RadMenu.RadMenu_WSMA .rsmThreeLevels {
+    /*Standard Width*/
+    min-width: 1170px !important; }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth10 {
     /*minimum width for more than menu items with 10-13 chars*/
     min-width: 210px !important; }

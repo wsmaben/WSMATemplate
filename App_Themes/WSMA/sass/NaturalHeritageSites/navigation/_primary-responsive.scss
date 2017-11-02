@@ -147,7 +147,18 @@
         padding-left: 0;
         margin-right: $navbar-padding-horizontal;
         font-weight: 500;
-        font-size: 105%;
+        font-size: 100%;
+    }
+
+    .rsmTwoLevels .rsmItem .rsmItem,
+    .rsmTwoLevels .rsmLevel2 .rsmLink,
+    .rsmThreeLevels .rsmItem .rsmItem,
+    .rsmThreeLevels .rsmLevel2 .rsmLink, {
+        /* make sure second-level rsm items are lined up properly */
+        padding-left: 0;
+        margin-right: $navbar-padding-horizontal;
+        font-weight: 300;
+        font-size: 100%;
     }
 
     .rsmTwoLevels .rsmLink {
@@ -456,7 +467,12 @@
         /* Make sure mega menus with two levels are an adequate width */
         .rsmTwoLevels {
             /*Standard Width*/
-            min-width: 190px !important;
+            min-width: 1170px !important;
+        }
+
+        .rsmThreeLevels {
+            /*Standard Width*/
+            min-width: 1170px !important;
         }
 
         .LargerWidth10 {
