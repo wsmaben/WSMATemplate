@@ -219,6 +219,7 @@
 
 
     /*Move this*/ 
+    .rsmTwoLevels > .rsmItem > .rsmLink,
     .rsmThreeLevels > .rsmItem > .rsmLink {
         color: $color-wsma-teal;
         border: none;
@@ -375,15 +376,15 @@
             margin-bottom: .5em;
         }
 
-        > .rsmItem > .rsmLink,
-        > .rsmItem.rsmDisabled > .rsmLink:hover
+        //> .rsmItem > .rsmLink,
+        //> .rsmItem.rsmDisabled > .rsmLink:hover
         //> .rsmItem.rsmDisabled > .rsmLink:focus 
-        {
-            text-transform: capitalize;
-            color: $navbar-default-dropdown-header-color;
-            font-weight: $navbar-default-link-weight;
-            letter-spacing: $navbar-default-link-letter-spacing;
-        }
+        // {
+        //     text-transform: capitalize;
+        //     color: $navbar-default-dropdown-header-color;
+        //     font-weight: $navbar-default-link-weight;
+        //     letter-spacing: $navbar-default-link-letter-spacing;
+        // }
     }
 
     .MegaDropDownMenuSeperator .rsmLink {
@@ -436,9 +437,9 @@
                 }
             }
         }
-        // .rmRootLink{
-        //     border-top: 3px solid transparent;
-        // }
+        .rmRootLink{
+            border-bottom: 4px solid transparent;
+        }
         .rmRootLink.rmSelected,
         .rmRootLink.rmExpanded,
         .rmRootLink:hover,
