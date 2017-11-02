@@ -1303,12 +1303,10 @@ img.ImgNoResize, .ImgNoResize img {
 @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\000035}}
   .primary-navigation-area .MegaDropDownMenuOuter {
-    text-align: right;
-    width: 1170px !important; } }
+    text-align: right; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/_breakpoint\.scss}line{font-family:\0000392}}
 .no-mqs .primary-navigation-area .MegaDropDownMenuOuter {
-  text-align: right;
-  width: 1170px !important; }
+  text-align: right; }
 
 @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\0000312}}
@@ -1727,11 +1725,11 @@ img.ImgNoResize, .ImgNoResize img {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003468}}
     .RadMenu.RadMenu_WSMA .rsmTwoLevels {
       /*Standard Width*/
-      min-width: 1170px !important; }
+      min-width: 190px !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003473}}
     .RadMenu.RadMenu_WSMA .rsmThreeLevels {
       /*Standard Width*/
-      min-width: 1170px !important; }
+      min-width: 190px !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003478}}
     .RadMenu.RadMenu_WSMA .LargerWidth10 {
       /*minimum width for more than menu items with 10-13 chars*/
@@ -1790,11 +1788,11 @@ img.ImgNoResize, .ImgNoResize img {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003468}}
   .no-mqs .RadMenu.RadMenu_WSMA .rsmTwoLevels {
     /*Standard Width*/
-    min-width: 1170px !important; }
+    min-width: 190px !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003473}}
   .no-mqs .RadMenu.RadMenu_WSMA .rsmThreeLevels {
     /*Standard Width*/
-    min-width: 1170px !important; }
+    min-width: 190px !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/navigation\/_primary-responsive\.scss}line{font-family:\00003478}}
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth10 {
     /*minimum width for more than menu items with 10-13 chars*/
@@ -5053,7 +5051,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   color: #313E48; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\0000374}}
-.Wrapper-HomePage .RadMenu a.rmLink {
+.Wrapper-HomePage .RadMenu a.rmLink.rmRootLink {
   color: #ffffff !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\0000377}}
 .Wrapper-HomePage .RadMenu a:visited {

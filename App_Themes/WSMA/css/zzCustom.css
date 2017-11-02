@@ -15,3 +15,11 @@
 .MegaDropDownOuter {
     with: 100%;
 }
+
+@media (min-width: 768px) {
+.RadMenu.RadMenu_WSMA {
+    float: right;
+    /* z-index: -100; */
+    border: 1px solid black;
+    }
+}

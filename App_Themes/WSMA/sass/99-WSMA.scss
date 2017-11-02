@@ -71,7 +71,7 @@
 
 .Wrapper-HomePage {
     .RadMenu {
-        a.rmLink {
+        a.rmLink.rmRootLink {
             color: $color-white!important;
         }
         a:visited {

@@ -1056,11 +1056,9 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 @media (min-width: 768px) {
   .primary-navigation-area .MegaDropDownMenuOuter {
-    text-align: right;
-    width: 1170px !important; } }
+    text-align: right; } }
 .no-mqs .primary-navigation-area .MegaDropDownMenuOuter {
-  text-align: right;
-  width: 1170px !important; }
+  text-align: right; }
 
 @media (min-width: 768px) {
   .header-bottom-container {
@@ -1396,10 +1394,10 @@ img.ImgNoResize, .ImgNoResize img {
       display: none; }
     .RadMenu.RadMenu_WSMA .rsmTwoLevels {
       /*Standard Width*/
-      min-width: 1170px !important; }
+      min-width: 190px !important; }
     .RadMenu.RadMenu_WSMA .rsmThreeLevels {
       /*Standard Width*/
-      min-width: 1170px !important; }
+      min-width: 190px !important; }
     .RadMenu.RadMenu_WSMA .LargerWidth10 {
       /*minimum width for more than menu items with 10-13 chars*/
       min-width: 210px !important; }
@@ -1443,10 +1441,10 @@ img.ImgNoResize, .ImgNoResize img {
     display: none; }
   .no-mqs .RadMenu.RadMenu_WSMA .rsmTwoLevels {
     /*Standard Width*/
-    min-width: 1170px !important; }
+    min-width: 190px !important; }
   .no-mqs .RadMenu.RadMenu_WSMA .rsmThreeLevels {
     /*Standard Width*/
-    min-width: 1170px !important; }
+    min-width: 190px !important; }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth10 {
     /*minimum width for more than menu items with 10-13 chars*/
     min-width: 210px !important; }
@@ -4182,11 +4180,6 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   color: #313E48; }
 .RadMenu a:visited {
   color: #313E48; }
-
-.Wrapper-HomePage .RadMenu a.rmRootLink {
-  color: #ffffff; }
-.Wrapper-HomePage .RadMenu a:visited {
-  color: #ffffff; }
 
 .ProgressTracker2 {
   font-size: 135%;

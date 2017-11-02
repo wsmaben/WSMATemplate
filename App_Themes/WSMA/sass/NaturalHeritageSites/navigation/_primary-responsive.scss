@@ -5,7 +5,7 @@
 .primary-navigation-area .MegaDropDownMenuOuter {
     @include respond-to('grid large') {
         text-align: $navbar-horizontal-alignment;
-        width: 1170px!important;
+        //width: 1170px!important;
     }           
 }
 
@@ -467,12 +467,12 @@
         /* Make sure mega menus with two levels are an adequate width */
         .rsmTwoLevels {
             /*Standard Width*/
-            min-width: 1170px !important;
+            min-width: 190px !important;
         }
 
         .rsmThreeLevels {
             /*Standard Width*/
-            min-width: 1170px !important;
+            min-width: 190px !important;
         }
 
         .LargerWidth10 {
