@@ -4,7 +4,7 @@
 <asi:PageNavR runat="server" Skin="WSMA" EnableEmbeddedSkins="False" EnableMegaDropDownMenu="True"
 DefaultGroupSettings_OffsetX="0" Width="100%"
 MegaDropDownMenuShowStartingNode="True" MaxDataBindDepth="4" MegaDropDownMenuRepeatColumns="4"
-MegaDropDownMenuLevelSettingLevel="1" MegaDropDownMenuRepeatDirection="Horizontal" EnableRootItemScroll="False"
+MegaDropDownMenuLevelSettingLevel="1" MegaDropDownMenuRepeatDirection="Vertical" EnableRootItemScroll="False"
 EnableAutoScroll="False" ShowToggleHandle="True"/>
 
 <telerik:RadSiteMap runat="server" SkinID="MegaDropDown" EnableEmbeddedSkins="False" Skin="WSMA" />
