@@ -292,7 +292,7 @@ $navbar-height:                    52px !default; // 50px !default;
 $navbar-margin-bottom:             0 !default; //$line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
-$navbar-padding-vertical:          10px !default; //floor(($navbar-height - $line-height-computed) / 2) !default;
+//$navbar-padding-vertical:          10px !default; //floor(($navbar-height - $line-height-computed) / 2) !default;
 
 $navbar-default-color:             lighten($text-color, 20%) !default; //#777 !default;
 $navbar-default-bg:                #d5d5d5 !default; //#f8f8f8 !default;
