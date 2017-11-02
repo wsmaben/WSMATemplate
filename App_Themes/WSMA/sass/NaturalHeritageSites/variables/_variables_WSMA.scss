@@ -100,7 +100,7 @@ $padding-base-horizontal:        10px !default;
 $border-radius-base:             0px !default;
 $border-radius-large:            0px !default;
 $border-radius-small:            0px !default;
-$component-active-color:         #fff !default;
+$component-active-color:         $color-wsma-red !default;
 $component-active-bg:            $color-secondary-a !default;
 
 
@@ -130,14 +130,14 @@ $btn-linkedin-border:           darken($color-linkedin, 10%) !default;
 // -------------------------
 $navbar-top-height:                        46px !default;
 $navbar-height:                            65px !default;
-$navbar-horizontal-alignment:              left; /* left, center, right */
-$navbar-default-color:                     $color_black !default;
+$navbar-horizontal-alignment:              right; /* left, center, right */
+$navbar-default-color:                     $color-black !default;
 $navbar-default-bg:                        $color-white !default;
 $navbar-padding-vertical:                  8px !default;
 
 $navbar-default-link-hover-color:          $color-wsma-teal !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $color-wsma-teal !default;
+$navbar-default-link-active-color:         $color-wsma-red !default;
 $navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       $color-secondary-a !default;
 $navbar-default-link-disabled-bg:          transparent !default;
@@ -158,14 +158,14 @@ $navbar-default-toggle-icon-bar-bg:        $navbar-default-toggle-bg;
 $navbar-default-toggle-border-color:       transparent !default;
 $navbar-toggle-margin-left:                10px !default;
 
-$navbar-auxiliary-link-color:              #fff;
+$navbar-auxiliary-link-color:              $color-black;
 $navbar-auxiliary-font-size:               107%;
 
 $navbar-default-dropdown-bg:                    $navbar-default-bg !default;
 $navbar-default-dropdown-link-color:            $color-wsma-dkgrey !default;
 $navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
 $navbar-default-dropdown-link-hover-bg:         transparent !default;
-$navbar-default-dropdown-link-hover-color:      $color-secondary-a !default;
+$navbar-default-dropdown-link-hover-color:      $color-wsma-teal !default;
 $navbar-default-dropdown-link-active-bg:        $navbar-default-dropdown-link-hover-bg !default;
 $navbar-default-dropdown-link-active-color:     $navbar-default-dropdown-link-hover-color !default;
 $navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;

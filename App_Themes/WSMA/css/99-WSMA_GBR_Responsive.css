@@ -792,6 +792,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 /* header logo */
 #masterHeaderImage {
+  position: absolute;
   background-image: url("images/wsma-logo.svg");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -1055,9 +1056,11 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 @media (min-width: 768px) {
   .primary-navigation-area .MegaDropDownMenuOuter {
-    text-align: left; } }
+    text-align: right;
+    width: 1170px !important; } }
 .no-mqs .primary-navigation-area .MegaDropDownMenuOuter {
-  text-align: left; }
+  text-align: right;
+  width: 1170px !important; }
 
 @media (min-width: 768px) {
   .header-bottom-container {
@@ -1105,7 +1108,8 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_WSMA {
   float: none;
   z-index: 1001 !important;
-  position: relative; }
+  position: relative;
+  /*Move this*/ }
   .RadMenu.RadMenu_WSMA:focus {
     outline: none; }
   .RadMenu.RadMenu_WSMA .rmGroup, .RadMenu.RadMenu_WSMA .rmRootGroup, .RadMenu.RadMenu_WSMA .rmMultiColumn, .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem {
@@ -1160,10 +1164,14 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu.RadMenu_WSMA .rsmOneLevel .rsmItem .rsmLink {
     padding: 0; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmItem .rsmItem,
-  .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLevel1 .rsmLink {
+  .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLevel1 .rsmLink,
+  .RadMenu.RadMenu_WSMA .rsmThreeLevels .rsmItem .rsmItem,
+  .RadMenu.RadMenu_WSMA .rsmThreeLevels .rsmLevel1 .rsmLink {
     /* make sure second-level rsm items are lined up properly */
     padding-left: 0;
-    margin-right: 15px; }
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 105%; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLink {
     margin-bottom: 0; }
   .RadMenu.RadMenu_WSMA .rsmColumn {
@@ -1200,8 +1208,15 @@ img.ImgNoResize, .ImgNoResize img {
     margin: 0; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected {
     /* root item selected styles */
-    color: #4bc8b6;
+    color: #a22a2e;
     background-color: transparent; }
+  .RadMenu.RadMenu_WSMA .rsmThreeLevels > .rsmItem > .rsmLink {
+    color: #4bc8b6;
+    border: none;
+    font-size: 150%;
+    font-weight: 300; }
+    .RadMenu.RadMenu_WSMA .rsmThreeLevels > .rsmItem > .rsmLink:active, .RadMenu.RadMenu_WSMA .rsmThreeLevels > .rsmItem > .rsmLink::visited {
+      color: #4bc8b6; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
@@ -1287,16 +1302,19 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu_WSMA .rmSlide .rsmSelected > .rsmLink,
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmSelected > .rsmLink {
     background-color: transparent;
-    color: #00837e; }
+    color: #4bc8b6; }
   .RadMenu_WSMA .rmSlide .rmLink:hover, .RadMenu_WSMA .rmSlide .rmLink:focus, .RadMenu_WSMA .rmSlide .rmLink.rmFocused,
   .RadMenu_WSMA .rmSlide .rsmLink:hover,
   .RadMenu_WSMA .rmSlide .rsmLink:focus,
   .RadMenu_WSMA .rmSlide .rsmLink.rmFocused,
-  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:hover,
-  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:focus,
-  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink.rmFocused {
+  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink
+  .rsmThreeLevels > .rsmItem > .rsmLink:hover,
+  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink
+  .rsmThreeLevels > .rsmItem > .rsmLink:focus,
+  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink
+  .rsmThreeLevels > .rsmItem > .rsmLink.rmFocused {
     background-color: transparent;
-    color: #00837e; }
+    color: #4bc8b6; }
   .RadMenu_WSMA .rmSlide.rmLevel1 .rmGroup {
     /* for second-level sub-nav and beyond,
      * we want to indent the nav to give separation */
@@ -1311,9 +1329,9 @@ img.ImgNoResize, .ImgNoResize img {
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem {
     margin-bottom: .5em; }
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink,
-  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:hover,
-  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:focus {
-    text-transform: uppercase;
+  .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:hover
+   {
+    text-transform: capitalize;
     color: #36424a;
     font-weight: 400;
     letter-spacing: 1px; }
@@ -1339,6 +1357,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 @media (min-width: 768px) {
   .RadMenu.RadMenu_WSMA {
+    float: right;
     /* Make sure mega menus with two levels are an adequate width */ }
     .RadMenu.RadMenu_WSMA .rmItem {
       white-space: nowrap; }
@@ -1382,6 +1401,7 @@ img.ImgNoResize, .ImgNoResize img {
       /*minimum width for more than menu items with 22+ chars*/
       min-width: 450px !important; } }
 .no-mqs .RadMenu.RadMenu_WSMA {
+  float: right;
   /* Make sure mega menus with two levels are an adequate width */ }
   .no-mqs .RadMenu.RadMenu_WSMA .rmItem {
     white-space: nowrap; }
@@ -1527,7 +1547,7 @@ img.ImgNoResize, .ImgNoResize img {
   .navbar-header .NavigationLink {
     display: block;
     vertical-align: right;
-    color: #fff; }
+    color: #313E48; }
 
 .navbar-toggle {
   margin-top: 3.5px;
@@ -1547,7 +1567,7 @@ img.ImgNoResize, .ImgNoResize img {
 .header-container .nav-auxiliary .navbar-toggle {
   margin-left: 10px; }
 .header-container .nav-auxiliary .UtilityAuthentication a {
-  color: #fff;
+  color: #313E48;
   font-size: 107%;
   text-decoration: none;
   font-weight: bold;
@@ -1638,7 +1658,7 @@ img.ImgNoResize, .ImgNoResize img {
     .nav-auxiliary .nav-aux-button.nav-aux-account a:hover .nav-text, .nav-auxiliary .nav-aux-button.nav-aux-account a:focus .nav-text {
       text-decoration: underline; }
     .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
-      color: #fff;
+      color: #313E48;
       padding: 0 0 0 30px;
       width: auto; } }
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account .NavigationLink {
@@ -1647,7 +1667,7 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account a:hover .nav-text, .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account a:focus .nav-text {
     text-decoration: underline; }
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
-    color: #fff;
+    color: #313E48;
     padding: 0 0 0 30px;
     width: auto; }
   .nav-auxiliary .nav-aux-button.nav-aux-cart .nav-text {
@@ -1692,7 +1712,7 @@ img.ImgNoResize, .ImgNoResize img {
 .UtilityNavigation .account-menu > li > a:hover,
 .UtilityNavigation .account-menu > li > a:visited,
 .UtilityNavigation .account-menu > li > a:active {
-  color: #fff; }
+  color: #313E48; }
 
 .account-menu .profile-picture-wrapper img {
   border-radius: 0;
@@ -4148,7 +4168,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 .RadMenu a:visited {
   color: #313E48; }
 
-.Wrapper-HomePage .RadMenu a.rmLink {
+.Wrapper-HomePage .RadMenu a.rmRootLink {
   color: #ffffff; }
 .Wrapper-HomePage .RadMenu a:visited {
   color: #ffffff; }

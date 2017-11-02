@@ -5,6 +5,7 @@
 .primary-navigation-area .MegaDropDownMenuOuter {
     @include respond-to('grid large') {
         text-align: $navbar-horizontal-alignment;
+        width: 1170px!important;
     }           
 }
 
@@ -139,10 +140,14 @@
     }
 
     .rsmTwoLevels .rsmItem .rsmItem,
-    .rsmTwoLevels .rsmLevel1 .rsmLink {
+    .rsmTwoLevels .rsmLevel1 .rsmLink,
+    .rsmThreeLevels .rsmItem .rsmItem,
+    .rsmThreeLevels .rsmLevel1 .rsmLink, {
         /* make sure second-level rsm items are lined up properly */
         padding-left: 0;
         margin-right: $navbar-padding-horizontal;
+        font-weight: 500;
+        font-size: 105%;
     }
 
     .rsmTwoLevels .rsmLink {
@@ -198,6 +203,18 @@
         /* root item selected styles */
         color: $navbar-default-link-active-color;
         background-color: $navbar-default-link-active-bg;
+    }
+
+
+    /*Move this*/ 
+    .rsmThreeLevels > .rsmItem > .rsmLink {
+        color: $color-wsma-teal;
+        border: none;
+        font-size: 150%;
+        font-weight: 300;
+        &:active, &::visited {
+            color: $color-wsma-teal;
+        }
     }
         
     .rmRootLink.rmExpanded,
@@ -312,7 +329,8 @@
 
     .rmLink,
     .rsmLink,
-    .rsmTwoLevels > .rsmItem > .rsmLink {
+    .rsmTwoLevels > .rsmItem > .rsmLink
+    .rsmThreeLevels > .rsmItem > .rsmLink {
         &:hover, 
         &:focus,
         &.rmFocused {
@@ -344,9 +362,10 @@
         }
 
         > .rsmItem > .rsmLink,
-        > .rsmItem.rsmDisabled > .rsmLink:hover,
-        > .rsmItem.rsmDisabled > .rsmLink:focus {
-            text-transform: uppercase;
+        > .rsmItem.rsmDisabled > .rsmLink:hover
+        //> .rsmItem.rsmDisabled > .rsmLink:focus 
+        {
+            text-transform: capitalize;
             color: $navbar-default-dropdown-header-color;
             font-weight: $navbar-default-link-weight;
             letter-spacing: $navbar-default-link-letter-spacing;
@@ -386,6 +405,7 @@
 
 .RadMenu.RadMenu_#{$theme-name} {
     @include respond-to('grid large') {
+        float: right;
         .rmItem { 
             white-space: nowrap; 
         }

@@ -36,6 +36,7 @@
 
 /* header logo */
 #masterHeaderImage {
+    position: absolute;
     background-image: $logo-default-url;
     background-repeat: no-repeat;
     //background-size: contain;

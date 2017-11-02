@@ -124,58 +124,58 @@ $navbar-padding-vertical:                  8px !default;
 
 $navbar-default-link-hover-color:          $color-secondary-a !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $color-secondary-a !default;
+//$navbar-default-link-active-color:         $color-secondary-a !default;
 $navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       $color-secondary-a !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 $navbar-default-link-weight:               normal !default;
 $navbar-default-link-letter-spacing:       1px !default;
-$navbar-default-link-font-size:            164% !default;
-$navbar-default-link-font-family:          $headings-font-family;
+// $navbar-default-link-font-size:            164% !default;
+// $navbar-default-link-font-family:          $headings-font-family;
 
-// Callout link
-$navbar-feature-link-color:                #fff !default;
-$navbar-feature-link-bg:                   $color-callout !default;
+// // Callout link
+// $navbar-feature-link-color:                #fff !default;
+// $navbar-feature-link-bg:                   $color-callout !default;
 
 // Mobile buttons
-$navbar-default-toggle-bg:                 rgba(#fff, 0.8)!default;
-$navbar-default-toggle-hover-bg:           #fff !default;
-$navbar-default-toggle-active-bg:          $navbar-default-toggle-bg;
-$navbar-default-toggle-icon-bar-bg:        $navbar-default-toggle-bg;
-$navbar-default-toggle-border-color:       transparent !default;
-$navbar-toggle-margin-left:                10px !default;
+// $navbar-default-toggle-bg:                 rgba(#fff, 0.8)!default;
+// $navbar-default-toggle-hover-bg:           #fff !default;
+// $navbar-default-toggle-active-bg:          $navbar-default-toggle-bg;
+// $navbar-default-toggle-icon-bar-bg:        $navbar-default-toggle-bg;
+// $navbar-default-toggle-border-color:       transparent !default;
+// $navbar-toggle-margin-left:                10px !default;
 
-$navbar-auxiliary-link-color:              #fff;
-$navbar-auxiliary-font-size:               107%;
+// //$navbar-auxiliary-link-color:              #fff;
+// $navbar-auxiliary-font-size:               107%;
 
-$navbar-default-dropdown-bg:                    $navbar-default-bg !default;
-$navbar-default-dropdown-link-color:            #fefefe !default;
-$navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
-$navbar-default-dropdown-link-hover-bg:         transparent !default;
-$navbar-default-dropdown-link-hover-color:      $color-secondary-a !default;
-$navbar-default-dropdown-link-active-bg:        $navbar-default-dropdown-link-hover-bg !default;
-$navbar-default-dropdown-link-active-color:     $navbar-default-dropdown-link-hover-color !default;
-$navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
-$navbar-default-dropdown-link-font-family:      $font-family-base;
-$navbar-default-dropdown-link-font-size:         114%;
-$navbar-default-dropdown-link-font-weight:       normal;
+//$navbar-default-dropdown-bg:                    $navbar-default-bg !default;
+//$navbar-default-dropdown-link-color:            #fefefe !default;
+//$navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
+//$navbar-default-dropdown-link-hover-bg:         transparent !default;
+//$navbar-default-dropdown-link-hover-color:      $color-secondary-a !default;
+//$navbar-default-dropdown-link-active-bg:        $navbar-default-dropdown-link-hover-bg !default;
+//$navbar-default-dropdown-link-active-color:     $navbar-default-dropdown-link-hover-color !default;
+// $navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
+// $navbar-default-dropdown-link-font-family:      $font-family-base;
+// $navbar-default-dropdown-link-font-size:         114%;
+// $navbar-default-dropdown-link-font-weight:       normal;
 
 // Navs
 // -------------------------
 
 // Secondary (internal)
-$nav-secondary-header-bg:                   $navbar-default-bg !default;
-$nav-secondary-header-color:                $navbar-default-color !default;
-$nav-secondary-bg:                          transparent;/*lighten($nav-secondary-header-bg,70%) !default;*/
-$nav-secondary-link-color:                  #fff;
-$nav-secondar-divider-bg:                   $nav-secondary-header-bg !default;
+// $nav-secondary-header-bg:                   $navbar-default-bg !default;
+// $nav-secondary-header-color:                $navbar-default-color !default;
+// $nav-secondary-bg:                          transparent;/*lighten($nav-secondary-header-bg,70%) !default;*/
+// $nav-secondary-link-color:                  #fff;
+// $nav-secondar-divider-bg:                   $nav-secondary-header-bg !default;
 
-// Cart icon
-//-------------------------
-$cart-count-color:              $color-base !default;
-$cart-count-xs-color:           $color-base !default;
-$cart-count-bg:                 $color-secondary-a;
-$cart-count-xs-bg:              $cart-count-bg !default;
+// // Cart icon
+// //-------------------------
+// $cart-count-color:              $color-base !default;
+// $cart-count-xs-color:           $color-base !default;
+// $cart-count-bg:                 $color-secondary-a;
+// $cart-count-xs-bg:              $cart-count-bg !default;
 
 // Communities
 // -------------------------
