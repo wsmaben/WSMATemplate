@@ -401,7 +401,7 @@
         jQuery(".PageTitle").appendTo(".breadcrumb");
         jQuery(".inner-banner").appendTo(".breadcrumb-obo-container");
         jQuery(".SideBar").appendTo(".col-secondary");
-        jQuery(".FullWidth").appendTo("#ContentPanel");
+        jQuery(".FullWidthFt").appendTo("#ContentPanel");
     //]]>
     </script>
 
