@@ -1187,7 +1187,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\0000392}}
 .footer-content {
-  background-color: #00837e;
+  background-color: #ffffff;
   color: #000;
   text-align: center; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\0000397}}
@@ -1208,9 +1208,9 @@ img.ImgNoResize, .ImgNoResize img {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003119}}
 .footer-promo-container .promo {
-  background-color: #000403;
+  background-color: #bfbfbf;
   /* rgba fallback */
-  background-color: rgba(0, 4, 3, 0.5);
+  background-color: rgba(191, 191, 191, 0.5);
   padding: 15px;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.075), 0 1px 0 rgba(255, 255, 255, 0.1); }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003126}}
@@ -1233,19 +1233,19 @@ img.ImgNoResize, .ImgNoResize img {
     font-size: 170%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003141}}
 .footer-promo-container .TextButton {
-  background-color: #000403;
+  background-color: #bfbfbf;
   /* rgba fallback */
-  background-color: rgba(0, 4, 3, 0.5);
+  background-color: rgba(191, 191, 191, 0.5);
   color: #fff; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003146}}
   .footer-promo-container .TextButton:hover {
-    background-color: #000403;
+    background-color: #bfbfbf;
     /* rgba fallback */
-    background-color: rgba(0, 4, 3, 0.8); }
+    background-color: rgba(191, 191, 191, 0.8); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003153}}
 .footer-nav-copyright {
-  background-color: #00837e;
+  background-color: #ffffff;
   color: #000; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003156}}
   .footer-nav-copyright a, .footer-nav-copyright a:visited {
@@ -1259,7 +1259,7 @@ img.ImgNoResize, .ImgNoResize img {
 /* Old-style footer (pre-responsive) */
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003168}}
 #ft {
-  background-color: #00837e;
+  background-color: #ffffff;
   color: #000; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_footer\.scss}line{font-family:\00003172}}
   #ft h4 {
@@ -5162,10 +5162,24 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 /***************************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003179}}
 .imgBanner .breadcrumb-obo-container {
-  background-color: red;
+  background-image: url(images/secondaryHero.svg);
   height: 418px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003180}}
   .imgBanner .breadcrumb-obo-container .inner-banner {
     color: white; }
+
+/****************************************
+/** FullWidthFt
+/***************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003192}}
+.FullWidthFt {
+  background-color: #313E48;
+  padding: 44px 0 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003195}}
+  .FullWidthFt h1, .FullWidthFt h2, .FullWidthFt h3, .FullWidthFt p {
+    color: #4bc8b6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003198}}
+  .FullWidthFt h1 {
+    font-size: 285%; }
 
 /*# sourceMappingURL=99-WSMA.css.map */

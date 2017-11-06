@@ -346,6 +346,9 @@
 
                         </asp:Panel>
                     </div>
+                    <!-- Placeholders for news and CTA -->
+                    <div id="News"></div>
+                    <div id="CTA"></div>
                     <!-- /.body-container -->
                 </div>
             </div>
@@ -355,10 +358,7 @@
                     <div class="container">
                         <asiweb:ContentTemplateArea ID="FooterCommunications" TemplateAreaName="FooterCommunications" HonorContentRecordLayout="true" runat="server" />
                     </div>
-                    <!-- Just stashing the Social Networking stuff here for now. -->
-                    <div id="masterSocialNetworking" class="header-social">
-                            <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
-                    </div>
+
                 </div>
                 <!-- /.footer-content -->
 
@@ -368,6 +368,10 @@
                         <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
                         <div class="footer-copyright">
                             <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
+                        </div>
+                        <!-- Just stashing the Social Networking stuff here for now. -->
+                        <div id="masterSocialNetworking" class="header-social">
+                            <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
                         </div>
                     </div>
                 </div>
@@ -401,7 +405,8 @@
         jQuery(".PageTitle").appendTo(".breadcrumb");
         jQuery(".inner-banner").appendTo(".breadcrumb-obo-container");
         jQuery(".SideBar").appendTo(".col-secondary");
-        jQuery(".FullWidthFt").appendTo("#ContentPanel");
+        jQuery(".NewsFullWidth").appendTo("#News");
+        jQuery(".FullWidthFt").appendTo("#CTA");
     //]]>
     </script>
 
