@@ -362,18 +362,21 @@
                 </div>
                 <!-- /.footer-content -->
 
-                <div class="footer-nav-copyright">
-                    <div class="container" role="navigation">
+
+                <div class="footer-nav-copyright container" >
+                    <div class="row" role="navigation">
                         <!-- The following control will display the applicable Footer Navigation (if any) -->
                         <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
-                        <div class="footer-copyright">
-                            <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
-                        </div>
-                        <!-- Just stashing the Social Networking stuff here for now. -->
+
+                    </div>
+                    <div class="footer-copyright row">
+                        <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
                         <div id="masterSocialNetworking" class="header-social">
                             <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
                         </div>
                     </div>
+                    <!-- Just stashing the Social Networking stuff here for now. -->
+
                 </div>
                 <!-- /.footer-nav-copyright -->
             </footer>

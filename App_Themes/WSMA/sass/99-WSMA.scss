@@ -176,14 +176,19 @@
 /** imgBanner
 /***************************************/
 
-    .imgBanner .breadcrumb-obo-container {
-        .inner-banner {
-            color: white;
-        }
-        background-image: url(images/secondaryHero.svg);
-        height: 418px;
+.imgBanner .breadcrumb-obo-container {
+    .inner-banner {
+        color: white;
     }
+    background-color: rgb(49, 62, 72);
+    //background-image: url(images/secondaryHero.svg);
+    //background-position: center;
+    height: 418px;
+}
 
+.secondaryHero {
+    background-image: url(images/secondaryHeroShort.svg);
+}
 
 /****************************************
 /** FullWidthFt
