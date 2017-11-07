@@ -11,3 +11,5 @@ function myFunction() {
     document.getElementById("demo").innerHTML = res;
 }
 </script>
+
+Source: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_encodeuri

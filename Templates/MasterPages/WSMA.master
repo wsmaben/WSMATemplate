@@ -371,11 +371,12 @@
                     </div>
                     <div class="footer-copyright row">
                         <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
-                        <div id="masterSocialNetworking" class="header-social">
+                        <!-- Just stashing the Social Networking stuff here for now. Probably don't need it-->
+                        <!--div id="masterSocialNetworking" class="header-social">
                             <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
-                        </div>
+                        </div-->
                     </div>
-                    <!-- Just stashing the Social Networking stuff here for now. -->
+                    
 
                 </div>
                 <!-- /.footer-nav-copyright -->
