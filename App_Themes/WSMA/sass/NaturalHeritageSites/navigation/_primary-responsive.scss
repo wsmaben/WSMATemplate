@@ -131,7 +131,7 @@
     }
 
     .rsmItem { 
-        padding: ($navbar-padding-vertical / 2) $navbar-padding-horizontal;
+        padding: 10px 15px; //($navbar-padding-vertical / 2) $navbar-padding-horizontal;
         margin: 0;
     }
 
@@ -148,7 +148,7 @@
         padding-left: 0;
         margin-right: $navbar-padding-horizontal;
         font-weight: 500;
-        font-size: 100%;
+        font-size: 110%;
     }
 
     .rsmTwoLevels .rsmItem .rsmItem,
@@ -476,37 +476,40 @@
 
         .rsmThreeLevels {
             /*Standard Width*/
-            min-width: 1170px !important;
+            //min-width: 1170px !important;
         }
 
         .LargerWidth10 {
             /*minimum width for more than menu items with 10-13 chars*/
-            min-width: 210px !important;
+            //min-width: 210px !important;
         }
 
         .LargerWidth14 {
             /*minimum width for more than menu items with 14-17 chars*/
-            min-width: 280px !important;
+            //min-width: 280px !important;
         }
 
         .LargerWidth18 {
             /*minimum width for more than menu items with 18-21 chars*/
-            min-width: 350px !important;
+            //min-width: 350px !important;
         }
 
         .LargerWidth22 {
             /*minimum width for more than menu items with 22+ chars*/
-            min-width: 450px !important;
+            //min-width: 450px !important;
         }
 
         .rsmLevel1 > .rsmItem > .rsmLink {
             font-weight: 400!important;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            
+            //line-height: 20px;
         }
 
         .rsmLevel1 > .rsmItem > .rsmLink,
         .rsmLevel2 > .rsmItem > .rsmLink {
-            &:hover, &:active {
+            &:hover, &:active, &:focus {
                 color: $color-wsma-red;
             }
         }

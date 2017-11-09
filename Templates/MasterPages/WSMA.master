@@ -270,16 +270,18 @@
                     <!-- This is full width to display the banner -->
                     <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
                         <div class="breadcrumb container" role="navigation">
+                            <div class="row hero2after">
                             <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
-                            <asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider">
-                                <NodeTemplate>
-                                    <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
-                                        CssClass="BreadCrumbLink"></asp:HyperLink>
-                                </NodeTemplate>
-                                <CurrentNodeTemplate>
-                                    <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'></asp:Label>
-                                </CurrentNodeTemplate>
-                            </asiweb:SiteMapPath>
+                                <asiweb:SiteMapPath ID="BreadCrumb" class="col-md-6" runat="server" SiteMapProvider="AsiSiteMapProvider">
+                                    <NodeTemplate>
+                                        <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
+                                            CssClass="BreadCrumbLink"></asp:HyperLink>
+                                    </NodeTemplate>
+                                    <CurrentNodeTemplate>
+                                        <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'></asp:Label>
+                                    </CurrentNodeTemplate>
+                                </asiweb:SiteMapPath>
+                            </div>
                         </div>
 
                         <!-- <%--<div id="masterPageTasks">
@@ -354,9 +356,15 @@
             </div>
 
             <footer id="ft" class="footer">
-                <div class="footer-content">
-                    <div class="container">
-                        <asiweb:ContentTemplateArea ID="FooterCommunications" TemplateAreaName="FooterCommunications" HonorContentRecordLayout="true" runat="server" />
+                <div class="footer-content container">
+                    <div class="row">
+                        <div class="col-lg-7" role="navigation">
+                            <!-- The following control will display the applicable Footer Navigation (if any) -->
+                            <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
+                        </div>
+                        <div class="col-lg-5">
+                            <asiweb:ContentTemplateArea ID="FooterCommunications" TemplateAreaName="FooterCommunications" HonorContentRecordLayout="true" runat="server" />
+                        </div>
                     </div>
 
                 </div>
@@ -364,11 +372,7 @@
 
 
                 <div class="footer-nav-copyright container" >
-                    <div class="row" role="navigation">
-                        <!-- The following control will display the applicable Footer Navigation (if any) -->
-                        <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
 
-                    </div>
                     <div class="footer-copyright row">
                         <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
                         <!-- Just stashing the Social Networking stuff here for now. Probably don't need it-->
@@ -407,9 +411,14 @@
         jQuery(".auth-link").appendAround();
         // Move Page Titles
         jQuery(".PageTitle").appendTo(".breadcrumb");
-        jQuery(".inner-banner").appendTo(".breadcrumb-obo-container");
+        // Next two lines are for secondard Hero
+        jQuery('.hero2banner').appendTo('.hero2after');
+        jQuery(".secondaryHero").appendTo('#ctl01_BreadCrumb');
+        // Extra sidebare content
         jQuery(".SideBar").appendTo(".col-secondary");
+        // News
         jQuery(".NewsFullWidth").appendTo("#News");
+        // Call to action
         jQuery(".FullWidthFt").appendTo("#CTA");
     //]]>
     </script>

@@ -227,7 +227,7 @@
     .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
       fill: #fff; }
     .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
-      fill: #a22a2e; }
+      fill: #a62d38; }
 
 /***** Proxy Panel Styling *****/
 /* This applies to the on behalf of (proxy) area */
@@ -320,7 +320,7 @@
   padding-top: 0 !important; }
 
 .HelperText {
-  color: #a22a2e; }
+  color: #a62d38; }
 
 .EasyEditOn .EasyEditContent:hover,
 .EasyEditOn .WebPartZoneDesignTime:hover {
@@ -637,6 +637,99 @@ h2, .h2, .PanelHead.Distinguish,
   padding-bottom: 23px;
   border-bottom: 5px solid #4bc8b6; }
 
+/***************************************
+/*
+/* Interior Banner
+/*
+/**************************************/
+@media (min-width: 768px) {
+  .body-container .breadcrumb-obo-container {
+    height: 155px;
+    background-image: url(images/Banner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 60px;
+    margin-top: 105px; }
+    .Wrapper-HomePage .body-container .breadcrumb-obo-container {
+      display: none;
+      background-image: none; }
+  .body-container .breadcrumb {
+    display: block;
+    line-height: 45px; }
+    .body-container .breadcrumb .PageTitle {
+      color: white;
+      font-size: 40px;
+      font-weight: 300;
+      margin-top: 18px; }
+    .body-container .breadcrumb a, .body-container .breadcrumb span {
+      font-size: 11px;
+      font-weight: 300;
+      color: white; }
+      .body-container .breadcrumb a:visited, .body-container .breadcrumb span:visited {
+        color: white; }
+  .body-container .hero2banner img {
+    max-height: 314px; } }
+.no-mqs .body-container .breadcrumb-obo-container {
+  height: 155px;
+  background-image: url(images/Banner2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 60px;
+  margin-top: 105px; }
+  .Wrapper-HomePage .no-mqs .body-container .breadcrumb-obo-container {
+    display: none;
+    background-image: none; }
+.no-mqs .body-container .breadcrumb {
+  display: block;
+  line-height: 45px; }
+  .no-mqs .body-container .breadcrumb .PageTitle {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 18px; }
+  .no-mqs .body-container .breadcrumb a, .no-mqs .body-container .breadcrumb span {
+    font-size: 11px;
+    font-weight: 300;
+    color: white; }
+    .no-mqs .body-container .breadcrumb a:visited, .no-mqs .body-container .breadcrumb span:visited {
+      color: white; }
+.no-mqs .body-container .hero2banner img {
+  max-height: 314px; }
+
+/****************************************
+/** imgBanner
+/***************************************/
+.imgBanner .breadcrumb-obo-container {
+  background-color: #313e48;
+  background-image: none; }
+  .imgBanner .breadcrumb-obo-container .attrib {
+    display: block; }
+  .imgBanner .breadcrumb-obo-container .secondaryHero {
+    font-size: 190%;
+    line-height: 35px;
+    margin-top: 50px;
+    margin-left: 0;
+    border-left: 1px solid #4bc8b6; }
+  @media (min-width: 768px) {
+    .imgBanner .breadcrumb-obo-container {
+      height: 314px; }
+      .imgBanner .breadcrumb-obo-container .inner-banner {
+        color: white; } }
+  .no-mqs .imgBanner .breadcrumb-obo-container {
+    height: 314px; }
+    .no-mqs .imgBanner .breadcrumb-obo-container .inner-banner {
+      color: white; }
+
+/***********************************
+/
+/ Misc
+/
+/**********************************/
+.ContentItemButtonPanel {
+  position: absolute; }
+
 /* ==========================================================================
    Basic setup
    ========================================================================== */
@@ -647,22 +740,22 @@ body {
   color: #313E48; }
 
 a {
-  color: #a22a2e ;
+  color: #a62d38 ;
   text-decoration: underline; }
   a:visited {
-    color: #b62f34 ; }
+    color: #ba323f ; }
   a:hover, a:focus, a:active {
-    color: #7a2023 ; }
+    color: #7e222a ; }
   a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
     color: #999999 ; }
 
 .RadGrid a, .RadToolTip a {
-  color: #a22a2e  !important;
+  color: #a62d38  !important;
   text-decoration: underline; }
   .RadGrid a:visited, .RadToolTip a:visited {
-    color: #b62f34  !important; }
+    color: #ba323f  !important; }
   .RadGrid a:hover, .RadGrid a:focus, .RadGrid a:active, .RadToolTip a:hover, .RadToolTip a:focus, .RadToolTip a:active {
-    color: #7a2023  !important; }
+    color: #7e222a  !important; }
   .RadGrid a.aspNetDisabled, .RadGrid a.aspNetDisabled:hover, .RadGrid a.aspNetDisabled:focus, .RadGrid a.aspNetDisabled:active, .RadGrid a.aspNetDisabled:visited, .RadToolTip a.aspNetDisabled, .RadToolTip a.aspNetDisabled:hover, .RadToolTip a.aspNetDisabled:focus, .RadToolTip a.aspNetDisabled:active, .RadToolTip a.aspNetDisabled:visited {
     color: #999999  !important; }
 
@@ -689,7 +782,7 @@ h1, .h1, .PageTitle {
 
 h1.BigHeader, .h1.BigHeader {
   color: #fff;
-  background-color: #a22a2e;
+  background-color: #a62d38;
   padding: 20px;
   margin: 0; }
 
@@ -819,7 +912,7 @@ img.ImgNoResize, .ImgNoResize img {
     #masterHeaderImage svg .cls-2 {
       fill: #36424a; }
     #masterHeaderImage svg .cls-3 {
-      fill: #a22a2e; } }
+      fill: #a62d38; } }
   @media (min-width: 768px) {
     #masterHeaderImage {
       margin-top: 40px; }
@@ -830,7 +923,7 @@ img.ImgNoResize, .ImgNoResize img {
       #masterHeaderImage svg .cls-2 {
         fill: #36424a; }
       #masterHeaderImage svg .cls-3 {
-        fill: #a22a2e; } }
+        fill: #a62d38; } }
   .no-mqs #masterHeaderImage {
     margin-top: 40px; }
     .no-mqs #masterHeaderImage svg .cls-1 {
@@ -840,7 +933,7 @@ img.ImgNoResize, .ImgNoResize img {
     .no-mqs #masterHeaderImage svg .cls-2 {
       fill: #36424a; }
     .no-mqs #masterHeaderImage svg .cls-3 {
-      fill: #a22a2e; }
+      fill: #a62d38; }
 
 #masterDonorHeaderImage {
   background-image: url("images/DonorHeaderLogo.png");
@@ -868,7 +961,7 @@ img.ImgNoResize, .ImgNoResize img {
   .ProxyPanelContact, .ProxyPanelContact .obo-label {
     color: #fff; }
   .ProxyPanelContact a {
-    color: #eaaeb0; }
+    color: #ebb4b9; }
 
 /* Sub (Left) Navigation
    ========================================================================== */
@@ -940,31 +1033,13 @@ img.ImgNoResize, .ImgNoResize img {
 .footer-copyright p {
   margin-bottom: 0; }
 
-@media (min-width: 480px) {
-  .footer-content-section {
-    float: left;
-    width: 50%; } }
-.no-mqs .footer-content-section {
-  float: left;
-  width: 50%; }
-
-@media (min-width: 768px) {
-  .footer .footer-social {
-    width: 33.33333%; }
-  .footer .footer-promo-container {
-    width: 66.66667%; } }
-.no-mqs .footer .footer-social {
-  width: 33.33333%; }
-.no-mqs .footer .footer-promo-container {
-  width: 66.66667%; }
-
 #masterFooterCopyright {
   clear: both; }
 
 .footer-content {
   background-color: #ffffff;
   color: #000;
-  text-align: center; }
+  text-align: left; }
   .footer-content h2 {
     margin-top: 0;
     color: #000;
@@ -1157,7 +1232,7 @@ img.ImgNoResize, .ImgNoResize img {
     position: relative;
     box-shadow: 1px 2px 5px #cccccc; }
   .RadMenu.RadMenu_WSMA .rsmItem {
-    padding: 4px 15px;
+    padding: 10px 15px;
     margin: 0; }
   .RadMenu.RadMenu_WSMA .rsmLink,
   .RadMenu.RadMenu_WSMA .rsmOneLevel .rsmItem .rsmLink {
@@ -1170,7 +1245,7 @@ img.ImgNoResize, .ImgNoResize img {
     padding-left: 0;
     margin-right: 15px;
     font-weight: 500;
-    font-size: 100%; }
+    font-size: 110%; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmItem .rsmItem,
   .RadMenu.RadMenu_WSMA .rsmTwoLevels .rsmLevel2 .rsmLink,
   .RadMenu.RadMenu_WSMA .rsmThreeLevels .rsmItem .rsmItem,
@@ -1216,7 +1291,7 @@ img.ImgNoResize, .ImgNoResize img {
     margin: 0; }
   .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected {
     /* root item selected styles */
-    color: #a22a2e;
+    color: #a62d38;
     background-color: transparent; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels > .rsmItem > .rsmLink,
   .RadMenu.RadMenu_WSMA .rsmThreeLevels > .rsmItem > .rsmLink {
@@ -1397,27 +1472,24 @@ img.ImgNoResize, .ImgNoResize img {
       /*Standard Width*/
       min-width: 1170px !important; }
     .RadMenu.RadMenu_WSMA .rsmThreeLevels {
-      /*Standard Width*/
-      min-width: 1170px !important; }
+      /*Standard Width*/ }
     .RadMenu.RadMenu_WSMA .LargerWidth10 {
-      /*minimum width for more than menu items with 10-13 chars*/
-      min-width: 210px !important; }
+      /*minimum width for more than menu items with 10-13 chars*/ }
     .RadMenu.RadMenu_WSMA .LargerWidth14 {
-      /*minimum width for more than menu items with 14-17 chars*/
-      min-width: 280px !important; }
+      /*minimum width for more than menu items with 14-17 chars*/ }
     .RadMenu.RadMenu_WSMA .LargerWidth18 {
-      /*minimum width for more than menu items with 18-21 chars*/
-      min-width: 350px !important; }
+      /*minimum width for more than menu items with 18-21 chars*/ }
     .RadMenu.RadMenu_WSMA .LargerWidth22 {
-      /*minimum width for more than menu items with 22+ chars*/
-      min-width: 450px !important; }
+      /*minimum width for more than menu items with 22+ chars*/ }
     .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink {
       font-weight: 400 !important;
-      padding-bottom: 10px; }
-    .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active,
+      padding-bottom: 0px;
+      padding-top: 0px; }
+    .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus,
     .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover,
-    .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active {
-      color: #a22a2e; } }
+    .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active,
+    .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:focus {
+      color: #a62d38; } }
 .no-mqs .RadMenu.RadMenu_WSMA {
   float: right;
   /* Make sure mega menus with two levels are an adequate width */ }
@@ -1453,27 +1525,24 @@ img.ImgNoResize, .ImgNoResize img {
     /*Standard Width*/
     min-width: 1170px !important; }
   .no-mqs .RadMenu.RadMenu_WSMA .rsmThreeLevels {
-    /*Standard Width*/
-    min-width: 1170px !important; }
+    /*Standard Width*/ }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth10 {
-    /*minimum width for more than menu items with 10-13 chars*/
-    min-width: 210px !important; }
+    /*minimum width for more than menu items with 10-13 chars*/ }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth14 {
-    /*minimum width for more than menu items with 14-17 chars*/
-    min-width: 280px !important; }
+    /*minimum width for more than menu items with 14-17 chars*/ }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth18 {
-    /*minimum width for more than menu items with 18-21 chars*/
-    min-width: 350px !important; }
+    /*minimum width for more than menu items with 18-21 chars*/ }
   .no-mqs .RadMenu.RadMenu_WSMA .LargerWidth22 {
-    /*minimum width for more than menu items with 22+ chars*/
-    min-width: 450px !important; }
+    /*minimum width for more than menu items with 22+ chars*/ }
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink {
     font-weight: 400 !important;
-    padding-bottom: 10px; }
-  .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active,
+    padding-bottom: 0px;
+    padding-top: 0px; }
+  .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover,
-  .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active {
-    color: #a22a2e; }
+  .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active,
+  .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:focus {
+    color: #a62d38; }
 
 /* ==========================================================================
    SECONDARY NAVIGATION
@@ -1564,7 +1633,7 @@ img.ImgNoResize, .ImgNoResize img {
     background-color: #fff; }
     .nav-secondary .SubNavigationSeparator .rtIn {
       padding: 0;
-      color: #717271; }
+      color: #6c6f70; }
 
 /* ==========================================================================
    AUXILIARY NAVIGATION
@@ -2631,7 +2700,7 @@ input[type="checkbox"]:focus {
 /* Open Invoices
    ========================================================================== */
 .OpenInvoicesTotals .SelectedTotal .PanelFieldValue {
-  color: #a22a2e; }
+  color: #a62d38; }
 
 /* Group List Editor
    ========================================================================== */
@@ -2640,7 +2709,7 @@ input[type="checkbox"]:focus {
 .RadTreeView.GLE .rtIn, .RadTreeView.GLE .rtHover .rtIn, .RadTreeView.GLE .rtSelected .rtIn {
   background-color: transparent;
   border: none;
-  color: #a22a2e; }
+  color: #a62d38; }
 .RadTreeView.GLE a:hover, .RadTreeView.GLE a:focus, .RadTreeView.GLE span[onclick]:hover, .RadTreeView.GLE span[onclick]:focus {
   background-color: #22272b;
   color: #fff; }
@@ -2734,7 +2803,7 @@ input[type="checkbox"]:focus {
 .ProgressTracker2 .ProgressBar {
   margin: 10px; }
   .ProgressTracker2 .ProgressBar > span {
-    background-color: #db7074; }
+    background-color: #db707a; }
 .ProgressTracker2 .SuccessfulMessage {
   background-color: #10f2ea;
   color: #313E48; }
@@ -2773,9 +2842,9 @@ input[type="checkbox"]:focus {
     background-color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    color: #a22a2e; }
+    color: #a62d38; }
     .CartCharges .GrandTotal .PanelField .Label {
-      color: #a22a2e; }
+      color: #a62d38; }
 
 /* ==========================================================================
    TELERIK OVERRIDES
@@ -3754,7 +3823,7 @@ h1.BigHeader, .h1.BigHeader {
   padding: 15px;
   margin: 0 0 1em;
   color: #ffffff;
-  background: #a22a2e;
+  background: #a62d38;
   /*$callout1-bg*/
   width: auto;
   border-radius: 3px; }
@@ -3771,7 +3840,7 @@ h1.BigHeader, .h1.BigHeader {
     border-width: 8px 8px 0;
     /* vary these values to change the angle of the vertex */
     border-style: solid;
-    border-color: #a22a2e transparent;
+    border-color: #a62d38 transparent;
     /*$callout1-bg*/
     /* reduce the damage in FF3.0 */
     display: block;
@@ -3782,7 +3851,7 @@ h1.BigHeader, .h1.BigHeader {
   border-color: #ddd; }
 
 .TotalBox label {
-  background-color: #a22a2e;
+  background-color: #a62d38;
   color: #fff;
   padding: .25em .75em;
   color: #fff; }
@@ -3866,7 +3935,7 @@ a.FeatureActionLink {
 /* Feature Header
    ========================================================================== */
 .feature-header {
-  color: #a22a2e;
+  color: #a62d38;
   border-bottom: none;
   margin-bottom: .8em; }
 
@@ -3895,11 +3964,11 @@ a.FeatureActionLink {
     .feature-link-with-image .feature-link-text h1, .feature-link-with-image .feature-link-text h2, .feature-link-with-image .feature-link-text h3, .feature-link-with-image .feature-link-text h4, .feature-link-with-image .feature-link-text h5 {
       margin-top: 0; }
   .feature-link-with-image.feature-link-1 .feature-link-text {
-    background-color: #a22a2e;
-    background-color: rgba(162, 42, 46, 0.75); }
+    background-color: #a62d38;
+    background-color: rgba(166, 45, 56, 0.75); }
   .feature-link-with-image.feature-link-1:hover .feature-link-text {
-    background-color: #7a2023;
-    background-color: rgba(122, 32, 35, 0.75); }
+    background-color: #7e222a;
+    background-color: rgba(126, 34, 42, 0.75); }
   .feature-link-with-image.feature-link-2 .feature-link-text {
     background-color: #36424a;
     background-color: rgba(54, 66, 74, 0.75); }
@@ -3910,7 +3979,7 @@ a.FeatureActionLink {
 /* Feature Text Inline
    ========================================================================== */
 .feature-text-inline {
-  color: #a22a2e; }
+  color: #a62d38; }
 
 /* Header Links
    ========================================================================== */
@@ -3921,7 +3990,7 @@ a.FeatureActionLink {
     .header-link a, .header-link a:visited {
       color: #313E48; }
     .header-link a:hover, .header-link a:active, .header-link a:focus {
-      color: #a22a2e; }
+      color: #a62d38; }
 
 /* Image Banners
    ========================================================================== */
@@ -4020,7 +4089,7 @@ a.FeatureActionLink {
    ========================================================================== */
 /* To enhance the display of a donation page, apply the donate-page class to the Donation Creator iPart's CSS Class */
 .donate-page .GiftItemName {
-  color: #a22a2e;
+  color: #a62d38;
   font-size: 250%; }
 
 .donate-page .GiftItemDescription {
@@ -4088,7 +4157,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   .ProgressTracker_Dashboard_Overview .ProgressBar > span {
     display: block;
     height: 100%;
-    background-color: #a22a2e;
+    background-color: #a62d38;
     position: relative;
     overflow: hidden; }
 .ProgressTracker2 p,
@@ -4150,13 +4219,13 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
   .heads svg .st0 {
     fill: whitesmoke; }
   .heads svg .st1 {
-    fill: #a22a2e; }
+    fill: #a62d38; }
 .heads:hover svg .st0 {
-  fill: #a22a2e; }
+  fill: #a62d38; }
 .heads:hover svg .st1 {
   fill: whitesmoke; }
 .heads .Spotlight:hover {
-  border-bottom: 5px solid #a22a2e; }
+  border-bottom: 5px solid #a62d38; }
 
 .bubbles svg {
   width: 50%; }
@@ -4206,32 +4275,6 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 .ste-section {
   display: inline-block; }
 
-.breadcrumb-obo-container {
-  height: 260px;
-  background-image: url(images/Banner2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-  margin-bottom: 60px; }
-  .Wrapper-HomePage .breadcrumb-obo-container {
-    display: none;
-    background-image: none; }
-
-.breadcrumb {
-  display: block;
-  margin-top: 120px; }
-  .breadcrumb .PageTitle {
-    color: white;
-    font-size: 40px;
-    font-weight: 300;
-    margin-top: 18px; }
-  .breadcrumb a, .breadcrumb span {
-    font-size: 11px;
-    font-weight: 300;
-    color: white; }
-    .breadcrumb a:visited, .breadcrumb span:visited {
-      color: white; }
-
 /*************************
 ***  Expander
 **************************/
@@ -4262,18 +4305,6 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     color: transparent;
     background-color: transparent;
     width: 100%; }
-
-/****************************************
-/** imgBanner
-/***************************************/
-.imgBanner .breadcrumb-obo-container {
-  background-color: #313e48;
-  height: 418px; }
-  .imgBanner .breadcrumb-obo-container .inner-banner {
-    color: white; }
-
-.secondaryHero {
-  background-image: url(images/secondaryHeroShort.svg); }
 
 /****************************************
 /** FullWidthFt

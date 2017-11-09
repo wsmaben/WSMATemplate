@@ -16,15 +16,16 @@ $theme-icons-sprite-path:        'images/ThemeIconsSprite.png' !default;
 // -------------------------
 $color-black:               #313E48 !default;
 $color-white:               #ffffff !default;
-$color-wsma-dkgrey:         #36424a !default;
-$color-wsma-mdgrey:         #6c6f70 !default;
-$color-wsma-ltgrey:         #d0cfcb !default;
-$color-wsma-red:            #a22a2e !default;
-$color-wsma-forest:         #00837e !default;
+$color-wsma-dkgrey:         #36424a !default; //From style guide
+$color-wsma-mdgrey:         #6c6f70 !default; //From style guide
+$color-wsma-ltgrey:         #d0cfcb !default; //From style guide
+//$color-wsma-red:            #a22a2e !default; This is the one they used in their design files
+$color-wsma-red:			#a62d38 !default; //From style guide
+$color-wsma-forest:         #00837e !default; //From style guide
 $color-wsma-teal:           #4bc8b6 !default;
-$color-wsma-seafoam:        #C5F0E8 !default;
-$color-wsma-seafoam-2:      #9fe6d9 !default;
-$color-wsma-green:          #8fd400 !default;
+$color-wsma-ltseafoam:		#C5F0E8 !default;
+$color-wsma-seafoam:        #9fe6d9 !default; //From style guide
+$color-wsma-green:          #8fd400 !default; //From style guide
 
 $color-base:                $color-wsma-dkgrey !default; 
 $color-callout:             $color-wsma-red !default; 
@@ -179,8 +180,8 @@ $navbar-default-dropdown-link-font-weight:       normal;
 // Secondary (internal)
 $nav-secondary-header-bg:                   $navbar-default-bg !default;
 $nav-secondary-header-color:                $navbar-default-color !default;
-$nav-secondary-bg:                          $color-wsma-seafoam;/*lighten($nav-secondary-header-bg,70%) !default;*/
-$nav-secondary-link-color:                  #717271;
+$nav-secondary-bg:                          $color-wsma-ltseafoam;/*lighten($nav-secondary-header-bg,70%) !default;*/
+$nav-secondary-link-color:                  $color-wsma-mdgrey;
 $nav-secondar-divider-bg:                   #fff !default;
 
 // Cart icon

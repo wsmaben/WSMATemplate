@@ -441,3 +441,94 @@ h2, .h2, .PanelHead.Distinguish,
     padding-bottom: 23px;
     border-bottom: 5px solid $color-wsma-teal;
 }
+
+/***************************************
+/*
+/* Interior Banner
+/*
+/**************************************/
+
+.body-container {
+    @include respond-to('grid large') { 
+        .breadcrumb-obo-container {
+            height: 155px;
+            background-image: url(images/Banner2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            margin-bottom: 60px;
+            margin-top:105px;
+            .Wrapper-HomePage & {
+                display: none;
+                background-image: none;
+            }
+        }
+
+        .breadcrumb {
+            display: block;
+            line-height: 45px;
+            //margin-top: 120px;
+
+            .PageTitle {
+                color: white;
+                font-size: 40px;
+                font-weight: 300;
+                margin-top: 18px;
+            }
+            a, span {
+                font-size: 11px;
+                font-weight: 300;
+                color: white;
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+        .hero2banner img {
+            max-height: 314px;
+        }
+    }
+}
+
+/****************************************
+/** imgBanner
+/***************************************/
+
+
+.imgBanner .breadcrumb-obo-container {
+    background-color: rgb(49, 62, 72);
+    background-image: none;
+    .attrib {
+        display: block;
+    }
+    .secondaryHero {
+        font-size: 190%;
+        line-height: 35px;
+        margin-top: 50px;
+        margin-left: 0;
+        border-left: 1px solid $color-wsma-teal;
+
+    }
+    @include respond-to('grid large') {
+        .inner-banner {
+            color: white;
+        }
+        
+        //background-image: url(images/secondaryHero.svg);
+        //background-position: center;
+        height: 314px;
+        //.secondaryHero {
+            //background-image: url(images/secondaryHeroShort.svg);
+        }
+    }
+
+
+/***********************************
+/
+/ Misc
+/
+/**********************************/
+
+.ContentItemButtonPanel {
+    position: absolute;
+}

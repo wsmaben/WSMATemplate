@@ -90,40 +90,6 @@
     display: inline-block;
 }
 
-.breadcrumb-obo-container {
-    height: 260px;
-    background-image: url(images/Banner2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    margin-bottom: 60px;
-    .Wrapper-HomePage & {
-        display: none;
-        background-image: none;
-    }
-}
-
-.breadcrumb {
-    display: block;
-    margin-top: 120px;
-
-    .PageTitle {
-        color: white;
-        font-size: 40px;
-        font-weight: 300;
-        margin-top: 18px;
-    }
-    a, span {
-        font-size: 11px;
-        font-weight: 300;
-        color: white;
-        &:visited {
-            color: white;
-        }
-    }
-
-}
-
 /*************************
 ***  Expander
 **************************/
@@ -172,23 +138,7 @@
     }
 }
 
-/****************************************
-/** imgBanner
-/***************************************/
 
-.imgBanner .breadcrumb-obo-container {
-    .inner-banner {
-        color: white;
-    }
-    background-color: rgb(49, 62, 72);
-    //background-image: url(images/secondaryHero.svg);
-    //background-position: center;
-    height: 418px;
-}
-
-.secondaryHero {
-    background-image: url(images/secondaryHeroShort.svg);
-}
 
 /****************************************
 /** FullWidthFt
