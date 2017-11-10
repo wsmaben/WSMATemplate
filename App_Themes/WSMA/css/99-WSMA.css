@@ -731,7 +731,9 @@ h2, .h2, .PanelHead.Distinguish,
 
 #ft ul li {
   border-bottom: 1px solid #9fe6d9;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 95%;
+  line-height: 30px; }
 
 #ft ul ul li {
   border-bottom: none;
@@ -1008,7 +1010,7 @@ img.ImgNoResize, .ImgNoResize img {
   /* 1em - .65em (bottom margin on nav lis) */ }
 
 .footer-content {
-  padding-top: 1em; }
+  padding-top: 40px; }
 
 .footer-content-section {
   padding: 0 15px 1em; }
@@ -1053,7 +1055,7 @@ img.ImgNoResize, .ImgNoResize img {
   clear: both; }
 
 .footer-content {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #000;
   text-align: left; }
   .footer-content h2 {
@@ -1069,9 +1071,9 @@ img.ImgNoResize, .ImgNoResize img {
     margin-right: .5em; }
 
 .footer-promo-container .promo {
-  background-color: #bfbfbf;
+  background-color: transparent;
   /* rgba fallback */
-  background-color: rgba(191, 191, 191, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.075), 0 1px 0 rgba(255, 255, 255, 0.1); }
 .footer-promo-container .lead {
@@ -1089,17 +1091,17 @@ img.ImgNoResize, .ImgNoResize img {
   .no-mqs .footer-promo-container .lead {
     font-size: 170%; }
 .footer-promo-container .TextButton {
-  background-color: #bfbfbf;
+  background-color: transparent;
   /* rgba fallback */
-  background-color: rgba(191, 191, 191, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff; }
   .footer-promo-container .TextButton:hover {
-    background-color: #bfbfbf;
+    background-color: transparent;
     /* rgba fallback */
-    background-color: rgba(191, 191, 191, 0.8); }
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .footer-nav-copyright {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #000; }
   .footer-nav-copyright a, .footer-nav-copyright a:visited {
     color: #000; }
@@ -1111,7 +1113,12 @@ img.ImgNoResize, .ImgNoResize img {
 /* Old-style footer (pre-responsive) */
 #ft {
   background-color: #ffffff;
-  color: #000; }
+  color: #000;
+  background-image: url(images/wsmabackgroundlogo.svg);
+  background-repeat: no-repeat;
+  background-size: 840px;
+  background-position-x: 85%;
+  background-position-y: bottom; }
   #ft h4 {
     color: #000;
     font-family: "Gotham A", "Gotham B", sans-serif;

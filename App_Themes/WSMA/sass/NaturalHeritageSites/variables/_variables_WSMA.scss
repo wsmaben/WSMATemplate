@@ -241,12 +241,12 @@ $carousel-caption-font-size:        $font-size-base + 4;
 // -------------------------
 $footer-top-color:          #000 !default;
 $footer-top-link-color:     $footer-top-color !default; /*hsl(hue($link-color), saturation($link-color), 80%) !default;*/
-$footer-top-bg:             $color-white !default;
+$footer-top-bg:             transparent !default;
 $footer-top-h1-color:       $color-base !default;
 
 $footer-bottom-color:        #000 !default;
 $footer-bottom-link-color:   $footer-bottom-color !default;
-$footer-bottom-bg:           $color-white !default; //$color-secondary-a !default;
+$footer-bottom-bg:           transparent !default; //$color-secondary-a !default;
 
 // Telerik controls
 // --------------------------
