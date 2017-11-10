@@ -523,6 +523,26 @@ h2, .h2, .PanelHead.Distinguish,
     }
 
 
+
+/***********************************
+/ Footer Nav
+/**********************************/
+
+#ft ul, #ft li {
+    list-style: none;
+    padding-left: 0;
+}
+
+#ft ul li {
+    border-bottom: 1px solid $color-wsma-seafoam;
+}
+
+#ft ul ul li {
+    border-bottom: none;
+    font-weight: 300;
+}
+
+
 /***********************************
 /
 / Misc
