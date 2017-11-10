@@ -730,11 +730,13 @@ h2, .h2, .PanelHead.Distinguish,
   padding-left: 0; }
 
 #ft ul li {
-  border-bottom: 1px solid #9fe6d9; }
+  border-bottom: 1px solid #9fe6d9;
+  display: inline-block; }
 
 #ft ul ul li {
   border-bottom: none;
-  font-weight: 300; }
+  font-weight: 300;
+  display: block; }
 
 /***********************************
 /
