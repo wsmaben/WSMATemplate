@@ -244,7 +244,7 @@ $footer-top-link-color:     $footer-top-color !default; /*hsl(hue($link-color), 
 $footer-top-bg:             transparent !default;
 $footer-top-h1-color:       $color-base !default;
 
-$footer-bottom-color:        #000 !default;
+$footer-bottom-color:        rgba(0, 0, 0, 0.31) !default;
 $footer-bottom-link-color:   $footer-bottom-color !default;
 $footer-bottom-bg:           transparent !default; //$color-secondary-a !default;
 

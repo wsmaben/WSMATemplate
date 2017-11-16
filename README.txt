@@ -13,3 +13,9 @@ function myFunction() {
 </script>
 
 Source: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_encodeuri
+
+Secondary Hero:
+
+Max-height: 314px
+@2x 628
+

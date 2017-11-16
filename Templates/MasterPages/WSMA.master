@@ -28,7 +28,7 @@
         HomepageContentAreas = new List<ContentTemplateArea>(
             new[] { HomepageContentArea1 });
         PageContentAreas = new List<ContentTemplateArea>(
-            new[] { HeaderLogo, SocialNetworking, SideBarContent, FooterCommunications });
+            new[] { HeaderLogo, SideBarContent, FooterCTA, FooterCommunications }); //SocialNetworking
     }
 
     protected void ProgressImage2Load(object sender, EventArgs e)
@@ -270,9 +270,9 @@
                     <!-- This is full width to display the banner -->
                     <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
                         <div class="breadcrumb container" role="navigation">
-                            <div class="row hero2after">
+                            <div class="hero2after">
                             <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
-                                <asiweb:SiteMapPath ID="BreadCrumb" class="col-md-6" runat="server" SiteMapProvider="AsiSiteMapProvider">
+                                <asiweb:SiteMapPath ID="BreadCrumb" class="" runat="server" SiteMapProvider="AsiSiteMapProvider">
                                     <NodeTemplate>
                                         <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
                                             CssClass="BreadCrumbLink"></asp:HyperLink>
@@ -350,7 +350,13 @@
                     </div>
                     <!-- Placeholders for news and CTA -->
                     <div id="News"></div>
-                    <div id="CTA"></div>
+                    <div id="CTA">
+                        <div class="row FullWidthFt">
+                            <div class="container">
+                                <asiweb:ContentTemplateArea ID="FooterCTA" class="col-lg-12" TemplateAreaName="FooterCTA" HonorContentRecordLayout="true" runat="server" />
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.body-container -->
                 </div>
             </div>
@@ -371,20 +377,23 @@
                 <!-- /.footer-content -->
 
 
-                <div class="footer-nav-copyright container" >
+                <div class="copyright-border">
+                    <div class="footer-nav-copyright container" >
 
-                    <div class="footer-copyright row">
-                        <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
-                        <!-- Just stashing the Social Networking stuff here for now. Probably don't need it-->
-                        <!--div id="masterSocialNetworking" class="header-social">
-                            <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
-                        </div-->
+                        <div class="footer-copyright row">
+                            <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="false" runat="server" />
+                            <!-- Just stashing the Social Networking stuff here for now. Probably don't need it-->
+                            <!--div id="masterSocialNetworking" class="header-social">
+                                <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="false" runat="server" />
+                            </div-->
+                        </div>
+                        
+
                     </div>
-                    
-
                 </div>
                 <!-- /.footer-nav-copyright -->
             </footer>
+            
             <!-- /.footer -->
         </asp:Panel>
         <!-- /.wrapper -->
@@ -419,7 +428,7 @@
         // News
         jQuery(".NewsFullWidth").appendTo("#News");
         // Call to action
-        jQuery(".FullWidthFt").appendTo("#CTA");
+        //jQuery(".FullWidthFt").appendTo("#CTA");
     //]]>
     </script>
 

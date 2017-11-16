@@ -473,7 +473,7 @@ h2, .h2, .PanelHead.Distinguish,
                 color: white;
                 font-size: 40px;
                 font-weight: 300;
-                margin-top: 18px;
+                margin-top: 60px;
             }
             a, span {
                 font-size: 11px;
@@ -484,8 +484,30 @@ h2, .h2, .PanelHead.Distinguish,
                 }
             }
         }
+        .hero2banner svg {
+            .cls-1 {
+                fill:url(#linear-gradient);
+                }
+            .cls-2 {
+                mask:url(#mask);
+                }
+        }
+
         .hero2banner img {
+            //max-height: 314px;
+        }
+
+        .hero2after {
+            display: block;
+            overflow: hidden;
             max-height: 314px;
+            span[id$="_BreadCrumb"] {
+                position: absolute;
+            }
+            .hero2banner {
+                //position: relative;
+                float: right;
+            }
         }
     }
 }
@@ -522,7 +544,9 @@ h2, .h2, .PanelHead.Distinguish,
         }
     }
 
-
+    .hero2banner img {
+        mask: url(#mask);
+      }
 
 /***********************************
 / Footer Nav
