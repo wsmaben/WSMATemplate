@@ -139,12 +139,8 @@ h1 { position: relative; display: table; }
 .Wrapper-HomePage h2.panel-title { color: #36424a; display: table; }
 
 .Wrapper-HomePage { /* Arrow shaped containers for nice browsers only. */ }
-.Wrapper-HomePage .FullWidthArea-StyleBg2 { color: #313E48; }
-.Wrapper-HomePage .FullWidthArea-StyleBg2 h2 { color: #fff; }
-.Wrapper-HomePage .FullWidthArea-StyleBg2 h2:before { content: ''; display: block; float: left; margin: 0 15px 0 0; width: 90px; height: 90px; background: transparent url("images/ThemeIconsSprite.png") -65px 0px no-repeat !important; }
-.Wrapper-HomePage .FullWidthArea-StyleBg2 h2 strong { font-size: 250%; display: block; padding-bottom: 15px; }
-.Wrapper-HomePage .FullWidthArea-StyleBg3, .Wrapper-HomePage .FullWidthArea-StyleBg5 { background: #f0edf2; }
-.Wrapper-HomePage .FullWidthArea-StyleBg4 { background: #222122 url(images/FullWidthArea_Bg4.jpg) center top no-repeat; color: #313E48; font-family: "Gotham A", "Gotham B", sans-serif; padding: 20px 1%; line-height: 1.5; }
+.Wrapper-HomePage .FullWidthArea-StyleBg3 { height: 500px; background-image: url(images/FaDBackground.jpg); }
+.Wrapper-HomePage .FullWidthArea-StyleBg4 { background: #f5f7f7; color: #313E48; font-family: "Gotham A", "Gotham B", sans-serif; padding: 20px 1%; line-height: 1.5; }
 .Wrapper-HomePage .FullWidthArea-StyleBg4 blockquote { font-size: 250%; }
 @media (min-width: 768px) { .Wrapper-HomePage .FullWidthArea-StyleBg4 blockquote { width: 45%; } }
 .no-mqs .Wrapper-HomePage .FullWidthArea-StyleBg4 blockquote { width: 45%; }
@@ -177,12 +173,17 @@ html.t-safari .PrimaryButton, html.t-safari .SaveAndClose, html.t-safari .SaveAs
 .Spotlight .SectionLabel, .Spotlight h4 { display: block; position: relative; padding: 15px 0 10px 0; font-size: 160%; font-weight: normal; }
 .Spotlight .SectionLabel:after, .Spotlight h4:after { width: 25%; }
 
-.Spotlight { margin-bottom: 20px; padding-top: 20px; box-shadow: 1px 1px 28px 3px #e3e3e3; min-height: 440px; }
-.Spotlight:hover { box-shadow: 1px 1px 28px 3px #cccccc; }
+.Spotlight { margin-bottom: 20px; padding-top: 20px; }
 .Spotlight p { padding: 3px 20px; margin: -3px 0 0 0; position: relative; }
 .Spotlight a { text-decoration: none; }
 .Spotlight img { margin-bottom: 15px; }
 .Spotlight .spLnk { background: none !important; font-weight: bold; display: block; margin-top: 15px; font-size: 130%; }
+
+.row.row-eq-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.row.row-eq-height > div > .ContentItemContainer { height: 100%; box-shadow: 1px 1px 28px 3px #e3e3e3; }
+.row.row-eq-height > div > .ContentItemContainer:hover { box-shadow: 1px 1px 28px 3px #cccccc; }
+.row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel { height: 100%; }
+.row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel .WebPartZone { height: 100%; }
 
 @media (min-width: 768px) { .TestimonialArea { width: 70%; } }
 .no-mqs .TestimonialArea { width: 70%; }
