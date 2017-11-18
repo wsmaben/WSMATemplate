@@ -174,12 +174,13 @@ html.t-safari .PrimaryButton, html.t-safari .SaveAndClose, html.t-safari .SaveAs
 .Spotlight .SectionLabel:after, .Spotlight h4:after { width: 25%; }
 
 .Spotlight { margin-bottom: 20px; padding-top: 20px; }
-.Spotlight p { padding: 3px 20px; margin: -3px 0 0 0; position: relative; }
+.Spotlight p { padding: 0 20px 60px 20px; position: relative; }
 .Spotlight a { text-decoration: none; }
 .Spotlight img { margin-bottom: 15px; }
-.Spotlight .spLnk { background: none !important; font-weight: bold; display: block; margin-top: 15px; font-size: 130%; }
+.Spotlight .spLnk { background: none !important; font-weight: bold; display: block; margin-top: 15px; font-size: 130%; position: absolute; bottom: 0; margin: 0 auto; left: 0; right: 0; margin-bottom: 30px; }
 
 .row.row-eq-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.row.row-eq-height .WebPartZone { height: 100%; }
 .row.row-eq-height > div > .ContentItemContainer { height: 100%; box-shadow: 1px 1px 28px 3px #e3e3e3; }
 .row.row-eq-height > div > .ContentItemContainer:hover { box-shadow: 1px 1px 28px 3px #cccccc; }
 .row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel { height: 100%; }
@@ -1350,33 +1351,37 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 .StaffDashboard h2, .StaffDashboard .panel-heading.Distinguish, .StaffDashboard .PanelHead.Distinguish, .StaffDashboard .TitleBarCaption { border-bottom-color: transparent; }
 .StaffDashboard h2.Collapsible, .StaffDashboard .panel-heading.Distinguish.Collapsible, .StaffDashboard .PanelHead.Distinguish.Collapsible, .StaffDashboard .TitleBarCaption.Collapsible { border-bottom-color: #ddd; }
 
+.smile { border-bottom: 5px solid transparent; }
 .smile svg { width: 50%; }
 .smile svg .cls-1 { fill: whitesmoke; }
 .smile svg .cls-2 { fill: #8fd400; }
 .smile:hover svg .cls-1 { fill: #8fd400; }
 .smile:hover svg .cls-2 { fill: white; }
-.smile .Spotlight:hover { border-bottom: 5px solid #8fd400; }
+.smile:hover { border-bottom: 5px solid #8fd400; }
 
+.heads { border-bottom: 5px solid transparent; }
 .heads svg { width: 50%; }
 .heads svg .st0 { fill: whitesmoke; }
 .heads svg .st1 { fill: #a62d38; }
 .heads:hover svg .st0 { fill: #a62d38; }
 .heads:hover svg .st1 { fill: whitesmoke; }
-.heads .Spotlight:hover { border-bottom: 5px solid #a62d38; }
+.heads:hover { border-bottom: 5px solid #a62d38; }
 
+.bubbles { border-bottom: 5px solid transparent; }
 .bubbles svg { width: 50%; }
 .bubbles svg .st0 { fill: whitesmoke; }
 .bubbles svg .st1 { fill: #4bc8b6; }
 .bubbles:hover svg .st0 { fill: #4bc8b6; }
 .bubbles:hover svg .st1 { fill: whitesmoke; }
-.bubbles .Spotlight:hover { border-bottom: 5px solid #4bc8b6; }
+.bubbles:hover { border-bottom: 5px solid #4bc8b6; }
 
+.shift { border-bottom: 5px solid transparent; }
 .shift svg { width: 50%; }
 .shift svg .st0 { fill: whitesmoke; }
 .shift svg .st1 { fill: #00837e; }
 .shift:hover svg .st0 { fill: #00837e; }
 .shift:hover svg .st1 { fill: whitesmoke; }
-.shift .Spotlight:hover { border-bottom: 5px solid #00837e; }
+.shift:hover { border-bottom: 5px solid #00837e; }
 
 .carousel-caption { top: 170px; }
 

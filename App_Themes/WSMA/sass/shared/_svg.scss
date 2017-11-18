@@ -21,6 +21,10 @@
         }
     }
     .Spotlight:hover {
+        //border-bottom: 5px solid $color-wsma-green;
+    }
+    border-bottom: 5px solid transparent;
+    &:hover {
         border-bottom: 5px solid $color-wsma-green;
     }
 }
@@ -47,6 +51,10 @@
         }
     }
     .Spotlight:hover {
+        //border-bottom: 5px solid $color-wsma-red;
+    }
+    border-bottom: 5px solid transparent;
+    &:hover {
         border-bottom: 5px solid $color-wsma-red;
     }
 }
@@ -73,6 +81,10 @@
         }
     }
     .Spotlight:hover {
+        //border-bottom: 5px solid $color-wsma-teal;
+    }
+    border-bottom: 5px solid transparent;
+    &:hover {
         border-bottom: 5px solid $color-wsma-teal;
     }
 }
@@ -99,6 +111,10 @@
         }
     }
     .Spotlight:hover {
+        //border-bottom: 5px solid $color-wsma-forest;
+    }
+    border-bottom: 5px solid transparent;
+    &:hover {
         border-bottom: 5px solid $color-wsma-forest;
     }
 }

@@ -256,8 +256,8 @@ html.t-safari {
     //}
     p {    
         //@include dottedBoxCenter(lighten($color-neutral,25%));
-        padding: 3px 20px;
-        margin: -3px 0 0 0;
+        padding: 0 20px 60px 20px;
+        //margin: 0;
         position: relative;
         //@include dottedBoxBottom(lighten($color-neutral,25%));
     }
@@ -268,13 +268,18 @@ html.t-safari {
         // border-color: transparent;
         font-weight: bold;
         // color: #3c4a53;
-        // position: absolute;
         // bottom: 40px;
         // left: 30%;
         // text-align: center;
         display: block;
         margin-top: 15px;
         font-size: 130%;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-bottom: 30px;
     }
 }
 
@@ -283,6 +288,9 @@ html.t-safari {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    .WebPartZone {
+        height: 100%;
+    }
     > div > .ContentItemContainer {
         height: 100%;
         box-shadow: $box-shadow-base;
@@ -297,7 +305,6 @@ html.t-safari {
         }
     }
 }
-
 
 
 // Testimonial Area
