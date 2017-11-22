@@ -350,6 +350,7 @@
         &.rmFocused {
             background-color: $navbar-default-dropdown-link-hover-bg;
             color: $navbar-default-dropdown-link-hover-color;
+            text-decoration: underline;
         }
     }
 

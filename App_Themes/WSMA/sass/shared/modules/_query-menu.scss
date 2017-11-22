@@ -3,7 +3,7 @@
 /* This is an alternate style for the Query Menu filter panel */
 .FilterPanel {
     @if ($theme-name != 'Orion') {
-        background-color: $color-alt-bg;
+        background-color: transparent;
     }
     border: none !important;
     margin-top: -3px;  
@@ -20,6 +20,25 @@
     .PanelHead.Distinguish,
     .panel-heading.Distinguish {
         border: none;
-        min-height: 1em;      
+        min-height: 1em;
     }
 }
+
+.FoD {
+
+    .panel-heading.Distinguish {
+        padding: 0;
+    }
+
+    .panel-body {
+        padding: 0;
+    }
+
+    h2.panel-title {
+    color: white;
+    }
+    .PanelField label {
+        color: white;
+    }
+}
+

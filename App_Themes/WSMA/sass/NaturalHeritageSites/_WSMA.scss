@@ -114,7 +114,7 @@ h1 {
     h2.panel-title {
         color: $color-secondary-b;
         display: table;
-        @include underlinedTitles($color-secondary-b,2px,30%);
+        //@include underlinedTitles($color-secondary-b,2px,30%);
     }
 
     .auth-link-container-sm {
@@ -247,7 +247,7 @@ html.t-safari {
 }
 .Spotlight {
     margin-bottom: 20px;
-    padding-top: 20px;
+    //padding-top: 20px;
     //box-shadow: $box-shadow-base;
     //min-height: 440px;
     //&:hover {
@@ -279,7 +279,7 @@ html.t-safari {
         margin: 0 auto;
         left: 0;
         right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 }
 
@@ -288,6 +288,10 @@ html.t-safari {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    > div {
+        padding-bottom: 30px;
+    }
     .WebPartZone {
         height: 100%;
     }
@@ -520,6 +524,8 @@ h2, .h2, .PanelHead.Distinguish,
             }
         }
         .hero2banner svg {
+            height: 314px;
+            float:right;
             .cls-1 {
                 fill:url(#linear-gradient);
                 }
@@ -528,9 +534,9 @@ h2, .h2, .PanelHead.Distinguish,
                 }
         }
 
-        .hero2banner img {
-            //max-height: 314px;
-        }
+        // .hero2banner img {
+        //     max-height: 314px;
+        // }
 
         .hero2after {
             display: block;
@@ -605,6 +611,19 @@ h2, .h2, .PanelHead.Distinguish,
     display: block;
 }
 
+/**********************************
+/
+/ Panels
+/
+/**********************************/
+
+.panel {
+    border:none;
+}
+
+.PanelField {
+    width: unset;
+}
 
 /***********************************
 /

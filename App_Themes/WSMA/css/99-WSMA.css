@@ -146,7 +146,6 @@ h1 { position: relative; display: table; }
 .no-mqs .Wrapper-HomePage .FullWidthArea-StyleBg4 blockquote { width: 45%; }
 .Wrapper-HomePage .FullWidthArea-StyleBg4 em { font-size: 50%; display: table; margin-top: 1em; }
 .Wrapper-HomePage h2.panel-title { color: #36424a; display: table; }
-.Wrapper-HomePage h2.panel-title:after { content: ''; display: block; bottom: 0; width: 30%; margin: 5px auto 0 auto; border-bottom: 2px solid #d3dadf; }
 .Wrapper-HomePage .auth-link-container-sm a { color: #ffffff; }
 .Wrapper-HomePage .auth-link-container-sm a:visited { color: #ffffff; }
 
@@ -173,13 +172,14 @@ html.t-safari .PrimaryButton, html.t-safari .SaveAndClose, html.t-safari .SaveAs
 .Spotlight .SectionLabel, .Spotlight h4 { display: block; position: relative; padding: 15px 0 10px 0; font-size: 160%; font-weight: normal; }
 .Spotlight .SectionLabel:after, .Spotlight h4:after { width: 25%; }
 
-.Spotlight { margin-bottom: 20px; padding-top: 20px; }
+.Spotlight { margin-bottom: 20px; }
 .Spotlight p { padding: 0 20px 60px 20px; position: relative; }
 .Spotlight a { text-decoration: none; }
 .Spotlight img { margin-bottom: 15px; }
-.Spotlight .spLnk { background: none !important; font-weight: bold; display: block; margin-top: 15px; font-size: 130%; position: absolute; bottom: 0; margin: 0 auto; left: 0; right: 0; margin-bottom: 30px; }
+.Spotlight .spLnk { background: none !important; font-weight: bold; display: block; margin-top: 15px; font-size: 130%; position: absolute; bottom: 0; margin: 0 auto; left: 0; right: 0; margin-bottom: 60px; }
 
-.row.row-eq-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.row.row-eq-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; }
+.row.row-eq-height > div { padding-bottom: 30px; }
 .row.row-eq-height .WebPartZone { height: 100%; }
 .row.row-eq-height > div > .ContentItemContainer { height: 100%; box-shadow: 1px 1px 28px 3px #e3e3e3; }
 .row.row-eq-height > div > .ContentItemContainer:hover { box-shadow: 1px 1px 28px 3px #cccccc; }
@@ -251,6 +251,7 @@ h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-headin
   .body-container .breadcrumb .PageTitle { color: white; font-size: 40px; font-weight: 300; margin-top: 60px; }
   .body-container .breadcrumb a, .body-container .breadcrumb span { font-size: 11px; font-weight: 300; color: white; }
   .body-container .breadcrumb a:visited, .body-container .breadcrumb span:visited { color: white; }
+  .body-container .hero2banner svg { height: 314px; float: right; }
   .body-container .hero2banner svg .cls-1 { fill: url(#linear-gradient); }
   .body-container .hero2banner svg .cls-2 { mask: url(#mask); }
   .body-container .hero2after { display: block; overflow: hidden; max-height: 314px; }
@@ -262,6 +263,7 @@ h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-headin
 .no-mqs .body-container .breadcrumb .PageTitle { color: white; font-size: 40px; font-weight: 300; margin-top: 60px; }
 .no-mqs .body-container .breadcrumb a, .no-mqs .body-container .breadcrumb span { font-size: 11px; font-weight: 300; color: white; }
 .no-mqs .body-container .breadcrumb a:visited, .no-mqs .body-container .breadcrumb span:visited { color: white; }
+.no-mqs .body-container .hero2banner svg { height: 314px; float: right; }
 .no-mqs .body-container .hero2banner svg .cls-1 { fill: url(#linear-gradient); }
 .no-mqs .body-container .hero2banner svg .cls-2 { mask: url(#mask); }
 .no-mqs .body-container .hero2after { display: block; overflow: hidden; max-height: 314px; }
@@ -289,6 +291,15 @@ h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-headin
 #ft ul li { border-bottom: 1px solid #9fe6d9; display: inline-block; font-size: 95%; line-height: 30px; }
 
 #ft ul ul li { border-bottom: none; font-weight: 300; display: block; }
+
+/**********************************
+/
+/ Panels
+/
+/**********************************/
+.panel { border: none; }
+
+.PanelField { width: unset; }
 
 /***********************************
 /
@@ -526,7 +537,7 @@ img.ImgNoResize, .ImgNoResize img { max-width: none; }
 .RadMenu_WSMA .rmSlide .rmSeparator, .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator, .RadMenu_WSMA .rmSlide .MegaDropDownMenuSeperator > .rsmLink { border-bottom: 1px solid #ffffff; }
 .RadMenu_WSMA .rmSlide .rmSeparator, .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator { margin: 0 15px; }
 .RadMenu_WSMA .rmSlide .rmFocused > .rmLink, .RadMenu_WSMA .rmSlide .rmSelected > .rmLink, .RadMenu_WSMA .rmSlide .rsmSelected > .rsmLink, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmSelected > .rsmLink { background-color: transparent; color: #4bc8b6; }
-.RadMenu_WSMA .rmSlide .rmLink:hover, .RadMenu_WSMA .rmSlide .rmLink:focus, .RadMenu_WSMA .rmSlide .rmLink.rmFocused, .RadMenu_WSMA .rmSlide .rsmLink:hover, .RadMenu_WSMA .rmSlide .rsmLink:focus, .RadMenu_WSMA .rmSlide .rsmLink.rmFocused, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink:hover, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink:focus, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink.rmFocused { background-color: transparent; color: #4bc8b6; }
+.RadMenu_WSMA .rmSlide .rmLink:hover, .RadMenu_WSMA .rmSlide .rmLink:focus, .RadMenu_WSMA .rmSlide .rmLink.rmFocused, .RadMenu_WSMA .rmSlide .rsmLink:hover, .RadMenu_WSMA .rmSlide .rsmLink:focus, .RadMenu_WSMA .rmSlide .rsmLink.rmFocused, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink:hover, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink:focus, .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink .rsmThreeLevels > .rsmItem > .rsmLink.rmFocused { background-color: transparent; color: #4bc8b6; text-decoration: underline; }
 .RadMenu_WSMA .rmSlide.rmLevel1 .rmGroup { /* for second-level sub-nav and beyond, we want to indent the nav to give separation */ margin-left: 0; }
 .RadMenu_WSMA .rmSlide .rmExpandRight, .RadMenu_WSMA .rmSlide .rmGroup a.rmLink.rmExpandRight { background-image: url("images/ResponsiveNav.png"); background-position: 110% -200px; background-repeat: no-repeat; }
 .RadMenu_WSMA .rmSlide .MegaDropDownMenu { padding-top: 25px; padding-left: 20px; padding-bottom: 45px; }
@@ -877,9 +888,14 @@ select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="c
 /* </Progress Tracker 2> */
 /* Filter Panel (Query Menu) ========================================================================== */
 /* This is an alternate style for the Query Menu filter panel */
-.FilterPanel { background-color: #f0edf2; border: none !important; margin-top: -3px; }
+.FilterPanel { background-color: transparent; border: none !important; margin-top: -3px; }
 .FilterPanel .PanelTitle, .FilterPanel .panel-title { background-image: none; padding-left: 0.1em; line-height: normal; margin-left: 0; font-size: 164.706%; }
 .FilterPanel .PanelHead.Distinguish, .FilterPanel .panel-heading.Distinguish { border: none; min-height: 1em; }
+
+.FoD .panel-heading.Distinguish { padding: 0; }
+.FoD .panel-body { padding: 0; }
+.FoD h2.panel-title { color: white; }
+.FoD .PanelField label { color: white; }
 
 /* Cart Charges ========================================================================== */
 .CartCharges { background-color: #f0edf2; }
@@ -1352,7 +1368,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 .StaffDashboard h2.Collapsible, .StaffDashboard .panel-heading.Distinguish.Collapsible, .StaffDashboard .PanelHead.Distinguish.Collapsible, .StaffDashboard .TitleBarCaption.Collapsible { border-bottom-color: #ddd; }
 
 .smile { border-bottom: 5px solid transparent; }
-.smile svg { width: 50%; }
+.smile svg { width: 50%; margin-top: 10%; }
 .smile svg .cls-1 { fill: whitesmoke; }
 .smile svg .cls-2 { fill: #8fd400; }
 .smile:hover svg .cls-1 { fill: #8fd400; }
@@ -1360,7 +1376,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 .smile:hover { border-bottom: 5px solid #8fd400; }
 
 .heads { border-bottom: 5px solid transparent; }
-.heads svg { width: 50%; }
+.heads svg { width: 50%; margin-top: 10%; }
 .heads svg .st0 { fill: whitesmoke; }
 .heads svg .st1 { fill: #a62d38; }
 .heads:hover svg .st0 { fill: #a62d38; }
@@ -1368,7 +1384,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 .heads:hover { border-bottom: 5px solid #a62d38; }
 
 .bubbles { border-bottom: 5px solid transparent; }
-.bubbles svg { width: 50%; }
+.bubbles svg { width: 50%; margin-top: 10%; }
 .bubbles svg .st0 { fill: whitesmoke; }
 .bubbles svg .st1 { fill: #4bc8b6; }
 .bubbles:hover svg .st0 { fill: #4bc8b6; }
@@ -1376,7 +1392,7 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 .bubbles:hover { border-bottom: 5px solid #4bc8b6; }
 
 .shift { border-bottom: 5px solid transparent; }
-.shift svg { width: 50%; }
+.shift svg { width: 50%; margin-top: 10%; }
 .shift svg .st0 { fill: whitesmoke; }
 .shift svg .st1 { fill: #00837e; }
 .shift:hover svg .st0 { fill: #00837e; }
