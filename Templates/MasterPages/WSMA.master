@@ -26,7 +26,7 @@
     override protected void EnsureContentAreas()
     {
         HomepageContentAreas = new List<ContentTemplateArea>(
-            new[] { HomepageContentArea1, FindaDoctor, HPNews });
+            new[] { HomepageContentArea1 });
         PageContentAreas = new List<ContentTemplateArea>(
             new[] { HeaderLogo, SideBarContent, FooterCTA, FooterCommunications }); //SocialNetworking
     }
@@ -269,7 +269,7 @@
                     </div>
                     <!-- This is full width to display the banner -->
                     <div class="breadcrumb-obo-container ClearFix" data-height-offset="true">
-                        <div class="breadcrumb container" role="navigation">
+                        <div class="breadcrumb container hidden-xs" role="navigation">
                             <div class="hero2after">
                             <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
                                 <asiweb:SiteMapPath ID="BreadCrumb" class="" runat="server" SiteMapProvider="AsiSiteMapProvider">
@@ -349,21 +349,12 @@
                         </asp:Panel>
                     </div>
                     <!-- Placeholders for news and CTA -->
-                    <div id="FaD">
-                        <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
-                            <asiweb:ContentTemplateArea ID="FindaDoctor" TemplateAreaName="FindaDoctor" HonorContentRecordLayout="false" runat="server" />
-                        </asp:Panel>
-                    </div>
-                    <div id="HPNewsContainer">
-                        <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
-                            <asiweb:ContentTemplateArea ID="HPNews" TemplateAreaName="HPNews" HonorContentRecordLayout="false" runat="server" />
-                        </asp:Panel>
-                    </div>
+                   
                     <div id="News"></div>
                     <div id="CTA">
                         <div class="row FullWidthFt">
                             <div class="container">
-                                <asiweb:ContentTemplateArea ID="FooterCTA" Cssclass="col-lg-12" TemplateAreaName="FooterCTA" HonorContentRecordLayout="true" runat="server" />
+                                <asiweb:ContentTemplateArea ID="FooterCTA" class="col-lg-12" TemplateAreaName="FooterCTA" HonorContentRecordLayout="true" runat="server" />
                             </div>
                         </div>
                     </div>
