@@ -329,11 +329,11 @@ h1, .h1, .PageTitle, h2, .h2, .PanelTitle { font-family: "Gotham A", "Gotham B",
 
 h1, .h1, .PageTitle { margin-top: 0; }
 
-h1, .h1, .PageTitle { color: #36424a; font-size: 250%; }
+h1, .h1, .PageTitle { color: #36424a; font-size: 280%; }
 
 h1.BigHeader, .h1.BigHeader { color: #fff; background-color: #a62d38; padding: 20px; margin: 0; }
 
-h2, .PanelTitle { line-height: 1.45em; font-size: 200%; }
+h2, .PanelTitle { line-height: 1.45em; font-size: 165%; }
 
 h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-heading.Distinguish { min-height: 0; border-bottom-style: solid; }
 
@@ -889,7 +889,7 @@ select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="c
 /* Filter Panel (Query Menu) ========================================================================== */
 /* This is an alternate style for the Query Menu filter panel */
 .FilterPanel { background-color: transparent; border: none !important; margin-top: -3px; }
-.FilterPanel .PanelTitle, .FilterPanel .panel-title { background-image: none; padding-left: 0.1em; line-height: normal; margin-left: 0; font-size: 164.706%; }
+.FilterPanel .PanelTitle, .FilterPanel .panel-title { background-image: none; padding-left: 0.1em; line-height: normal; margin-left: 0; font-size: 135.88245%; }
 .FilterPanel .PanelHead.Distinguish, .FilterPanel .panel-heading.Distinguish { border: none; min-height: 1em; }
 
 .FoD .panel-heading.Distinguish { padding: 0; }
@@ -1330,7 +1330,7 @@ a.FeatureActionLink:hover { text-decoration: underline; }
 
 /* Donation page enhancements ========================================================================== */
 /* To enhance the display of a donation page, apply the donate-page class to the Donation Creator iPart's CSS Class */
-.donate-page .GiftItemName { color: #a62d38; font-size: 250%; }
+.donate-page .GiftItemName { color: #a62d38; font-size: 280%; }
 
 .donate-page .GiftItemDescription { font-size: 125%; }
 
