@@ -35,6 +35,7 @@ h2, .h2, .PanelTitle {
 
 h1, .h1, .PageTitle {
     margin-top: 0;
+    line-height: 42px;
 }
 
 h1, .h1, .PageTitle {
@@ -50,7 +51,7 @@ h1.BigHeader, .h1.BigHeader {
 }
 
 h2, .PanelTitle {
-    line-height: 1.45em;
+    line-height: 28px;
     font-size: $font-size-h2;
 }
 
@@ -64,15 +65,21 @@ div.PanelTitle,
     border-bottom-style: $border-style;
 }
 
-h4, .SectionLabel {
-    margin: 0 0 .2em;
-    font-size: 155%;
+h3, .h3 {
     font-weight: 300;
+    font-size: 143%;
+    line-height: 25px;
 }
 
-h4, .h4, .SectionLabel { color: $h4-color; }
-h5, .h5 { color: $h5-color; font-weight:300; }
-h6, .h6 { margin: 0; }
+h4, .SectionLabel {
+    margin: 0 0 .2em;
+    font-size: 100%;
+    line-height: 21px;
+}
+
+h4, .h4, .SectionLabel { color: $h4-color; font-weight: 500;}
+h5, .h5 { color: $h5-color; font-weight:300; line-height: 20px;font-size: 93%;}
+h6, .h6 .breadcrumb { margin: 0; font-weight: 300; line-height: 18px}
 
 hr {
     margin-left: .5em;
@@ -132,4 +139,27 @@ div.ShowFieldset fieldset,
  * This class also makes the text larger, per UltraWave styles */
 .lead {
     margin-bottom: 20px;
+}
+
+// ul {
+    
+//     li {
+        
+        
+//         }
+//     }
+// }
+
+ol {
+    counter-reset: item;
+    padding: 0;
+    li {
+        display: block;
+        &:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: $color-wsma-red;
+            padding-right: 1em;
+        }
+    }
 }

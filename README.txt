@@ -19,3 +19,8 @@ Secondary Hero:
 Max-height: 314px
 @2x 628
 
+Secondary Hero Zone Property: Zone CSS Class: inner-banner
+
+Basic style examples:
+https://dev.wsma.org/referencesite/baseelements.aspx
+

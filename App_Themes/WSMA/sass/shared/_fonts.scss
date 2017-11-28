@@ -39,8 +39,7 @@ h4,
 .h4, 
 .SectionLabel {
     font-size: $font-size-h4;
-    line-height: 21;
-    font-weight: 500!important;
+    line-height: 21px;
 }
 
 h5, 
@@ -55,10 +54,11 @@ h5,
     line-height: 20px;
 }
 
-// h6,
-// .h6 {
-//     font-weight: 500!important;
-// }
+h6,
+.h6 {
+    font-weight: 300!important;
+    line-height: 18px;
+}
 
 h1, h2, h3, h5, h6,
 h1, .h2, .h3, .h5, .h6,
@@ -87,6 +87,10 @@ blockquote,ul,ol,dl {
     margin:1em;
 }
 
+// blockquote {
+    
+// }
+
 ol,ul,dl {
     /*bringing lists on to the page with breathing room */
     /*Fuck breathing room */
@@ -102,6 +106,7 @@ ol li {
 ul li {
     /*giving UL's LIs generated disc markers*/
     list-style: disc outside;
+    
 }
 
 dl dd {
