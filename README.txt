@@ -24,3 +24,8 @@ Secondary Hero Zone Property: Zone CSS Class: inner-banner
 Basic style examples:
 https://dev.wsma.org/referencesite/baseelements.aspx
 
+
+**News to-do**
+Get list of all articles with tags and within tagged folders
+Get link for each article
+Get meta-data for each article

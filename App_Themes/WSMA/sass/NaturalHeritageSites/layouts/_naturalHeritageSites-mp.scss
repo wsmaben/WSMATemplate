@@ -56,7 +56,11 @@
                 margin-right: 2%; 
             }
 
-            .col-secondary { float: right; }
+            .col-secondary { 
+                float: right;
+                position: sticky;
+                top: 50px;
+             }
         }
 
         &.col-on-left {
@@ -228,22 +232,24 @@
         }
     }
     #masterHeaderImage {
-        margin-top: 40px;
-        svg {
-            .cls-1 {
-                fill: none;
-                stroke: #fff;
-                stroke-miterlimit: 3.86;
-                //stroke-width: 0.36px;
-              }
-        
-              .cls-2 {
-                fill: #fff;
-              }
-        
-              .cls-3 {
-                fill: $color-wsma-red;
-              }
+        @include respond-to('grid large') { 
+            margin-top: 40px;
+            svg {
+                .cls-1 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-miterlimit: 3.86;
+                    //stroke-width: 0.36px;
+                }
+            
+                .cls-2 {
+                    fill: #fff;
+                }
+            
+                .cls-3 {
+                    fill: $color-wsma-red;
+                }
+            }
         }
     }
 }

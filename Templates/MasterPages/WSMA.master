@@ -352,7 +352,7 @@
                    
                     <div id="News"></div>
                     <div id="CTA">
-                        <div class="row FullWidthFt">
+                        <div class="FullWidthFt">
                             <div class="container">
                                 <asiweb:ContentTemplateArea ID="FooterCTA" class="col-lg-12" TemplateAreaName="FooterCTA" HonorContentRecordLayout="true" runat="server" />
                             </div>
