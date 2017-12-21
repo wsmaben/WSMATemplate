@@ -150,8 +150,9 @@ h1 {
 html:not(.t-safari) {
     .btn, .TextButton {   
         //background: url(images/DiamondButton.svg#color-base) no-repeat top center!important;  
-        //background-size: 100% 100%!important; 
-        //padding: 5px 25px !important;     
+        background-size: 100% 100%!important; 
+        padding: 5px 25px !important;   
+        border-radius: 5px;  
     }
 
     .PrimaryButton, .SaveAndClose, .SaveAs, 
@@ -161,8 +162,8 @@ html:not(.t-safari) {
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
         //background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center!important; 
-        //background-size: 100% 100%!important;
-        //color: $color-base!important;
+        background-size: 100% 100%!important;
+        color: $color-base!important;
     }
 }
 
@@ -174,7 +175,8 @@ html:not(.t-safari) {
      @include scale(0.94);
      &:hover, &:focus {
         @include scale(1.00);
-    }   
+    }
+      
  }
 
 /* Button styles for Safari only */
@@ -185,8 +187,9 @@ html.t-safari {
     #masterHeaderActionArea a, .RadGrid input.PrimaryButton,
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
-        background-color: $color-secondary-a!important; 
+        background-color: $color-wsma-teal; //$color-secondary-a!important; 
         color: $color-base!important;
+        border-radius: 5px;
     }
 }
 
