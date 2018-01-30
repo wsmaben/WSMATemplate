@@ -2419,4 +2419,4 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 /** News
 /***************************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/99-WSMA\.scss}line{font-family:\00003173}}
-.newsBody img { width: 365px; }
+.newsBody img { width: 365px; display: none; }

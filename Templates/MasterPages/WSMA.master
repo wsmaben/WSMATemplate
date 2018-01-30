@@ -431,6 +431,18 @@
         // Call to action
         //jQuery(".FullWidthFt").appendTo("#CTA");
     //]]>
+	
+	
+    //Add RiSE tags to Body class 
+    jQuery( function() { 
+    //Find meta keywords tag and grab value 
+    var taggedListTags = jQuery('meta[name="Keywords"]').attr("content"); 
+    //evaluate for spaces and remove, then remove comma and replace with space for pages with multiple tags 
+    var taggedListTags = taggedListTags.replace(/ /g , '').replace(/,/g , ' '); 
+
+    //add tag to body tag class 
+    jQuery('body').addClass(taggedListTags); 
+    } ); 
     </script>
 
     <!--jscript from Page.ResgisterStartupScript extention is loaded here -->

@@ -15,7 +15,7 @@
 		2: "TagName",
 		3: "ParentTag",
 		4: "Location",
-		5: "Blob"
+		5: "Blob",
 		6: "Img"
 	}
 	
