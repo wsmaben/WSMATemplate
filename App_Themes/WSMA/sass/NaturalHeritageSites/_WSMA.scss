@@ -670,6 +670,54 @@ h2, .h2, .PanelHead.Distinguish,
     padding: 60px 0;
 }
 
+.newsBody {
+    
+    img {
+        width: 365px;
+        margin: 0 0 15px 15px
+    }
+    h2 {
+        color: $color-wsma-red;
+        font-weight: 400;
+        line-height: 33px;
+    }
+    h5 {
+        margin-top: 0;
+
+    }
+}
+
+#NewsDisplay {
+    .newsBody {
+        H2 {
+            color: $color-wsma-dkgrey;
+        }
+    }
+    .readMore {
+        color: $color-black;
+        text-decoration: none;
+        font-weight: 500;
+        
+        a {
+            color: $color-black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        span {
+            color: $color-wsma-red;
+        }
+    }
+}
+
+#BaseDirectory {
+    border: 1px solid $color-wsma-ltgrey;
+    margin-bottom: 30px;
+}
+
+
 /***********************************
 /
 / Misc

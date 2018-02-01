@@ -44,9 +44,12 @@ function rtnMarkup(news) {
 // generate markup for output (one per feed)
 function rtnFeed(news) {
 	var feed = `<div class="encoded row">
-<div class="col-md-7 newsBody">${news.Blob}</div><div class="col-md-5" newsImg"><${news.Img}</div>
-            <div class="col-md-12 readMore"><a href="/${news.Location}">Read More...</a></div>
-         </div>`;
+    <div class="col-md-12 newsBody"><div class="col-md-5 pull-right newsImg">${news.Img}</div>${news.Blob}</div>
+    
+</div>
+<div class="row">
+    <div class="col-md-12 readMore"><a href="/${news.Location}">Read More...</a></div>
+</div>`;
 	return feed;
 }
 
@@ -60,20 +63,37 @@ function rtnFeed(news) {
 		var h = rtnFeed(b);
 		jQuery("#BaseDirectory").append(g);
 		jQuery("#NewsDisplay").append(h);
-	}
-	
-jQuery(".newsBody").each(function(index, element){
-	//console.log(jQuery(this).text());
-	var b = jQuery(this).text();
-	var encoded = b.replace(/(\&amp\;)/g, '&');
-	function htmlDecode(input){
-		var e = document.createElement('div');
-		e.innerHTML = input;
-		// handle case of empty input
-		return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
-	}
-	jQuery(this).html('');
-	jQuery(this).append(htmlDecode(encoded));
-});
+    }
+    
+
+    // Decode encoded HTML so it is readable by the browser
+    jQuery(".newsBody").each(function(index, element){
+        //console.log(jQuery(this).text());
+        var b = jQuery(this).text();
+        var encoded = b.replace(/(\&amp\;)/g, '&');
+        function htmlDecode(input){
+            var e = document.createElement('div');
+            e.innerHTML = input;
+            // handle case of empty input
+            return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+        }
+        jQuery(this).html('');
+        jQuery(this).append(htmlDecode(encoded));
+    });
+
+    // Decode encoded HTML so it is readable by the browser
+    jQuery(".newsImg").each(function(index, element){
+        //console.log(jQuery(this).text());
+        var b = jQuery(this).text();
+        var encoded = b.replace(/(\&amp\;)/g, '&');
+        function htmlDecode(input){
+            var e = document.createElement('div');
+            e.innerHTML = input;
+            // handle case of empty input
+            return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+        }
+        jQuery(this).html('');
+        jQuery(this).append(htmlDecode(encoded));
+    });
 
 </script>
