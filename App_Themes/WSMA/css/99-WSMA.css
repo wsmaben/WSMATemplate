@@ -534,7 +534,7 @@ ol li:before { content: counter(item) ". "; counter-increment: item; color: #a62
 .RadMenu.RadMenu_WSMA .rmVertical .rmToggle .rmIcon:before, .RadMenu.RadMenu_WSMA .rmVertical .rmExpand:before, .RadMenu.RadMenu_WSMA .rmRightArrow .rmIcon:before, .RadMenu.RadMenu_WSMA .rmHorizontal .rmToggle .rmIcon:before, .RadMenu.RadMenu_WSMA .rmHorizontal .rmExpand:before, .RadMenu.RadMenu_WSMA .rmBottomArrow .rmIcon:before { content: none; }
 .RadMenu.RadMenu_WSMA .rmItem, .RadMenu.RadMenu_WSMA .rmHorizontal > .rmItem, .RadMenu.RadMenu_WSMA .rmHorizontal > .rmRootScrollGroup > .rmItem, .RadMenu.RadMenu_WSMA .rmLink { float: none; }
 .RadMenu.RadMenu_WSMA .rmLink { padding: 0px; }
-.RadMenu.RadMenu_WSMA .rmText { display: inline-block; vertical-align: top; float: left; }
+.RadMenu.RadMenu_WSMA .rmText { display: inline-block; vertical-align: top; }
 .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle, .RadMenu.RadMenu_WSMA .rmToggle { width: auto; }
 .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmToggle .rmIcon, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle { position: static; }
 .RadMenu.RadMenu_WSMA .rmGroup .rmContent, .RadMenu.RadMenu_WSMA .rmRootGroup .rmContent { padding: 0; }
@@ -570,7 +570,7 @@ ol li:before { content: counter(item) ". "; counter-increment: item; color: #a62
 .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink:hover, .RadMenu.RadMenu_WSMA .rmDisabled > .rmLink:active, .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmDisabled > .rsmLink:active { background-color: transparent; color: #36424a; }
 .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem { position: relative; }
 .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink { color: #313E48; font-family: "Gotham A", "Gotham B", sans-serif; font-size: 105%; font-weight: 400; letter-spacing: 1px; }
-.RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle { /* a clickable target to expand multi-level navigaiton */ display: inline-block; float: right; height: 100%; }
+.RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle { /* a clickable target to expand multi-level navigaiton */ display: inline-block; height: 100%; }
 .RadMenu.RadMenu_WSMA .rmToggle .rmIcon, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle .rmIcon { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; display: block; width: 23px; height: 15px; background-image: url("images/responsivenav.png"); background-repeat: no-repeat; margin-top: 15px; margin-bottom: 15px; margin-right: 15px; margin-left: 15px; }
 .RadMenu.RadMenu_WSMA .rmLink:hover .rmToggle > .rmIcon, .RadMenu.RadMenu_WSMA .rmLink.rmFocused .rmToggle > .rmIcon, .RadMenu.RadMenu_WSMA .rmSelected > .rmLink .rmToggle > .rmIcon, .RadMenu.RadMenu_WSMA .rmFocused > .rmLink.rmRootLink .rmToggle > .rmIcon, .RadMenu.RadMenu_WSMA .rmExpanded > .rmLink .rmToggle > .rmIcon, .RadMenu.RadMenu_WSMA .rmSlide .rmLink .rmToggle > .rmIcon { background-position: 0 -26px; }
 .RadMenu.RadMenu_WSMA .rmExpanded > .rmLink > .rmToggle > .rmIcon { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
@@ -607,11 +607,6 @@ ol li:before { content: counter(item) ". "; counter-increment: item; color: #a62
   .RadMenu.RadMenu_WSMA .rmSlide .rmLink { margin: 0; }
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle { display: none; }
   .RadMenu.RadMenu_WSMA .rsmTwoLevels { /*Standard Width*/ min-width: 1170px !important; }
-  .RadMenu.RadMenu_WSMA .rsmThreeLevels { /*Standard Width*/ }
-  .RadMenu.RadMenu_WSMA .LargerWidth10 { /*minimum width for more than menu items with 10-13 chars*/ }
-  .RadMenu.RadMenu_WSMA .LargerWidth14 { /*minimum width for more than menu items with 14-17 chars*/ }
-  .RadMenu.RadMenu_WSMA .LargerWidth18 { /*minimum width for more than menu items with 18-21 chars*/ }
-  .RadMenu.RadMenu_WSMA .LargerWidth22 { /*minimum width for more than menu items with 22+ chars*/ }
   .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink { font-weight: 400 !important; padding-bottom: 0px; padding-top: 0px; }
   .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus, .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active, .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:focus { color: #a62d38; } }
 .no-mqs .RadMenu.RadMenu_WSMA { float: right; /* Make sure mega menus with two levels are an adequate width */ }
@@ -626,11 +621,6 @@ ol li:before { content: counter(item) ". "; counter-increment: item; color: #a62
 .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmLink { margin: 0; }
 .no-mqs .RadMenu.RadMenu_WSMA .rmToggle, .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle { display: none; }
 .no-mqs .RadMenu.RadMenu_WSMA .rsmTwoLevels { /*Standard Width*/ min-width: 1170px !important; }
-.no-mqs .RadMenu.RadMenu_WSMA .rsmThreeLevels { /*Standard Width*/ }
-.no-mqs .RadMenu.RadMenu_WSMA .LargerWidth10 { /*minimum width for more than menu items with 10-13 chars*/ }
-.no-mqs .RadMenu.RadMenu_WSMA .LargerWidth14 { /*minimum width for more than menu items with 14-17 chars*/ }
-.no-mqs .RadMenu.RadMenu_WSMA .LargerWidth18 { /*minimum width for more than menu items with 18-21 chars*/ }
-.no-mqs .RadMenu.RadMenu_WSMA .LargerWidth22 { /*minimum width for more than menu items with 22+ chars*/ }
 .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink { font-weight: 400 !important; padding-bottom: 0px; padding-top: 0px; }
 .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:focus { color: #a62d38; }
 

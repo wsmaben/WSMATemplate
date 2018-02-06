@@ -72,7 +72,7 @@
     .rmText {
         display: inline-block;
         vertical-align: top;
-        float:left;
+        //float:left;
     }
 
     .rmRootGroup .rmRootLink .rmToggle, .rmToggle {
@@ -275,7 +275,7 @@
         /* a clickable target to expand multi-level navigaiton */
         display: inline-block;
         //margin: (-$navbar-padding-vertical) (-$navbar-padding-horizontal); 
-        float: right;
+        //float: right;
         height: 100%;
          
         .rmIcon { 
@@ -478,30 +478,30 @@
             min-width: 1170px !important;
         }
 
-        .rsmThreeLevels {
-            /*Standard Width*/
-            //min-width: 1170px !important;
-        }
+        // .rsmThreeLevels {
+        //     /*Standard Width*/
+        //     //min-width: 1170px !important;
+        // }
 
-        .LargerWidth10 {
-            /*minimum width for more than menu items with 10-13 chars*/
-            //min-width: 210px !important;
-        }
+        // .LargerWidth10 {
+        //     /*minimum width for more than menu items with 10-13 chars*/
+        //     //min-width: 210px !important;
+        // }
 
-        .LargerWidth14 {
-            /*minimum width for more than menu items with 14-17 chars*/
-            //min-width: 280px !important;
-        }
+        // .LargerWidth14 {
+        //     /*minimum width for more than menu items with 14-17 chars*/
+        //     //min-width: 280px !important;
+        // }
 
-        .LargerWidth18 {
-            /*minimum width for more than menu items with 18-21 chars*/
-            //min-width: 350px !important;
-        }
+        // .LargerWidth18 {
+        //     /*minimum width for more than menu items with 18-21 chars*/
+        //     //min-width: 350px !important;
+        // }
 
-        .LargerWidth22 {
-            /*minimum width for more than menu items with 22+ chars*/
-            //min-width: 450px !important;
-        }
+        // .LargerWidth22 {
+        //     /*minimum width for more than menu items with 22+ chars*/
+        //     //min-width: 450px !important;
+        // }
 
         .rsmLevel1 > .rsmItem > .rsmLink {
             font-weight: 400!important;
