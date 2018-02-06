@@ -64,6 +64,7 @@ $breakpoints: add-breakpoint('smartphones and up', ($screen-xs-min, 'no-query' $
 $breakpoints: add-breakpoint('tablets and up', ($screen-sm-min, 'no-query' $no-query-desktop));
 $breakpoints: add-breakpoint('desktops and up', ($screen-md-min, 'no-query' $no-query-desktop));
 $breakpoints: add-breakpoint('grid large', ($grid-float-breakpoint, 'no-query' $no-query-desktop));
+$breakpoints: add-breakpoint('large', ($screen-lg-min, 'no-query' $no-query-desktop));
 
 // tablet- and large-only breakpoints are the same in all themes (no fallbacks needed)
 $breakpoints: add-breakpoint('tablets only', $screen-sm-min $screen-sm-max);

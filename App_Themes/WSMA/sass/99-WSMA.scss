@@ -58,7 +58,12 @@
 
 .UtilityNavigation {
     text-align: right;
+    padding-bottom: 55px;
+    @include respond-to('large') {
+        padding-bottom: 0;
+    }
 }
+
 
 .RadMenu {
     a.rmLink {

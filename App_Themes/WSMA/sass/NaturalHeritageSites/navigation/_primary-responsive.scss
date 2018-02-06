@@ -112,7 +112,10 @@
     .rmText, 
     .rmHorizontal .rmText,
     .rmSlide .rmText {
-        padding: 8px 15px 8px 15px; //$navbar-padding-vertical $navbar-padding-horizontal;
+        padding: 8px 15px; //$navbar-padding-vertical $navbar-padding-horizontal;
+        @include respond-to('tablets and down') {
+            padding: 8px 8px;
+        }
     }
 
     .rmSlide .MegaDropDownMenuOuter > .rmText {

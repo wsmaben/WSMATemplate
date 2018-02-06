@@ -209,13 +209,13 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- This is the append around code. data-set is the marker. The class sets the visibility. -->
-                                <div class="search-container-sm" data-set="searchbar"><%-- The search bar goes here when the screen is wider than 767px --%></div>
+                                <div class="search-container-md" data-set="searchbar"><%-- The search bar goes here when the screen is wider than 767px --%></div>
                                 <!-- Navigation Links -->
                                 <%-- Get the Auxiliary Navigation Items from the site map --%>
                                 <asiweb:NavigationList ID="Auxiliary" runat="server" NavigationPaneCode="4" UseGenericMenu="true" AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
                                 <!-- Navigation Toggle -->
                                 <!-- Auth -->
-                                <div class="auth-link-container-sm" data-set="auth-link"></div>
+                                <div class="auth-link-container-md" data-set="auth-link"></div>
                                 <!-- Translation -- Don't need-->
                                 <!-- <div>
                                         <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />

@@ -146,6 +146,9 @@
 
 .header-logo-container {
     float: left;
+    @include respond-to('grid small') { 
+        visibility: hidden;
+    }
     // margin: 0.5em 0;
 }
 

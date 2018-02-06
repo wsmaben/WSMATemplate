@@ -58,6 +58,7 @@
 .no-mqs .header-top-container { position: absolute; top: 0; left: 0; right: 0; z-index: 666; background: #ffffff; }
 
 .header-logo-container { float: left; }
+@media (max-width: 767px) { .header-logo-container { visibility: hidden; } }
 
 @media (max-width: 767px) { .header-social { display: none !important; } }
 .header-social a { text-decoration: none; }
@@ -542,7 +543,8 @@ ol li:before { content: counter(item) ". "; counter-increment: item; color: #a62
 .RadMenu.RadMenu_WSMA .rmItem, .RadMenu.RadMenu_WSMA .rsmItem { list-style: none; }
 .RadMenu.RadMenu_WSMA .rmDisabled > a, .RadMenu.RadMenu_WSMA .rsmDisabled > a { cursor: default; }
 .RadMenu.RadMenu_WSMA .rmItem { width: auto; clear: both; text-align: left; }
-.RadMenu.RadMenu_WSMA .rmText, .RadMenu.RadMenu_WSMA .rmHorizontal .rmText, .RadMenu.RadMenu_WSMA .rmSlide .rmText { padding: 8px 15px 8px 15px; }
+.RadMenu.RadMenu_WSMA .rmText, .RadMenu.RadMenu_WSMA .rmHorizontal .rmText, .RadMenu.RadMenu_WSMA .rmSlide .rmText { padding: 8px 15px; }
+@media (max-width: 991px) { .RadMenu.RadMenu_WSMA .rmText, .RadMenu.RadMenu_WSMA .rmHorizontal .rmText, .RadMenu.RadMenu_WSMA .rmSlide .rmText { padding: 8px 8px; } }
 .RadMenu.RadMenu_WSMA .rmSlide .MegaDropDownMenuOuter > .rmText { /* when mega menus are on, don't add padding around the rmText */ padding: 0; }
 .RadMenu.RadMenu_WSMA .rmSlide .rmText { /* give space for the expand arrow */ padding-right: 40px; }
 .RadMenu.RadMenu_WSMA .rmSlide .rmGroup { position: relative; box-shadow: 1px 2px 5px #cccccc; }
@@ -1447,7 +1449,9 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li { height
 
 .carousel-caption { top: 170px; }
 
-.UtilityNavigation { text-align: right; }
+.UtilityNavigation { text-align: right; padding-bottom: 55px; }
+@media (min-width: 1200px) { .UtilityNavigation { padding-bottom: 0; } }
+.no-mqs .UtilityNavigation { padding-bottom: 0; }
 
 .RadMenu a.rmLink { color: #313E48; }
 .RadMenu a:visited { color: #313E48; }
