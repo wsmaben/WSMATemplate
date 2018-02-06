@@ -316,7 +316,7 @@ h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-headin
 .aux-nav { padding: 20px; }
 .aux-nav h1 { color: #313E48; font-size: 145%; font-weight: 400; padding: 10px 0; border-bottom: 5px solid #d0cfcb; line-height: initial; width: 100%; }
 .aux-nav a { color: #36424a; border-bottom: 1px solid #4bc8b6; padding: 8px 0; display: block; }
-.aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active { color: #a62d38; text-decoration: underline; background-color: #d0cfcb; }
+.aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active { color: #a62d38; text-decoration: underline; background-color: #ecf9f7; }
 
 /**********************************
 /
@@ -343,6 +343,8 @@ h2, .h2, .PanelHead.Distinguish, .TitleBarCaption, div.PanelTitle, .panel-headin
 /
 /**********************************/
 .ContentItemButtonPanel { position: absolute; }
+
+.Hidden { display: none; }
 
 /* ========================================================================== Basic setup ========================================================================== */
 body { font-family: "Gotham A", "Gotham B", sans-serif; font-size: 14px; line-height: 1.8; color: #313E48; }
