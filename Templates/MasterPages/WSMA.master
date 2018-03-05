@@ -419,6 +419,9 @@
         // in conjuntion with display styles defined in the stylesheet
         jQuery(".header-search").appendAround();
         jQuery(".auth-link").appendAround();
+        // Remove links in primary nav so we dont have landing pages.
+        jQuery('a.disabled').removeAttr('href');
+        jQuery('.disabled').children('a').removeAttr('href');
         // Move Page Titles
         jQuery(".PageTitle").appendTo(".breadcrumb");
         // Next two lines are for secondard Hero
