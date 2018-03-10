@@ -26,7 +26,7 @@
     override protected void EnsureContentAreas()
     {
         HomepageContentAreas = new List<ContentTemplateArea>(
-            new[] { HomepageContentArea1 });
+            new[] { HomepageContentArea1  });
         PageContentAreas = new List<ContentTemplateArea>(
             new[] { HeaderLogo, SideBarContent, FooterCTA, FooterCommunications }); //SocialNetworking
     }
@@ -350,7 +350,11 @@
                     </div>
                     <!-- Placeholders for news and CTA -->
                    
-                    <div id="News"></div>
+                    <!--div id="News">
+                        <div class="container">
+                                <%--asiweb:ContentTemplateArea ID="HPNews" class="col-lg-12" TemplateAreaName="HPNews" HonorContentRecordLayout="true" runat="server" /--%>
+                        </div>
+                    </div-->
                     <div id="CTA">
                         <div class="FullWidthFt">
                             <div class="container">
