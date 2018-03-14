@@ -197,7 +197,7 @@
                                 <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />
                             </div>								  
                         </div>
-                        <div class="collapse navbar-collapse nav-primary pull-right" id="navbar-collapse">
+                        <div class="collapse navbar-collapse nav-primary" id="navbar-collapse">
                             <div class="auth-link-container" data-set="auth-link">
                                 <%-- This template required to display the (Sign In/Out Link) --%>
                                 <%-- Note: on screens > 768px wide this link will display before the auxiliary navigation --%>

@@ -11,7 +11,7 @@
 
 .header-bottom-container {
     @include respond-to('grid large') {
-        background-color: rgba($navbar-default-bg, 0.8 );
+        //background-color: rgba($navbar-default-bg, 0.8 );
         position:absolute;
         bottom:0;
         left:0;
@@ -33,6 +33,12 @@
         padding-right: 0;
         border: none;
         background:none;
+    }
+}
+
+.navbar-collapse.collapse {
+    @include respond-to('grid large') {
+        float: right;
     }
 }
 
@@ -437,7 +443,7 @@
                 // This sets the spac below the menu
                 > .rmLink {
                     margin: 0 0 -8px 0;
-                    padding-bottom: 15px;
+                    padding-bottom: 16px;
                 }
             }
         }
