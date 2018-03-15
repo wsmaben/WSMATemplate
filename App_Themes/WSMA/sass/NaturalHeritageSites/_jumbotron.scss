@@ -356,7 +356,9 @@
 .Wrapper-HomePage .HomePageFullWidthArea {
     /* Overwrite slideshow height setting on homepage only */
     .carousel-inner .item {
-        height: $jumbotron-home-height!important;
+        @include respond-to('grid large') { height: $jumbotron-home-height!important; }
+        @include respond-to('grid small') { height: $jumbotron-home-height-sm!important; }
+        
         /*Make one for small width*/
         background-color: #ffffff;
     }

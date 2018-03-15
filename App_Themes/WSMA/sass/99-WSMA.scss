@@ -52,53 +52,56 @@
 //     //margin-bottom: 10px;
 // }
 
-.carousel-caption {
-    top: 170px;
-}
-
-.UtilityNavigation {
-    text-align: right;
-    padding-bottom: 55px;
-    @include respond-to('large') {
-        padding-bottom: 0;
-    }
-}
-
-
-.RadMenu {
-    a.rmLink {
-        color: $color-black;
-    }
-    a:visited {
-        color: $color-black;
-    }
-}
-
-.Wrapper-HomePage {
-    .RadMenu {
-        a.rmLink.rmRootLink {
-            color: $color-white!important;
+.header-containger {
+    @include respond-to('grid large') {
+        .carousel-caption {
+            top: 170px;
         }
-        // a:visited {
-        //     color: $color-white!important;
-        // }
+
+        .UtilityNavigation {
+            text-align: right;
+            padding-bottom: 55px;
+            @include respond-to('large') {
+                padding-bottom: 0;
+            }
+        }
+
+
+        .RadMenu {
+            a.rmLink {
+                color: $color-black;
+            }
+            a:visited {
+                color: $color-black;
+            }
+        }
+
+        .Wrapper-HomePage {
+            .RadMenu {
+                a.rmLink.rmRootLink {
+                    color: $color-white!important;
+                }
+                // a:visited {
+                //     color: $color-white!important;
+                // }
+            }
+        }
+
+        .ProgressTracker2 {
+            font-size: 135%;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .ste-section {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+        }
     }
 }
-
-.ProgressTracker2 {
-    font-size: 135%;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.ste-section {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-}
-
 /*************************
 ***  Expander
 **************************/
