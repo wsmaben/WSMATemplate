@@ -39,6 +39,7 @@
 .navbar-collapse.collapse {
     @include respond-to('grid large') {
         float: right;
+        margin-top: 15px;
     }
 }
 

@@ -54,27 +54,36 @@
         // .NavigationListItem, 
         .header-social .SocialSprite,
         .auth-link {
-            padding-top: 7px;
+            padding: 5px 20px 5px 0;
             color: $navbar-auxiliary-link-color;
             // margin-left: floor($navbar-padding-horizontal / 2);
             .Wrapper-HomePage & {
                 color: #fff;
             }
         }
-        .NavigationListItem.btn {
-            background-color: $color-wsma-red;
-            .NavigationLink {
+        .NavigationListItem {
+            display: inline-flex;
+            color: $navbar-auxiliary-link-color;
+            border-left: 1px solid $color-black;
+            .Wrapper-HomePage & {
                 color: #fff;
+                border-left: 1px solid white;
+            }
+            &.btn {
+                background-color: $color-wsma-red;
+                font-size: 14px!important;
+                border: none;
+                .NavigationLink {
+                    color: #fff;
+                }
             }
         }
-         .auth-link-container-sm {
-             line-height: 2.8;
+        .auth-link-container-sm {
+             line-height: 2.4;
+             //padding-right: 20px;
         }
-        .NavigationLink
-        , .auth-link {
-            border-right: 1px solid #fff;
-            border-left: 1px solid #fff;
-            padding: 0 20px;
+        .NavigationLink {
+        padding: 0 20px;
         }
     }
 
@@ -269,6 +278,9 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
     padding: $navbar-padding-vertical ($grid-gutter-width / 2);
     > .header-search {
         padding: 0; /* don't double the padding */
+    }
+    @include respond-to('grid large') {
+        padding: 0 15px;
     }
     /* Search field is used as toggle button *and* field on larger devices */
     .search-field {
