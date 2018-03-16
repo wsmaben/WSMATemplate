@@ -146,9 +146,9 @@
 
 .header-logo-container {
     float: left;
-    @include respond-to('grid small') { 
-        visibility: hidden;
-    }
+    // @include respond-to('grid small') { 
+    //     visibility: hidden;
+    // }
     // margin: 0.5em 0;
 }
 
@@ -236,7 +236,7 @@
     }
     #masterHeaderImage {
         @include respond-to('grid large') { 
-            margin-top: 40px;
+            // margin-top: 40px;
             svg {
                 .cls-1 {
                     fill: none;
