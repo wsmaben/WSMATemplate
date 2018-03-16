@@ -177,3 +177,43 @@
         }
     }
 }
+
+
+
+
+
+
+//**************************************
+// TEST
+
+// #testofbreakpoints {
+//     @include respond-to('smartphones and up') {
+//         .img {
+//             width: 5px;  // @media (min-width: 480px) { #testofbreakpoints .img { width: 5px; } }
+//         }
+//     }
+    
+//     @include respond-to('tablets and up') {
+//         .img {
+//             width: 10px;// @media (min-width: 768px) { #testofbreakpoints .img { width: 10px; } 
+//         }
+//     }
+    
+//     @include respond-to('desktops and up') {
+//         .img {
+//             width: 15px;// @media (min-width: 992px) { #testofbreakpoints .img { width: 15px; } 
+//         }
+//     }
+    
+//     @include respond-to('grid large') {
+//         .img {
+//             width: 20px;// @media (min-width: 768px) { #testofbreakpoints .img { width: 20px; } }
+//         }
+//     }
+    
+//     @include respond-to('large') {
+//         .img {
+//             width: 25px;// @media (min-width: 1200px) { #testofbreakpoints .img { width: 25px; } }
+//         }
+//     }
+// }

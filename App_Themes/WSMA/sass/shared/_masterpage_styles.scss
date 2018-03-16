@@ -47,11 +47,11 @@
     //text-indent: -9999px;
     overflow: hidden;
     float: left;
-    @if ($logo-default-margin-top > 0) {
-        @include respond-to('tablets and up') {
-            margin-top: $logo-default-margin-top;
-        }
-    }
+    // @if ($logo-default-margin-top > 0) {
+    //     @include respond-to('tablets and up') {
+    //         margin-top: $logo-default-margin-top;
+    //     }
+    // }
 
     // resize the logo on medium/large screens, if necessary
     @if ($logo-default-position-md != 'null' or $logo-default-width-md != 'null' or $logo-default-height-md != 'null') {
@@ -68,42 +68,77 @@
          }
     }
     //Colors for The logo
-    @include respond-to('grid small') {
-        svg {
-            .cls-1 {
-                fill: none;
-                stroke: $color-wsma-dkgrey;
-                stroke-miterlimit: 3.86;
-                //stroke-width: 0.36px;
-              }
-        
-              .cls-2 {
-                fill: $color-wsma-dkgrey;
-              }
-        
-              .cls-3 {
-                fill: $color-wsma-red;
-              }
-        }
+    svg {
+        .cls-1 {
+            fill: none;
+            stroke: $color-wsma-dkgrey;
+            stroke-miterlimit: 3.86;
+            //stroke-width: 0.36px;
+          }
+    
+          .cls-2 {
+            fill: $color-wsma-dkgrey;
+          }
+    
+          .cls-3 {
+            fill: $color-wsma-red;
+          }
     }
+    // @include respond-to('grid small') {
+    //     svg {
+    //         .cls-1 {
+    //             fill: none;
+    //             stroke: $color-wsma-dkgrey;
+    //             stroke-miterlimit: 3.86;
+    //             //stroke-width: 0.36px;
+    //           }
+        
+    //           .cls-2 {
+    //             fill: $color-wsma-dkgrey;
+    //           }
+        
+    //           .cls-3 {
+    //             fill: $color-wsma-red;
+    //           }
+    //     }
+    // }
     @include respond-to('grid large') {
+        margin-top: 0px;
+        // svg {
+        //     .cls-1 {
+        //         fill: none;
+        //         stroke: $color-wsma-dkgrey;
+        //         stroke-miterlimit: 3.86;
+        //         //stroke-width: 0.36px;
+        //     }
+        
+        //     .cls-2 {
+        //         fill: $color-wsma-dkgrey;
+        //     }
+        
+        //     .cls-3 {
+        //         fill: $color-wsma-red;
+        //     }
+        // }
+    }
+    @include respond-to('large') {
         margin-top: 40px;
-        svg {
-            .cls-1 {
-                fill: none;
-                stroke: $color-wsma-dkgrey;
-                stroke-miterlimit: 3.86;
-                //stroke-width: 0.36px;
-            }
+        // svg {
+        //     .cls-1 {
+        //         fill: none;
+        //         stroke: $color-wsma-dkgrey;
+        //         stroke-miterlimit: 3.86;
+        //         //stroke-width: 0.36px;
+        //     }
         
-            .cls-2 {
-                fill: $color-wsma-dkgrey;
-            }
+        //     .cls-2 {
+        //         fill: $color-wsma-dkgrey;
+        //     }
         
-            .cls-3 {
-                fill: $color-wsma-red;
-            }
-        }
+        //     .cls-3 {
+        //         fill: $color-wsma-red;
+        //     }
+        // }
     }
 }
 

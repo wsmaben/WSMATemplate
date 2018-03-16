@@ -16,6 +16,11 @@
             color: white;
         }
     }
+    @include respond-to('grid small') {
+        .NavigationUnorderedList {
+            display: none!important;
+        }
+    }
 }
 
 .navbar-toggle {

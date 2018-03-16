@@ -60,10 +60,15 @@ $breakpoints: add-breakpoint('tablets and down', max-width $screen-sm-max);
 $breakpoints: add-breakpoint('grid small', max-width ($grid-float-breakpoint - 1));
 
 // tablet- and desktop-and-up queries: provide no-query fallbacks for styles that apply to 1024px-wide resolutions (e.g. $screen-md)
+//480px
 $breakpoints: add-breakpoint('smartphones and up', ($screen-xs-min, 'no-query' $no-query-desktop));
+//768px
 $breakpoints: add-breakpoint('tablets and up', ($screen-sm-min, 'no-query' $no-query-desktop));
+// Desktop 992px
 $breakpoints: add-breakpoint('desktops and up', ($screen-md-min, 'no-query' $no-query-desktop));
+// Point at which the navbar stops collapsing //768px
 $breakpoints: add-breakpoint('grid large', ($grid-float-breakpoint, 'no-query' $no-query-desktop));
+//Wide Desktop: 1200px
 $breakpoints: add-breakpoint('large', ($screen-lg-min, 'no-query' $no-query-desktop));
 
 // tablet- and large-only breakpoints are the same in all themes (no fallbacks needed)
