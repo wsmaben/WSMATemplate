@@ -189,9 +189,7 @@
    ========================================================================== */
    
 #masterContentArea {
-    @include respond-to('grid large') {
-        margin-top: 10px;
-    }
+    margin-top: 4px;
     @include respond-to('grid small') {
         margin-top: 20px;
     }

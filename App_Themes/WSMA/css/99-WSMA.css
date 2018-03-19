@@ -203,41 +203,37 @@
 
 /* Main
    ========================================================================== */
-@media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003191}}
-  #masterContentArea {
-    margin-top: 10px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/_breakpoint\.scss}line{font-family:\0000392}}
-.no-mqs #masterContentArea {
-  margin-top: 10px; }
-@media (max-width: 767px) {
+#masterContentArea {
+  margin-top: 4px; }
+  @media (max-width: 767px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003191}}
-  #masterContentArea {
-    margin-top: 20px; } }
+    #masterContentArea {
+      margin-top: 20px; } }
 
 /* This applies to the breadcrumb area */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003199}}
 .breadcrumb {
   float: none;
   display: inline;
   line-height: 33px; }
 
 /* Homepage Full Width areas */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003208}}
 .Wrapper-FullWidth #masterContentArea.container {
   max-width: 100%;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003212}}
 .Wrapper-FullWidth #masterContentArea .container-inner {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003220}}
 .Wrapper-HomePage {
   /* Homepage logo and banner differences */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003221}}
   .Wrapper-HomePage .FullWidthArea-StyleBg1,
   .Wrapper-HomePage .FullWidthArea-StyleBg2,
   .Wrapper-HomePage .FullWidthArea-StyleBg3,
@@ -245,7 +241,7 @@
   .Wrapper-HomePage .FullWidthArea-StyleBg5 {
     padding: 50px 1%; }
   @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003232}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003230}}
     .Wrapper-HomePage .header-top-container {
       position: absolute;
       top: 0;
@@ -262,69 +258,69 @@
     z-index: 666;
     background: transparent; }
   @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003244}}
     .Wrapper-HomePage #masterHeaderImage svg .cls-1 {
       fill: none;
       stroke: #fff;
       stroke-miterlimit: 3.86; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003251}}
     .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
       fill: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003255}}
     .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
       fill: #a62d38; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003244}}
   .no-mqs .Wrapper-HomePage #masterHeaderImage svg .cls-1 {
     fill: none;
     stroke: #fff;
     stroke-miterlimit: 3.86; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003251}}
   .no-mqs .Wrapper-HomePage #masterHeaderImage svg .cls-2 {
     fill: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003255}}
   .no-mqs .Wrapper-HomePage #masterHeaderImage svg .cls-3 {
     fill: #a62d38; }
 
 /***** Proxy Panel Styling *****/
 /* This applies to the on behalf of (proxy) area */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003265}}
 .obo-container {
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003268}}
 .obo-panel {
   line-height: 2.4em;
   white-space: nowrap;
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003275}}
   .obo-panel.on {
     padding-left: 2em;
     padding-right: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003279}}
   .account-menu .obo-panel {
     /* within the account area dropdown make the padding match the other items*/
     padding: 3px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003284}}
 .obo-label,
 .obo-actions {
   display: inline-block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003288}}
 .obo-label {
   font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003293}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003291}}
   .obo-label span:after {
     content: ':'; }
 
 /* This applies to the button area at the bottom of the page (e.g., Save, Cancel) */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003295}}
 .CommandBar {
   margin: .5em 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003299}}
 .backToTop {
   display: block;
   font-size: 0px;
@@ -338,7 +334,7 @@
   width: 45px;
   height: 45px; }
   @media (max-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003299}}
     .backToTop {
       display: none; } }
 
@@ -348,19 +344,19 @@
  * Responsive sticky footer.
  * See http://www.joshrcook.com/a-responsive-sticky-footer/ 
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003321}}
 .wrapper {
   display: table;
   width: 100%;
   height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003327}}
 .footer {
   display: table-row;
   height: 1px; }
 
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003331}}
   .footer-social {
     text-align: left; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/_breakpoint\.scss}line{font-family:\0000392}}
@@ -368,39 +364,39 @@
   text-align: left; }
 
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003336}}
   .footer-promo-container {
     text-align: right; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/_breakpoint\.scss}line{font-family:\0000392}}
 .no-mqs .footer-promo-container {
   text-align: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003341}}
 .footer-promo-container .promo {
   background: none !important;
   box-shadow: none !important;
   padding-bottom: 0 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003345}}
   .footer-promo-container .promo .TextButton {
     background: #04fff5 !important;
     color: #36424a; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003350}}
 .footer-content-section {
   padding: 0 15px 0 1em !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003352}}
   .footer-content-section h2 {
     font-size: 110%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003356}}
 .footer-nav-copyright {
   padding-top: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003359}}
 .HelperText {
   color: #a62d38; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/NaturalHeritageSites\/layouts\/_naturalHeritageSites-mp\.scss}line{font-family:\00003364}}
 .EasyEditOn .EasyEditContent:hover,
 .EasyEditOn .WebPartZoneDesignTime:hover {
   background: none; }
