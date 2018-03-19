@@ -275,8 +275,10 @@
             font-size: $navbar-default-link-font-size;
             font-weight: $navbar-default-link-weight;
             letter-spacing: $navbar-default-link-letter-spacing;
-            .Wrapper-HomePage & {
-                color: white;
+            @include respond-to('grid large') {
+                            .Wrapper-HomePage & {
+                    color: white;
+                }
             }
         }
     }

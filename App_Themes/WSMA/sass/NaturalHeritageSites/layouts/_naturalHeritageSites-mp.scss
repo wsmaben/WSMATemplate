@@ -189,7 +189,12 @@
    ========================================================================== */
    
 #masterContentArea {
-    margin-top: 10px;
+    @include respond-to('grid large') {
+        margin-top: 10px;
+    }
+    @include respond-to('grid small') {
+        margin-top: 20px;
+    }
 }
 
 /* This applies to the breadcrumb area */

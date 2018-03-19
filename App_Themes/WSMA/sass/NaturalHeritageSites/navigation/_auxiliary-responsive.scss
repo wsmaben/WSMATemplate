@@ -280,7 +280,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
 }
 
 .header-search {
-    padding: $navbar-padding-vertical ($grid-gutter-width / 2);
+    padding: 20px ($grid-gutter-width / 2) $navbar-padding-vertical ($grid-gutter-width / 2);
     > .header-search {
         padding: 0; /* don't double the padding */
     }
