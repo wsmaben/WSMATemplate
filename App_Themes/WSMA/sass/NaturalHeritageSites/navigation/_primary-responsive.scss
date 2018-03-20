@@ -12,7 +12,8 @@
 .header-bottom-container {
     @include respond-to('grid large') {
         //background-color: rgba($navbar-default-bg, 0.8 );
-        position:absolute;
+        //position:absolute;
+        display: none;
         bottom:0;
         left:0;
         right:0;
@@ -321,7 +322,7 @@
     display: none; /* hide the sub nav until requested */
     position: absolute;
     height: auto !important;
-    top:61px!important;
+    top:62px!important;
 
     .rmItem {
         float: none;
