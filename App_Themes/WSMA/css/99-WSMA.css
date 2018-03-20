@@ -3491,25 +3491,22 @@ input[type="checkbox"]:focus {
 
 /* Event Display
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\000033}}
-.EventSummary {
-  background-color: #f0edf2; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\000035}}
-  .EventSummary .PhotoArea {
-    padding: 2em; }
+.EventSummary .PhotoArea {
+  padding: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\000037}}
-    .EventSummary .PhotoArea img {
-      border: 1px solid #CCC !important; }
+  .EventSummary .PhotoArea img {
+    border: 1px solid #CCC !important; }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\0000311}}
-  .EventSummary .Description {
-    padding: 0 2em 2em; }
-    @media (min-width: 768px) {
+.EventSummary .Description {
+  padding: 0 2em 2em; }
+  @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\0000311}}
-      .EventSummary .Description {
-        padding: 2em; } }
+    .EventSummary .Description {
+      padding: 2em; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/_breakpoint\.scss}line{font-family:\0000392}}
-    .no-mqs .EventSummary .Description {
-      padding: 2em; }
+  .no-mqs .EventSummary .Description {
+    padding: 2em; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\0000321}}
 .ProgramGroup .PanelHead,
@@ -3528,7 +3525,6 @@ input[type="checkbox"]:focus {
    ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/H\:\/ABM\/WSMA\/iMIS\%202017\/Design\/WSMA-GBR\/App_Themes\/WSMA\/sass\/shared\/modules\/_events-products\.scss}line{font-family:\0000337}}
 .ProductDisplay {
-  background-color: #f0edf2;
   padding: 1em; }
 
 /* Progress Tracker
