@@ -4540,4 +4540,68 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     padding: 15px 30px;
     float: right; }
 
+.dkgrey {
+  color: #36424a; }
+
+.mdgrey {
+  color: #6c6f70; }
+
+.ltgrey {
+  color: #d0cfcb; }
+
+.red {
+  color: #a62d38; }
+
+.forest {
+  color: #00837e; }
+
+.teal {
+  color: #4bc8b6; }
+
+.ltteal {
+  color: #ecf9f7; }
+
+.seafoam {
+  color: #9fe6d9; }
+
+.ltseafoam {
+  color: #C5F0E8; }
+
+.green {
+  color: #8fd400; }
+
+.bg-dkgrey {
+  background-color: #36424a;
+  color: #fff; }
+
+.bg-mdgrey {
+  background-color: #6c6f70;
+  color: #fff; }
+
+.bg-ltgrey {
+  background-color: #d0cfcb; }
+
+.bg-red {
+  background-color: #a62d38;
+  color: #fff; }
+
+.bg-forest {
+  background-color: #00837e;
+  color: #fff; }
+
+.bg-teal {
+  background-color: #4bc8b6; }
+
+.bg-ltteal {
+  background-color: #ecf9f7; }
+
+.bg-seafoam {
+  background-color: #9fe6d9; }
+
+.bg-ltseafoam {
+  background-color: #C5F0E8; }
+
+.bg-green {
+  background-color: #8fd400; }
+
 /*# sourceMappingURL=99-WSMA.css.map */
