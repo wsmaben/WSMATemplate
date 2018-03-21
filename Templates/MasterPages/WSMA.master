@@ -229,12 +229,6 @@
                 <asp:Panel ID="HomePageContent" runat="server" Visible="false" CssClass="HomePageFullWidthArea">
                     <asiweb:ContentTemplateArea ID="HomepageContentArea1" TemplateAreaName="HomepageContentArea1" HonorContentRecordLayout="false" runat="server" />
                 </asp:Panel>
-				<div class="ste-section">
-					<%-- This control will display the Surf-to-Edit button --%>
-					<asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
-					<asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " />
-					<asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
-				</div>
             </header>
             <!-- /.header -->
 
@@ -271,6 +265,12 @@
                                     <asp:ContentPlaceHolder ID="TemplatePageTasks" runat="server"></asp:ContentPlaceHolder>
                             </asp:Panel>
                         </div>--%> -->
+                    </div>
+                    <div class="ste-section">
+                        <%-- This control will display the Surf-to-Edit button --%>
+                        <asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
+                        <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " />
+                        <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
                     </div>
 
                     <!-- This panel contains the Main content area for a page -->
@@ -405,7 +405,7 @@
         // Move Page Titles
         jQuery(".PageTitle").appendTo(".breadcrumb");
         // Next two lines are for secondard Hero
-        jQuery('.hero2banner').appendTo('.hero2after');
+        // jQuery('.hero2banner').appendTo('.hero2after');
         jQuery(".secondaryHero").appendTo('#ctl01_BreadCrumb');
         // Extra sidebare content
         jQuery(".SideBar").appendTo(".col-secondary");
