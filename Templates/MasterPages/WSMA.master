@@ -406,7 +406,7 @@
         jQuery(".PageTitle").appendTo(".breadcrumb");
         // Next two lines are for secondard Hero
         // jQuery('.hero2banner').appendTo('.hero2after');
-        jQuery(".secondaryHero").appendTo('#ctl01_BreadCrumb');
+        // jQuery(".secondaryHero").appendTo('#ctl01_BreadCrumb');
         // Extra sidebare content
         jQuery(".SideBar").appendTo(".col-secondary");
         // News
