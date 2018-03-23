@@ -285,6 +285,7 @@ html.t-safari {
 .row.row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
+    display: -webkit-inline-box;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
@@ -490,7 +491,7 @@ h2, .h2, .PanelHead.Distinguish,
     @include respond-to('grid large') { 
         .breadcrumb-obo-container {
             height: 155px;
-            background-image: url(images/Banner2.png);
+            background-image: url(images/Banner2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: left;
