@@ -4,7 +4,7 @@
   position: relative;
   text-align: left;
   z-index: 7000\9;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none; }
   .RadMenu .rmRootGroup {
     margin: 0;
