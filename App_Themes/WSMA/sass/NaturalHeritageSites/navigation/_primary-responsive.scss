@@ -322,7 +322,6 @@
     display: none; /* hide the sub nav until requested */
     position: absolute;
     height: auto !important;
-    top:62px!important;
 
     .rmItem {
         float: none;
@@ -466,6 +465,7 @@
         }
 
         .rmSlide {
+            margin-top:8px;
 
             .rmGroup {
                 margin: 0;
