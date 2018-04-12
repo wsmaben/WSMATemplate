@@ -277,7 +277,7 @@
     p {
         font-size: 100%;
     }
-    clip-path: polygon(100% 0, 100% 68%, 58% 100%, 0% 78%, 0 0);
+    //clip-path: polygon(100% 0, 100% 68%, 58% 100%, 0% 78%, 0 0);
     @include respond-to('tablets and down') {
         h1 {  font-size: 200%; }
     }
@@ -301,6 +301,14 @@
         background: url($header-sprite-path) 0 -200px no-repeat;
     }
 }
+.carousel-control {
+    &.right, &.left {
+        background-image: none;
+        //background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    }
+
+}
+
 .carousel-indicators { display: none; }
 .carousel-caption {  
     @include respond-to('grid large') {
@@ -357,6 +365,7 @@
     /* Overwrite slideshow height setting on homepage only */
     .carousel-inner .item {
         @include respond-to('grid large') { height: $jumbotron-home-height!important; }
+        @include respond-to('tablets and up') { height: $jumbotron-home-height-md!important; }
         @include respond-to('grid small') { height: $jumbotron-home-height-sm!important; }
         
         /*Make one for small width*/
