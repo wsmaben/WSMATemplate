@@ -262,17 +262,34 @@
         display: block;
     }
     h1 {
-        font-weight: 300;
-        font-size: 380%;
-        margin-bottom: 0px;
-        line-height: 52px;
+        @include respond-to('large') {        
+            font-weight: 300;
+            font-size: 380%;
+            margin-bottom: 0px;
+            line-height: 52px;
+        }
+        @include respond-to('grid large') {
+            font-weight: 300;
+            font-size: 260%;
+            margin-bottom: 0px;
+            line-height: 40px;
+        }
     }
     h2 {
+        @include respond-to('large') {
         font-weight: 600;
         font-size: 380%;
         color: $color-wsma-teal;
         margin-bottom: 0px;
         line-height: 52px;
+        }
+        @include respond-to('grid large') {
+        font-weight: 600;
+        font-size: 260%;
+        color: $color-wsma-teal;
+        margin-bottom: 0px;
+        line-height: 40px;
+        }
     }
     p {
         font-size: 100%;
@@ -365,7 +382,7 @@
     /* Overwrite slideshow height setting on homepage only */
     .carousel-inner .item {
         @include respond-to('grid large') { height: $jumbotron-home-height!important; }
-        @include respond-to('tablets and up') { height: $jumbotron-home-height-md!important; }
+        @include respond-to('tablets and down') { height: $jumbotron-home-height-md!important; }
         @include respond-to('grid small') { height: $jumbotron-home-height-sm!important; }
         
         /*Make one for small width*/
