@@ -331,6 +331,7 @@
     @include respond-to('grid large') {
         left: auto;
         right: auto;
+        padding-top: 7%;
         button {
             background-color: $color-wsma-teal;
             color:white;
