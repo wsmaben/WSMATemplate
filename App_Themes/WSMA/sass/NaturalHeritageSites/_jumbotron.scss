@@ -319,6 +319,7 @@
     }
 }
 .carousel-control {
+    width: 5%;
     &.right, &.left {
         background-image: none;
         //background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0001) 100%);

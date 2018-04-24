@@ -4475,26 +4475,29 @@ input[type="checkbox"]:focus {
   .carousel-control .icon-next::before {
     background: url("images/ResponsiveHeaderSprite.png") 0 -200px no-repeat; }
 
-/* line 322, ../sass/NaturalHeritageSites/_jumbotron.scss */
-.carousel-control.right, .carousel-control.left {
-  background-image: none; }
+/* line 321, ../sass/NaturalHeritageSites/_jumbotron.scss */
+.carousel-control {
+  width: 5%; }
+  /* line 323, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  .carousel-control.right, .carousel-control.left {
+    background-image: none; }
 
-/* line 329, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 330, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .carousel-indicators {
   display: none; }
 
-/* line 330, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 331, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .carousel-caption {
   font-family: "Gotham A", "Gotham B", sans-serif;
   top: 83px;
   text-align: left !important; }
   @media (min-width: 768px) {
-    /* line 330, ../sass/NaturalHeritageSites/_jumbotron.scss */
+    /* line 331, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .carousel-caption {
       left: auto;
       right: auto;
       padding-top: 7%; }
-      /* line 335, ../sass/NaturalHeritageSites/_jumbotron.scss */
+      /* line 336, ../sass/NaturalHeritageSites/_jumbotron.scss */
       .carousel-caption button {
         background-color: #4bc8b6;
         color: white;
@@ -4507,7 +4510,7 @@ input[type="checkbox"]:focus {
     left: auto;
     right: auto;
     padding-top: 7%; }
-    /* line 335, ../sass/NaturalHeritageSites/_jumbotron.scss */
+    /* line 336, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .no-mqs .carousel-caption button {
       background-color: #4bc8b6;
       color: white;
@@ -4515,16 +4518,16 @@ input[type="checkbox"]:focus {
       padding: 5px 20px;
       margin: 20px 0;
       border-radius: 5px; }
-  /* line 349, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 350, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .carousel-caption h1:after {
     display: none; }
-  /* line 350, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 351, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .carousel-caption p {
     font-size: 18px;
     line-height: 28px; }
 
 /* Internal page carousel */
-/* line 357, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 358, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .InternalHeaderArea {
   background-image: url(images/banner2.png);
   background-size: contain;
@@ -4532,58 +4535,58 @@ input[type="checkbox"]:focus {
   height: 250px;
   overflow: hidden; }
   @media (min-width: 768px) {
-    /* line 364, ../sass/NaturalHeritageSites/_jumbotron.scss */
+    /* line 365, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .InternalHeaderArea .carousel {
       height: 200px; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .InternalHeaderArea .carousel {
     height: 200px; }
   @media (max-width: 767px) {
-    /* line 364, ../sass/NaturalHeritageSites/_jumbotron.scss */
+    /* line 365, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .InternalHeaderArea .carousel {
       height: 0px; } }
-  /* line 368, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 369, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .InternalHeaderArea .panel-body {
     padding: 0; }
-  /* line 371, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 372, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .InternalHeaderArea .carousel-inner {
     -webkit-filter: blur(5px);
     filter: blur(5px);
     width: 100%; }
-  /* line 376, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 377, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .InternalHeaderArea .carousel-control,
   .InternalHeaderArea .carousel-inner > .item .carousel-link {
     display: none !important; }
 
-/* line 382, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 383, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .Wrapper-HomePage .HomePageFullWidthArea {
   /* Overwrite slideshow height setting on homepage only */
   /* darker gradient to improve legibility of auxiliary nav */ }
-  /* line 384, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 385, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
     /*Make one for small width*/
     background-color: #ffffff; }
     @media (min-width: 768px) {
-      /* line 384, ../sass/NaturalHeritageSites/_jumbotron.scss */
+      /* line 385, ../sass/NaturalHeritageSites/_jumbotron.scss */
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 700px !important; } }
     /* line 92, ../sass/_breakpoint.scss */
     .no-mqs .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
       height: 700px !important; }
     @media (max-width: 991px) {
-      /* line 384, ../sass/NaturalHeritageSites/_jumbotron.scss */
+      /* line 385, ../sass/NaturalHeritageSites/_jumbotron.scss */
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 500px !important; } }
     @media (max-width: 767px) {
-      /* line 384, ../sass/NaturalHeritageSites/_jumbotron.scss */
+      /* line 385, ../sass/NaturalHeritageSites/_jumbotron.scss */
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 200px !important; } }
   @media all {
-    /* line 394, ../sass/NaturalHeritageSites/_jumbotron.scss */
+    /* line 395, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
       height: 200px;
       background-color: #ffffff; } }
-  /* line 400, ../sass/NaturalHeritageSites/_jumbotron.scss */
+  /* line 401, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner:before {
     content: '';
     display: block;
@@ -4594,11 +4597,11 @@ input[type="checkbox"]:focus {
 
 /* There seems to be an issue when choosing to display the FullWidthArea on the homepage only.
     The container div remains on internal pages although its content is hidden. */
-/* line 412, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 413, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .HomePageFullWidthArea {
   display: none; }
 
-/* line 413, ../sass/NaturalHeritageSites/_jumbotron.scss */
+/* line 414, ../sass/NaturalHeritageSites/_jumbotron.scss */
 .Wrapper-HomePage .HomePageFullWidthArea,
 .TemplateManagerArea .HomePageFullWidthArea {
   display: block; }
