@@ -42,7 +42,7 @@
     //background-size: contain;
     @include background-size(contain); 
     width: $logo-default-width-sm;
-    height: $logo-default-height-sm;
+    //height: $logo-default-height-sm;
     /* The following are needed to hide the text, but allow it to be read by screen readers */
     //text-indent: -9999px;
     overflow: hidden;
