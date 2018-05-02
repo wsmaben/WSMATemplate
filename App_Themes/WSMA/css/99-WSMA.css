@@ -1064,6 +1064,7 @@ ol {
   -o-background-size: contain;
   background-size: contain;
   width: 60%;
+  height: 60px;
   /* The following are needed to hide the text, but allow it to be read by screen readers */
   overflow: hidden;
   float: left; }
