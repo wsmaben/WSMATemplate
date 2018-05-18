@@ -734,7 +734,7 @@ h2, .h2, .PanelHead.Distinguish,
 
 /***********************************
 /
-/ New Collapse
+/ News Collapse
 /
 /**********************************/
 
@@ -757,3 +757,8 @@ h2, .h2, .PanelHead.Distinguish,
     position: relative;
     overflow: hidden;
   }
+
+.shrink {
+    height: 150px;
+    overflow: hidden;
+}
