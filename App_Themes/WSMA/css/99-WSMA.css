@@ -830,8 +830,11 @@ h2, .h2, .PanelHead.Distinguish,
 .newsBody h5 {
   margin-top: 0; }
 
-#NewsDisplay .newsBody H2 {
-  color: #36424a; }
+#NewsDisplay .newsBody {
+  max-height: 230px;
+  overflow: hidden; }
+  #NewsDisplay .newsBody H2 {
+    color: #36424a; }
 #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
