@@ -22,7 +22,7 @@
 // Loop through the rows, writing the results into a new object
 // and then add the object to the array
 	jQuery.each(r, function(key, value) {
-		var l = jQuery(value).find("td");
+		var l = jQuery(value).find('td');
 		var i = l.length;
 		var news = {};
 		for (i = 0; i < l.length; i++) { 

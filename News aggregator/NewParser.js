@@ -1,6 +1,8 @@
 <script>
+
+// The Query iPart must be called 'TaggedListQuery'
 // hide the iPart containing the IQA
-   // jQuery("#ste_container_ciTaggedListQuery").parent().hide();
+    jQuery("#ste_container_ciTaggedListQuery").parent().hide();
 
 // Read the IQA contents into a jQuery variable
 	var r = jQuery("#ste_container_ciTaggedListQuery table tbody tr");
