@@ -1397,8 +1397,7 @@ ol {
   .RadMenu.RadMenu_WSMA .rmText,
   .RadMenu.RadMenu_WSMA .rmHorizontal .rmText,
   .RadMenu.RadMenu_WSMA .rmSlide .rmText {
-    padding: 8px 15px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+    padding: 8px 15px; }
     @media (max-width: 991px) {
       .RadMenu.RadMenu_WSMA .rmText,
       .RadMenu.RadMenu_WSMA .rmHorizontal .rmText,
