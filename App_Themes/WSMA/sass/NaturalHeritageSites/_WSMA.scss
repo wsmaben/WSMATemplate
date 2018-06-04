@@ -689,8 +689,9 @@ h2, .h2, .PanelHead.Distinguish,
         H2 {
             color: $color-wsma-dkgrey;
         }
-        max-height: 230px;
+        max-height: 220px;
         overflow: hidden;
+        margin-bottom: 20px;
     }
     .readMore {
         color: $color-black;
