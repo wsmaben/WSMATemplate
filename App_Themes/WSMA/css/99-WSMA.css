@@ -830,9 +830,31 @@ h2, .h2, .PanelHead.Distinguish,
 .newsBody h5 {
   margin-top: 0; }
 
-#NewsDisplay .newsBody H2 {
-  color: #36424a; }
-#NewsDisplay .newsBody .shrink {
+@media (min-width: 768px) {
+  #NewsDisplay .newsBody {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 25.2px;
+    max-height: 250px;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical; }
+    #NewsDisplay .newsBody H2 {
+      color: #36424a; }
+  #NewsDisplay .readMore {
+    color: #313E48;
+    text-decoration: none;
+    font-weight: 500; }
+    #NewsDisplay .readMore a {
+      color: #313E48;
+      text-decoration: none;
+      font-weight: 500; }
+    #NewsDisplay .readMore hr {
+      margin: 30px 0; }
+    #NewsDisplay .readMore span {
+      color: #a62d38; } }
+.no-mqs #NewsDisplay .newsBody {
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -841,18 +863,44 @@ h2, .h2, .PanelHead.Distinguish,
   max-height: 250px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
-#NewsDisplay .readMore {
+  .no-mqs #NewsDisplay .newsBody H2 {
+    color: #36424a; }
+.no-mqs #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
   font-weight: 500; }
-  #NewsDisplay .readMore a {
+  .no-mqs #NewsDisplay .readMore a {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-  #NewsDisplay .readMore hr {
+  .no-mqs #NewsDisplay .readMore hr {
     margin: 30px 0; }
-  #NewsDisplay .readMore span {
+  .no-mqs #NewsDisplay .readMore span {
     color: #a62d38; }
+@media (max-width: 767px) {
+  #NewsDisplay .newsBody {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 25.2px;
+    max-height: 475px;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical; }
+    #NewsDisplay .newsBody H2 {
+      color: #36424a; }
+  #NewsDisplay .readMore {
+    color: #313E48;
+    text-decoration: none;
+    font-weight: 500; }
+    #NewsDisplay .readMore a {
+      color: #313E48;
+      text-decoration: none;
+      font-weight: 500; }
+    #NewsDisplay .readMore hr {
+      margin: 30px 0; }
+    #NewsDisplay .readMore span {
+      color: #a62d38; } }
 
 #BaseDirectory {
   border: 1px solid #d0cfcb;
