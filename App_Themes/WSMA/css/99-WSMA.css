@@ -277,7 +277,6 @@
  * See http://www.joshrcook.com/a-responsive-sticky-footer/ 
  */
 .wrapper {
-  display: table;
   width: 100%;
   height: 100%; }
 
