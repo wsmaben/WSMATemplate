@@ -227,6 +227,15 @@
         padding: 50px 1%;
         //min-height: 450px;
     }
+    @include respond-to('small') {
+        .FullWidthArea-StyleBg1,
+        .FullWidthArea-StyleBg2,
+        .FullWidthArea-StyleBg3,
+        .FullWidthArea-StyleBg4,
+        .FullWidthArea-StyleBg5 {
+            padding: 20px 1%;
+        }
+    }
     /* Homepage logo and banner differences */
     .header-top-container {
         @include respond-to('grid large') { 

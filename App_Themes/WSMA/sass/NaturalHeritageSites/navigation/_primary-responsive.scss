@@ -282,6 +282,9 @@
                     color: white;
                 }
             }
+            @include respond-to('tablets and down') {
+                font-size: 100%;
+            }
         }
     }
 

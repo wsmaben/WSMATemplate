@@ -342,7 +342,9 @@
             border-radius: 5px;
         }
     }
-    @include respond-to('tablets and down') {
+    @include respond-to('smartphones and down') {
+        top: 0;
+        padding-left: 40px;
         h1, h2, .h1, .h2, .PageTitle {
             line-height: 30px;
             font-size: 130%;
@@ -361,14 +363,6 @@
         font-size: $carousel-caption-font-size;
         line-height: 28px;
      }
-}
-
-.carousel-link {
-    @include respond-to('tablets and down') {
-        .carousel-caption {
-            top:0;
-        }
-    }
 }
 
 /* Internal page carousel */

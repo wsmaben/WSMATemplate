@@ -190,6 +190,12 @@
   .Wrapper-HomePage .FullWidthArea-StyleBg4,
   .Wrapper-HomePage .FullWidthArea-StyleBg5 {
     padding: 50px 1%; }
+  .Wrapper-HomePage .FullWidthArea-StyleBg1,
+  .Wrapper-HomePage .FullWidthArea-StyleBg2,
+  .Wrapper-HomePage .FullWidthArea-StyleBg3,
+  .Wrapper-HomePage .FullWidthArea-StyleBg4,
+  .Wrapper-HomePage .FullWidthArea-StyleBg5 {
+    padding: 20px 1%; }
   @media (min-width: 768px) {
     .Wrapper-HomePage .header-top-container {
       position: absolute;
@@ -1566,6 +1572,9 @@ ol {
         color: white; } }
     .Wrapper-HomePage .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
       color: white; }
+    @media (max-width: 991px) {
+      .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
+        font-size: 100%; } }
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
     /* a clickable target to expand multi-level navigaiton */
     display: inline-block;
@@ -3797,21 +3806,20 @@ input[type="checkbox"]:focus {
       padding: 5px 20px;
       margin: 20px 0;
       border-radius: 5px; }
-  @media (max-width: 991px) {
-    .carousel-caption h1, .carousel-caption h2, .carousel-caption .h1, .carousel-caption .h2, .carousel-caption .PageTitle {
-      line-height: 30px;
-      font-size: 130%; }
-    .carousel-caption p {
-      display: none; } }
+  @media (max-width: 767px) {
+    .carousel-caption {
+      top: 0;
+      padding-left: 40px; }
+      .carousel-caption h1, .carousel-caption h2, .carousel-caption .h1, .carousel-caption .h2, .carousel-caption .PageTitle {
+        line-height: 30px;
+        font-size: 130%; }
+      .carousel-caption p {
+        display: none; } }
   .carousel-caption h1:after {
     display: none; }
   .carousel-caption p {
     font-size: 18px;
     line-height: 28px; }
-
-@media (max-width: 991px) {
-  .carousel-link .carousel-caption {
-    top: 0; } }
 
 /* Internal page carousel */
 .InternalHeaderArea {
