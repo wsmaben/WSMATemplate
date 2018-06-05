@@ -3806,15 +3806,20 @@ input[type="checkbox"]:focus {
       padding: 5px 20px;
       margin: 20px 0;
       border-radius: 5px; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .carousel-caption {
-      top: 0;
       padding-left: 40px; }
       .carousel-caption h1, .carousel-caption h2, .carousel-caption .h1, .carousel-caption .h2, .carousel-caption .PageTitle {
         line-height: 30px;
-        font-size: 130%; }
+        font-size: 180%; }
       .carousel-caption p {
-        display: none; } }
+        font-size: 16px; } }
+  @media (max-width: 767px) {
+    .carousel-caption h1, .carousel-caption h2, .carousel-caption .h1, .carousel-caption .h2, .carousel-caption .PageTitle {
+      line-height: 30px;
+      font-size: 130%; }
+    .carousel-caption p {
+      display: none; } }
   .carousel-caption h1:after {
     display: none; }
   .carousel-caption p {

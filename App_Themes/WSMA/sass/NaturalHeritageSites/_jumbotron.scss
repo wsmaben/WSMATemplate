@@ -342,9 +342,17 @@
             border-radius: 5px;
         }
     }
-    @include respond-to('smartphones and down') {
-        top: 0;
+    @include respond-to('tablets and down') {
         padding-left: 40px;
+        h1, h2, .h1, .h2, .PageTitle {
+            line-height: 30px;
+            font-size: 180%;
+        }
+        p {
+            font-size: 16px
+        }
+    }
+    @include respond-to('smartphones and down') {
         h1, h2, .h1, .h2, .PageTitle {
             line-height: 30px;
             font-size: 130%;
