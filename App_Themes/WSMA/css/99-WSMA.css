@@ -836,7 +836,7 @@ h2, .h2, .PanelHead.Distinguish,
     text-overflow: ellipsis;
     display: -webkit-box;
     line-height: 25.2px;
-    max-height: 250px;
+    max-height: 260px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
     #NewsDisplay .newsBody H2 {
@@ -859,7 +859,7 @@ h2, .h2, .PanelHead.Distinguish,
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 25.2px;
-  max-height: 250px;
+  max-height: 260px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
   .no-mqs #NewsDisplay .newsBody H2 {
@@ -3797,11 +3797,21 @@ input[type="checkbox"]:focus {
       padding: 5px 20px;
       margin: 20px 0;
       border-radius: 5px; }
+  @media (max-width: 991px) {
+    .carousel-caption h1, .carousel-caption h2, .carousel-caption .h1, .carousel-caption .h2, .carousel-caption .PageTitle {
+      line-height: 30px;
+      font-size: 130%; }
+    .carousel-caption p {
+      display: none; } }
   .carousel-caption h1:after {
     display: none; }
   .carousel-caption p {
     font-size: 18px;
     line-height: 28px; }
+
+@media (max-width: 991px) {
+  .carousel-link .carousel-caption {
+    top: 0; } }
 
 /* Internal page carousel */
 .InternalHeaderArea {

@@ -341,7 +341,16 @@
             margin: 20px 0;
             border-radius: 5px;
         }
-    }       
+    }
+    @include respond-to('tablets and down') {
+        h1, h2, .h1, .h2, .PageTitle {
+            line-height: 30px;
+            font-size: 130%;
+        }
+        p {
+            display: none;
+        }
+    }
     //padding: 15px;
     font-family: $carousel-caption-font-family;
     top: $navbar-height + $navbar-padding-vertical + 10;
@@ -352,6 +361,14 @@
         font-size: $carousel-caption-font-size;
         line-height: 28px;
      }
+}
+
+.carousel-link {
+    @include respond-to('tablets and down') {
+        .carousel-caption {
+            top:0;
+        }
+    }
 }
 
 /* Internal page carousel */
