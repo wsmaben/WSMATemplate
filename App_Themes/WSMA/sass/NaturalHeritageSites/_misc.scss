@@ -57,6 +57,10 @@ h1.BigHeader, .h1.BigHeader {
     }
 }
 
+.InputXLargeWrapper input[type="text"] {
+    width: 100%;
+}
+
 /* Use class ContentBlockPictureArea to surround an image within a ContentBlockPrimary area */
 .ContentBlockPictureArea, 
 .ContentBlockLeft

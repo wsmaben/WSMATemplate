@@ -296,7 +296,13 @@
     }
     //clip-path: polygon(100% 0, 100% 68%, 58% 100%, 0% 78%, 0 0);
     @include respond-to('tablets and down') {
-        h1 {  font-size: 200%; }
+        h1, h2 {
+            font-size: 160%; 
+            line-height: 30px;
+        }
+        p {
+            display: none;
+        }
     }
 }
 
@@ -344,19 +350,21 @@
     }
     @include respond-to('tablets and down') {
         padding-left: 40px;
-        h1, h2, .h1, .h2, .PageTitle {
-            line-height: 30px;
-            font-size: 180%;
-        }
+        // h1, h2, .h1, .h2, .PageTitle {
+        //     line-height: 30px;
+        //     font-size: 180%;
+        // }
         p {
             font-size: 16px
         }
     }
     @include respond-to('smartphones and down') {
-        h1, h2, .h1, .h2, .PageTitle {
-            line-height: 30px;
-            font-size: 130%;
-        }
+        padding-left: 0;
+        top:0;
+        // h1, h2, .h1, .h2, .PageTitle {
+        //     line-height: 30px;
+        //     font-size: 130%;
+        // }
         p {
             display: none;
         }
