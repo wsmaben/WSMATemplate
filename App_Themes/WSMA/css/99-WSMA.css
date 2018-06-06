@@ -1943,7 +1943,7 @@ ol {
     @media (max-width: 991px) {
       /* line 273, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        font-size: 100%; } }
+        font-size: 130%; } }
   /* line 291, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
     /* a clickable target to expand multi-level navigaiton */
@@ -2346,7 +2346,7 @@ ol {
     background-color: #36424a; }
   /* line 36, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .navbar-toggle:hover, .navbar-toggle:focus {
-    background-color: #fff; }
+    background-color: #6c6f70; }
   /* line 38, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .navbar-toggle .icon-bar {
     background-color: #ffffff; }
@@ -2491,7 +2491,7 @@ ol {
     border-radius: 0px; }
     /* line 151, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button .NavigationLink:hover, .nav-auxiliary .nav-aux-button .NavigationLink:focus {
-      background-color: #fff; }
+      background-color: #6c6f70; }
     /* line 154, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button .NavigationLink:active {
       background-color: #36424a; }
@@ -2680,11 +2680,11 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
         /* line 310, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
         .header-search .search-field:hover {
           cursor: pointer;
-          background-color: #fff;
+          background-color: #6c6f70;
           background-position: 7px -17px !important; }
         /* line 315, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
         .header-search .search-field:focus {
-          background-color: #fff;
+          background-color: #6c6f70;
           background-position: 7px -17px !important;
           width: 200px; } }
     /* line 92, ../sass/_breakpoint.scss */
@@ -2708,11 +2708,11 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
       /* line 310, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .no-mqs .header-search .search-field:hover {
         cursor: pointer;
-        background-color: #fff;
+        background-color: #6c6f70;
         background-position: 7px -17px !important; }
       /* line 315, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .no-mqs .header-search .search-field:focus {
-        background-color: #fff;
+        background-color: #6c6f70;
         background-position: 7px -17px !important;
         width: 200px; }
 
