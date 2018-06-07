@@ -1019,7 +1019,6 @@ h2, .h2, .PanelHead.Distinguish,
 
 /* line 672, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody img {
-  width: 365px;
   margin: 0 0 15px 15px; }
 /* line 676, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h2 {
@@ -1119,8 +1118,27 @@ h2, .h2, .PanelHead.Distinguish,
     /* line 747, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore span {
       color: #a62d38; } }
+/* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
+.FullWidthArea-StyleBg4 #NewsDisplay .encoded {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d0cfcb;
+  margin-bottom: 30px; }
+/* line 758, ../sass/NaturalHeritageSites/_WSMA.scss */
+.FullWidthArea-StyleBg4 #NewsDisplay .newsBody {
+  max-height: 100%; }
+  /* line 759, ../sass/NaturalHeritageSites/_WSMA.scss */
+  .FullWidthArea-StyleBg4 #NewsDisplay .newsBody .shrink {
+    display: none; }
+  /* line 763, ../sass/NaturalHeritageSites/_WSMA.scss */
+  .FullWidthArea-StyleBg4 #NewsDisplay .newsBody img {
+    border-bottom: 5px solid #a62d38;
+    margin: 0 0 15px 0; }
+/* line 768, ../sass/NaturalHeritageSites/_WSMA.scss */
+.FullWidthArea-StyleBg4 #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div {
+  width: 100%;
+  padding: 0 0 15px 0; }
 
-/* line 754, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 775, ../sass/NaturalHeritageSites/_WSMA.scss */
 #BaseDirectory {
   border: 1px solid #d0cfcb;
   margin-bottom: 30px; }
@@ -1130,7 +1148,7 @@ h2, .h2, .PanelHead.Distinguish,
 / Misc
 /
 /**********************************/
-/* line 770, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 791, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Hidden {
   display: none; }
 
@@ -1139,12 +1157,12 @@ h2, .h2, .PanelHead.Distinguish,
 / News Collapse
 /
 /**********************************/
-/* line 784, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 805, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip {
   display: block;
   height: 100%; }
 
-/* line 789, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 810, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -1152,7 +1170,7 @@ h2, .h2, .PanelHead.Distinguish,
   word-wrap: normal;
   max-width: 100%; }
 
-/* line 797, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 818, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip,
 .ellip-line {
   position: relative;
@@ -1374,6 +1392,7 @@ ol {
 /* header logo */
 /* line 38, ../sass/shared/_masterpage_styles.scss */
 #masterHeaderImage {
+  max-width: 300px;
   position: absolute;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -1394,15 +1413,15 @@ ol {
   .no-mqs #masterHeaderImage {
     background-position: 0 0px;
     width: 300px; }
-  /* line 72, ../sass/shared/_masterpage_styles.scss */
+  /* line 73, ../sass/shared/_masterpage_styles.scss */
   #masterHeaderImage svg .cls-1 {
     fill: none;
     stroke: #36424a;
     stroke-miterlimit: 3.86; }
-  /* line 79, ../sass/shared/_masterpage_styles.scss */
+  /* line 80, ../sass/shared/_masterpage_styles.scss */
   #masterHeaderImage svg .cls-2 {
     fill: #36424a; }
-  /* line 83, ../sass/shared/_masterpage_styles.scss */
+  /* line 84, ../sass/shared/_masterpage_styles.scss */
   #masterHeaderImage svg .cls-3 {
     fill: #a62d38; }
   @media (min-width: 768px) {
@@ -1420,7 +1439,7 @@ ol {
   .no-mqs #masterHeaderImage {
     margin-top: 20px; }
 
-/* line 148, ../sass/shared/_masterpage_styles.scss */
+/* line 149, ../sass/shared/_masterpage_styles.scss */
 #masterDonorHeaderImage {
   background-image: url("images/DonorHeaderLogo.png");
   background-repeat: no-repeat;
@@ -1431,7 +1450,7 @@ ol {
   overflow: hidden;
   float: left; }
   @media (min-width: 768px) {
-    /* line 148, ../sass/shared/_masterpage_styles.scss */
+    /* line 149, ../sass/shared/_masterpage_styles.scss */
     #masterDonorHeaderImage {
       width: 169px; } }
   /* line 92, ../sass/_breakpoint.scss */
@@ -1439,37 +1458,37 @@ ol {
     width: 169px; }
 
 /* Used in the donor site header logo content area */
-/* line 180, ../sass/shared/_masterpage_styles.scss */
+/* line 181, ../sass/shared/_masterpage_styles.scss */
 #masterHeaderActionArea a {
   display: block;
   text-align: center; }
 
 /* On Behalf Of with target set */
-/* line 186, ../sass/shared/_masterpage_styles.scss */
+/* line 187, ../sass/shared/_masterpage_styles.scss */
 .ProxyPanelContact {
   background-color: #36424a; }
-  /* line 189, ../sass/shared/_masterpage_styles.scss */
+  /* line 190, ../sass/shared/_masterpage_styles.scss */
   .ProxyPanelContact, .ProxyPanelContact .obo-label {
     color: #fff; }
-  /* line 192, ../sass/shared/_masterpage_styles.scss */
+  /* line 193, ../sass/shared/_masterpage_styles.scss */
   .ProxyPanelContact a {
     color: #ebb4b9; }
 
 /* Sub (Left) Navigation
    ========================================================================== */
-/* line 200, ../sass/shared/_masterpage_styles.scss */
+/* line 201, ../sass/shared/_masterpage_styles.scss */
 #pagesubnav {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
 
-/* line 206, ../sass/shared/_masterpage_styles.scss */
+/* line 207, ../sass/shared/_masterpage_styles.scss */
 .SubNavPanelHead {
   background-color: #f0edf2;
   color: #313E48;
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-weight: 300; }
 
-/* line 214, ../sass/shared/_masterpage_styles.scss */
+/* line 215, ../sass/shared/_masterpage_styles.scss */
 .SubNavigationSeparator {
   border-width: 1px 0 0 0;
   border-style: solid;
@@ -4679,11 +4698,11 @@ input[type="checkbox"]:focus {
     @media (max-width: 767px) {
       /* line 412, ../sass/NaturalHeritageSites/_jumbotron.scss */
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 200px !important; } }
+        height: 210px !important; } }
   @media all {
     /* line 422, ../sass/NaturalHeritageSites/_jumbotron.scss */
     .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-      height: 200px;
+      height: 210px;
       background-color: #ffffff; } }
   /* line 428, ../sass/NaturalHeritageSites/_jumbotron.scss */
   .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner:before {

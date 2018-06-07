@@ -670,7 +670,7 @@ h2, .h2, .PanelHead.Distinguish,
 .newsBody {
     
     img {
-        width: 365px;
+        //width: 365px;
         margin: 0 0 15px 15px
     }
     h2 {
@@ -747,6 +747,27 @@ h2, .h2, .PanelHead.Distinguish,
             span {
                 color: $color-wsma-red;
             }
+        }
+    }
+    .FullWidthArea-StyleBg4 & {
+        .encoded {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $color-wsma-ltgrey;
+            margin-bottom: 30px;
+        }
+        .newsBody {
+            .shrink {
+                display: none;
+            }
+            max-height: 100%;
+            img {
+                border-bottom: 5px solid $color-wsma-red;
+                margin: 0 0 15px 0;
+            }
+        }
+        .newsBody div > div, .newsBody div {
+            width: 100%;
+            padding: 0 0 15px 0
         }
     }
 }
