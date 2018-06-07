@@ -316,7 +316,8 @@
         .rmToggle > .rmIcon { background-position: 0 -26px; }
     }
 
-    .rmExpanded > .rmLink > .rmToggle > .rmIcon {
+    .rmExpanded > .rmLink > .rmToggle > .rmIcon,
+    .rmExpanded > .rmToggle > .rmIcon {
         @include rotate(180deg);
     }
 }

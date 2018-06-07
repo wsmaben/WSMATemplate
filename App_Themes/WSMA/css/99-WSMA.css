@@ -1974,49 +1974,50 @@ ol {
   .RadMenu.RadMenu_WSMA .rmSlide .rmLink .rmToggle > .rmIcon {
     background-position: 0 -26px; }
   /* line 319, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
-  .RadMenu.RadMenu_WSMA .rmExpanded > .rmLink > .rmToggle > .rmIcon {
+  .RadMenu.RadMenu_WSMA .rmExpanded > .rmLink > .rmToggle > .rmIcon,
+  .RadMenu.RadMenu_WSMA .rmExpanded > .rmToggle > .rmIcon {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
 
 /*2nd and 3rd level navigation (dropdown menus)*/
-/* line 325, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+/* line 326, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
 .RadMenu_WSMA .rmSlide {
   display: none;
   /* hide the sub nav until requested */
   position: absolute;
   height: auto !important; }
-  /* line 330, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 331, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmItem {
     float: none;
     display: block; }
-  /* line 335, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 336, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmText {
     float: none; }
-  /* line 337, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 338, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmLink,
   .RadMenu_WSMA .rmSlide .rsmLink {
     color: #36424a;
     font-family: "Gotham A", "Gotham B", sans-serif;
     font-size: 114%;
     font-weight: normal; }
-  /* line 345, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 346, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmSeparator,
   .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator,
   .RadMenu_WSMA .rmSlide .MegaDropDownMenuSeperator > .rsmLink {
     border-bottom: 1px solid #ffffff; }
-  /* line 351, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 352, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmSeparator, .RadMenu_WSMA .rmSlide .rmVertical > .rmSeparator {
     margin: 0 15px; }
-  /* line 355, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 356, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmFocused > .rmLink,
   .RadMenu_WSMA .rmSlide .rmSelected > .rmLink,
   .RadMenu_WSMA .rmSlide .rsmSelected > .rsmLink,
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem.rsmSelected > .rsmLink {
     background-color: transparent;
     color: #4bc8b6; }
-  /* line 367, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 368, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmLink:hover, .RadMenu_WSMA .rmSlide .rmLink:focus, .RadMenu_WSMA .rmSlide .rmLink.rmFocused,
   .RadMenu_WSMA .rmSlide .rsmLink:hover,
   .RadMenu_WSMA .rmSlide .rsmLink:focus,
@@ -2030,106 +2031,106 @@ ol {
     background-color: transparent;
     color: #4bc8b6;
     text-decoration: underline; }
-  /* line 376, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 377, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide.rmLevel1 .rmGroup {
     /* for second-level sub-nav and beyond,
      * we want to indent the nav to give separation */
     margin-left: 0; }
-  /* line 382, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 383, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rmExpandRight, .RadMenu_WSMA .rmSlide .rmGroup a.rmLink.rmExpandRight {
     background-image: url("images/ResponsiveNav.png");
     background-position: 110% -200px;
     background-repeat: no-repeat; }
-  /* line 388, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 389, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .MegaDropDownMenu {
     padding-top: 25px;
     padding-left: 20px;
     padding-bottom: 45px; }
-  /* line 395, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 396, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .rsmTwoLevels > .rsmItem {
     margin-bottom: .5em; }
-  /* line 410, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 411, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu_WSMA .rmSlide .MegaDropDownMenuSeperator .rsmLink {
     padding: 0; }
   @media (max-width: 767px) {
-    /* line 325, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 326, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu_WSMA .rmSlide {
       width: 100% !important;
       left: 0 !important; }
-      /* line 418, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 419, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu_WSMA .rmSlide ul.rmVertical, .RadMenu_WSMA .rmSlide ul.rmHorizontal, .RadMenu_WSMA .rmSlide ul.rmRootScrollGroup {
         float: none; }
-      /* line 422, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 423, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu_WSMA .rmSlide .rmSlide {
         /* for right expanded items, expand below on extra small screens */
         left: 0 !important;
         margin-top: 64px; }
-      /* line 428, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 429, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu_WSMA .rmSlide .rmToggleHandles .rmSlide .rmText {
         /* if we have toggles on we don't want to add the extra padding */
         padding-right: 15px; }
-      /* line 433, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 434, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu_WSMA .rmSlide .rmToggleHandles .rmExpandRight,
       .RadMenu_WSMA .rmSlide .rmToggleHandles .rmGroup a.rmText.rmExpandRight {
         /* if toggle handles are on we don't want to display the arrow twice*/
         background-image: none; } }
 
 @media (min-width: 768px) {
-  /* line 441, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 442, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu.RadMenu_WSMA {
     float: right;
     /* Make sure mega menus with two levels are an adequate width */ }
-    /* line 444, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 445, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmItem {
       white-space: nowrap; }
-    /* line 447, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 448, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmRootGroup {
       width: auto;
       display: inline-block; }
-      /* line 450, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 451, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem {
         float: left;
         clear: none; }
-        /* line 454, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+        /* line 455, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
         .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
           margin: 0 0 -8px 0;
           padding-bottom: 16px; }
-    /* line 460, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 461, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmRootLink {
       border-bottom: 4px solid transparent; }
-    /* line 463, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 464, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
     .RadMenu.RadMenu_WSMA .rmRootLink:hover,
     .RadMenu.RadMenu_WSMA .rmRootLink:focus,
     .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
       border-bottom: 4px solid #4bc8b6; }
-    /* line 471, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 472, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmSlide {
       margin-top: 8px; }
-      /* line 474, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 475, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
         margin: 0; }
-      /* line 478, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 479, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
         float: none;
         display: block; }
-      /* line 483, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 484, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmSlide .rmLink {
         margin: 0; }
-    /* line 488, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 489, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
       display: none; }
-    /* line 493, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 494, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rsmTwoLevels {
       /*Standard Width*/
       min-width: 1170px !important; }
-    /* line 523, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 524, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink {
       font-weight: 400 !important;
       padding-bottom: 0px;
       padding-top: 0px; }
-    /* line 533, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 534, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus,
     .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover,
     .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active,
@@ -2139,57 +2140,57 @@ ol {
 .no-mqs .RadMenu.RadMenu_WSMA {
   float: right;
   /* Make sure mega menus with two levels are an adequate width */ }
-  /* line 444, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 445, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmItem {
     white-space: nowrap; }
-  /* line 447, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 448, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup {
     width: auto;
     display: inline-block; }
-    /* line 450, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 451, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem {
       float: left;
       clear: none; }
-      /* line 454, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+      /* line 455, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
         margin: 0 0 -8px 0;
         padding-bottom: 16px; }
-  /* line 460, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 461, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink {
     border-bottom: 4px solid transparent; }
-  /* line 463, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 464, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmSelected,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmExpanded,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:hover,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rmRootLink.rmFocused {
     border-bottom: 4px solid #4bc8b6; }
-  /* line 471, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 472, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmSlide {
     margin-top: 8px; }
-    /* line 474, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 475, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmGroup {
       margin: 0; }
-    /* line 478, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 479, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmItem {
       float: none;
       display: block; }
-    /* line 483, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+    /* line 484, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
     .no-mqs .RadMenu.RadMenu_WSMA .rmSlide .rmLink {
       margin: 0; }
-  /* line 488, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 489, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rmToggle, .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
     display: none; }
-  /* line 493, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 494, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rsmTwoLevels {
     /*Standard Width*/
     min-width: 1170px !important; }
-  /* line 523, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 524, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink {
     font-weight: 400 !important;
     padding-bottom: 0px;
     padding-top: 0px; }
-  /* line 533, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
+  /* line 534, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:hover, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:active, .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel1 > .rsmItem > .rsmLink:focus,
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:hover,
   .no-mqs .RadMenu.RadMenu_WSMA .rsmLevel2 > .rsmItem > .rsmLink:active,
