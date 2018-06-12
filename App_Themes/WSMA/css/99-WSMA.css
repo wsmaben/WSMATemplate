@@ -530,14 +530,14 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   max-width: 250px; }
 
 @media (min-width: 768px) {
-  /* line 224, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 225, ../sass/NaturalHeritageSites/_WSMA.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
     background: transparent url("images/ResponsiveHeaderSprite.png") 0 -100px no-repeat !important; } }
 /* line 92, ../sass/_breakpoint.scss */
 .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
   background: transparent url("images/ResponsiveHeaderSprite.png") 0 -100px no-repeat !important; }
 
-/* line 233, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 235, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Spotlight .SectionLabel,
 .Spotlight h4 {
   display: block;
@@ -545,25 +545,25 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   padding: 15px 0 10px 0;
   font-size: 160%;
   font-weight: normal; }
-  /* line 240, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 242, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Spotlight .SectionLabel:after,
   .Spotlight h4:after {
     width: 25%; }
 
-/* line 247, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 249, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Spotlight {
   margin-bottom: 20px; }
-  /* line 256, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 258, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Spotlight p {
     padding: 0 20px 60px 20px;
     position: relative; }
-  /* line 263, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 265, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Spotlight a {
     text-decoration: none; }
-  /* line 264, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 266, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Spotlight img {
     margin-bottom: 15px; }
-  /* line 265, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 267, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Spotlight .spLnk {
     background: none !important;
     font-weight: bold;
@@ -577,7 +577,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
     right: 0;
     margin-bottom: 60px; }
 
-/* line 285, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 287, ../sass/NaturalHeritageSites/_WSMA.scss */
 .row.row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -585,34 +585,34 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap; }
-  /* line 292, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 294, ../sass/NaturalHeritageSites/_WSMA.scss */
   .row.row-eq-height > div {
     padding-bottom: 30px; }
-  /* line 295, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 297, ../sass/NaturalHeritageSites/_WSMA.scss */
   .row.row-eq-height .WebPartZone {
     height: 100%; }
-  /* line 298, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 300, ../sass/NaturalHeritageSites/_WSMA.scss */
   .row.row-eq-height > div > .ContentItemContainer {
     height: 100%;
     box-shadow: 1px 1px 28px 3px #e3e3e3; }
-    /* line 301, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 303, ../sass/NaturalHeritageSites/_WSMA.scss */
     .row.row-eq-height > div > .ContentItemContainer:hover {
       box-shadow: 1px 1px 28px 3px #cccccc; }
-    /* line 304, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 306, ../sass/NaturalHeritageSites/_WSMA.scss */
     .row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel {
       height: 100%; }
-      /* line 306, ../sass/NaturalHeritageSites/_WSMA.scss */
+      /* line 308, ../sass/NaturalHeritageSites/_WSMA.scss */
       .row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel .WebPartZone {
         height: 100%; }
 
 @media (min-width: 768px) {
-  /* line 316, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 318, ../sass/NaturalHeritageSites/_WSMA.scss */
   .TestimonialArea {
     width: 70%; } }
 /* line 92, ../sass/_breakpoint.scss */
 .no-mqs .TestimonialArea {
   width: 70%; }
-/* line 320, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 322, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea img {
   object-fit: cover;
   width: 150px;
@@ -620,7 +620,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   border-radius: 50% 50%;
   margin: 0 auto;
   display: block; }
-/* line 328, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 330, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea blockquote:before {
   content: '';
   display: block;
@@ -631,7 +631,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   right: 20%;
   border-top: 2px dotted #6c8494;
   border-right: 2px dotted #6c8494; }
-/* line 339, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 341, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea blockquote {
   background: #fff;
   position: relative;
@@ -639,75 +639,75 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   padding: 20px 3%;
   margin: 25px auto 0 auto;
   text-align: center; }
-  /* line 346, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 348, ../sass/NaturalHeritageSites/_WSMA.scss */
   .TestimonialArea blockquote em {
     display: block;
     margin-top: 1em; }
 
 @media (min-width: 768px) {
-  /* line 357, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 359, ../sass/NaturalHeritageSites/_WSMA.scss */
   .UpcomingEventsHome ul.RelatedItemsHorizontal li,
   .UpcomingEventsHome .RelatedItemsHorizontal ul.rrItemsList li {
     width: 225px;
     height: auto;
     margin: 9px 2%; }
-  /* line 363, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 365, ../sass/NaturalHeritageSites/_WSMA.scss */
   .UpcomingEventsHome a.ImageLink img {
     width: 225px !important;
     height: auto !important;
     display: block; } }
-/* line 357, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 359, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .UpcomingEventsHome ul.RelatedItemsHorizontal li,
 .no-mqs .UpcomingEventsHome .RelatedItemsHorizontal ul.rrItemsList li {
   width: 225px;
   height: auto;
   margin: 9px 2%; }
-/* line 363, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 365, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .UpcomingEventsHome a.ImageLink img {
   width: 225px !important;
   height: auto !important;
   display: block; }
-/* line 369, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 371, ../sass/NaturalHeritageSites/_WSMA.scss */
 .UpcomingEventsHome a.LabelLink {
   text-decoration: none;
   font-weight: bold;
   color: #36424a;
   line-break: normal; }
 
-/* line 379, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 381, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ProgressTracker2 {
   text-align: center; }
-  /* line 383, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 385, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .ProgressTrackerPanel .label, .ProgressTracker2 .ProgressTrackerPanel a {
     color: #313E48; }
-  /* line 385, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 387, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .SuccessfulMessage {
     width: 95%;
     margin: 0 auto;
     background-color: #00837e !important;
     font-weight: bold;
     margin-bottom: 8px; }
-  /* line 392, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 394, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .ProgressBar {
     border-radius: 0;
     background-color: black !important;
     height: 25px; }
-    /* line 396, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 398, ../sass/NaturalHeritageSites/_WSMA.scss */
     .ProgressTracker2 .ProgressBar span {
       background-color: #00837e !important;
       border-radius: 0; }
-  /* line 401, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 403, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 div p {
     color: #313E48 !important; }
 
-/* line 405, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 407, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 .ProgressTrackerPanel {
   background-color: transparent; }
-/* line 408, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 410, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 .inset {
   text-align: left;
   font-size: 125%; }
-/* line 412, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 414, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 span.count {
   color: #313E48; }
   /* line 48, ../sass/NaturalHeritageSites/_WSMA.scss */
@@ -726,48 +726,48 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
     padding-bottom: 15px; }
 
 /* Search Results */
-/* line 421, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 423, ../sass/NaturalHeritageSites/_WSMA.scss */
 .SearchResultSummary .ListItemTitle a {
   background: none !important; }
 
 /* RadStrip Tabs */
-/* line 426, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 428, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip.RadTabStrip_MetroTouch {
   background: #36424a;
   padding: 10px 10px 0 10px !important;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
-/* line 433, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 435, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected {
   background-color: #fff !important;
   border-color: #fff !important;
   color: #36424a !important; }
 
-/* line 438, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 440, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip_MetroTouch .rtsLevel1 .rtsLink {
   background-color: #36424a !important;
   border-color: #36424a !important; }
 
-/* line 442, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 444, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip_MetroTouch .rtsLink {
   color: #fff !important; }
 
-/* line 445, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 447, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStripTop_MetroTouch .rtsLevel1 {
   border-bottom: none !important; }
 
-/* line 447, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 449, ../sass/NaturalHeritageSites/_WSMA.scss */
 h2, .h2, .PanelHead.Distinguish,
 .TitleBarCaption, div.PanelTitle,
 .panel-heading.Distinguish {
   border: none !important; }
 
-/* line 454, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 456, ../sass/NaturalHeritageSites/_WSMA.scss */
 .CalloutPart2 {
   background-color: #f0edf2;
   text-align: center; }
-  /* line 457, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 459, ../sass/NaturalHeritageSites/_WSMA.scss */
   .CalloutPart2 .PanelFieldValue {
     text-align: center; }
   /* line 8, ../sass/NaturalHeritageSites/_WSMA.scss */
@@ -779,21 +779,21 @@ h2, .h2, .PanelHead.Distinguish,
     margin: 5px auto 0 auto;
     border-bottom: 2px solid white; }
 
-/* line 465, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 467, ../sass/NaturalHeritageSites/_WSMA.scss */
 .AsiInformation, .AsiSuccess, .AsiWarning,
 .AsiError, .AsiValidation, .AsiValidationSummary,
 .AsiNeutral {
   border: none; }
 
-/* line 471, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 473, ../sass/NaturalHeritageSites/_WSMA.scss */
 .SelectedItem a, .ProxyPanelContact a {
   color: #fff !important; }
 
-/* line 475, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 477, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadMenu .rmGroup .rmText {
   padding: 0 0 0 5px !important; }
 
-/* line 479, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 481, ../sass/NaturalHeritageSites/_WSMA.scss */
 .rmRootGroup > .rmItem {
   padding-bottom: 23px;
   border-bottom: 5px solid #4bc8b6; }
@@ -804,7 +804,7 @@ h2, .h2, .PanelHead.Distinguish,
 /*
 /**************************************/
 @media (min-width: 768px) {
-  /* line 492, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 494, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .breadcrumb-obo-container {
     height: 155px;
     background-image: url(images/Banner2.jpg);
@@ -813,50 +813,50 @@ h2, .h2, .PanelHead.Distinguish,
     background-position: left;
     margin-bottom: 25px;
     margin-top: 120px; }
-    /* line 500, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
     .Wrapper-HomePage .body-container .breadcrumb-obo-container {
       display: none;
       background-image: none; }
-  /* line 506, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 508, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .breadcrumb {
     display: block;
     line-height: 45px; }
-    /* line 511, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 513, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .breadcrumb .PageTitle {
       color: white;
       font-size: 40px;
       font-weight: 300;
       margin-top: 60px; }
-    /* line 517, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 519, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .breadcrumb a, .body-container .breadcrumb span {
       font-size: 11px;
       font-weight: 300;
       color: white; }
-      /* line 521, ../sass/NaturalHeritageSites/_WSMA.scss */
+      /* line 523, ../sass/NaturalHeritageSites/_WSMA.scss */
       .body-container .breadcrumb a:visited, .body-container .breadcrumb span:visited {
         color: white; }
-  /* line 526, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 528, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .hero2banner svg {
     height: 314px;
     float: right; }
-    /* line 529, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2banner svg .cls-1 {
       fill: url(#linear-gradient); }
-    /* line 532, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2banner svg .cls-2 {
       mask: url(#mask); }
-  /* line 541, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 543, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .hero2after {
     display: block;
     overflow: hidden;
     max-height: 314px; }
-    /* line 545, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 547, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2after span[id$="_BreadCrumb"] {
       position: absolute; }
-    /* line 548, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2after .hero2banner {
       float: right; } }
-/* line 492, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 494, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .breadcrumb-obo-container {
   height: 155px;
   background-image: url(images/Banner2.jpg);
@@ -865,61 +865,61 @@ h2, .h2, .PanelHead.Distinguish,
   background-position: left;
   margin-bottom: 25px;
   margin-top: 120px; }
-  /* line 500, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Wrapper-HomePage .no-mqs .body-container .breadcrumb-obo-container {
     display: none;
     background-image: none; }
-/* line 506, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 508, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .breadcrumb {
   display: block;
   line-height: 45px; }
-  /* line 511, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 513, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .breadcrumb .PageTitle {
     color: white;
     font-size: 40px;
     font-weight: 300;
     margin-top: 60px; }
-  /* line 517, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 519, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .breadcrumb a, .no-mqs .body-container .breadcrumb span {
     font-size: 11px;
     font-weight: 300;
     color: white; }
-    /* line 521, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 523, ../sass/NaturalHeritageSites/_WSMA.scss */
     .no-mqs .body-container .breadcrumb a:visited, .no-mqs .body-container .breadcrumb span:visited {
       color: white; }
-/* line 526, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 528, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .hero2banner svg {
   height: 314px;
   float: right; }
-  /* line 529, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2banner svg .cls-1 {
     fill: url(#linear-gradient); }
-  /* line 532, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2banner svg .cls-2 {
     mask: url(#mask); }
-/* line 541, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 543, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .hero2after {
   display: block;
   overflow: hidden;
   max-height: 314px; }
-  /* line 545, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 547, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2after span[id$="_BreadCrumb"] {
     position: absolute; }
-  /* line 548, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2after .hero2banner {
     float: right; }
 
 /****************************************
 /** imgBanner
 /***************************************/
-/* line 561, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 563, ../sass/NaturalHeritageSites/_WSMA.scss */
 .imgBanner .breadcrumb-obo-container {
   background-color: #313e48;
   background-image: none; }
-  /* line 564, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 566, ../sass/NaturalHeritageSites/_WSMA.scss */
   .imgBanner .breadcrumb-obo-container .attrib {
     display: block; }
-  /* line 567, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 569, ../sass/NaturalHeritageSites/_WSMA.scss */
   .imgBanner .breadcrumb-obo-container .secondaryHero {
     font-size: 190%;
     line-height: 35px;
@@ -927,39 +927,39 @@ h2, .h2, .PanelHead.Distinguish,
     margin-left: 0;
     border-left: 1px solid #4bc8b6; }
   @media (min-width: 768px) {
-    /* line 561, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 563, ../sass/NaturalHeritageSites/_WSMA.scss */
     .imgBanner .breadcrumb-obo-container {
       height: 314px; }
-      /* line 576, ../sass/NaturalHeritageSites/_WSMA.scss */
+      /* line 578, ../sass/NaturalHeritageSites/_WSMA.scss */
       .imgBanner .breadcrumb-obo-container .inner-banner {
         color: white; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .imgBanner .breadcrumb-obo-container {
     height: 314px; }
-    /* line 576, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 578, ../sass/NaturalHeritageSites/_WSMA.scss */
     .no-mqs .imgBanner .breadcrumb-obo-container .inner-banner {
       color: white; }
 
-/* line 588, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 590, ../sass/NaturalHeritageSites/_WSMA.scss */
 .hero2banner img {
   mask: url(#mask); }
 
 /***********************************
 / Footer Nav
 /**********************************/
-/* line 596, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 598, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul, #ft li {
   list-style: none;
   padding-left: 0; }
 
-/* line 601, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 603, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul li {
   border-bottom: 1px solid #9fe6d9;
   display: inline-block;
   font-size: 95%;
   line-height: 30px; }
 
-/* line 608, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 610, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul ul li {
   border-bottom: none;
   font-weight: 300;
@@ -970,11 +970,11 @@ h2, .h2, .PanelHead.Distinguish,
 / Panels
 /
 /**********************************/
-/* line 620, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 622, ../sass/NaturalHeritageSites/_WSMA.scss */
 .panel {
   border: none; }
 
-/* line 624, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 626, ../sass/NaturalHeritageSites/_WSMA.scss */
 .PanelField {
   width: unset; }
 
@@ -983,10 +983,10 @@ h2, .h2, .PanelHead.Distinguish,
 / Aux Nav
 /
 /**********************************/
-/* line 634, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 636, ../sass/NaturalHeritageSites/_WSMA.scss */
 .aux-nav {
   padding: 20px; }
-  /* line 636, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 638, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav h1 {
     color: #313E48;
     font-size: 145%;
@@ -995,13 +995,13 @@ h2, .h2, .PanelHead.Distinguish,
     border-bottom: 5px solid #d0cfcb;
     line-height: initial;
     width: 100%; }
-  /* line 645, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 647, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav a {
     color: #36424a;
     border-bottom: 1px solid #4bc8b6;
     padding: 8px 0;
     display: block; }
-    /* line 650, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 652, ../sass/NaturalHeritageSites/_WSMA.scss */
     .aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active {
       color: #a62d38;
       text-decoration: underline;
@@ -1012,25 +1012,25 @@ h2, .h2, .PanelHead.Distinguish,
 / News & Events
 /
 /**********************************/
-/* line 665, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 667, ../sass/NaturalHeritageSites/_WSMA.scss */
 .NewsFullWidth {
   background-color: #f5f7f8;
   padding: 60px 0; }
 
-/* line 672, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 674, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody img {
   margin: 0 0 15px 15px; }
-/* line 676, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 678, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h2 {
   color: #a62d38;
   font-weight: 400;
   line-height: 33px; }
-/* line 681, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 683, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h5 {
   margin-top: 0; }
 
 @media (min-width: 768px) {
-  /* line 689, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 691, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1040,26 +1040,26 @@ h2, .h2, .PanelHead.Distinguish,
     max-height: 260px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 690, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 692, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 702, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 704, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-    /* line 707, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 709, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 712, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 714, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 715, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 717, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 689, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 691, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs #NewsDisplay .newsBody {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1069,27 +1069,27 @@ h2, .h2, .PanelHead.Distinguish,
   max-height: 260px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
-  /* line 690, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 692, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .newsBody H2 {
     color: #36424a; }
-/* line 702, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 704, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
   font-weight: 500; }
-  /* line 707, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 709, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore a {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-  /* line 712, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 714, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore hr {
     margin: 30px 0; }
-  /* line 715, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 717, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
-  /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 723, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1099,46 +1099,46 @@ h2, .h2, .PanelHead.Distinguish,
     max-height: 475px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 722, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 724, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 734, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 736, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-    /* line 739, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 741, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 744, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 746, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 747, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 749, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 755, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .encoded {
   padding-bottom: 30px;
   border-bottom: 1px solid #d0cfcb;
   margin-bottom: 30px; }
-/* line 758, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 760, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .newsBody {
   max-height: 100%; }
-  /* line 759, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 761, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 #NewsDisplay .newsBody .shrink {
     display: none; }
-  /* line 763, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 765, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 #NewsDisplay .newsBody img {
     border-bottom: 5px solid #a62d38;
     margin: 0 0 15px 0; }
-/* line 768, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 770, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div {
   width: 100%;
   padding: 0 0 15px 0; }
 
-/* line 775, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 777, ../sass/NaturalHeritageSites/_WSMA.scss */
 #BaseDirectory {
   border: 1px solid #d0cfcb;
   margin-bottom: 30px; }
@@ -1148,7 +1148,7 @@ h2, .h2, .PanelHead.Distinguish,
 / Misc
 /
 /**********************************/
-/* line 791, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 793, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Hidden {
   display: none; }
 
@@ -1157,12 +1157,12 @@ h2, .h2, .PanelHead.Distinguish,
 / News Collapse
 /
 /**********************************/
-/* line 805, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 807, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip {
   display: block;
   height: 100%; }
 
-/* line 810, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 812, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -1170,7 +1170,7 @@ h2, .h2, .PanelHead.Distinguish,
   word-wrap: normal;
   max-width: 100%; }
 
-/* line 818, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 820, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip,
 .ellip-line {
   position: relative;
@@ -1431,15 +1431,13 @@ ol {
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs #masterHeaderImage {
     margin-top: 0px; }
-  @media (min-width: 1200px) {
+  @media (max-width: 991px) {
     /* line 38, ../sass/shared/_masterpage_styles.scss */
     #masterHeaderImage {
-      margin-top: 20px; } }
-  /* line 92, ../sass/_breakpoint.scss */
-  .no-mqs #masterHeaderImage {
-    margin-top: 20px; }
+      margin-top: 20px;
+      width: 200px; } }
 
-/* line 149, ../sass/shared/_masterpage_styles.scss */
+/* line 153, ../sass/shared/_masterpage_styles.scss */
 #masterDonorHeaderImage {
   background-image: url("images/DonorHeaderLogo.png");
   background-repeat: no-repeat;
@@ -1450,7 +1448,7 @@ ol {
   overflow: hidden;
   float: left; }
   @media (min-width: 768px) {
-    /* line 149, ../sass/shared/_masterpage_styles.scss */
+    /* line 153, ../sass/shared/_masterpage_styles.scss */
     #masterDonorHeaderImage {
       width: 169px; } }
   /* line 92, ../sass/_breakpoint.scss */
@@ -1458,37 +1456,37 @@ ol {
     width: 169px; }
 
 /* Used in the donor site header logo content area */
-/* line 181, ../sass/shared/_masterpage_styles.scss */
+/* line 185, ../sass/shared/_masterpage_styles.scss */
 #masterHeaderActionArea a {
   display: block;
   text-align: center; }
 
 /* On Behalf Of with target set */
-/* line 187, ../sass/shared/_masterpage_styles.scss */
+/* line 191, ../sass/shared/_masterpage_styles.scss */
 .ProxyPanelContact {
   background-color: #36424a; }
-  /* line 190, ../sass/shared/_masterpage_styles.scss */
+  /* line 194, ../sass/shared/_masterpage_styles.scss */
   .ProxyPanelContact, .ProxyPanelContact .obo-label {
     color: #fff; }
-  /* line 193, ../sass/shared/_masterpage_styles.scss */
+  /* line 197, ../sass/shared/_masterpage_styles.scss */
   .ProxyPanelContact a {
     color: #ebb4b9; }
 
 /* Sub (Left) Navigation
    ========================================================================== */
-/* line 201, ../sass/shared/_masterpage_styles.scss */
+/* line 205, ../sass/shared/_masterpage_styles.scss */
 #pagesubnav {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
 
-/* line 207, ../sass/shared/_masterpage_styles.scss */
+/* line 211, ../sass/shared/_masterpage_styles.scss */
 .SubNavPanelHead {
   background-color: #f0edf2;
   color: #313E48;
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-weight: 300; }
 
-/* line 215, ../sass/shared/_masterpage_styles.scss */
+/* line 219, ../sass/shared/_masterpage_styles.scss */
 .SubNavigationSeparator {
   border-width: 1px 0 0 0;
   border-style: solid;
@@ -1743,11 +1741,11 @@ ol {
   /* line 40, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .navbar-collapse.collapse {
     float: right;
-    margin-top: 15px; } }
+    margin-top: 45px; } }
 /* line 92, ../sass/_breakpoint.scss */
 .no-mqs .navbar-collapse.collapse {
   float: right;
-  margin-top: 15px; }
+  margin-top: 45px; }
 
 /* line 47, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
 .auth-link-container {
@@ -1962,7 +1960,7 @@ ol {
     @media (max-width: 991px) {
       /* line 273, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
       .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        font-size: 130%; } }
+        font-size: 100%; } }
   /* line 291, ../sass/NaturalHeritageSites/navigation/_primary-responsive.scss */
   .RadMenu.RadMenu_WSMA .rmToggle, .RadMenu.RadMenu_WSMA .rmRootGroup .rmRootLink .rmToggle {
     /* a clickable target to expand multi-level navigaiton */
@@ -2259,7 +2257,7 @@ ol {
   .RadTreeView.RadTreeView_WSMA .rtIn,
   .RadTreeView.RadTreeView_WSMA .rtHover .rtIn,
   .RadTreeView.RadTreeView_WSMA .rtSelected .rtIn {
-    padding: 10px 0;
+    padding: 10px 10px;
     border: none; }
   /* line 45, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
   .RadTreeView.RadTreeView_WSMA .rtSelected > a.rtIn,
@@ -2274,18 +2272,18 @@ ol {
     width: 100%; }
   /* line 62, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
   .RadTreeView.RadTreeView_WSMA .rtUL .rtUL {
-    padding-left: 0; }
+    padding-left: 10px; }
   /* line 66, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
   .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI {
     /* add a separator border to the first-level sub-nav items only */ }
     /* line 71, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
     .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI .rtLI .rtIn {
       /* children should have less padding */
-      padding: 5px 0; }
+      padding: 5px 10px; }
     /* line 75, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
     .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI > .rtUL {
       /* this makes the children section padding even */
-      padding-right: 0;
+      padding-right: 10px;
       padding-bottom: 10px; }
   /* line 82, ../sass/NaturalHeritageSites/navigation/_secondary-responsive.scss */
   .RadTreeView.RadTreeView_WSMA > .rtUL {
@@ -2448,11 +2446,44 @@ ol {
 /* line 90, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .no-mqs .header-container .nav-auxiliary .NavigationLink {
   padding: 0 20px; }
+@media (max-width: 991px) {
+  /* line 96, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  .header-container .nav-auxiliary .header-social .SocialSprite, .header-container .nav-auxiliary .auth-link {
+    padding: 5px 7px 5px 0;
+    line-height: 2.1;
+    color: #313E48; }
+    /* line 102, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    .Wrapper-HomePage .header-container .nav-auxiliary .header-social .SocialSprite,
+    .Wrapper-HomePage .header-container .nav-auxiliary .auth-link {
+      color: #fff; }
+  /* line 106, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  .header-container .nav-auxiliary .NavigationListItem {
+    display: inline-flex;
+    color: #313E48;
+    border-left: 1px solid #313E48; }
+    /* line 110, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    .Wrapper-HomePage .header-container .nav-auxiliary .NavigationListItem {
+      color: #fff;
+      border-left: 1px solid white; }
+    /* line 114, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    .header-container .nav-auxiliary .NavigationListItem.btn {
+      background-color: #a62d38;
+      font-size: 85% !important;
+      border: none; }
+      /* line 118, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      .header-container .nav-auxiliary .NavigationListItem.btn .NavigationLink {
+        color: #fff; }
+  /* line 123, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  .header-container .nav-auxiliary .auth-link-container-sm {
+    line-height: 2.1; }
+  /* line 127, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  .header-container .nav-auxiliary .NavigationLink {
+    padding: 0 7px; } }
 @media (max-width: 767px) {
   /* line 41, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .header-container .nav-auxiliary {
     margin-top: 5px; } }
-/* line 99, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 136, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .header-container .nav-auxiliary .nav-image {
   vertical-align: baseline;
   padding-right: 8px; }
@@ -2462,28 +2493,28 @@ ol {
 /* By default, put parentheses around the cart item count.
  * This is overwritten when the class "nav-aux-cart" is applied.
  */
-/* line 111, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 148, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .cartCenter span:before {
   content: '('; }
-/* line 112, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 149, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .cartCenter span:after {
   content: ')'; }
 
 /* Auxiliary toggle buttons
    ========================================================================== */
 /* Toggles that display on x-small screens to display the primary nav and search */
-/* line 118, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 155, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .navbar-toggle {
   float: none;
   padding: 5px; }
-  /* line 122, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 159, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .navbar-toggle .icon-bar {
     height: 3px;
     border-radius: 0; }
-    /* line 125, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 162, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .navbar-toggle .icon-bar + .icon-bar {
       margin-top: 5px; }
-  /* line 129, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 166, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .navbar-toggle .icon-search {
     display: inline-block;
     float: left;
@@ -2496,10 +2527,10 @@ ol {
 /* Auxiliary button links
    ========================================================================== */
 /* These links are styled like the toggles (search & hamburger buttons) */
-/* line 141, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 178, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .nav-auxiliary .nav-aux-button {
   /* Cart Item Flag indicating how many items are in your cart */ }
-  /* line 142, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 179, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button .NavigationLink {
     /* This makes the link look like the toggle buttons */
     background-color: #36424a;
@@ -2509,17 +2540,17 @@ ol {
     margin-bottom: 3.5px;
     border: 1px solid transparent;
     border-radius: 0px; }
-    /* line 151, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 188, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button .NavigationLink:hover, .nav-auxiliary .nav-aux-button .NavigationLink:focus {
       background-color: #6c6f70; }
-    /* line 154, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 191, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button .NavigationLink:active {
       background-color: #36424a; }
-  /* line 158, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 195, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.NavigationListItem {
     position: relative;
     /* this is required for the cart indicator placement */ }
-  /* line 162, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 199, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text, .nav-auxiliary .nav-aux-button.nav-aux-cart .nav-text {
     /* hide the cart text on small devices */
     display: inline-block;
@@ -2529,38 +2560,38 @@ ol {
     width: 22px;
     height: 19px;
     padding-left: 22px; }
-  /* line 173, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 210, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
     background: transparent url("images/ResponsiveHeaderSprite.png") 0 -125px no-repeat; }
   @media (min-width: 768px) {
-    /* line 177, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 214, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-account .NavigationLink {
       background: none;
       padding: 0; }
-    /* line 182, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 219, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-account a:hover .nav-text, .nav-auxiliary .nav-aux-button.nav-aux-account a:focus .nav-text {
       text-decoration: underline; }
-    /* line 185, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 222, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
       color: #313E48;
       padding: 0 0 0 30px;
       width: auto; } }
-  /* line 177, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 214, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account .NavigationLink {
     background: none;
     padding: 0; }
-  /* line 182, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 219, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account a:hover .nav-text, .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account a:focus .nav-text {
     text-decoration: underline; }
-  /* line 185, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 222, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .no-mqs .nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
     color: #313E48;
     padding: 0 0 0 30px;
     width: auto; }
-  /* line 192, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 229, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-cart .nav-text {
     background: transparent url("images/ResponsiveHeaderSprite.png") 0 -75px no-repeat; }
-  /* line 198, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 235, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-cart .cartFull {
     /* left postion is padding plus placement */
     position: absolute;
@@ -2569,7 +2600,7 @@ ol {
     text-align: center;
     line-height: 1;
     width: 1.6em; }
-  /* line 205, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 242, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .nav-auxiliary .nav-aux-button.nav-aux-cart .cartCenter {
     color: #36424a;
     background-color: #00837e;
@@ -2579,47 +2610,47 @@ ol {
     padding: 0 2px 1px;
     -webkit-box-shadow: -1px 1px 0 rgba(34, 34, 34, 0.6);
     box-shadow: -1px 1px 0 rgba(34, 34, 34, 0.6); }
-    /* line 207, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 244, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-cart .cartCenter span:before, .nav-auxiliary .nav-aux-button.nav-aux-cart .cartCenter span:after {
       /* Clear the parentheses put around the item count by default */
       content: none; }
   @media (max-width: 767px) {
-    /* line 214, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 251, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-cart .cartFull {
       /* This is the flag indicating how many items are in your cart */
       left: 7.5px;
       /*($navbar-padding-horizontal + 9 + 5)*/
       top: 2px; }
-    /* line 219, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 256, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .nav-auxiliary .nav-aux-button.nav-aux-cart .cartCenter {
       background-color: #00837e;
       color: #36424a; } }
 
-/* line 230, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 267, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .UtilityAccountArea {
   float: left;
   margin-top: 3px; }
-  /* line 233, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 270, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .UtilityAccountArea .account-toggle .nav-text {
     vertical-align: middle; }
 
-/* line 238, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 275, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .UtilityNavigation .account-menu > li > a,
 .UtilityNavigation .account-menu > li > a:hover,
 .UtilityNavigation .account-menu > li > a:visited,
 .UtilityNavigation .account-menu > li > a:active {
   color: #313E48; }
 
-/* line 245, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 282, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .account-menu .profile-picture-wrapper img {
   border-radius: 0;
   width: 31px; }
 @media (max-width: 767px) {
-  /* line 244, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 281, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .account-menu {
     margin-top: -8px; } }
 
-/* line 256, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 293, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
   background-color: rgba(255, 255, 255, 0.9);
   width: 34px;
@@ -2627,7 +2658,7 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
   border-radius: 0;
   margin-left: -5px; }
 
-/* line 262, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 299, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .obo-toggle, .obo-toggle:hover, .obo-toggle:focus {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0;
@@ -2635,51 +2666,51 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
   width: 34px;
   height: 31px; }
   @media (min-width: 768px) {
-    /* line 262, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 299, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .obo-toggle, .obo-toggle:hover, .obo-toggle:focus {
       margin-top: 2px; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .obo-toggle, .no-mqs .obo-toggle:hover, .no-mqs .obo-toggle:focus {
     margin-top: 2px; }
 
-/* line 272, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 309, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .obo-toggle.on, .ste-toggle.on {
   background-color: #36424a; }
 
-/* line 276, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 313, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .OnBehalfOfContainer {
   width: 100%; }
 
-/* line 278, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 315, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .search-container-sm {
   margin-top: 3.5px;
   margin-bottom: 3.5px; }
 
-/* line 282, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+/* line 319, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
 .header-search {
   padding: 20px 15px 8px 15px;
   /* Search field is used as toggle button *and* field on larger devices */ }
-  /* line 284, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 321, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .header-search > .header-search {
     padding: 0;
     /* don't double the padding */ }
   @media (min-width: 768px) {
-    /* line 282, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 319, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .header-search {
       padding: 0 15px; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .header-search {
     padding: 0 15px; }
-  /* line 291, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 328, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .header-search .search-field {
     height: 32px; }
     @media (max-width: 767px) {
-      /* line 291, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      /* line 328, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .header-search .search-field {
         width: 100%;
         background-color: #ffffff; } }
     @media (min-width: 768px) {
-      /* line 291, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      /* line 328, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .header-search .search-field {
         padding: 0 0 0 7px;
         width: 25px;
@@ -2694,15 +2725,15 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
         transition: width;
         -webkit-transition-duration: 1s;
         transition-duration: 1s; }
-        /* line 302, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+        /* line 339, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
         .Wrapper-HomePage .header-search .search-field {
           background-position: 7px 7px !important; }
-        /* line 310, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+        /* line 347, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
         .header-search .search-field:hover {
           cursor: pointer;
           background-color: #6c6f70;
           background-position: 7px -17px !important; }
-        /* line 315, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+        /* line 352, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
         .header-search .search-field:focus {
           background-color: #6c6f70;
           background-position: 7px -17px !important;
@@ -2722,15 +2753,15 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
       transition: width;
       -webkit-transition-duration: 1s;
       transition-duration: 1s; }
-      /* line 302, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      /* line 339, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .Wrapper-HomePage .no-mqs .header-search .search-field {
         background-position: 7px 7px !important; }
-      /* line 310, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      /* line 347, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .no-mqs .header-search .search-field:hover {
         cursor: pointer;
         background-color: #6c6f70;
         background-position: 7px -17px !important; }
-      /* line 315, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+      /* line 352, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
       .no-mqs .header-search .search-field:focus {
         background-color: #6c6f70;
         background-position: 7px -17px !important;
@@ -2766,15 +2797,15 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
   display: none !important; }
 
 @media (max-width: 767px) {
-  /* line 347, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 384, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .searchbar-collapse {
     margin-top: 10px;
     width: 100%; }
-    /* line 350, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+    /* line 387, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
     .searchbar-collapse .header-search {
       padding: 8px 8px 10px 10px; }
 
-  /* line 352, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
+  /* line 389, ../sass/NaturalHeritageSites/navigation/_auxiliary-responsive.scss */
   .header-container .UtilityNavigation.nav-auxiliary {
     text-align: right; } }
 /* ==========================================================================

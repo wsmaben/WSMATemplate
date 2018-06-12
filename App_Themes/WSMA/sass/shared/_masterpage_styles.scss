@@ -122,25 +122,29 @@
         //     }
         // }
     }
-    @include respond-to('large') {
+    @include respond-to('tablets and down') {
         margin-top: 20px;
-        // svg {
-        //     .cls-1 {
-        //         fill: none;
-        //         stroke: $color-wsma-dkgrey;
-        //         stroke-miterlimit: 3.86;
-        //         //stroke-width: 0.36px;
-        //     }
-        
-        //     .cls-2 {
-        //         fill: $color-wsma-dkgrey;
-        //     }
-        
-        //     .cls-3 {
-        //         fill: $color-wsma-red;
-        //     }
-        // }
+        width: 200px;
     }
+    // @include respond-to('large') {
+    //     margin-top: 20px;
+    //     // svg {
+    //     //     .cls-1 {
+    //     //         fill: none;
+    //     //         stroke: $color-wsma-dkgrey;
+    //     //         stroke-miterlimit: 3.86;
+    //     //         //stroke-width: 0.36px;
+    //     //     }
+        
+    //     //     .cls-2 {
+    //     //         fill: $color-wsma-dkgrey;
+    //     //     }
+        
+    //     //     .cls-3 {
+    //     //         fill: $color-wsma-red;
+    //     //     }
+    //     // }
+    // }
 }
 
 // Invert the logo color for home page

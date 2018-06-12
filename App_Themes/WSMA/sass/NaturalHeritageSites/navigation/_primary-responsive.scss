@@ -40,7 +40,7 @@
 .navbar-collapse.collapse {
     @include respond-to('grid large') {
         float: right;
-        margin-top: 15px;
+        margin-top: 45px;
     }
 }
 
@@ -270,7 +270,7 @@
             position: relative;
         }
 
-        > .rmItem > .rmLink  {
+        > .rmItem > .rmLink {
             //text-transform: capitalize;
             color: $navbar-default-color;
             font-family: $navbar-default-link-font-family;
@@ -283,7 +283,7 @@
                 }
             }
             @include respond-to('tablets and down') {
-                font-size: 130%;
+                font-size: 100%;
             }
         }
     }

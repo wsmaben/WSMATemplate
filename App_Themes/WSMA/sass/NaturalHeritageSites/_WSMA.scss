@@ -221,9 +221,11 @@ html.t-safari {
     max-width: 250px;
 }
 
-.nav-auxiliary .nav-aux-button.nav-aux-account .nav-text {
-    @include respond-to('grid large') {
-        background: transparent url($header-sprite-path) 0 -100px no-repeat!important;
+.nav-auxiliary {
+    .nav-aux-button.nav-aux-account .nav-text {
+        @include respond-to('grid large') {
+            background: transparent url($header-sprite-path) 0 -100px no-repeat!important;
+        }
     }
 }
 
