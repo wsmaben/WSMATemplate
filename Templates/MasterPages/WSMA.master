@@ -217,7 +217,27 @@
                                 <%-- Universal search --%>
                                 <%-- Note: on screens > 768px wide this search bar will display after the social networking link --%>
                                 <div class="header-search">
-                                    <asiweb:SimpleSearchField ID="SearchField" runat="server" AdvancedLinkVisible="false" PromptText="Keyword Search" InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" />
+                                    <!--<asiweb:SimpleSearchField ID="SearchField" runat="server" AdvancedLinkVisible="false" PromptText="Keyword Search" InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" />-->
+                                    <a href="/search"><div id="GCSEToggle" class="search-field"></div></a>
+                                    <!--<script>
+                                        jQuery('#GCSEToggle').click(function(){
+                                            jQuery('#SimpleSearchBlock').toggleClass('d-md-none');
+                                        });
+                                    </script>
+                                    <div id="SimpleSearchBlock" class="d-block d-md-none">
+                                        <script>
+                                        (function() {
+                                            var cx = '013019162679488435162:tjvkxiwevki';
+                                            var gcse = document.createElement('script');
+                                            gcse.type = 'text/javascript';
+                                            gcse.async = true;
+                                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                            var s = document.getElementsByTagName('script')[0];
+                                            s.parentNode.insertBefore(gcse, s);
+                                        })();
+                                        </script>
+                                        <gcse:search></gcse:search>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
