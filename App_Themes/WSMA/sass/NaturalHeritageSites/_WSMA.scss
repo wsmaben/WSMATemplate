@@ -498,7 +498,7 @@ h2, .h2, .PanelHead.Distinguish,
             background-repeat: no-repeat;
             background-position: left;
             margin-bottom: 25px;
-            margin-top:120px;
+            margin-top:152px;
             .Wrapper-HomePage & {
                 display: none;
                 background-image: none;
@@ -594,6 +594,10 @@ h2, .h2, .PanelHead.Distinguish,
 /***********************************
 / Footer Nav
 /**********************************/
+footer#ft {
+    float: left;
+    width: 100%;
+}
 
 #ft ul, #ft li {
     list-style: none;
@@ -827,3 +831,28 @@ h2, .h2, .PanelHead.Distinguish,
 //     height: 150px;
 //     overflow: hidden;
 // }
+
+body.newsWidget { // body.newsWidget .NewsFullWidth
+    .NewsFullWidth {
+        background-color: transparent;
+    }
+    .NewsDisplay {
+
+    }
+    .newsBody {
+        p {
+            display: none;
+        }
+        .col-md-12 {
+
+        }
+        div, div > div{
+            width: 100%;
+            padding: 0;
+            img {
+                margin: 0;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

@@ -812,7 +812,7 @@ h2, .h2, .PanelHead.Distinguish,
     background-repeat: no-repeat;
     background-position: left;
     margin-bottom: 25px;
-    margin-top: 120px; }
+    margin-top: 152px; }
     /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
     .Wrapper-HomePage .body-container .breadcrumb-obo-container {
       display: none;
@@ -864,7 +864,7 @@ h2, .h2, .PanelHead.Distinguish,
   background-repeat: no-repeat;
   background-position: left;
   margin-bottom: 25px;
-  margin-top: 120px; }
+  margin-top: 152px; }
   /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Wrapper-HomePage .no-mqs .body-container .breadcrumb-obo-container {
     display: none;
@@ -947,19 +947,24 @@ h2, .h2, .PanelHead.Distinguish,
 /***********************************
 / Footer Nav
 /**********************************/
-/* line 598, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 597, ../sass/NaturalHeritageSites/_WSMA.scss */
+footer#ft {
+  float: left;
+  width: 100%; }
+
+/* line 602, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul, #ft li {
   list-style: none;
   padding-left: 0; }
 
-/* line 603, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 607, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul li {
   border-bottom: 1px solid #9fe6d9;
   display: inline-block;
   font-size: 95%;
   line-height: 30px; }
 
-/* line 610, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 614, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul ul li {
   border-bottom: none;
   font-weight: 300;
@@ -970,11 +975,11 @@ h2, .h2, .PanelHead.Distinguish,
 / Panels
 /
 /**********************************/
-/* line 622, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 626, ../sass/NaturalHeritageSites/_WSMA.scss */
 .panel {
   border: none; }
 
-/* line 626, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 630, ../sass/NaturalHeritageSites/_WSMA.scss */
 .PanelField {
   width: unset; }
 
@@ -983,10 +988,10 @@ h2, .h2, .PanelHead.Distinguish,
 / Aux Nav
 /
 /**********************************/
-/* line 636, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 640, ../sass/NaturalHeritageSites/_WSMA.scss */
 .aux-nav {
   padding: 20px; }
-  /* line 638, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 642, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav h1 {
     color: #313E48;
     font-size: 145%;
@@ -995,13 +1000,13 @@ h2, .h2, .PanelHead.Distinguish,
     border-bottom: 5px solid #d0cfcb;
     line-height: initial;
     width: 100%; }
-  /* line 647, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 651, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav a {
     color: #36424a;
     border-bottom: 1px solid #4bc8b6;
     padding: 8px 0;
     display: block; }
-    /* line 652, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 656, ../sass/NaturalHeritageSites/_WSMA.scss */
     .aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active {
       color: #a62d38;
       text-decoration: underline;
@@ -1012,25 +1017,25 @@ h2, .h2, .PanelHead.Distinguish,
 / News & Events
 /
 /**********************************/
-/* line 667, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 671, ../sass/NaturalHeritageSites/_WSMA.scss */
 .NewsFullWidth {
   background-color: #f5f7f8;
   padding: 60px 0; }
 
-/* line 674, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 678, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody img {
   margin: 0 0 15px 15px; }
-/* line 678, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 682, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h2 {
   color: #a62d38;
   font-weight: 400;
   line-height: 33px; }
-/* line 683, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 687, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h5 {
   margin-top: 0; }
 
 @media (min-width: 768px) {
-  /* line 691, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1040,26 +1045,26 @@ h2, .h2, .PanelHead.Distinguish,
     max-height: 260px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 692, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 704, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-    /* line 709, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 714, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 717, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 691, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs #NewsDisplay .newsBody {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1069,27 +1074,27 @@ h2, .h2, .PanelHead.Distinguish,
   max-height: 260px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
-  /* line 692, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .newsBody H2 {
     color: #36424a; }
-/* line 704, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
   font-weight: 500; }
-  /* line 709, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore a {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-  /* line 714, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore hr {
     margin: 30px 0; }
-  /* line 717, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
-  /* line 723, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 727, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1099,46 +1104,46 @@ h2, .h2, .PanelHead.Distinguish,
     max-height: 475px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 724, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 728, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 736, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 740, ../sass/NaturalHeritageSites/_WSMA.scss */
   #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-    /* line 741, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 745, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 746, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 750, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 749, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
     #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 755, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 759, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .encoded {
   padding-bottom: 30px;
   border-bottom: 1px solid #d0cfcb;
   margin-bottom: 30px; }
-/* line 760, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 764, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .newsBody {
   max-height: 100%; }
-  /* line 761, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 765, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 #NewsDisplay .newsBody .shrink {
     display: none; }
-  /* line 765, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 769, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 #NewsDisplay .newsBody img {
     border-bottom: 5px solid #a62d38;
     margin: 0 0 15px 0; }
-/* line 770, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 774, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div {
   width: 100%;
   padding: 0 0 15px 0; }
 
-/* line 777, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 781, ../sass/NaturalHeritageSites/_WSMA.scss */
 #BaseDirectory {
   border: 1px solid #d0cfcb;
   margin-bottom: 30px; }
@@ -1148,7 +1153,7 @@ h2, .h2, .PanelHead.Distinguish,
 / Misc
 /
 /**********************************/
-/* line 793, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 797, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Hidden {
   display: none; }
 
@@ -1157,12 +1162,12 @@ h2, .h2, .PanelHead.Distinguish,
 / News Collapse
 /
 /**********************************/
-/* line 807, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 811, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip {
   display: block;
   height: 100%; }
 
-/* line 812, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 816, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -1170,11 +1175,26 @@ h2, .h2, .PanelHead.Distinguish,
   word-wrap: normal;
   max-width: 100%; }
 
-/* line 820, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 824, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip,
 .ellip-line {
   position: relative;
   overflow: hidden; }
+
+/* line 836, ../sass/NaturalHeritageSites/_WSMA.scss */
+body.newsWidget .NewsFullWidth {
+  background-color: transparent; }
+/* line 843, ../sass/NaturalHeritageSites/_WSMA.scss */
+body.newsWidget .newsBody p {
+  display: none; }
+/* line 849, ../sass/NaturalHeritageSites/_WSMA.scss */
+body.newsWidget .newsBody div, body.newsWidget .newsBody div > div {
+  width: 100%;
+  padding: 0; }
+  /* line 852, ../sass/NaturalHeritageSites/_WSMA.scss */
+  body.newsWidget .newsBody div img, body.newsWidget .newsBody div > div img {
+    margin: 0;
+    padding-bottom: 15px; }
 
 /* ==========================================================================
    Basic setup
@@ -1427,10 +1447,10 @@ ol {
   @media (min-width: 768px) {
     /* line 38, ../sass/shared/_masterpage_styles.scss */
     #masterHeaderImage {
-      margin-top: 0px; } }
+      margin-top: 30px; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs #masterHeaderImage {
-    margin-top: 0px; }
+    margin-top: 30px; }
   @media (max-width: 991px) {
     /* line 38, ../sass/shared/_masterpage_styles.scss */
     #masterHeaderImage {
@@ -5617,71 +5637,71 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     border-bottom: 5px solid #00837e; }
 
 @media (min-width: 768px) {
-  /* line 57, ../sass/99-WSMA.scss */
+  /* line 58, ../sass/99-WSMA.scss */
   .header-containger .carousel-caption {
     top: 170px; }
-  /* line 61, ../sass/99-WSMA.scss */
+  /* line 62, ../sass/99-WSMA.scss */
   .header-containger .UtilityNavigation {
     text-align: right;
     padding-bottom: 55px; } }
   @media (min-width: 768px) and (min-width: 1200px) {
-    /* line 61, ../sass/99-WSMA.scss */
+    /* line 62, ../sass/99-WSMA.scss */
     .header-containger .UtilityNavigation {
       padding-bottom: 0; } }
 @media (min-width: 768px) {
     /* line 92, ../sass/_breakpoint.scss */
     .no-mqs .header-containger .UtilityNavigation {
       padding-bottom: 0; }
-  /* line 71, ../sass/99-WSMA.scss */
+  /* line 72, ../sass/99-WSMA.scss */
   .header-containger .RadMenu a.rmLink {
     color: #313E48; }
-  /* line 74, ../sass/99-WSMA.scss */
+  /* line 75, ../sass/99-WSMA.scss */
   .header-containger .RadMenu a:visited {
     color: #313E48; }
-  /* line 81, ../sass/99-WSMA.scss */
+  /* line 82, ../sass/99-WSMA.scss */
   .header-containger .Wrapper-HomePage .RadMenu a.rmLink.rmRootLink {
     color: #ffffff !important; }
-  /* line 90, ../sass/99-WSMA.scss */
+  /* line 91, ../sass/99-WSMA.scss */
   .header-containger .ProgressTracker2 {
     font-size: 135%;
     width: 75%;
     margin: 0 auto; }
-  /* line 96, ../sass/99-WSMA.scss */
+  /* line 97, ../sass/99-WSMA.scss */
   .header-containger .ste-section {
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1000; } }
-/* line 57, ../sass/99-WSMA.scss */
+/* line 58, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .carousel-caption {
   top: 170px; }
-/* line 61, ../sass/99-WSMA.scss */
+/* line 62, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .UtilityNavigation {
   text-align: right;
   padding-bottom: 55px; }
   @media (min-width: 1200px) {
-    /* line 61, ../sass/99-WSMA.scss */
+    /* line 62, ../sass/99-WSMA.scss */
     .no-mqs .header-containger .UtilityNavigation {
       padding-bottom: 0; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .no-mqs .header-containger .UtilityNavigation {
     padding-bottom: 0; }
-/* line 71, ../sass/99-WSMA.scss */
+/* line 72, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .RadMenu a.rmLink {
   color: #313E48; }
-/* line 74, ../sass/99-WSMA.scss */
+/* line 75, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .RadMenu a:visited {
   color: #313E48; }
-/* line 81, ../sass/99-WSMA.scss */
+/* line 82, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .Wrapper-HomePage .RadMenu a.rmLink.rmRootLink {
   color: #ffffff !important; }
-/* line 90, ../sass/99-WSMA.scss */
+/* line 91, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .ProgressTracker2 {
   font-size: 135%;
   width: 75%;
   margin: 0 auto; }
-/* line 96, ../sass/99-WSMA.scss */
+/* line 97, ../sass/99-WSMA.scss */
 .no-mqs .header-containger .ste-section {
   display: inline-block;
   position: absolute;
@@ -5692,32 +5712,32 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 /*************************
 ***  Expander
 **************************/
-/* line 110, ../sass/99-WSMA.scss */
+/* line 111, ../sass/99-WSMA.scss */
 .expander-container .expander {
   background-color: #fafafa;
   border-bottom: 1px solid #A02A31;
   margin-bottom: 15px;
   margin-top: 25px;
   display: flex; }
-  /* line 116, ../sass/99-WSMA.scss */
+  /* line 117, ../sass/99-WSMA.scss */
   .expander-container .expander .expander-head {
     padding: 40px 35px; }
-  /* line 119, ../sass/99-WSMA.scss */
+  /* line 120, ../sass/99-WSMA.scss */
   .expander-container .expander.active {
     background-color: #fbf7f7; }
-    /* line 122, ../sass/99-WSMA.scss */
+    /* line 123, ../sass/99-WSMA.scss */
     .expander-container .expander.active .expander-switch button {
       background-image: url(images/minus.svg); }
-    /* line 130, ../sass/99-WSMA.scss */
+    /* line 131, ../sass/99-WSMA.scss */
     .expander-container .expander.active + div {
       display: block; }
-/* line 135, ../sass/99-WSMA.scss */
+/* line 136, ../sass/99-WSMA.scss */
 .expander-container .expander-body {
   display: none; }
-/* line 138, ../sass/99-WSMA.scss */
+/* line 139, ../sass/99-WSMA.scss */
 .expander-container .expander-switch {
   display: flex; }
-  /* line 140, ../sass/99-WSMA.scss */
+  /* line 141, ../sass/99-WSMA.scss */
   .expander-container .expander-switch button {
     background-image: url(images/plus.svg);
     background-position: center;
@@ -5731,17 +5751,17 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 /****************************************
 /** FullWidthFt
 /***************************************/
-/* line 159, ../sass/99-WSMA.scss */
+/* line 160, ../sass/99-WSMA.scss */
 .FullWidthFt {
   background-color: #313E48;
   padding: 30px 0 30px 0; }
-  /* line 162, ../sass/99-WSMA.scss */
+  /* line 163, ../sass/99-WSMA.scss */
   .FullWidthFt h1, .FullWidthFt h2, .FullWidthFt h3, .FullWidthFt p {
     color: #4bc8b6; }
-  /* line 165, ../sass/99-WSMA.scss */
+  /* line 166, ../sass/99-WSMA.scss */
   .FullWidthFt h1 {
     font-size: 285%; }
-  /* line 170, ../sass/99-WSMA.scss */
+  /* line 171, ../sass/99-WSMA.scss */
   .FullWidthFt .ContentItemContainer button {
     background: #36424a;
     border: 2px solid #d0cfcb;
@@ -5750,87 +5770,87 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     padding: 15px 30px;
     float: right; }
 
-/* line 184, ../sass/99-WSMA.scss */
+/* line 185, ../sass/99-WSMA.scss */
 .dkgrey {
   color: #36424a; }
 
-/* line 185, ../sass/99-WSMA.scss */
+/* line 186, ../sass/99-WSMA.scss */
 .mdgrey {
   color: #6c6f70; }
 
-/* line 186, ../sass/99-WSMA.scss */
+/* line 187, ../sass/99-WSMA.scss */
 .ltgrey {
   color: #d0cfcb; }
 
-/* line 187, ../sass/99-WSMA.scss */
+/* line 188, ../sass/99-WSMA.scss */
 .red {
   color: #a62d38; }
 
-/* line 188, ../sass/99-WSMA.scss */
+/* line 189, ../sass/99-WSMA.scss */
 .forest {
   color: #00837e; }
 
-/* line 189, ../sass/99-WSMA.scss */
+/* line 190, ../sass/99-WSMA.scss */
 .teal {
   color: #4bc8b6; }
 
-/* line 190, ../sass/99-WSMA.scss */
+/* line 191, ../sass/99-WSMA.scss */
 .ltteal {
   color: #ecf9f7; }
 
-/* line 191, ../sass/99-WSMA.scss */
+/* line 192, ../sass/99-WSMA.scss */
 .seafoam {
   color: #9fe6d9; }
 
-/* line 192, ../sass/99-WSMA.scss */
+/* line 193, ../sass/99-WSMA.scss */
 .ltseafoam {
   color: #C5F0E8; }
 
-/* line 193, ../sass/99-WSMA.scss */
+/* line 194, ../sass/99-WSMA.scss */
 .green {
   color: #8fd400; }
 
-/* line 195, ../sass/99-WSMA.scss */
+/* line 196, ../sass/99-WSMA.scss */
 .bg-dkgrey {
   background-color: #36424a;
   color: #fff; }
 
-/* line 196, ../sass/99-WSMA.scss */
+/* line 197, ../sass/99-WSMA.scss */
 .bg-mdgrey {
   background-color: #6c6f70;
   color: #fff; }
 
-/* line 197, ../sass/99-WSMA.scss */
+/* line 198, ../sass/99-WSMA.scss */
 .bg-ltgrey {
   background-color: #d0cfcb; }
 
-/* line 198, ../sass/99-WSMA.scss */
+/* line 199, ../sass/99-WSMA.scss */
 .bg-red {
   background-color: #a62d38;
   color: #fff; }
 
-/* line 199, ../sass/99-WSMA.scss */
+/* line 200, ../sass/99-WSMA.scss */
 .bg-forest {
   background-color: #00837e;
   color: #fff; }
 
-/* line 200, ../sass/99-WSMA.scss */
+/* line 201, ../sass/99-WSMA.scss */
 .bg-teal {
   background-color: #4bc8b6; }
 
-/* line 201, ../sass/99-WSMA.scss */
+/* line 202, ../sass/99-WSMA.scss */
 .bg-ltteal {
   background-color: #ecf9f7; }
 
-/* line 202, ../sass/99-WSMA.scss */
+/* line 203, ../sass/99-WSMA.scss */
 .bg-seafoam {
   background-color: #9fe6d9; }
 
-/* line 203, ../sass/99-WSMA.scss */
+/* line 204, ../sass/99-WSMA.scss */
 .bg-ltseafoam {
   background-color: #C5F0E8; }
 
-/* line 204, ../sass/99-WSMA.scss */
+/* line 205, ../sass/99-WSMA.scss */
 .bg-green {
   background-color: #8fd400; }
 

@@ -3,7 +3,6 @@
 // Core variables and mixins
 @import "breakpoint"; // Sass plugin used to generate responsive media queries
 @import "mixins";
-@import "functions";
 
 @import "NaturalHeritageSites/variables/variables_WSMA";
 // import base variables after theme variables so calculations of dependent variables
@@ -47,8 +46,6 @@
 @import "shared/panel_callouts";
 @import "shared/dashboards";
 @import "shared/svg";
-@import "mixins/breakpoints";
-@import "utilities/display";
 
 
 // #masterHeaderImage {
