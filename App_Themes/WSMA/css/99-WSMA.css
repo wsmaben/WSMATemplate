@@ -1036,7 +1036,7 @@ footer#ft {
 
 @media (min-width: 768px) {
   /* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
-  #NewsDisplay .newsBody {
+  .NewsFeed #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1046,26 +1046,26 @@ footer#ft {
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
     /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .newsBody H2 {
+    .NewsFeed #NewsDisplay .newsBody H2 {
       color: #36424a; }
   /* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
-  #NewsDisplay .readMore {
+  .NewsFeed #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
     /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore a {
+    .NewsFeed #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
     /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore hr {
+    .NewsFeed #NewsDisplay .readMore hr {
       margin: 30px 0; }
     /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore span {
+    .NewsFeed #NewsDisplay .readMore span {
       color: #a62d38; } }
 /* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
-.no-mqs #NewsDisplay .newsBody {
+.no-mqs .NewsFeed #NewsDisplay .newsBody {
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1075,27 +1075,27 @@ footer#ft {
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
   /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .no-mqs #NewsDisplay .newsBody H2 {
+  .no-mqs .NewsFeed #NewsDisplay .newsBody H2 {
     color: #36424a; }
 /* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
-.no-mqs #NewsDisplay .readMore {
+.no-mqs .NewsFeed #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
   font-weight: 500; }
   /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .no-mqs #NewsDisplay .readMore a {
+  .no-mqs .NewsFeed #NewsDisplay .readMore a {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
   /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .no-mqs #NewsDisplay .readMore hr {
+  .no-mqs .NewsFeed #NewsDisplay .readMore hr {
     margin: 30px 0; }
   /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .no-mqs #NewsDisplay .readMore span {
+  .no-mqs .NewsFeed #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
   /* line 727, ../sass/NaturalHeritageSites/_WSMA.scss */
-  #NewsDisplay .newsBody {
+  .NewsFeed #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1105,41 +1105,41 @@ footer#ft {
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
     /* line 728, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .newsBody H2 {
+    .NewsFeed #NewsDisplay .newsBody H2 {
       color: #36424a; }
   /* line 740, ../sass/NaturalHeritageSites/_WSMA.scss */
-  #NewsDisplay .readMore {
+  .NewsFeed #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
     /* line 745, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore a {
+    .NewsFeed #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
     /* line 750, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore hr {
+    .NewsFeed #NewsDisplay .readMore hr {
       margin: 30px 0; }
     /* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
-    #NewsDisplay .readMore span {
+    .NewsFeed #NewsDisplay .readMore span {
       color: #a62d38; } }
 /* line 759, ../sass/NaturalHeritageSites/_WSMA.scss */
-.FullWidthArea-StyleBg4 #NewsDisplay .encoded {
+.FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .encoded {
   padding-bottom: 30px;
   border-bottom: 1px solid #d0cfcb;
   margin-bottom: 30px; }
 /* line 764, ../sass/NaturalHeritageSites/_WSMA.scss */
-.FullWidthArea-StyleBg4 #NewsDisplay .newsBody {
+.FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody {
   max-height: 100%; }
   /* line 765, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .FullWidthArea-StyleBg4 #NewsDisplay .newsBody .shrink {
+  .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody .shrink {
     display: none; }
   /* line 769, ../sass/NaturalHeritageSites/_WSMA.scss */
-  .FullWidthArea-StyleBg4 #NewsDisplay .newsBody img {
+  .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody img {
     border-bottom: 5px solid #a62d38;
     margin: 0 0 15px 0; }
 /* line 774, ../sass/NaturalHeritageSites/_WSMA.scss */
-.FullWidthArea-StyleBg4 #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 #NewsDisplay .newsBody div {
+.FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody div {
   width: 100%;
   padding: 0 0 15px 0; }
 
@@ -1150,24 +1150,15 @@ footer#ft {
 
 /***********************************
 /
-/ Misc
-/
-/**********************************/
-/* line 797, ../sass/NaturalHeritageSites/_WSMA.scss */
-.Hidden {
-  display: none; }
-
-/***********************************
-/
 / News Collapse
 /
 /**********************************/
-/* line 811, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 795, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip {
   display: block;
   height: 100%; }
 
-/* line 816, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 800, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -1175,26 +1166,43 @@ footer#ft {
   word-wrap: normal;
   max-width: 100%; }
 
-/* line 824, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 808, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ellip,
 .ellip-line {
   position: relative;
   overflow: hidden; }
 
-/* line 836, ../sass/NaturalHeritageSites/_WSMA.scss */
-body.newsWidget .NewsFullWidth {
+/***********************************
+/
+/ News Widget
+/
+/**********************************/
+/* line 826, ../sass/NaturalHeritageSites/_WSMA.scss */
+.newsWidget .NewsFullWidth {
   background-color: transparent; }
-/* line 843, ../sass/NaturalHeritageSites/_WSMA.scss */
-body.newsWidget .newsBody p {
+/* line 832, ../sass/NaturalHeritageSites/_WSMA.scss */
+.newsWidget .newsBody {
+  max-height: unset; }
+  /* line 834, ../sass/NaturalHeritageSites/_WSMA.scss */
+  .newsWidget .newsBody p {
+    display: none; }
+  /* line 840, ../sass/NaturalHeritageSites/_WSMA.scss */
+  .newsWidget .newsBody div, .newsWidget .newsBody div > div {
+    width: 100%;
+    padding: 0; }
+    /* line 843, ../sass/NaturalHeritageSites/_WSMA.scss */
+    .newsWidget .newsBody div img, .newsWidget .newsBody div > div img {
+      margin: 0;
+      padding-bottom: 15px; }
+
+/***********************************
+/
+/ Misc
+/
+/**********************************/
+/* line 862, ../sass/NaturalHeritageSites/_WSMA.scss */
+.Hidden {
   display: none; }
-/* line 849, ../sass/NaturalHeritageSites/_WSMA.scss */
-body.newsWidget .newsBody div, body.newsWidget .newsBody div > div {
-  width: 100%;
-  padding: 0; }
-  /* line 852, ../sass/NaturalHeritageSites/_WSMA.scss */
-  body.newsWidget .newsBody div img, body.newsWidget .newsBody div > div img {
-    margin: 0;
-    padding-bottom: 15px; }
 
 /* ==========================================================================
    Basic setup

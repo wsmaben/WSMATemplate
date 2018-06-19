@@ -690,7 +690,7 @@ footer#ft {
     }
 }
 
-#NewsDisplay {
+.NewsFeed #NewsDisplay {
     @include respond-to('grid large') {
         .newsBody {
             H2 {
@@ -784,22 +784,6 @@ footer#ft {
 }
 
 
-/***********************************
-/
-/ Misc
-/
-/**********************************/
-
-// .ContentItemButtonPanel {
-//     position: absolute;
-// }
-
-.Hidden {
-    display: none;
-}
-
-
-
 
 /***********************************
 /
@@ -808,7 +792,7 @@ footer#ft {
 /**********************************/
 
  
-  .ellip {
+.ellip {
     display: block;
     height: 100%;
   }
@@ -832,7 +816,13 @@ footer#ft {
 //     overflow: hidden;
 // }
 
-body.newsWidget { // body.newsWidget .NewsFullWidth
+/***********************************
+/
+/ News Widget
+/
+/**********************************/
+
+.newsWidget { // body.newsWidget .NewsFullWidth
     .NewsFullWidth {
         background-color: transparent;
     }
@@ -840,6 +830,7 @@ body.newsWidget { // body.newsWidget .NewsFullWidth
 
     }
     .newsBody {
+        max-height: unset;
         p {
             display: none;
         }
@@ -856,3 +847,20 @@ body.newsWidget { // body.newsWidget .NewsFullWidth
         }
     }
 }
+
+
+/***********************************
+/
+/ Misc
+/
+/**********************************/
+
+// .ContentItemButtonPanel {
+//     position: absolute;
+// }
+
+.Hidden {
+    display: none;
+}
+
+
