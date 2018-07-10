@@ -831,7 +831,7 @@ footer#ft {
     }
     .newsBody {
         max-height: unset;
-        p {
+        p, ol, ul, li, h3, h4, h6 {
             display: none;
         }
         .col-md-12 {

@@ -138,7 +138,7 @@ html:not(.t-safari) {
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
         background: url(images/DiamondButton.svg#color-secondary-a) no-repeat top center!important; 
         background-size: 100% 100%!important;
-        color: $color-base!important;
+        //color: $color-base!important;
     }
 }
 
@@ -162,7 +162,7 @@ html.t-safari {
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
         background-color: $color-secondary-a!important; 
-        color: $color-base!important;
+        //color: $color-base!important;
     }
 }
 

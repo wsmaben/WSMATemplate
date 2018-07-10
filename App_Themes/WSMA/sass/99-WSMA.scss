@@ -107,6 +107,14 @@
 ***  Expander
 **************************/
 
+.RadWindow {
+    .expander-container {
+        .expander-body {
+            display:block;
+        }
+    }
+}
+
 .expander-container {
     .expander {
         background-color: #fafafa;
@@ -150,7 +158,6 @@
         }
     }
 }
-
 
 
 /****************************************

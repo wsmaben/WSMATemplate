@@ -14,6 +14,8 @@ DocumentVersionKey                   uniqueidentifier              NULL
 
 usp_GenerateTaggedNews takes a tag as a parameter and generates a list of articles that are a descendant of that tag. This is added to a table named NewsFeed_All
 
+Decode the blob: convert (varchar(max) , convert (varbinary (max) , DocumentMain.blob)) as [Blob]
+
 usp_Refresh_NewsFeed_All takes a list of tags, and executes usp_GenerateTaggedNews for each tag, and appends that to NewsFeed_All
 
 NewsFeed_All

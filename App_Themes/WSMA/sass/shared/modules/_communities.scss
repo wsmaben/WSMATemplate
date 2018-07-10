@@ -3,19 +3,22 @@
    ========================================================================== */
 
 /* Community left nav */
-.CommunityLinksBlock a {
-    color: $communities-nav-color;
-    &:hover {
-        background-color: $communities-nav-hover-bg;
+.CommunityLinksBlock {
+    display: none;   
+    a {
         color: $communities-nav-color;
-        text-decoration: none;
-    }
-    &.CommunityLinksSelected, 
-    &.CommunityLinksSelected:hover {
-        background-color: $communities-nav-select-bg;
-        color:White;
-        font-weight:bold;
-        text-decoration: none;
+        &:hover {
+            background-color: $communities-nav-hover-bg;
+            color: $communities-nav-color;
+            text-decoration: none;
+        }
+        &.CommunityLinksSelected, 
+        &.CommunityLinksSelected:hover {
+            background-color: $communities-nav-select-bg;
+            color:White;
+            font-weight:bold;
+            text-decoration: none;
+        }
     }
 }
 
