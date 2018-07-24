@@ -182,8 +182,8 @@
   padding-right: 15px;
   margin: 0 auto; }
 
-.Wrapper-HomePage {
-  /* Homepage logo and banner differences */ }
+  /* .Wrapper-HomePage {
+Homepage logo and banner differences } */
   .Wrapper-HomePage .FullWidthArea-StyleBg1,
   .Wrapper-HomePage .FullWidthArea-StyleBg2,
   .Wrapper-HomePage .FullWidthArea-StyleBg3,
@@ -336,8 +336,8 @@ h1 {
   color: #36424a;
   display: table; }
 
-.Wrapper-HomePage {
-  /* Arrow shaped containers for nice browsers only. */ }
+/* .Wrapper-HomePage {
+   Arrow shaped containers for nice browsers only.  } */
   .Wrapper-HomePage .FullWidthArea-StyleBg3 {
     background-image: url(images/FaDBackground.jpg); }
   .Wrapper-HomePage .FullWidthArea-StyleBg4 {
@@ -882,10 +882,6 @@ h2, .h2, .PanelHead.Distinguish,
   .no-mqs #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
-  #NewsDisplay .encoded {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #313E48;
-    margin-bottom: 30px; }
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -910,6 +906,21 @@ h2, .h2, .PanelHead.Distinguish,
     #NewsDisplay .readMore span {
       color: #a62d38; } }
 
+@media (max-width: 767px) {
+  .newsWidget #NewsDisplay .encoded {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #313E48;
+    margin-bottom: 30px; } }
+@media (min-width: 768px) {
+  .newsWidget #NewsDisplay .encoded .newsBody {
+    max-height: 395px; } }
+.no-mqs .newsWidget #NewsDisplay .encoded .newsBody {
+  max-height: 395px; }
+.newsWidget #NewsDisplay .col-md-5.pull-right {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0; }
+
 #BaseDirectory {
   border: 1px solid #d0cfcb;
   margin-bottom: 30px; }
@@ -927,22 +938,6 @@ h2, .h2, .PanelHead.Distinguish,
 / News Collapse
 /
 /**********************************/
-.ellip {
-  display: block;
-  height: 100%; }
-
-.ellip-line {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  max-width: 100%; }
-
-.ellip,
-.ellip-line {
-  position: relative;
-  overflow: hidden; }
-
 /* ==========================================================================
    Basic setup
    ========================================================================== */
@@ -1826,8 +1821,8 @@ ol {
     width: 100%; }
   .RadTreeView.RadTreeView_WSMA .rtUL .rtUL {
     padding-left: 0; }
-  .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI {
-    /* add a separator border to the first-level sub-nav items only */ }
+ /*  .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI {
+    add a separator border to the first-level sub-nav items only  }*/
     .RadTreeView.RadTreeView_WSMA > .rtUL > .rtLI .rtLI .rtIn {
       /* children should have less padding */
       padding: 5px 0; }
@@ -2001,8 +1996,8 @@ ol {
 /* Auxiliary button links
    ========================================================================== */
 /* These links are styled like the toggles (search & hamburger buttons) */
-.nav-auxiliary .nav-aux-button {
-  /* Cart Item Flag indicating how many items are in your cart */ }
+/*.nav-auxiliary .nav-aux-button {
+   Cart Item Flag indicating how many items are in your cart }*/ 
   .nav-auxiliary .nav-aux-button .NavigationLink {
     /* This makes the link look like the toggle buttons */
     background-color: #36424a;
@@ -3854,9 +3849,9 @@ input[type="checkbox"]:focus {
   .InternalHeaderArea .carousel-inner > .item .carousel-link {
     display: none !important; }
 
-.Wrapper-HomePage .HomePageFullWidthArea {
-  /* Overwrite slideshow height setting on homepage only */
-  /* darker gradient to improve legibility of auxiliary nav */ }
+ /*.Wrapper-HomePage .HomePageFullWidthArea {
+  Overwrite slideshow height setting on homepage only */
+  /* darker gradient to improve legibility of auxiliary nav }*/ 
   .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
     /*Make one for small width*/
     background-color: #ffffff; }

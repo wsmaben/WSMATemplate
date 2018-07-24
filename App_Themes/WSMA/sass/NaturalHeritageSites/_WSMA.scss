@@ -718,11 +718,6 @@ h2, .h2, .PanelHead.Distinguish,
         }
     }
     @include respond-to('grid small') {
-        .encoded {
-            padding-bottom: 30px;
-            border-bottom: 1px solid $color-black;
-            margin-bottom: 30px;
-        }
         .newsBody {
             H2 {
                 color: $color-wsma-dkgrey;
@@ -752,6 +747,31 @@ h2, .h2, .PanelHead.Distinguish,
             span {
                 color: $color-wsma-red;
             }
+        }
+    }
+}
+
+.newsWidget {
+    #NewsDisplay {
+        @include respond-to('grid small') {
+            .encoded {
+                padding-bottom: 30px;
+                border-bottom: 1px solid $color-black;
+                margin-bottom: 30px;
+                
+            }
+        }
+        @include respond-to('grid large') {
+            .encoded {
+                .newsBody {
+                    max-height: 395px;
+                }
+            }
+        }
+        .col-md-5.pull-right {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 0;
         }
     }
 }
@@ -786,24 +806,24 @@ h2, .h2, .PanelHead.Distinguish,
 /**********************************/
 
  
-  .ellip {
-    display: block;
-    height: 100%;
-  }
+//   .ellip {
+//     display: block;
+//     height: 100%;
+//   }
   
-  .ellip-line {
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal;
-    max-width: 100%;
-  }
+//   .ellip-line {
+//     display: inline-block;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     word-wrap: normal;
+//     max-width: 100%;
+//   }
   
-  .ellip,
-  .ellip-line {
-    position: relative;
-    overflow: hidden;
-  }
+//   .ellip,
+//   .ellip-line {
+//     position: relative;
+//     overflow: hidden;
+//   }
 
 // .shrink {
 //     height: 150px;
