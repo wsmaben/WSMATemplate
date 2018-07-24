@@ -686,6 +686,11 @@ h2, .h2, .PanelHead.Distinguish,
 
 .newsWidget {
     #NewsDisplay {
+        .newsBody {
+            p, li {
+                display: none;
+            }
+        }
         @include respond-to('grid small') {
             .encoded {
                 padding-bottom: 30px;
@@ -697,7 +702,7 @@ h2, .h2, .PanelHead.Distinguish,
         @include respond-to('grid large') {
             .encoded {
                 .newsBody {
-                    max-height: 395px;
+                    max-height: 410px;
                 }
             }
         }
