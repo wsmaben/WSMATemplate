@@ -684,6 +684,31 @@ h2, .h2, .PanelHead.Distinguish,
     }
 }
 
+.newsWidget {
+    #NewsDisplay {
+        @include respond-to('grid small') {
+            .encoded {
+                padding-bottom: 30px;
+                border-bottom: 1px solid $color-black;
+                margin-bottom: 30px;
+                
+            }
+        }
+        @include respond-to('grid large') {
+            .encoded {
+                .newsBody {
+                    max-height: 395px;
+                }
+            }
+        }
+        .col-md-5.pull-right {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 0;
+        }
+    }
+}
+
 #NewsDisplay {
     @include respond-to('grid large') {
         .newsBody {
@@ -751,30 +776,7 @@ h2, .h2, .PanelHead.Distinguish,
     }
 }
 
-.newsWidget {
-    #NewsDisplay {
-        @include respond-to('grid small') {
-            .encoded {
-                padding-bottom: 30px;
-                border-bottom: 1px solid $color-black;
-                margin-bottom: 30px;
-                
-            }
-        }
-        @include respond-to('grid large') {
-            .encoded {
-                .newsBody {
-                    max-height: 395px;
-                }
-            }
-        }
-        .col-md-5.pull-right {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 0;
-        }
-    }
-}
+
 
 #BaseDirectory {
     border: 1px solid $color-wsma-ltgrey;
