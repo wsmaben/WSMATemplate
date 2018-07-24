@@ -685,9 +685,9 @@ h2, .h2, .PanelHead.Distinguish,
 }
 
 #NewsDisplay {
-    .encoded {
-        padding-bottom: 30px;
-    }
+    // .encoded {
+    //     padding-bottom: 30px;
+    // }
     @include respond-to('grid large') {
         .newsBody {
             H2 {
