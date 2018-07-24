@@ -78,21 +78,21 @@ h1 {
 // Homepage Full Width Areas
 // -------------------------
 .Wrapper-HomePage {
-    .FullWidthArea-StyleBg2 {
+    //.FullWidthArea-StyleBg2 {
         //background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
         // color: $black;
         //  h2 {
         //      @include LargeIconMultiLineHeading(#fff, -65px, 0px);
         //  }
-    }
+    //}
     .FullWidthArea-StyleBg3 {
         //height: 500px;
         background-image: url(images/FaDBackground.jpg);
     }
-    .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg5 {
+    //.FullWidthArea-StyleBg3, .FullWidthArea-StyleBg5 {
         //background: $color-alt-bg;
 
-    }
+    //}
     .FullWidthArea-StyleBg4 {
         background: #f5f7f7; //$color-alt-bg2 url(images/FullWidthArea_Bg4.jpg) center top no-repeat;
         color: $black;
@@ -685,6 +685,9 @@ h2, .h2, .PanelHead.Distinguish,
 }
 
 #NewsDisplay {
+    .encoded {
+        padding-bottom: 30px;
+    }
     @include respond-to('grid large') {
         .newsBody {
             H2 {
