@@ -851,6 +851,8 @@ h2, .h2, .PanelHead.Distinguish,
   margin-bottom: 15px;
   padding: 0;
   float: left; }
+  .newsWidget #NewsDisplay .col-md-5.pull-right .pull-right {
+    float: left; }
 
 @media (min-width: 768px) {
   #NewsDisplay .newsBody {
