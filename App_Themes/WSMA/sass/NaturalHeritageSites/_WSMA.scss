@@ -685,9 +685,6 @@ h2, .h2, .PanelHead.Distinguish,
 }
 
 #NewsDisplay {
-    // .encoded {
-    //     padding-bottom: 30px;
-    // }
     @include respond-to('grid large') {
         .newsBody {
             H2 {
@@ -721,6 +718,11 @@ h2, .h2, .PanelHead.Distinguish,
         }
     }
     @include respond-to('grid small') {
+        .encoded {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $color-black;
+            margin-bottom: 30px;
+        }
         .newsBody {
             H2 {
                 color: $color-wsma-dkgrey;

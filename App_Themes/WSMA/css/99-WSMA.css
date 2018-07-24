@@ -882,6 +882,10 @@ h2, .h2, .PanelHead.Distinguish,
   .no-mqs #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
+  #NewsDisplay .encoded {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #313E48;
+    margin-bottom: 30px; }
   #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
