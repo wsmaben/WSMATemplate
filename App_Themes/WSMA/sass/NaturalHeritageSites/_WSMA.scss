@@ -78,21 +78,21 @@ h1 {
 // Homepage Full Width Areas
 // -------------------------
 .Wrapper-HomePage {
-    .FullWidthArea-StyleBg2 {
+    //.FullWidthArea-StyleBg2 {
         //background: $color-alt-bg2 url(images/FullWidthArea_Bg2.jpg) center top no-repeat;
         // color: $black;
         //  h2 {
         //      @include LargeIconMultiLineHeading(#fff, -65px, 0px);
         //  }
-    }
+    //}
     .FullWidthArea-StyleBg3 {
         //height: 500px;
         background-image: url(images/FaDBackground.jpg);
     }
-    .FullWidthArea-StyleBg3, .FullWidthArea-StyleBg5 {
+    //.FullWidthArea-StyleBg3, .FullWidthArea-StyleBg5 {
         //background: $color-alt-bg;
 
-    }
+    //}
     .FullWidthArea-StyleBg4 {
         background: #f5f7f7; //$color-alt-bg2 url(images/FullWidthArea_Bg4.jpg) center top no-repeat;
         color: $black;
@@ -778,6 +778,8 @@ footer#ft {
     }
 }
 
+
+
 #BaseDirectory {
     border: 1px solid $color-wsma-ltgrey;
     margin-bottom: 30px;
@@ -792,24 +794,24 @@ footer#ft {
 /**********************************/
 
  
-.ellip {
-    display: block;
-    height: 100%;
-  }
+//   .ellip {
+//     display: block;
+//     height: 100%;
+//   }
   
-  .ellip-line {
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal;
-    max-width: 100%;
-  }
+//   .ellip-line {
+//     display: inline-block;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     word-wrap: normal;
+//     max-width: 100%;
+//   }
   
-  .ellip,
-  .ellip-line {
-    position: relative;
-    overflow: hidden;
-  }
+//   .ellip,
+//   .ellip-line {
+//     position: relative;
+//     overflow: hidden;
+//   }
 
 // .shrink {
 //     height: 150px;
