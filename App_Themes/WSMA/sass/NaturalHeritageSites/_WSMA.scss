@@ -828,17 +828,23 @@ footer#ft {
     .NewsFullWidth {
         background-color: transparent;
     }
-    .NewsDisplay {
-
+    #NewsDisplay {
+        @include respond-to('grid small') {
+            .encoded {
+                margin-bottom: 15px;
+                border-bottom: 1px solid $color-wsma-dkgrey;
+                padding-bottom: 15px;
+            }
+        }
     }
     .newsBody {
         max-height: unset;
         p, ol, ul, li, h3, h4, h6 {
             display: none;
         }
-        .col-md-12 {
+        // .col-md-12 {
 
-        }
+        // }
         div, div > div{
             width: 100%;
             padding: 0;
