@@ -604,15 +604,18 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
       /* line 308, ../sass/NaturalHeritageSites/_WSMA.scss */
       .row.row-eq-height > div > .ContentItemContainer .ContentItemButtonPanel .WebPartZone {
         height: 100%; }
+  /* line 313, ../sass/NaturalHeritageSites/_WSMA.scss */
+  .row.row-eq-height:before, .row.row-eq-height:after {
+    content: normal; }
 
 @media (min-width: 768px) {
-  /* line 318, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 321, ../sass/NaturalHeritageSites/_WSMA.scss */
   .TestimonialArea {
     width: 70%; } }
 /* line 92, ../sass/_breakpoint.scss */
 .no-mqs .TestimonialArea {
   width: 70%; }
-/* line 322, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 325, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea img {
   object-fit: cover;
   width: 150px;
@@ -620,7 +623,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   border-radius: 50% 50%;
   margin: 0 auto;
   display: block; }
-/* line 330, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 333, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea blockquote:before {
   content: '';
   display: block;
@@ -631,7 +634,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   right: 20%;
   border-top: 2px dotted #6c8494;
   border-right: 2px dotted #6c8494; }
-/* line 341, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 344, ../sass/NaturalHeritageSites/_WSMA.scss */
 .TestimonialArea blockquote {
   background: #fff;
   position: relative;
@@ -639,75 +642,75 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
   padding: 20px 3%;
   margin: 25px auto 0 auto;
   text-align: center; }
-  /* line 348, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 351, ../sass/NaturalHeritageSites/_WSMA.scss */
   .TestimonialArea blockquote em {
     display: block;
     margin-top: 1em; }
 
 @media (min-width: 768px) {
-  /* line 359, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 362, ../sass/NaturalHeritageSites/_WSMA.scss */
   .UpcomingEventsHome ul.RelatedItemsHorizontal li,
   .UpcomingEventsHome .RelatedItemsHorizontal ul.rrItemsList li {
     width: 225px;
     height: auto;
     margin: 9px 2%; }
-  /* line 365, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 368, ../sass/NaturalHeritageSites/_WSMA.scss */
   .UpcomingEventsHome a.ImageLink img {
     width: 225px !important;
     height: auto !important;
     display: block; } }
-/* line 359, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 362, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .UpcomingEventsHome ul.RelatedItemsHorizontal li,
 .no-mqs .UpcomingEventsHome .RelatedItemsHorizontal ul.rrItemsList li {
   width: 225px;
   height: auto;
   margin: 9px 2%; }
-/* line 365, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 368, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .UpcomingEventsHome a.ImageLink img {
   width: 225px !important;
   height: auto !important;
   display: block; }
-/* line 371, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 374, ../sass/NaturalHeritageSites/_WSMA.scss */
 .UpcomingEventsHome a.LabelLink {
   text-decoration: none;
   font-weight: bold;
   color: #36424a;
   line-break: normal; }
 
-/* line 381, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 384, ../sass/NaturalHeritageSites/_WSMA.scss */
 .ProgressTracker2 {
   text-align: center; }
-  /* line 385, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 388, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .ProgressTrackerPanel .label, .ProgressTracker2 .ProgressTrackerPanel a {
     color: #313E48; }
-  /* line 387, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 390, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .SuccessfulMessage {
     width: 95%;
     margin: 0 auto;
     background-color: #00837e !important;
     font-weight: bold;
     margin-bottom: 8px; }
-  /* line 394, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 397, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 .ProgressBar {
     border-radius: 0;
     background-color: black !important;
     height: 25px; }
-    /* line 398, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 401, ../sass/NaturalHeritageSites/_WSMA.scss */
     .ProgressTracker2 .ProgressBar span {
       background-color: #00837e !important;
       border-radius: 0; }
-  /* line 403, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 406, ../sass/NaturalHeritageSites/_WSMA.scss */
   .ProgressTracker2 div p {
     color: #313E48 !important; }
 
-/* line 407, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 410, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 .ProgressTrackerPanel {
   background-color: transparent; }
-/* line 410, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 413, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 .inset {
   text-align: left;
   font-size: 125%; }
-/* line 414, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 417, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Wrapper-HomePage .ProgressTracker2 span.count {
   color: #313E48; }
   /* line 48, ../sass/NaturalHeritageSites/_WSMA.scss */
@@ -726,48 +729,48 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
     padding-bottom: 15px; }
 
 /* Search Results */
-/* line 423, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 426, ../sass/NaturalHeritageSites/_WSMA.scss */
 .SearchResultSummary .ListItemTitle a {
   background: none !important; }
 
 /* RadStrip Tabs */
-/* line 428, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 431, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip.RadTabStrip_MetroTouch {
   background: #36424a;
   padding: 10px 10px 0 10px !important;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
-/* line 435, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 438, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected {
   background-color: #fff !important;
   border-color: #fff !important;
   color: #36424a !important; }
 
-/* line 440, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 443, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip_MetroTouch .rtsLevel1 .rtsLink {
   background-color: #36424a !important;
   border-color: #36424a !important; }
 
-/* line 444, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 447, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStrip_MetroTouch .rtsLink {
   color: #fff !important; }
 
-/* line 447, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 450, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadTabStripTop_MetroTouch .rtsLevel1 {
   border-bottom: none !important; }
 
-/* line 449, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 452, ../sass/NaturalHeritageSites/_WSMA.scss */
 h2, .h2, .PanelHead.Distinguish,
 .TitleBarCaption, div.PanelTitle,
 .panel-heading.Distinguish {
   border: none !important; }
 
-/* line 456, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 459, ../sass/NaturalHeritageSites/_WSMA.scss */
 .CalloutPart2 {
   background-color: #f0edf2;
   text-align: center; }
-  /* line 459, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 462, ../sass/NaturalHeritageSites/_WSMA.scss */
   .CalloutPart2 .PanelFieldValue {
     text-align: center; }
   /* line 8, ../sass/NaturalHeritageSites/_WSMA.scss */
@@ -779,21 +782,21 @@ h2, .h2, .PanelHead.Distinguish,
     margin: 5px auto 0 auto;
     border-bottom: 2px solid white; }
 
-/* line 467, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 470, ../sass/NaturalHeritageSites/_WSMA.scss */
 .AsiInformation, .AsiSuccess, .AsiWarning,
 .AsiError, .AsiValidation, .AsiValidationSummary,
 .AsiNeutral {
   border: none; }
 
-/* line 473, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 476, ../sass/NaturalHeritageSites/_WSMA.scss */
 .SelectedItem a, .ProxyPanelContact a {
   color: #fff !important; }
 
-/* line 477, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 480, ../sass/NaturalHeritageSites/_WSMA.scss */
 .RadMenu .rmGroup .rmText {
   padding: 0 0 0 5px !important; }
 
-/* line 481, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 484, ../sass/NaturalHeritageSites/_WSMA.scss */
 .rmRootGroup > .rmItem {
   padding-bottom: 23px;
   border-bottom: 5px solid #4bc8b6; }
@@ -804,7 +807,7 @@ h2, .h2, .PanelHead.Distinguish,
 /*
 /**************************************/
 @media (min-width: 768px) {
-  /* line 494, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 497, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .breadcrumb-obo-container {
     height: 155px;
     background-image: url(images/Banner2.jpg);
@@ -813,50 +816,50 @@ h2, .h2, .PanelHead.Distinguish,
     background-position: left;
     margin-bottom: 25px;
     margin-top: 152px; }
-    /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 505, ../sass/NaturalHeritageSites/_WSMA.scss */
     .Wrapper-HomePage .body-container .breadcrumb-obo-container {
       display: none;
       background-image: none; }
-  /* line 508, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 511, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .breadcrumb {
     display: block;
     line-height: 45px; }
-    /* line 513, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 516, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .breadcrumb .PageTitle {
       color: white;
       font-size: 40px;
       font-weight: 300;
       margin-top: 60px; }
-    /* line 519, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 522, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .breadcrumb a, .body-container .breadcrumb span {
       font-size: 11px;
       font-weight: 300;
       color: white; }
-      /* line 523, ../sass/NaturalHeritageSites/_WSMA.scss */
+      /* line 526, ../sass/NaturalHeritageSites/_WSMA.scss */
       .body-container .breadcrumb a:visited, .body-container .breadcrumb span:visited {
         color: white; }
-  /* line 528, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .hero2banner svg {
     height: 314px;
     float: right; }
-    /* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2banner svg .cls-1 {
       fill: url(#linear-gradient); }
-    /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 537, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2banner svg .cls-2 {
       mask: url(#mask); }
-  /* line 543, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 546, ../sass/NaturalHeritageSites/_WSMA.scss */
   .body-container .hero2after {
     display: block;
     overflow: hidden;
     max-height: 314px; }
-    /* line 547, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2after span[id$="_BreadCrumb"] {
       position: absolute; }
-    /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 553, ../sass/NaturalHeritageSites/_WSMA.scss */
     .body-container .hero2after .hero2banner {
       float: right; } }
-/* line 494, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 497, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .breadcrumb-obo-container {
   height: 155px;
   background-image: url(images/Banner2.jpg);
@@ -865,61 +868,61 @@ h2, .h2, .PanelHead.Distinguish,
   background-position: left;
   margin-bottom: 25px;
   margin-top: 152px; }
-  /* line 502, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 505, ../sass/NaturalHeritageSites/_WSMA.scss */
   .Wrapper-HomePage .no-mqs .body-container .breadcrumb-obo-container {
     display: none;
     background-image: none; }
-/* line 508, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 511, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .breadcrumb {
   display: block;
   line-height: 45px; }
-  /* line 513, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 516, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .breadcrumb .PageTitle {
     color: white;
     font-size: 40px;
     font-weight: 300;
     margin-top: 60px; }
-  /* line 519, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 522, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .breadcrumb a, .no-mqs .body-container .breadcrumb span {
     font-size: 11px;
     font-weight: 300;
     color: white; }
-    /* line 523, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 526, ../sass/NaturalHeritageSites/_WSMA.scss */
     .no-mqs .body-container .breadcrumb a:visited, .no-mqs .body-container .breadcrumb span:visited {
       color: white; }
-/* line 528, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .hero2banner svg {
   height: 314px;
   float: right; }
-  /* line 531, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2banner svg .cls-1 {
     fill: url(#linear-gradient); }
-  /* line 534, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 537, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2banner svg .cls-2 {
     mask: url(#mask); }
-/* line 543, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 546, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .body-container .hero2after {
   display: block;
   overflow: hidden;
   max-height: 314px; }
-  /* line 547, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2after span[id$="_BreadCrumb"] {
     position: absolute; }
-  /* line 550, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 553, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .body-container .hero2after .hero2banner {
     float: right; }
 
 /****************************************
 /** imgBanner
 /***************************************/
-/* line 563, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 566, ../sass/NaturalHeritageSites/_WSMA.scss */
 .imgBanner .breadcrumb-obo-container {
   background-color: #313e48;
   background-image: none; }
-  /* line 566, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 569, ../sass/NaturalHeritageSites/_WSMA.scss */
   .imgBanner .breadcrumb-obo-container .attrib {
     display: block; }
-  /* line 569, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 572, ../sass/NaturalHeritageSites/_WSMA.scss */
   .imgBanner .breadcrumb-obo-container .secondaryHero {
     font-size: 190%;
     line-height: 35px;
@@ -927,44 +930,44 @@ h2, .h2, .PanelHead.Distinguish,
     margin-left: 0;
     border-left: 1px solid #4bc8b6; }
   @media (min-width: 768px) {
-    /* line 563, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 566, ../sass/NaturalHeritageSites/_WSMA.scss */
     .imgBanner .breadcrumb-obo-container {
       height: 314px; }
-      /* line 578, ../sass/NaturalHeritageSites/_WSMA.scss */
+      /* line 581, ../sass/NaturalHeritageSites/_WSMA.scss */
       .imgBanner .breadcrumb-obo-container .inner-banner {
         color: white; } }
   /* line 92, ../sass/_breakpoint.scss */
   .no-mqs .imgBanner .breadcrumb-obo-container {
     height: 314px; }
-    /* line 578, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 581, ../sass/NaturalHeritageSites/_WSMA.scss */
     .no-mqs .imgBanner .breadcrumb-obo-container .inner-banner {
       color: white; }
 
-/* line 590, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 593, ../sass/NaturalHeritageSites/_WSMA.scss */
 .hero2banner img {
   mask: url(#mask); }
 
 /***********************************
 / Footer Nav
 /**********************************/
-/* line 597, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 600, ../sass/NaturalHeritageSites/_WSMA.scss */
 footer#ft {
   float: left;
   width: 100%; }
 
-/* line 602, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 605, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul, #ft li {
   list-style: none;
   padding-left: 0; }
 
-/* line 607, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 610, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul li {
   border-bottom: 1px solid #9fe6d9;
   display: inline-block;
   font-size: 95%;
   line-height: 30px; }
 
-/* line 614, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 617, ../sass/NaturalHeritageSites/_WSMA.scss */
 #ft ul ul li {
   border-bottom: none;
   font-weight: 300;
@@ -975,11 +978,11 @@ footer#ft {
 / Panels
 /
 /**********************************/
-/* line 626, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 629, ../sass/NaturalHeritageSites/_WSMA.scss */
 .panel {
   border: none; }
 
-/* line 630, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 633, ../sass/NaturalHeritageSites/_WSMA.scss */
 .PanelField {
   width: unset; }
 
@@ -988,10 +991,10 @@ footer#ft {
 / Aux Nav
 /
 /**********************************/
-/* line 640, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 643, ../sass/NaturalHeritageSites/_WSMA.scss */
 .aux-nav {
   padding: 20px; }
-  /* line 642, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 645, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav h1 {
     color: #313E48;
     font-size: 145%;
@@ -1000,13 +1003,13 @@ footer#ft {
     border-bottom: 5px solid #d0cfcb;
     line-height: initial;
     width: 100%; }
-  /* line 651, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 654, ../sass/NaturalHeritageSites/_WSMA.scss */
   .aux-nav a {
     color: #36424a;
     border-bottom: 1px solid #4bc8b6;
     padding: 8px 0;
     display: block; }
-    /* line 656, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 659, ../sass/NaturalHeritageSites/_WSMA.scss */
     .aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active {
       color: #a62d38;
       text-decoration: underline;
@@ -1017,25 +1020,25 @@ footer#ft {
 / News & Events
 /
 /**********************************/
-/* line 671, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 674, ../sass/NaturalHeritageSites/_WSMA.scss */
 .NewsFullWidth {
   background-color: #f5f7f8;
   padding: 60px 0; }
 
-/* line 678, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 681, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody img {
   margin: 0 0 15px 15px; }
-/* line 682, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 685, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h2 {
   color: #a62d38;
   font-weight: 400;
   line-height: 33px; }
-/* line 687, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 690, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsBody h5 {
   margin-top: 0; }
 
 @media (min-width: 768px) {
-  /* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 698, ../sass/NaturalHeritageSites/_WSMA.scss */
   .NewsFeed #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1045,26 +1048,27 @@ footer#ft {
     max-height: 260px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 699, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 711, ../sass/NaturalHeritageSites/_WSMA.scss */
   .NewsFeed #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
-    font-weight: 500; }
-    /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
+    font-weight: 500;
+    padding-top: 15px; }
+    /* line 716, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 724, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 695, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 698, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .NewsFeed #NewsDisplay .newsBody {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1074,27 +1078,28 @@ footer#ft {
   max-height: 260px;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
-  /* line 696, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 699, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .NewsFeed #NewsDisplay .newsBody H2 {
     color: #36424a; }
-/* line 708, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 711, ../sass/NaturalHeritageSites/_WSMA.scss */
 .no-mqs .NewsFeed #NewsDisplay .readMore {
   color: #313E48;
   text-decoration: none;
-  font-weight: 500; }
-  /* line 713, ../sass/NaturalHeritageSites/_WSMA.scss */
+  font-weight: 500;
+  padding-top: 15px; }
+  /* line 716, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .NewsFeed #NewsDisplay .readMore a {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-  /* line 718, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .NewsFeed #NewsDisplay .readMore hr {
     margin: 30px 0; }
-  /* line 721, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 724, ../sass/NaturalHeritageSites/_WSMA.scss */
   .no-mqs .NewsFeed #NewsDisplay .readMore span {
     color: #a62d38; }
 @media (max-width: 767px) {
-  /* line 727, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 730, ../sass/NaturalHeritageSites/_WSMA.scss */
   .NewsFeed #NewsDisplay .newsBody {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1104,46 +1109,46 @@ footer#ft {
     max-height: 475px;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical; }
-    /* line 728, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 731, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .newsBody H2 {
       color: #36424a; }
-  /* line 740, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 743, ../sass/NaturalHeritageSites/_WSMA.scss */
   .NewsFeed #NewsDisplay .readMore {
     color: #313E48;
     text-decoration: none;
     font-weight: 500; }
-    /* line 745, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 748, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore a {
       color: #313E48;
       text-decoration: none;
       font-weight: 500; }
-    /* line 750, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore hr {
       margin: 30px 0; }
-    /* line 753, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 756, ../sass/NaturalHeritageSites/_WSMA.scss */
     .NewsFeed #NewsDisplay .readMore span {
       color: #a62d38; } }
-/* line 759, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 762, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .encoded {
   padding-bottom: 30px;
   border-bottom: 1px solid #d0cfcb;
   margin-bottom: 30px; }
-/* line 764, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 767, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody {
   max-height: 100%; }
-  /* line 765, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 768, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody .shrink {
     display: none; }
-  /* line 769, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 772, ../sass/NaturalHeritageSites/_WSMA.scss */
   .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody img {
     border-bottom: 5px solid #a62d38;
     margin: 0 0 15px 0; }
-/* line 774, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 777, ../sass/NaturalHeritageSites/_WSMA.scss */
 .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody div > div, .FullWidthArea-StyleBg4 .NewsFeed #NewsDisplay .newsBody div {
   width: 100%;
   padding: 0 0 15px 0; }
 
-/* line 783, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 827, ../sass/NaturalHeritageSites/_WSMA.scss */
 #BaseDirectory {
   border: 1px solid #d0cfcb;
   margin-bottom: 30px; }
@@ -1158,26 +1163,26 @@ footer#ft {
 / News Widget
 /
 /**********************************/
-/* line 828, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 872, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsWidget .NewsFullWidth {
   background-color: transparent; }
 @media (max-width: 767px) {
-  /* line 833, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 877, ../sass/NaturalHeritageSites/_WSMA.scss */
   .newsWidget #NewsDisplay .encoded {
     margin-bottom: 15px;
     border-bottom: 1px solid #36424a;
     padding-bottom: 15px; } }
-/* line 840, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 884, ../sass/NaturalHeritageSites/_WSMA.scss */
 .newsWidget .newsBody {
   max-height: unset; }
-  /* line 842, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 886, ../sass/NaturalHeritageSites/_WSMA.scss */
   .newsWidget .newsBody p, .newsWidget .newsBody ol, .newsWidget .newsBody ul, .newsWidget .newsBody li, .newsWidget .newsBody h3, .newsWidget .newsBody h4, .newsWidget .newsBody h6 {
     display: none; }
-  /* line 848, ../sass/NaturalHeritageSites/_WSMA.scss */
+  /* line 892, ../sass/NaturalHeritageSites/_WSMA.scss */
   .newsWidget .newsBody div, .newsWidget .newsBody div > div {
     width: 100%;
     padding: 0; }
-    /* line 851, ../sass/NaturalHeritageSites/_WSMA.scss */
+    /* line 895, ../sass/NaturalHeritageSites/_WSMA.scss */
     .newsWidget .newsBody div img, .newsWidget .newsBody div > div img {
       margin: 0;
       padding-bottom: 15px; }
@@ -1187,7 +1192,7 @@ footer#ft {
 / Misc
 /
 /**********************************/
-/* line 870, ../sass/NaturalHeritageSites/_WSMA.scss */
+/* line 914, ../sass/NaturalHeritageSites/_WSMA.scss */
 .Hidden {
   display: none; }
 

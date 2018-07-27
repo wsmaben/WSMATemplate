@@ -310,6 +310,9 @@ html.t-safari {
             }
         }
     }
+    &:before, &:after {
+        content:normal;
+    }
 }
 
 
@@ -697,19 +700,19 @@ footer#ft {
                 color: $color-wsma-dkgrey;
             }
         margin-bottom: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 25.2px;
-        max-height: 260px;
-        -webkit-line-clamp: 8;
-        -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 25.2px;
+            max-height: 260px;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
         }
         .readMore {
             color: $color-black;
             text-decoration: none;
             font-weight: 500;
-            
+            padding-top: 15px;
             a {
                 color: $color-black;
                 text-decoration: none;
@@ -728,15 +731,15 @@ footer#ft {
             H2 {
                 color: $color-wsma-dkgrey;
             }
-        margin-bottom: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 25.2px;
-        max-height: 475px;
-        -webkit-line-clamp: 8;
-        -webkit-box-orient: vertical;
-        }
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 25.2px;
+            max-height: 475px;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            }
         .readMore {
             color: $color-black;
             text-decoration: none;
@@ -778,7 +781,48 @@ footer#ft {
     }
 }
 
+// // Elipses
+// // -------------------------
 
+// @mixin excerpt($font-size: $paragraph-font-size, $line-height: 1.8, $lines-to-show: 8, $excerpt-bg: transparent) {
+//   background: $excerpt-bg;
+//   display: block; /* Fallback for non-webkit */
+//   display: -webkit-box;
+//   max-height: $font-size*$line-height*$lines-to-show+1; /* Fallback for non-webkit */
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   -webkit-line-clamp: $lines-to-show;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   @-moz-document url-prefix() {
+//     overflow: hidden;
+//     position: relative;
+//     &:before {
+//       background: $excerpt-bg;
+//       bottom: 0;
+//       position: absolute;
+//       right: 0;
+//       float: right;
+//       content: '\2026';
+//       margin-left: -3rem;
+//       width: 3rem;
+//     }
+//     &:after {
+//       content: '';
+//       background: $excerpt-bg;
+//       position: absolute;
+//       height: 50px;
+//       width: 100%;
+//       z-index: 1;
+//     }
+//   }
+// }
+
+// #NewsDisplay .encoded .newsBody {
+//     @include excerpt($font-size: 1.6rem, $line-height: 1.8, $lines-to-show: 8, $excerpt-bg: $white);
+//     margin-bottom: 0;
+//   }
 
 #BaseDirectory {
     border: 1px solid $color-wsma-ltgrey;
