@@ -1,25 +1,18 @@
-.RadMenu .rmSlide .rmGroup .rmTemplate {
-    width:100%!important;
+/* .RadMenu .rmSlide, .RadMenu_Context {
+    min-width: 1170px!important;
+    right: 0!important;
+}  */
+
+#auxiliary-container {
+    /* background-color: pink; */
+    display: flex;
 }
 
-/*.RadMenu .rmSlide, .RadMenu_Context {
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    float: left;
-    top: 61px!important;
-    width: 1000px!important;
-    left: -250px!important;
-} */
-
-.MegaDropDownOuter {
-    with: 100%;
+.search-container-sm {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-.RadMenu.RadMenu_WSMA {
-    float: right;
-    /* z-index: -100; */
-    border: 1px solid black;
-    }
+.header-container {
+    padding-top:10px;
 }
