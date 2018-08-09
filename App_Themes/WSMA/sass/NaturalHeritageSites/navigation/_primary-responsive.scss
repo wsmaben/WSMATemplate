@@ -539,3 +539,9 @@
         }
     }
 }
+
+
+// Dropdowns with icons
+.RadMenu_Default .rmItem img + span.rmText {
+    margin-left: 30px;
+  }
