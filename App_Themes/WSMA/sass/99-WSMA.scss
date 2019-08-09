@@ -118,8 +118,8 @@
 
 .expander-container {
     .expander {
-        background-color: #fafafa;
-        border-bottom: 1px solid #A02A31;
+        background-color: #eeeeee;
+        border-bottom: 1px solid #6BCABA;
         margin-bottom: 15px;
         margin-top: 25px;
         display: flex;
@@ -127,7 +127,7 @@
             padding: 40px 35px;
         }
         &.active {
-            background-color: #fbf7f7;
+            background-color: #f3f3f3;
             .expander-switch {
                 button {
                     background-image: url(images/minus.svg);
@@ -166,10 +166,10 @@
 /***************************************/
 
 .FullWidthFt {
-    background-color: $color-black;
+    background-color: $color-wsma-evergreen;
     padding: 30px 0 30px 0;
     h1, h2, h3, p {
-        color: $color-wsma-teal;
+        color: $color-wsma-ltseafoam;
     }
     h1 {
         font-size: 285%;
@@ -179,7 +179,7 @@
         button {
             background: $color-wsma-dkgrey;
             border: 2px solid $color-wsma-ltgrey;
-            border-radius: 5px;
+            //border-radius: 5px;
             color: white;
             padding: 15px 30px;
             float: right;
@@ -194,9 +194,9 @@
 .mdgrey {color:$color-wsma-mdgrey;}
 .ltgrey {color:$color-wsma-ltgrey;}
 .red {color:$color-wsma-red;}
-.forest {color:$color-wsma-forest;}
-.teal {color:$color-wsma-teal;}
-.ltteal {color:$color-wsma-ltteal;}
+//.forest {color:$color-wsma-forest;}
+//.teal {color:$color-wsma-teal;}
+//.ltteal {color:$color-wsma-ltteal;}
 .seafoam {color:$color-wsma-seafoam;}
 .ltseafoam {color:$color-wsma-ltseafoam;}
 .green {color:$color-wsma-green;}
@@ -205,9 +205,9 @@
 .bg-mdgrey {background-color:$color-wsma-mdgrey;color:#fff;}
 .bg-ltgrey {background-color:$color-wsma-ltgrey;}
 .bg-red {background-color:$color-wsma-red;color:#fff;}
-.bg-forest {background-color:$color-wsma-forest;color:#fff;}
-.bg-teal {background-color:$color-wsma-teal;}
-.bg-ltteal {background-color:$color-wsma-ltteal;}
+//.bg-forest {background-color:$color-wsma-forest;color:#fff;}
+//.bg-teal {background-color:$color-wsma-teal;}
+//.bg-ltteal {background-color:$color-wsma-ltteal;}
 .bg-seafoam {background-color:$color-wsma-seafoam;}
 .bg-ltseafoam {background-color:$color-wsma-ltseafoam;}
 .bg-green {background-color:$color-wsma-green;}

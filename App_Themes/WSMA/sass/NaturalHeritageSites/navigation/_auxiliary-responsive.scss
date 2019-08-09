@@ -69,13 +69,13 @@
         .NavigationListItem {
             display: inline-flex;
             color: $navbar-auxiliary-link-color;
-            border-left: 1px solid $color-black;
+            //border-left: 1px solid $color-black;
             .Wrapper-HomePage & {
                 color: #fff;
-                border-left: 1px solid white;
+                //border-left: 1px solid white;
             }
             &.btn {
-                background-color: $color-wsma-red;
+                background-color: $color-wsma-seafoam;
                 font-size: 14px!important;
                 border: none;
                 .NavigationLink {
@@ -106,13 +106,13 @@
         .NavigationListItem {
             display: inline-flex;
             color: $navbar-auxiliary-link-color;
-            border-left: 1px solid $color-black;
+            //border-left: 1px solid $color-black;
             .Wrapper-HomePage & {
                 color: #fff;
-                border-left: 1px solid white;
+                //border-left: 1px solid white;
             }
             &.btn {
-                background-color: $color-wsma-red;
+                background-color: $color-wsma-seafoam;
                 font-size: 85%!important;
                 border: none;
                 .NavigationLink {

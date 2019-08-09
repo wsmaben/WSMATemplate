@@ -148,7 +148,7 @@ html:not(.t-safari) {
         //background: url(images/DiamondButton.svg#color-base) no-repeat top center!important;  
         background-size: 100% 100%!important; 
         padding: 5px 25px !important;   
-        border-radius: 5px;  
+        //border-radius: 5px;  
     }
 
     .PrimaryButton, .SaveAndClose, .SaveAs, 
@@ -183,9 +183,9 @@ html.t-safari {
     #masterHeaderActionArea a, .RadGrid input.PrimaryButton,
     .Spotlight .TextButton, .BigButtonPanelArea2 .btn,
     .RadUpload .ruButton, .ruButton, .ruFileInput { 
-        background-color: $color-wsma-teal; //$color-secondary-a!important; 
+        background-color: $color-wsma-seafoam; //$color-secondary-a!important; 
         color: #fff!important;
-        border-radius: 5px;
+        //border-radius: 5px;
     }
 }
 
@@ -483,7 +483,7 @@ h2, .h2, .PanelHead.Distinguish,
 
 .rmRootGroup > .rmItem {
     padding-bottom: 23px;
-    border-bottom: 5px solid $color-wsma-teal;
+    border-bottom: 5px solid $color-wsma-seafoam;
 }
 
 /***************************************
@@ -564,17 +564,17 @@ h2, .h2, .PanelHead.Distinguish,
 
 
 .imgBanner .breadcrumb-obo-container {
-    background-color: rgb(49, 62, 72);
+    background-color: rgb(00, 72, 81);
     background-image: none;
     .attrib {
         display: block;
     }
     .secondaryHero {
-        font-size: 190%;
+        font-size: 170%;
         line-height: 35px;
         margin-top: 50px;
         margin-left: 0;
-        border-left: 1px solid $color-wsma-teal;
+        border-left: 1px solid $color-wsma-seafoam;
 
     }
     @include respond-to('grid large') {
@@ -608,7 +608,7 @@ footer#ft {
 }
 
 #ft ul li {
-    border-bottom: 1px solid $color-wsma-seafoam;
+    border-bottom: 1px solid $color-wsma-ltseafoam;
     display: inline-block;
     font-size: 95%;
     line-height: 30px;
@@ -653,13 +653,13 @@ footer#ft {
     }
     a {
         color: $color-wsma-dkgrey;
-        border-bottom: 1px solid $color-wsma-teal;
-        padding: 8px 0;
+        border-bottom: 1px solid $color-wsma-evergreen;
+        padding: 2px 0;
         display: block;
         &:hover, &:focus, &:active {
-            color: $color-wsma-red;
+            color: $color-wsma-seafoam;
             text-decoration: underline;
-            background-color: $color-wsma-ltteal;
+            background-color: $color-wsma-ltseafoam;
         }
     }
 }
@@ -683,7 +683,7 @@ footer#ft {
         margin: 0 0 15px 15px
     }
     h2 {
-        color: $color-wsma-red;
+        color: $color-black;
         font-weight: 400;
         line-height: 33px;
     }
@@ -697,7 +697,7 @@ footer#ft {
     @include respond-to('grid large') {
         .newsBody {
             H2 {
-                color: $color-wsma-dkgrey;
+                color: $color-wsma-seafoam;
             }
         margin-bottom: 20px;
             overflow: hidden;
@@ -709,12 +709,12 @@ footer#ft {
             -webkit-box-orient: vertical;
         }
         .readMore {
-            color: $color-black;
+            color: $color-wsma-seafoam;
             text-decoration: none;
             font-weight: 500;
             padding-top: 15px;
             a {
-                color: $color-black;
+                color: $color-wsma-seafoam;
                 text-decoration: none;
                 font-weight: 500;
             }
@@ -722,14 +722,14 @@ footer#ft {
                 margin: 30px 0;
             }
             span {
-                color: $color-wsma-red;
+                color: $color-wsma-seafoam;
             }
         }
     }
     @include respond-to('grid small') {
         .newsBody {
             H2 {
-                color: $color-wsma-dkgrey;
+                color: $color-wsma-seafoam;
             }
             margin-bottom: 20px;
             overflow: hidden;
@@ -741,12 +741,12 @@ footer#ft {
             -webkit-box-orient: vertical;
             }
         .readMore {
-            color: $color-black;
+            color: $color-wsma-seafoam;
             text-decoration: none;
             font-weight: 500;
             
             a {
-                color: $color-black;
+                color: $color-wsma-seafoam;
                 text-decoration: none;
                 font-weight: 500;
             }
@@ -754,7 +754,7 @@ footer#ft {
                 margin: 30px 0;
             }
             span {
-                color: $color-wsma-red;
+                color: $color-wsma-sun;
             }
         }
     }
@@ -770,7 +770,7 @@ footer#ft {
             }
             max-height: 100%;
             img {
-                border-bottom: 5px solid $color-wsma-red;
+                border-bottom: 5px solid $color-wsma-sun;
                 margin: 0 0 15px 0;
             }
         }

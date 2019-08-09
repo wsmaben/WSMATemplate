@@ -51,7 +51,7 @@ h1.BigHeader, .h1.BigHeader {
 }
 
 h2, .PanelTitle {
-    line-height: 28px;
+    line-height: 38px;
     font-size: $font-size-h2;
 }
 
@@ -66,15 +66,16 @@ div.PanelTitle,
 }
 
 h3, .h3 {
+	font-family: 'Source Serif Pro', serif;
     font-weight: 300;
-    font-size: 143%;
-    line-height: 25px;
+    font-size: 140%;
+    line-height: 38px;
 }
 
 h4, .SectionLabel {
     margin: 0 0 .2em;
     font-size: 100%;
-    line-height: 21px;
+    line-height: 28px;
 }
 
 h4, .h4, .SectionLabel { color: $h4-color; font-weight: 500;}
@@ -158,7 +159,7 @@ ol {
         &:before {
             content: counter(item) ". ";
             counter-increment: item;
-            color: $color-wsma-red;
+            color: $color-wsma-sun;
             padding-right: 1em;
         }
     }

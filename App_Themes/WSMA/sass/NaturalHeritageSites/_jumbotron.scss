@@ -279,14 +279,14 @@
         @include respond-to('large') {
         font-weight: 600;
         font-size: 380%;
-        color: $color-wsma-teal;
+        color: $color-wsma-seafoam;
         margin-bottom: 0px;
         line-height: 52px;
         }
         @include respond-to('grid large') {
         font-weight: 600;
         font-size: 260%;
-        color: $color-wsma-teal;
+        color: $color-wsma-seafoam;
         margin-bottom: 0px;
         line-height: 40px;
         }
@@ -340,12 +340,12 @@
         right: auto;
         padding-top: 7%;
         button {
-            background-color: $color-wsma-teal;
+            background-color: $color-wsma-seafoam;
             color:white;
             border: none;
             padding: 5px 20px;
             margin: 20px 0;
-            border-radius: 5px;
+            //border-radius: 5px;
         }
     }
     @include respond-to('tablets and down') {

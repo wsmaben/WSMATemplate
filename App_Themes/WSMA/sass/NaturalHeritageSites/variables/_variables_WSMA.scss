@@ -16,21 +16,70 @@ $theme-icons-sprite-path:        'images/ThemeIconsSprite.png' !default;
 // -------------------------
 $color-black:               #313E48 !default;
 $color-white:               #ffffff !default;
-$color-wsma-dkgrey:         #36424a !default; //From style guide
-$color-wsma-mdgrey:         #6c6f70 !default; //From style guide
-$color-wsma-ltgrey:         #d0cfcb !default; //From style guide
+//$color-wsma-dkgrey:       #36424a !default; From style guide
+//$color-wsma-mdgrey:       #6c6f70 !default; From style guide
+//$color-wsma-ltgrey:         #d0cfcb !default; From style guide
 //$color-wsma-red:            #a22a2e !default; This is the one they used in their design files
 $color-wsma-red:			#a62d38 !default; //From style guide
-$color-wsma-forest:         #00837e !default; //From style guide
-$color-wsma-teal:           #4bc8b6 !default;
-$color-wsma-ltteal:			#ecf9f7 !default;
-$color-wsma-seafoam:        #9fe6d9 !default; //From style guide
-$color-wsma-ltseafoam:		#C5F0E8 !default;
+//$color-wsma-forest:         #00837e !default; From style guide
+//$color-wsma-teal:           #4bc8b6 !default;
+//$color-wsma-ltteal:		  #ecf9f7 !default;
 $color-wsma-green:          #8fd400 !default; //From style guide
 
+//Journey Group rebrand
+//PRIMARY WEB PALETTE
+$color-wsma-seafoam:        #6BCABA !default; //From style guide
+$color-wsma-evergreen:      #004851 !default; //From style guide
+$color-wsma-sun:			#F0D283 !default; //From style guide
+$color-wsma-black: 			#000	!default; //From style guide
+$color-wsma-white: 			#fff	!default; //From style guide
+$color-wsma-ltseafoam:		#94D4CA !default; //From style guide
+
+//SECONDARY WEB PALETTE
+$color-wsma-mountain: 		#330072 !default; //From style guide
+$color-wsma-sky:			#77C5D5 !default; //From style guide
+//$color-wsma-sun:			#F0D283 !default; Reference, duplicate of primary
+$color-wsma-stone-a: 		#BFB7B0 !default; //From style guide
+$color-wsma-stone-b: 		#ACA199 !default; //From style guide
+$color-wsma-sea:			#012169 !default; //From style guide
+$color-wsma-rain:			#0068A5 !default; //From style guide
+$color-wsma-sand:			#CC9F53 !default; //From style guide
+$color-wsma-leaf:			#1B806D !default; //From style guide
+
+//COLOR INTERFACE PALETTE
+//Teal
+//$color-wsma-ltseafoam:	#94D4CA !default; Reference, duplicate of primary
+//$color-wsma-seafoam:      #6BCABA !default; Reference, duplicate of primary
+//$color-wsma-evergreen:    #004851 !default; Reference, duplicate of primary
+$color-wsma-dkevergreen:    #00282D !default; //From style guide
+//Dark
+//$color-wsma-black: 		#000	!default; Reference, duplicate of primary
+$color-wsma-charcoal: 		#222	!default; //From style guide
+$color-wsma-charcoal: 		#222	!default; //From style guide
+$color-wsma-dkgrey:       	#333 	!default; //From style guide
+$color-wsma-mdgrey:         #666 	!default; //From style guide
+//Light
+$color-wsma-grey:        	#DDD 	!default; //From style guide
+$color-wsma-ltgrey:         #EEE	!default; //From style guide
+$color-wsma-palegrey:       #F3F3F3 !default; //From style guide
+//$color-wsma-white: 		#fff	!default; Reference, duplicate of primary
+
+//COLOR SUB-BRANDS
+//Foundation Primary
+//$color-wsma-mountain:     #330072 !default; Reference, duplicate of secondary
+//$color-wsma-sky:			#77C5D5 !default; Reference, duplicate of secondary
+//CAMS Primary
+//color-wsma-sea:			#012169 !default; Reference, duplicate of secondary
+//$color-wsma-stone-a: 		#BFB7B0 !default; Reference, duplicate of secondary
+//$color-wsma-stone-b: 		#ACA199 !default; Reference, duplicate of secondary
+//Complete CME
+$color-wsma-slate:        	#243746 !default; //From style guide
+//$color-wsma-sun:			#F0D283 !default; Reference, duplicate of primary
+//$color-wsma-sand:			#CC9F53 !default; Reference, duplicate of secondary
+
 $color-base:                $color-wsma-dkgrey !default; 
-$color-callout:             $color-wsma-red !default; 
-$color-secondary-a:         $color-wsma-forest !default;
+$color-callout:             $color-wsma-sun !default; 
+$color-secondary-a:         $color-wsma-evergreen !default;
 $color-secondary-b:         $color-wsma-dkgrey !default;
 
 $color-neutral:             $color-wsma-dkgrey !default;
@@ -61,31 +110,31 @@ $border-style:          solid !default;
 
 // Links
 // -------------------------
-$link-color:            $color-wsma-red; //darken($color-secondary-b, 2%) !default;
+$link-color:            $color-wsma-seafoam; //darken($color-secondary-b, 2%) !default;
 
 // Typography
 // -------------------------
-$font-family-base:      "Gotham A", "Gotham B", sans-serif !default;
+$font-family-base:      "Source Sans Pro", sans-serif !default;
 $font-family-icons:     "elegant-icons";
-$font-size-base:        14px !default;
-$line-height-base:      1.8 !default;
+$font-size-base:        16px !default;
+$line-height-base:      1.7 !default;
 $line-height-computed:  floor($font-size-base * $line-height-base) !default;
 $text-color:            $color-black !default;
 
-$headings-font-family:  "Gotham A", "Gotham B", sans-serif !default; 
+$headings-font-family:  "Source Sans Pro", sans-serif !default; 
 $headings-font-weight:  300 !default;
 $headings-color:        $color-neutral !default;
 
-@import url("https://cloud.typography.com/6283694/6298792/css/fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro&display=swap');
 
 @font-face {
 	font-family: "elegant-icons";
 	src: url("https://cdn.rawgit.com/mdentinho/elegant-icons-sass/e48e7df0/fonts/ElegantIcons.woff");
     }
 
-$font-size-h1:          280% !default;
-$font-size-h2:          165% !default;
-$font-size-h3:          143% !default;
+$font-size-h1:          250% !default;
+$font-size-h2:          180% !default;
+$font-size-h3:          140% !default;
 $font-size-h4:          100% !default;
 $font-size-h5:          100% !default;
 $font-size-h6:          85% !default;
@@ -102,7 +151,7 @@ $padding-base-horizontal:        10px !default;
 $border-radius-base:             0px !default;
 $border-radius-large:            0px !default;
 $border-radius-small:            0px !default;
-$component-active-color:         $color-wsma-red !default;
+$component-active-color:         $color-wsma-sun !default;
 $component-active-bg:            $color-secondary-a !default;
 
 
@@ -115,7 +164,7 @@ $input-height-base:             ($line-height-computed + ($padding-base-vertical
 // -------------------------
 $btn-style:                     flat !default;
 $btn-default-color:             #fff;
-$btn-default-bg:                $color-wsma-teal;
+$btn-default-bg:                $color-wsma-seafoam;
 $btn-default-border:            transparent !default;
 $btn-default-shadow:            $btn-default-border !default;
 
@@ -137,15 +186,15 @@ $navbar-default-color:                     $color-black !default;
 $navbar-default-bg:                        $color-white !default;
 $navbar-padding-vertical:                  8px !default;
 
-$navbar-default-link-hover-color:          $color-wsma-teal !default;
+$navbar-default-link-hover-color:          $color-wsma-seafoam !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $color-wsma-red !default;
+$navbar-default-link-active-color:         $color-wsma-sun !default;
 $navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       $color-secondary-a !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 $navbar-default-link-weight:               400 !default;
 $navbar-default-link-letter-spacing:       1px !default;
-$navbar-default-link-font-size:            105% !default;
+$navbar-default-link-font-size:            110% !default;
 $navbar-default-link-font-family:          $headings-font-family;
 
 // Callout link
@@ -167,12 +216,12 @@ $navbar-default-dropdown-bg:                    $navbar-default-bg !default;
 $navbar-default-dropdown-link-color:            $color-wsma-dkgrey !default;
 $navbar-default-dropdown-header-color:          $navbar-default-dropdown-link-color !default;
 $navbar-default-dropdown-link-hover-bg:         transparent !default;
-$navbar-default-dropdown-link-hover-color:      $color-wsma-teal !default;
+$navbar-default-dropdown-link-hover-color:      $color-wsma-seafoam !default;
 $navbar-default-dropdown-link-active-bg:        $navbar-default-dropdown-link-hover-bg !default;
 $navbar-default-dropdown-link-active-color:     $navbar-default-dropdown-link-hover-color !default;
 $navbar-default-dropdown-link-disabled-color:   $navbar-default-dropdown-link-color !default;
 $navbar-default-dropdown-link-font-family:      $font-family-base;
-$navbar-default-dropdown-link-font-size:         114%;
+$navbar-default-dropdown-link-font-size:         124%;
 $navbar-default-dropdown-link-font-weight:       normal;
 
 // Navs

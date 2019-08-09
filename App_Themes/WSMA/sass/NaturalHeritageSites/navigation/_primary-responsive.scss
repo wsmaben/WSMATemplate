@@ -233,12 +233,12 @@
     /*Move this*/ 
     .rsmTwoLevels > .rsmItem > .rsmLink,
     .rsmThreeLevels > .rsmItem > .rsmLink {
-        color: $color-wsma-teal;
+        color: $color-wsma-seafoam;
         border: none;
         font-size: 150%;
         font-weight: 300;
         &:active, &::visited {
-            color: $color-wsma-teal;
+            color: $color-wsma-seafoam;
         }
     }
         
@@ -370,7 +370,7 @@
         &.rmFocused {
             background-color: $navbar-default-dropdown-link-hover-bg;
             color: $navbar-default-dropdown-link-hover-color;
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 
@@ -524,9 +524,10 @@
         // }
 
         .rsmLevel1 > .rsmItem > .rsmLink {
-            font-weight: 400!important;
+            font-weight: 600!important;
             padding-bottom: 0px;
-            padding-top: 0px;
+            padding-top: 20px;
+            color: $color-wsma-evergreen;
             
             //line-height: 20px;
         }
@@ -534,7 +535,7 @@
         .rsmLevel1 > .rsmItem > .rsmLink,
         .rsmLevel2 > .rsmItem > .rsmLink {
             &:hover, &:active, &:focus {
-                color: $color-wsma-red;
+                color: $color-wsma-seafoam;
             }
         }
     }
