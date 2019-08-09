@@ -4752,17 +4752,14 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 .ltgrey {
   color: #EEE; }
 
-.red {
-  color: #a62d38; }
-
 .seafoam {
   color: #6BCABA; }
 
 .ltseafoam {
   color: #94D4CA; }
 
-.green {
-  color: #8fd400; }
+.evergreen {
+  color: #004851; }
 
 .bg-dkgrey {
   background-color: #333;
@@ -4775,17 +4772,13 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
 .bg-ltgrey {
   background-color: #EEE; }
 
-.bg-red {
-  background-color: #a62d38;
-  color: #fff; }
-
 .bg-seafoam {
   background-color: #6BCABA; }
 
 .bg-ltseafoam {
   background-color: #94D4CA; }
 
-.bg-green {
-  background-color: #8fd400; }
+.bg-evergreen {
+  background-color: #004851; }
 
 /*# sourceMappingURL=99-WSMA.css.map */
