@@ -76,7 +76,7 @@
             }
             &.btn {
                 background-color: $color-wsma-seafoam;
-                font-size: 14px!important;
+                font-size: 18px!important;
                 border: none;
                 .NavigationLink {
                     color: #fff;
@@ -84,7 +84,7 @@
             }
         }
         .auth-link-container-sm {
-             line-height: 1.8;
+             line-height: 2.0;
              //padding-right: 20px;
         }
         .NavigationLink {
@@ -336,9 +336,9 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
             @include size(25px,30px);                
             padding-left: 34px !important;  
             background-position: 7px -17px!important;
-            .Wrapper-HomePage & {
-                background-position: 7px 7px!important;
-            }
+           //  .Wrapper-HomePage & {
+//                 background-position: 7px 7px!important;
+//             }
             background-color: transparent;
             border: none;
             margin: 0 0 0 -5px;

@@ -1961,12 +1961,12 @@ ol {
       color: #313e48; }
     .header-container .nav-auxiliary .NavigationListItem.btn {
       background-color: #6BCABA;
-      font-size: 14px !important;
+      font-size: 18px !important;
       border: none; }
       .header-container .nav-auxiliary .NavigationListItem.btn .NavigationLink {
         color: #fff; }
   .header-container .nav-auxiliary .auth-link-container-sm {
-    line-height: 1.8; }
+    line-height: 2.0; }
   .header-container .nav-auxiliary .NavigationLink {
     padding: 0 20px; } }
 .no-mqs .header-container .nav-auxiliary .header-social .SocialSprite, .no-mqs .header-container .nav-auxiliary .auth-link {
@@ -1982,12 +1982,12 @@ ol {
     color: #313e48; }
   .no-mqs .header-container .nav-auxiliary .NavigationListItem.btn {
     background-color: #6BCABA;
-    font-size: 14px !important;
+    font-size: 18px !important;
     border: none; }
     .no-mqs .header-container .nav-auxiliary .NavigationListItem.btn .NavigationLink {
       color: #fff; }
 .no-mqs .header-container .nav-auxiliary .auth-link-container-sm {
-  line-height: 1.8; }
+  line-height: 2.0; }
 .no-mqs .header-container .nav-auxiliary .NavigationLink {
   padding: 0 20px; }
 @media (max-width: 991px) {
@@ -2213,8 +2213,6 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
         transition: width;
         -webkit-transition-duration: 1s;
         transition-duration: 1s; }
-        .Wrapper-HomePage .header-search .search-field {
-          background-position: 7px 7px !important; }
         .header-search .search-field:hover {
           cursor: pointer;
           background-color: #666;
@@ -2237,8 +2235,6 @@ a.ste-toggle, a.ste-toggle:hover, a.ste-toggle:focus {
       transition: width;
       -webkit-transition-duration: 1s;
       transition-duration: 1s; }
-      .Wrapper-HomePage .no-mqs .header-search .search-field {
-        background-position: 7px 7px !important; }
       .no-mqs .header-search .search-field:hover {
         cursor: pointer;
         background-color: #666;
@@ -3841,7 +3837,7 @@ input[type="checkbox"]:focus {
 
 .carousel-caption {
   font-family: "Source Sans Pro", sans-serif;
-  top: 83px;
+  top: 43px;
   text-align: left !important; }
   @media (min-width: 768px) {
     .carousel-caption {

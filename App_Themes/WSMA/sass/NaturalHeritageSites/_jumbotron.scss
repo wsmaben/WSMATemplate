@@ -372,7 +372,7 @@
     }
     //padding: 15px;
     font-family: $carousel-caption-font-family;
-    top: $navbar-height + $navbar-padding-vertical + 10;
+    top: $navbar-height + $navbar-padding-vertical - 30;
     background-color: $carousel-caption-bg-color;
     text-align: $carousel-caption-text-alignment!important;   
     h1:after { display: none; }
