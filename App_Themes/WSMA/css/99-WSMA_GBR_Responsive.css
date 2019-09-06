@@ -1174,9 +1174,9 @@ ol {
     fill: #6BCABA; }
   @media (min-width: 768px) {
     #masterHeaderImage {
-      margin-top: 30px; } }
+      margin-top: 76px; } }
   .no-mqs #masterHeaderImage {
-    margin-top: 30px; }
+    margin-top: 76px; }
   @media (max-width: 991px) {
     #masterHeaderImage {
       margin-top: 20px;
@@ -1595,9 +1595,9 @@ ol {
     letter-spacing: 1px; }
     @media (min-width: 768px) {
       .Wrapper-HomePage .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-        color: white; } }
+        color: #313E48; } }
     .Wrapper-HomePage .no-mqs .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
-      color: white; }
+      color: #313E48; }
     @media (max-width: 991px) {
       .RadMenu.RadMenu_WSMA .rmRootGroup > .rmItem > .rmLink {
         font-size: 100%; } }
@@ -1917,7 +1917,7 @@ ol {
     .Wrapper-HomePage .navbar-header > a,
     .Wrapper-HomePage .navbar-header .NavigationUnorderedList,
     .Wrapper-HomePage .navbar-header .NavigationLink {
-      color: white; }
+      color: #313E48; }
   @media (max-width: 767px) {
     .navbar-header .NavigationUnorderedList {
       display: none !important; } }
@@ -1953,12 +1953,12 @@ ol {
     color: #313E48; }
     .Wrapper-HomePage .header-container .nav-auxiliary .header-social .SocialSprite,
     .Wrapper-HomePage .header-container .nav-auxiliary .auth-link {
-      color: #fff; }
+      color: #313e48; }
   .header-container .nav-auxiliary .NavigationListItem {
     display: inline-flex;
     color: #313E48; }
     .Wrapper-HomePage .header-container .nav-auxiliary .NavigationListItem {
-      color: #fff; }
+      color: #313e48; }
     .header-container .nav-auxiliary .NavigationListItem.btn {
       background-color: #6BCABA;
       font-size: 14px !important;
@@ -1966,7 +1966,7 @@ ol {
       .header-container .nav-auxiliary .NavigationListItem.btn .NavigationLink {
         color: #fff; }
   .header-container .nav-auxiliary .auth-link-container-sm {
-    line-height: 2.4; }
+    line-height: 1.8; }
   .header-container .nav-auxiliary .NavigationLink {
     padding: 0 20px; } }
 .no-mqs .header-container .nav-auxiliary .header-social .SocialSprite, .no-mqs .header-container .nav-auxiliary .auth-link {
@@ -1974,12 +1974,12 @@ ol {
   color: #313E48; }
   .Wrapper-HomePage .no-mqs .header-container .nav-auxiliary .header-social .SocialSprite,
   .Wrapper-HomePage .no-mqs .header-container .nav-auxiliary .auth-link {
-    color: #fff; }
+    color: #313e48; }
 .no-mqs .header-container .nav-auxiliary .NavigationListItem {
   display: inline-flex;
   color: #313E48; }
   .Wrapper-HomePage .no-mqs .header-container .nav-auxiliary .NavigationListItem {
-    color: #fff; }
+    color: #313e48; }
   .no-mqs .header-container .nav-auxiliary .NavigationListItem.btn {
     background-color: #6BCABA;
     font-size: 14px !important;
@@ -1987,7 +1987,7 @@ ol {
     .no-mqs .header-container .nav-auxiliary .NavigationListItem.btn .NavigationLink {
       color: #fff; }
 .no-mqs .header-container .nav-auxiliary .auth-link-container-sm {
-  line-height: 2.4; }
+  line-height: 1.8; }
 .no-mqs .header-container .nav-auxiliary .NavigationLink {
   padding: 0 20px; }
 @media (max-width: 991px) {
@@ -3572,7 +3572,7 @@ input[type="checkbox"]:focus {
  * For the Slideshow iPart styles see Carousel.
  */
 .Slider.FullWidth {
-  height: 700px;
+  height: 500px;
   background-image: url(images/HomeBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -3642,7 +3642,7 @@ input[type="checkbox"]:focus {
   color: #fff;
   text-shadow: 1px 1px 1px #000; }
 .jumbotron.home {
-  height: 700px; }
+  height: 500px; }
   .jumbotron.home h1 span,
   .jumbotron.home .ActionButton {
     display: block;
@@ -3755,7 +3755,8 @@ input[type="checkbox"]:focus {
 /* Used by the Slideshow iPart */
 .carousel h1, .carousel h2, .carousel h3, .carousel h4, .carousel h5 {
   font-weight: bold;
-  display: block; }
+  display: block;
+  font-family: "Source Pro", serif; }
 @media (min-width: 1200px) {
   .carousel h1 {
     font-weight: 300;
@@ -3782,13 +3783,13 @@ input[type="checkbox"]:focus {
   .carousel h2 {
     font-weight: 600;
     font-size: 380%;
-    color: #6BCABA;
+    color: #ffffff;
     margin-bottom: 0px;
     line-height: 52px; } }
 .no-mqs .carousel h2 {
   font-weight: 600;
   font-size: 380%;
-  color: #6BCABA;
+  color: #ffffff;
   margin-bottom: 0px;
   line-height: 52px; }
 @media (min-width: 768px) {
@@ -3913,9 +3914,9 @@ input[type="checkbox"]:focus {
     background-color: #ffffff; }
     @media (min-width: 768px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 700px !important; } }
+        height: 500px !important; } }
     .no-mqs .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-      height: 700px !important; }
+      height: 500px !important; }
     @media (max-width: 991px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 500px !important; } }
@@ -3941,7 +3942,8 @@ input[type="checkbox"]:focus {
 
 .Wrapper-HomePage .HomePageFullWidthArea,
 .TemplateManagerArea .HomePageFullWidthArea {
-  display: block; }
+  display: block;
+  margin-top: 159px; }
 
 /* ==========================================================================
    COMMUNITIES

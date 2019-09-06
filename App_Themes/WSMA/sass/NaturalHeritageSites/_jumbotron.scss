@@ -260,6 +260,7 @@
     h1, h2, h3, h4, h5 {
         font-weight: $font-weight-bold;
         display: block;
+        font-family: "Source Pro", serif;
     }
     h1 {
         @include respond-to('large') {        
@@ -279,7 +280,7 @@
         @include respond-to('large') {
         font-weight: 600;
         font-size: 380%;
-        color: $color-wsma-seafoam;
+        color: $color-white;
         margin-bottom: 0px;
         line-height: 52px;
         }
@@ -439,5 +440,5 @@
     The container div remains on internal pages although its content is hidden. */
 .HomePageFullWidthArea { display: none; }
 .Wrapper-HomePage .HomePageFullWidthArea,
-.TemplateManagerArea .HomePageFullWidthArea { display: block; }
+.TemplateManagerArea .HomePageFullWidthArea { display: block; margin-top: 159px;}
         

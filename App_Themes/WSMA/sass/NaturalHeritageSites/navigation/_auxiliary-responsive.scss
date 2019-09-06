@@ -13,7 +13,7 @@
         vertical-align: right;
         color: $navbar-auxiliary-link-color;
         .Wrapper-HomePage & {
-            color: white;
+            color: #313E48;
         }
     }
     @include respond-to('grid small') {
@@ -63,7 +63,7 @@
             color: $navbar-auxiliary-link-color;
             // margin-left: floor($navbar-padding-horizontal / 2);
             .Wrapper-HomePage & {
-                color: #fff;
+                color: #313e48;
             }
         }
         .NavigationListItem {
@@ -71,7 +71,7 @@
             color: $navbar-auxiliary-link-color;
             //border-left: 1px solid $color-black;
             .Wrapper-HomePage & {
-                color: #fff;
+                color: #313e48;
                 //border-left: 1px solid white;
             }
             &.btn {
@@ -84,7 +84,7 @@
             }
         }
         .auth-link-container-sm {
-             line-height: 2.4;
+             line-height: 1.8;
              //padding-right: 20px;
         }
         .NavigationLink {
