@@ -459,7 +459,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
     font-weight: bold;
     display: block;
     margin-top: 15px;
-    font-size: 130%;
+    font-size: 110%;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
@@ -773,7 +773,7 @@ footer#ft {
   padding-left: 0; }
 
 #ft ul li {
-  border-bottom: 1px solid #94D4CA;
+  border-bottom: 1px solid #6BCABA;
   display: inline-block;
   font-size: 95%;
   line-height: 30px; }
@@ -810,14 +810,13 @@ footer#ft {
     line-height: initial;
     width: 100%; }
   .aux-nav a {
-    color: #333;
-    border-bottom: 1px solid #004851;
+    color: #ffffff;
     padding: 2px 0;
     display: block; }
     .aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active {
-      color: #6BCABA;
+      color: #ffffff;
       text-decoration: underline;
-      background-color: #94D4CA; }
+      background-color: #6BCABA; }
 
 /**********************************
 /
@@ -1237,7 +1236,8 @@ ol {
   padding-top: 1em;
   padding-bottom: 0.35em;
   /* 1em - .65em (bottom margin on nav lis) */
-  color: #0000004f; }
+  color: #000;
+  font-size: 90%; }
 
 .copyright-border {
   border-top: 1px solid #e6e6e6; }
@@ -1894,7 +1894,7 @@ ol {
     font-size: 155%;
     padding: 25px 0 10px 0;
     margin: 0 20px;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     line-height: 25px; }
   .nav-secondary .SubNavigationSeparator {
     border: none;
@@ -3568,7 +3568,7 @@ input[type="checkbox"]:focus {
  * For the Slideshow iPart styles see Carousel.
  */
 .Slider.FullWidth {
-  height: 500px;
+  height: 550px;
   background-image: url(images/HomeBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -3638,7 +3638,7 @@ input[type="checkbox"]:focus {
   color: #fff;
   text-shadow: 1px 1px 1px #000; }
 .jumbotron.home {
-  height: 500px; }
+  height: 550px; }
   .jumbotron.home h1 span,
   .jumbotron.home .ActionButton {
     display: block;
@@ -3910,12 +3910,12 @@ input[type="checkbox"]:focus {
     background-color: #ffffff; }
     @media (min-width: 768px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 500px !important; } }
+        height: 550px !important; } }
     .no-mqs .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-      height: 500px !important; }
+      height: 550px !important; }
     @media (max-width: 991px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 500px !important; } }
+        height: 550px !important; } }
     @media (max-width: 767px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 210px !important; } }

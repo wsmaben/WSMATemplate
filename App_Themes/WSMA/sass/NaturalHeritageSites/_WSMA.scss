@@ -274,7 +274,7 @@ html.t-safari {
         // text-align: center;
         display: block;
         margin-top: 15px;
-        font-size: 130%;
+        font-size: 110%;
         position: absolute;
         bottom: 0;
         margin: 0 auto;
@@ -608,7 +608,7 @@ footer#ft {
 }
 
 #ft ul li {
-    border-bottom: 1px solid $color-wsma-ltseafoam;
+    border-bottom: 1px solid $color-wsma-seafoam;
     display: inline-block;
     font-size: 95%;
     line-height: 30px;
@@ -652,14 +652,14 @@ footer#ft {
         width: 100%;
     }
     a {
-        color: $color-wsma-dkgrey;
-        border-bottom: 1px solid $color-wsma-evergreen;
+        color: $color-white;
+        //border-bottom: 1px solid $color-wsma-evergreen;
         padding: 2px 0;
         display: block;
         &:hover, &:focus, &:active {
-            color: $color-wsma-seafoam;
+            color: $color-white;
             text-decoration: underline;
-            background-color: $color-wsma-ltseafoam;
+            background-color: $color-wsma-seafoam;
         }
     }
 }
