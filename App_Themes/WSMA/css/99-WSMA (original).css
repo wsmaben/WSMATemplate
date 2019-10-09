@@ -459,7 +459,7 @@ html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFi
     font-weight: bold;
     display: block;
     margin-top: 15px;
-    font-size: 110%;
+    font-size: 130%;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
@@ -773,7 +773,7 @@ footer#ft {
   padding-left: 0; }
 
 #ft ul li {
-  border-bottom: 1px solid #6BCABA;
+  border-bottom: 1px solid #94D4CA;
   display: inline-block;
   font-size: 95%;
   line-height: 30px; }
@@ -815,9 +815,9 @@ footer#ft {
     padding: 2px 0;
     display: block; }
     .aux-nav a:hover, .aux-nav a:focus, .aux-nav a:active {
-      color: #ffffff;
+      color: #6BCABA;
       text-decoration: underline;
-      background-color: #6BCABA; }
+      background-color: #94D4CA; }
 
 /**********************************
 /
@@ -1050,7 +1050,7 @@ h4, .SectionLabel {
 
 h4, .h4, .SectionLabel {
   color: #333;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h5, .h5 {
   color: #333;
@@ -1237,8 +1237,7 @@ ol {
   padding-top: 1em;
   padding-bottom: 0.35em;
   /* 1em - .65em (bottom margin on nav lis) */
-  color: #000;
-  font-size: 90%; }
+  color: #0000004f; }
 
 .copyright-border {
   border-top: 1px solid #e6e6e6; }
@@ -1895,7 +1894,7 @@ ol {
     font-size: 155%;
     padding: 25px 0 10px 0;
     margin: 0 20px;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
     line-height: 25px; }
   .nav-secondary .SubNavigationSeparator {
     border: none;
@@ -3569,7 +3568,7 @@ input[type="checkbox"]:focus {
  * For the Slideshow iPart styles see Carousel.
  */
 .Slider.FullWidth {
-  height: 525px;
+  height: 500px;
   background-image: url(images/HomeBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -3639,7 +3638,7 @@ input[type="checkbox"]:focus {
   color: #fff;
   text-shadow: 1px 1px 1px #000; }
 .jumbotron.home {
-  height: 525px; }
+  height: 500px; }
   .jumbotron.home h1 span,
   .jumbotron.home .ActionButton {
     display: block;
@@ -3911,12 +3910,12 @@ input[type="checkbox"]:focus {
     background-color: #ffffff; }
     @media (min-width: 768px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 525px !important; } }
+        height: 500px !important; } }
     .no-mqs .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-      height: 525px !important; }
+      height: 500px !important; }
     @media (max-width: 991px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 525px !important; } }
+        height: 500px !important; } }
     @media (max-width: 767px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 210px !important; } }
@@ -3962,7 +3961,7 @@ input[type="checkbox"]:focus {
 
 /* Community breadcrumb */
 .BreadCrumbCurrent {
-  font-size: 100%;
+  font-size: 150%;
   font-weight: bold; }
 
 /*** Communities common elements ***/

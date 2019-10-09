@@ -652,8 +652,8 @@ footer#ft {
         width: 100%;
     }
     a {
-        color: $color-white;
-        //border-bottom: 1px solid $color-wsma-evergreen;
+        color: $color-wsma-dkgrey;
+        border-bottom: 1px solid $color-wsma-evergreen;
         padding: 2px 0;
         display: block;
         &:hover, &:focus, &:active {

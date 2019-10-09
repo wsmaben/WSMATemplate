@@ -274,8 +274,8 @@ $logo-donor-width-md:               169px !default;
 // Jumbotron
 // -------------------------
 $jumbotron-background-url:     url(images/HomeBanner.jpg) !default;
-$jumbotron-home-height:        525px !default;
-$jumbotron-home-height-md:	   525px !default;
+$jumbotron-home-height:        550px !default;
+$jumbotron-home-height-md:	   550px !default;
 $jumbotron-home-height-sm:     210px !default;
 $jumbotron-h1-size-xs:         200% !default;
 $jumbotron-h1-size:            250% !default;
