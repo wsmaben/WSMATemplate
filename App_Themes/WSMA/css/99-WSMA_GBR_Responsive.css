@@ -3108,7 +3108,8 @@ input[type="checkbox"]:focus {
 .FoD .panel-body {
   padding: 0; }
 .FoD h2.panel-title {
-  color: white; }
+  color: white;
+  margin-bottom: 20px; }
 .FoD .PanelField label {
   color: white; }
 
@@ -3569,7 +3570,7 @@ input[type="checkbox"]:focus {
  * For the Slideshow iPart styles see Carousel.
  */
 .Slider.FullWidth {
-  height: 550px;
+  height: 525px;
   background-image: url(images/HomeBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -3639,7 +3640,7 @@ input[type="checkbox"]:focus {
   color: #fff;
   text-shadow: 1px 1px 1px #000; }
 .jumbotron.home {
-  height: 550px; }
+  height: 525px; }
   .jumbotron.home h1 span,
   .jumbotron.home .ActionButton {
     display: block;
@@ -3911,12 +3912,12 @@ input[type="checkbox"]:focus {
     background-color: #ffffff; }
     @media (min-width: 768px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 550px !important; } }
+        height: 525px !important; } }
     .no-mqs .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-      height: 550px !important; }
+      height: 525px !important; }
     @media (max-width: 991px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
-        height: 550px !important; } }
+        height: 525px !important; } }
     @media (max-width: 767px) {
       .Wrapper-HomePage .HomePageFullWidthArea .carousel-inner .item {
         height: 210px !important; } }
@@ -4635,6 +4636,14 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     fill: whitesmoke; }
   .shift:hover {
     border-bottom: 5px solid #6BCABA; }
+
+.people svg {
+  width: 50%;
+  margin-top: 10%; }
+  .people svg .st2 {
+    fill: #6BCABA; }
+  .people svg .st3 {
+    fill: #004851; }
 
 #masterHeaderImage {
   margin-top: 35px; }

@@ -1116,13 +1116,13 @@ img.ImgNoResize, .ImgNoResize img {
 
 ol {
   counter-reset: item;
-  padding: 0; }
+  padding: 20px; }
   ol li {
     display: block; }
     ol li:before {
       content: counter(item) ". ";
       counter-increment: item;
-      color: #F0D283;
+      color: #004851;
       padding-right: 1em; }
 
 /* ==========================================================================
@@ -3108,7 +3108,8 @@ input[type="checkbox"]:focus {
 .FoD .panel-body {
   padding: 0; }
 .FoD h2.panel-title {
-  color: white; }
+  color: white;
+  margin-bottom: 20px; }
 .FoD .PanelField label {
   color: white; }
 
@@ -4635,6 +4636,14 @@ ul.RelatedItemsHorizontal li, .RelatedItemsHorizontal ul.rrItemsList li {
     fill: whitesmoke; }
   .shift:hover {
     border-bottom: 5px solid #6BCABA; }
+
+.people svg {
+  width: 50%;
+  margin-top: 10%; }
+  .people svg .st2 {
+    fill: #6BCABA; }
+  .people svg .st3 {
+    fill: #004851; }
 
 @media (min-width: 768px) {
   .header-containger .carousel-caption {

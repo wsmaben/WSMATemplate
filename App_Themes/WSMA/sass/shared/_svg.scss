@@ -122,3 +122,34 @@
         border-bottom: 5px solid $color-wsma-seafoam;
     }
 }
+//Member Resource Center Icons;
+.people {
+    svg {
+        width: 50%;
+        margin-top: 10%;
+        .st2 {
+            fill:$color-wsma-seafoam;
+        }
+        .st3{
+            fill:$color-wsma-evergreen;
+        }
+    }
+    
+//     &:hover {
+//         svg {
+//             .st2 {
+//                 fill:$color-wsma-seafoam;
+//             }
+//             .st3{
+//                 fill:rgb(245, 245, 245);
+//             }
+//         }
+//     }
+//     .Spotlight:hover {
+//         //border-bottom: 5px solid $color-wsma-forest;
+//     }
+//     border-bottom: 5px solid transparent;
+//     &:hover {
+//         border-bottom: 5px solid $color-wsma-seafoam;
+//     }
+}

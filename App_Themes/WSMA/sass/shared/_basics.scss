@@ -153,13 +153,13 @@ div.ShowFieldset fieldset,
 
 ol {
     counter-reset: item;
-    padding: 0;
+    padding: 20px;
     li {
         display: block;
         &:before {
             content: counter(item) ". ";
             counter-increment: item;
-            color: $color-wsma-sun;
+            color: $color-wsma-evergreen;
             padding-right: 1em;
         }
     }
